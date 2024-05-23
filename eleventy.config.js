@@ -8,7 +8,7 @@ module.exports = function (eleventyConfig) {
     headingPermalinks: true,
     header: {
       organisationLogo: false,
-      productName: 'Design history',
+      productName: 'Claim for adult social care training and development',
       search: {
         indexPath: '/search.json',
         sitemapPath: '/sitemap'
@@ -18,6 +18,15 @@ module.exports = function (eleventyConfig) {
 
   // Passthrough
   eleventyConfig.addPassthroughCopy({ './app/images': '.' })
+
+  eleventyConfig.addCollection('claims', collection => {
+    return collection.getFilteredByGlob('app/posts/claims/*.md')
+  })
+
+  eleventyConfig.addCollection('processing', collection => {
+    return collection.getFilteredByGlob('app/posts/processing/*.md')
+  })
+
 
   // Config
   return {
@@ -29,6 +38,9 @@ module.exports = function (eleventyConfig) {
       output: 'public',
       layouts: '_layouts',
       includes: '_components'
-    }
+    },
+
   }
+
+
 }

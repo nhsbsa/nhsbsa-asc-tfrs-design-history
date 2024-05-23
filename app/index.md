@@ -1,10 +1,12 @@
 ---
 homepage: true
 layout: product
-title: A design history for your GOV.UK service
-description: A permanent record of how your service has developed over time.
-pagination:
-  data: collections.all
-  reverse: true
-  size: 50
+title: Claim for adult social care training and development design history
+description: A permanent record of how the Claim for adult social care training and development service has developed since the start of beta.
+sections:
+  title: Parts of the service
+eleventyComputed:
+  eleventyNavigation:
+    key: Home
+    title: "{{ title }}"
 ---
