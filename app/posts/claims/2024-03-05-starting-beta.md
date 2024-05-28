@@ -1,10 +1,10 @@
 ---
-title: Where we are at the start of Beta
-description: Reflecting on our design decsion logs from Alpha and moving torwards the Design History tool from X-GOVUk.
+title: Where we are at the start of beta
+description: Reflecting on our design decision logs from Alpha and moving towards the Design History tool from X-GOVUK.
 author:
   name: Mark Portnell
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
-date: 2024-05-31
+date: 2024-03-05
 tags:
   - alpha
 aside:
