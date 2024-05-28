@@ -25,7 +25,7 @@ This is an example of a standard design history post. Thjis would provide a summ
 - Timelines are an effective way to present the journey the work has taken from initial research to the design
 - Insight into your design decisions
 
-## Why we did this work
+## What our ideas were
 - Providing visuals of Information architecture
 - Including all interactions
 - Wireframe and interface ideation

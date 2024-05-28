@@ -9,7 +9,7 @@ tags:
   - claims-version-8
   - claims-version-7
   - manage-claims
-  - TU-100-claims
+  - care-skills-100-claims
   - account-creation
 aside:
   title:  Related content
