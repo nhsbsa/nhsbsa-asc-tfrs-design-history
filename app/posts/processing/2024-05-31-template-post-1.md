@@ -1,5 +1,5 @@
 ---
-title: A template for a processing
+title: A template for a  claims post
 description: This is an example of a standard design history post. Thjis would provide a summary fo the design hsitory post.
 author:
   name: Mark Portnell
