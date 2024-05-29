@@ -5,6 +5,7 @@ author:
   name: Mark Portnell
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-03-26
+modified: 2024-05-06
 tags:
   - claims-version-8
   - manage-claims
@@ -19,64 +20,64 @@ aside:
 
 ## Why we did this work
 
-The decision was made from a delivery and product perspective to de-scope the revalidation funding for the start of private beta. This ability to make claims for these would come later in the year. 
+At the end of Alpha the design for managing claims consisted of a single page with the tabs component on it. Each tab was for a specific state a claim could be in eg approved or submitted. Within each tab was a table with claims for that were in the corresponding state. 
 
-In our last version of Alpha we had formulated the designs for the revalidation funding side of the service but this had yet to be tested with users due to challenges around finding organisations with employees who were eligible for this funding pot. 
+![A screenshot from v7 of the prototype showing managing claims screen.](manage-claims-v7.png "Manage claims screen from v7")
 
-Although we knew we had to remove the functions of be able to make a claim for revalidation funding the design challenge was what to do with the reference to revalidation funding in the service until we were able to provide the functionality later in the year.
+While on the whole this screen tested well during Alpha, there were a few issues we had discovered with the design:
+- The removal of pagination in the table for MVP meant the tables could end up being very long on a single tab.
+- Tabs on smaller screen sizes are vertically stacked on smaller screen sizes meaning multiple, potentially large, tables stacked on top of one another.
+- Due to the amount of data that could be on each tab loading times could be affected (this is something we struggled to test in the prototype).
+- When using assistive technologies the multiple tabs and large quantities of claims could prove problematic and we struggled to test with users with accessibility needs during alpha.
+- We would be introducing new types of claims into these tables in the future for the 60/40 work and introducing another columns would increase cognitive load further on a page that already causes a high cognitive load.
+
+Given the above we decided to looks at ways we would simplify the design journey around managing claims while incorporating the MVP changes. 
+
+>**How might we** improve accessibility, extensibility and scalability of the manage claims journey while not degrading usability.
 
 ## What our ideas were
 
-There were two fundamental design hypotheses that we explored:
+Our starting point for this work was the idea that each tab should instead be separate pages of the service. We felt this would reduce the cognitive load by focussing a page on claims of a specific state without the other visual clutter. It would also allow the tables to better scale and extend as needed for more claims or additional features such as filters and search options in the future. 
 
-#### Hypothesis 1
-**We believe that** maintaining references to revalidation funding but disabling access to that part of the service
-**Will be a useful feature for** submitters
-**As it will** show where that feature will exist when it is introduced in the future
+The remaining challenge then became how we sign post to these different pages in an intuitive way. This sign posting page would also be the natural home for the start new claim button. 
 
-#### Hypothesis 2
-**We believe that** removed references to revalidation funding
-**Will be a useful feature for** submitters
-**As it will** simplify the user interface and reduce cognitive load
+We explored two ideas for this; the chevron card and basic card:
 
-After conversations with colleagues in the design community the general consensus was it would better practice to remove the references to revalidation funding for MVP instead of opting for disabled states for certain functionality particularly given we don't have the opportunity to research this before design handover.
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="basic-cards.png" alt="A screenshot of some basic cards" style="width: 100%; height: auto;">
+    <figcaption>Basic cards</figcaption>
+  </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="chevron-cards.png" alt="A screenshot of some chevron cards" style="width: 100%; height: auto;">
+    <figcaption>Chevron cards</figcaption>
+  </figure>
+  </div>
+</div>
+
+After some deliberation we decided to opt for the chevron cards as they were more universally seen on the government website and therefore we formed a hypothesis that these would be better suited for this form of signposting.
+
+>**We believe that** using the chevron card to sign post users to different claims state pages
+>**Will be a useful feature for** submitters
+>**As it will** help them clearly identify the different states claims can be in and allow users to easily navigate to these pages.
 
 ## What we changed
 
-The main references to revalidation funding were found on the 'before you start' screen, eligibility checker screen and the landing screen once you sign in. 
+The below show the designs we created and tested in v8:
 
-With the removal of the references the eligibility checker screen became redundant and was removed, with the small amount of information on care skills funding was moved to the 'before you start' screen. 
+![A screenshot from v8 of the prototype showing managing claims screen.](manage-claims-v8.png "Manage claims")
 
-<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-  <div style="flex: 1; max-width: 48%;">
-  <figure>
-    <img src="before-you-start-v7.png" alt="v7 'Before you start'" style="width: 100%; height: auto;">
-    <figcaption>The v7 before you start screen with references to revalidation funding</figcaption>
-  </figure>
-  </div>
-  <div style="flex: 1; max-width: 48%;">
-  <figure>
-    <img src="before-you-start-v8.png" alt="v8 'Before you start'" style="width: 100%; height: auto;">
-    <figcaption>The v8 before you start screen without references to revalidation funding and removal of the eligibility checker</figcaption>
-  </figure>
-  </div>
-</div>
-
-Additionally the landing screen that showed once users signed into the service also became redundant. Given it provided signposting to the two parts of the service for each funding pot, without revalidation funding and the removal of the dashboard concept for MVP this page was removed. Users were landing straight onto the manage claims page for care skills funding after sign in for version 8.
-
-<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-  <div style="flex: 1; max-width: 48%;">
-  <figure>
-    <img src="landing-screen-v7.png" alt="v7 'Before you start'" style="width: 100%; height: auto;">
-    <figcaption>The landing screen that was removed from version 7</figcaption>
-  </figure>
-  </div>
-</div>
+![A screenshot from v8 of the prototype showing not yet submitted claims screen.](claims-table-v8.png "Not yet submitted claims")
 
 ## How we tested our ideas and what we found
-Ideally we would have liked to explore with this with users and understand their expectations before committing to an option for MVP. However with limited time and availability of users that would make use of this funding pot we opted for some desk research on best practice. 
+We ran usability testing on these designs week commencing 6th May 2024. Here is a summary of the findings related to the above changes:
+- users found it very easy to make and submit claims still despite changes. Minimal confusion and little to suggest they would struggle to do this independently
+- a shift to pages for the claims tables instead of tabs meant users were able to pick up quicker what was going on that before
 
 
 ## What we will do next
-We will closely monitor this approach through early private beta and will explore how best to introduce revalidation funding into the service when we get to that point in the road map.
+The changes we have made have improved usability as well as providing a better foundation for us to scale and extend as needed in the future, as a result we will move these changes into development and monitor any related findings early on in private beta.
 

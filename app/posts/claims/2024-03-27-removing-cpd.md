@@ -30,14 +30,14 @@ Although we knew we had to remove the functions of be able to make a claim for r
 There were two fundamental design hypotheses that we explored:
 
 #### Hypothesis 1
-**We believe that** maintaining references to revalidation funding but disabling access to that part of the service
-**Will be a useful feature for** submitters
-**As it will** show where that feature will exist when it is introduced in the future
+>**We believe that** maintaining references to revalidation funding but disabling access to that part of the service
+>**Will be a useful feature for** submitters
+>**As it will** show where that feature will exist when it is introduced in the future
 
 #### Hypothesis 2
-**We believe that** removed references to revalidation funding
-**Will be a useful feature for** submitters
-**As it will** simplify the user interface and reduce cognitive load
+>**We believe that** removed references to revalidation funding
+>**Will be a useful feature for** submitters
+>**As it will** simplify the user interface and reduce cognitive load
 
 After conversations with colleagues in the design community the general consensus was it would better practice to remove the references to revalidation funding for MVP instead of opting for disabled states for certain functionality particularly given we don't have the opportunity to research this before design handover.
 

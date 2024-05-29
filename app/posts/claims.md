@@ -11,5 +11,5 @@ aside:
   title:  Claims Prototypes
   content: |
     [View claims prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Claims) 
-    Password: ascbsa123
+    Password: bsaasc123
 ---
