@@ -1,6 +1,6 @@
 ---
 title: Scaling back MVP
-description: With an aggressive delivery deadline fast approaching and an increasing amount of technical unknowns the decision was made by the product owner to scale back the MVP at the start of Beta.
+description: With a tight delivery deadline fast approaching and an increasing amount of technical unknowns the decision was made by the product owner to scale back the MVP at the start of Beta.
 author:
   name: Mark Portnell
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
