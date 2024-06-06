@@ -8,7 +8,7 @@ date: 2024-04-16
 modified: 2024-05-16
 tags:
   - claims-version-8
-  - account-creation
+  - evidence
 aside:
   title:  Claims Prototypes
   content: |
