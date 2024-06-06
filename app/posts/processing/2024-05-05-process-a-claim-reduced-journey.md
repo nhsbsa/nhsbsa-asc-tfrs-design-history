@@ -5,10 +5,10 @@ description: Due to MVP decisions we stripped back many of the design decisions 
 author:
   name: Hannah Williams
   url: '#'
-date: 2024-15-05
+date: 2024-05-15
 tags:
   - processing-version-1
-  - process-a-claim
+  - process-a-60-claim
 aside:
   title:  Processing Prototypes
   content: |
@@ -23,15 +23,33 @@ In a workshop attended by the entire product team a series of key decisions were
 
 ## Remove claim notes
 
-Notes are decided not to be necessary to the core user journey to process a claim, something to be revisited.
+Notes are decided not to be necessary to the core user journey to process a claim.
+
+#### Risks
+
+- We know this is a feature highly valuable to a processor as will need to still be captured somewhere. 
+
+#### Mitigations
+
+- Will be moved to a offline process. 
+
 
 #### Screenshots
 
 
 
-## Remove multiple views, condense into 2
+## Remove multiple screens
 
-Multiple screens becomes more technical effort. Condensing. Going to see how this tests in user research, as to whether we iterate on this journey or go back to previous. combined critiera question onto claim details screen for MVP, removed seperate screen for capturing reimbursement amount and returned it conditional input on criteria radio button input for MVP. 
+Multiple screens becomes more technical effort. Condensing into as few as possible by combining the critiera questions onto claim details screen for MVP, removed seperate screen for capturing reimbursement amount and returned it in a conditional input on criteria radio button input. 
+
+#### Risks
+
+- This is a lot of load on the processor on one screen but also since the criteria check questions have become less specific then its still a maximum of two questions. 
+- We know the reimbursement amount is highly risky in getting correct so having it on the same view with a radio button conditional means less space and focus given to getting this correct.
+
+#### Mitigations
+
+- Training will be given on calculating the reimbursement amount and iterations on the content.
 
 #### Screenshots
 
@@ -39,15 +57,31 @@ Multiple screens becomes more technical effort. Condensing. Going to see how thi
 
 ## Remove save claim ability 
 
-removed ability to save claim mid processing for MVP
+Removed ability to save claim mid processing for MVP is a feature deemed nice to have rather than absolutely necessary so removed.
+
+#### Risks
+
+- Processors might find a claim's evidence more complex to work out whether checks off criteria or they have a query over the reimbursement amount so they might have done some involved work on the screen already and have to abandon to come back to start again which they will find inconvinient.  
+
+#### Mitigations
+
+- Processors will be aware they need to complete their checks in one go.
 
 #### Screenshots
 
 
 
-## Remove edit rejection notes
+## Remove adding rejection notes on a seperate page
 
-removed ability to edit rejection note from claim outcome screen for MVP
+As the screens are condensed into one view, the rejection note's are also incorportated into the claim screen criteria check radio buttons conditional input on selection of no. This means there is one rejection note for evidence of payment criteria check and one for completion. When 
+
+#### Risks
+
+- 
+
+#### Mitigations
+
+- 
 
 
 #### Screenshots
@@ -55,8 +89,7 @@ removed ability to edit rejection note from claim outcome screen for MVP
 
 ## Add rejected/approved date to status tag
 
-Add
-
+Added the date that the claim was either rejected or approved to the status tag at the top of the claim view. This is to mitigate the loss of the system generated notes where the date a claim was approved or rejected was captured, giving a processor context to the history of the claim. 
 
 #### Screenshots
 
