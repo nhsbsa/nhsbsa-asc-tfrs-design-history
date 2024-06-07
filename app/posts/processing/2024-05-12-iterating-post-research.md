@@ -1,12 +1,12 @@
 ---
-title: Iterating confirmation screen
-description: Off the back of user research we iterated the information we were providing the processor on the claim and organisation. 
+title: Iterating post research insights
+description: Off the back of user research we iterated on designs, not able to be validated as moved to MVP version swiftly.
 author:
   name: Hannah Williams
   url: '#'
-date: 2024-05-10
+date: 2024-05-12
 tags:
-  - processing-version-1
+  - processing-version-2
   - process-a-claim
 aside:
   title:  Processing Prototypes
@@ -46,6 +46,25 @@ On feedback from research that happened w/c 15 May 2024 we iterated the design. 
 
 --------
 
+
+## Notes
+
+#### Assumption: 
+- Would want categories to choose from as many purposes for notes.
+
+#### Finding:
+- too many categories were confusing
+- notes are helpful
+
+#### Iteration on design:
+- more simplified categories to see which are useful
+- Hypothesis system generated are helpful. So there is a history log of status updates. 
+
+#### Screenshots:
+- 
+
+
+
 ## Confirmation screen
 
 #### Assumption: 
@@ -60,3 +79,42 @@ On feedback from research that happened w/c 15 May 2024 we iterated the design. 
 
 #### Screenshots:
 - 
+
+
+
+
+## Cost per learner / reimbursement amount
+
+#### Assumption: 
+- That the explanation provided would help users understand cost per learner against reimbursement amount.
+
+#### Finding:
+- Confusion between total cost paid by organisation for an invoice vs what was paid per learner
+
+#### Iteration on design:
+- Hypothesis this is still going to cause some trouble so this needs to remain on its own screen. Only present if result is approve. 
+- Research needed to understand whether seperating out the reimbursement question reduce the liklihood of errors.
+
+#### Screenshots:
+
+
+
+## Save and exit
+
+#### Assumption: 
+- Would be wanted to know processing was complete success
+
+#### Finding:
+- confirmation screen was of limited use and processors were keen to check that the caim status has been updated 
+
+#### Iteration on design:
+Hypothesising processor might begin processing then as multiple tasks to complete and costs to work out they might go away and come back, annoying to have to start again. Button the save and exit needed. 
+
+#### Screenshots:
+- 
+
+
+
+---------
+
+- register an org will not be tested with users before release due to time pressures and low risks given this nature of the process

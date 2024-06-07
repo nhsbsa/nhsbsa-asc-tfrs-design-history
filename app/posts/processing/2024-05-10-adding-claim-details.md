@@ -6,7 +6,7 @@ author:
   url: '#'
 date: 2024-05-10
 tags:
-  - processing-version-1
+  - processing-version-2
   - process-a-claim
 aside:
   title:  Processing Prototypes
@@ -74,6 +74,7 @@ Adding organisation and claim details
 - From round of user research users wanted to see more information on a claim to orientate themselves within it. The inclusion of information like the submitter’s name and email would be useful if the processor wanted to get in contact with the submitter to query something, advise on something not right in the claim etc. 
 - Decided not the processor’s job to spot fraud as that’s more high level above one claim. The job here is to process a single claim. 
 - Research needed to understand whether the claims details presented help orientate users on what the claim is for and by whom. 
+- move notes to make layout work
 
 #### Screenshots:
 

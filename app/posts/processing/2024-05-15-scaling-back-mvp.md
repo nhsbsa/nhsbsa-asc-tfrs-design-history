@@ -7,7 +7,7 @@ author:
   url: '#'
 date: 2024-05-15
 tags:
-  - processing-version-1
+  - processing-version-3
   - process-a-60-claim
 aside:
   title:  Processing Prototypes
@@ -28,10 +28,12 @@ Notes are decided not to be necessary to the core user journey to process a clai
 #### Risks
 
 - We know this is a feature highly valuable to a processor as will need to still be captured somewhere. 
+- loss of the system notes means no knowledge of timeline of approved or rejected states. 
 
 #### Mitigations
 
 - Will be moved to a offline process. 
+- date of approval or rejection added to status under claim id.
 
 
 #### Screenshots

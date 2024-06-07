@@ -1,12 +1,12 @@
 ---
-title: Iterating claim details notes
-description: Off the back of user research we iterated 
+title: Criteria updates
+description: Off the back of user research.. 
 author:
   name: Hannah Williams
   url: '#'
 date: 2024-05-10
 tags:
-  - processing-version-1
+  - processing-version-2
   - process-a-claim
 aside:
   title:  Processing Prototypes
@@ -47,18 +47,38 @@ On feedback from research that happened w/c 15 May 2024 we iterated the design. 
 --------
 
 
-## Notes
+
+
+## Criteria checks against evidence
 
 #### Assumption: 
-- Would want system notes and many categories to choose from as many purposes for notes.
+- Users would be helped by a single question per view.
 
 #### Finding:
-- too many categories were confusing
-- notes are helpful
+- People weren't expecting a series of questions with led to confusion around the evidence presented on each page
 
 #### Iteration on design:
-- more simplified categories to see which are useful
-- Hypothesis system generated are helpful. So there is a history log of status updates. 
+Combined criteria onto a single screen
+- Due to lack of complete criteria definitions and the complexity identified for MVP this was stripped back to a single quesiton with the complete checks being moved offline
+- Added error states to criteria. 
+- Research needed to understand whether combining the critiera onto one screen improves usability
+
+#### Screenshots:
+
+
+
+## Rejection notes
+
+#### Assumption: 
+- Would want to write rejection notes per criteria. 
+
+#### Finding:
+- it was unclear to processers that comments left when a criteria was met would end up being passed to the submitter
+- processors would want to edit messages before they were sent to submitters 
+
+#### Iteration on design:
+- added edit rejection note view
 
 #### Screenshots:
 - 
+

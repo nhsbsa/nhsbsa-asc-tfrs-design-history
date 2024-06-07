@@ -23,13 +23,34 @@ We had a processing workstream kickoff on ... with the wider product team to beg
 
 - [if applicable] Sprint goal and some background for the sprint
 - [if applicable] Sprint numbers is spanning over multiple sprints
-- Provide key findings of the research and discovery work
-- Timelines are an effective way to present the journey the work has taken from initial research to the design
-- Insight into your design decisions
+- We are on version 8 of the claim creation side of the journey and now need to create the journey to process the claims that organisations have submitted for their users.
+- Mention any discovery work?
 
->**How might we** give users all the functionality they need to process a claim.
+>**How might we** give users the MVP functionality they need to process a claim.
 
 ## What our ideas were
+
+Core questions we asked the UCD team to figure out the potential needs and wants of the processor to complete the task of processing a claim.
+
+#### How does a processor find the claim they are wanting to process?
+
+Our assumption is the processor will be given just the claim id for the claim they need to process in Operations Manager. They will need to use this id to search in our service for the claim. We don't believe this ID in OM is able to be a link so the processor will copy and paste the ID directly into our service's claim ID search box reducing mistakes.
+
+>**We believe that** only the claim ID 
+>**Will be needed for** processors to find the correct claim
+>**As it will** allow them to search in our service and find their claim.
+
+To be tested
+- Whether they copy and paste the code or type it in themselves.
+- Whether mistakes are made and they have no other information to validate they have the correct claim.
+
+Screenshot
+
+Here is the initial design in the processing a claim prototype journey for searching for a claim id:
+
+![A screenshot from the processing a claim prototype showing the search claim screen](claim-id-search.png "Claim ID search")
+
+
 
 #### What claim detail information does the processor need to see when they land on a claim?
 
@@ -42,8 +63,10 @@ Our starting assumption for this question is that the purpose of a processor is 
 To be tested
 - Whether users have any other purpose and needs for any additional information about the claim beyond information provided in criteria checks. 
 
-Screenshots
+Screenshot
 
+Here is the initial design of what we believe is necessary for a processor to know about the claim:
+![A screenshot from the processing a claim prototype showing the initial view a processor lands in with no additional claim details](claim-details.png "Claim details")
 
 
 #### How can a processor effectively view the multiple pieces of evidence?
