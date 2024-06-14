@@ -97,6 +97,18 @@ On feedback from research that happened w/c 15 May 2024 we iterated the design. 
 
 #### Screenshots:
 
+We beieve that a processor working out the cost per learner and thus the reimbursement amount is going to be a very tricky part of the journey, very prone to errors, with a big risk as could end up entering more money than the claimant is entitled to and BSA will be paying out more than meant to. We believe seperating this calculation out onto a seperate page to focus the processor on the task with more room for the content to guide through the stabs a initial first design aiming to maximise correct calculations.
+
+>**We believe that** having the cost per learner calculation on a seperate page with descriptive content
+>**Will be useful information for** processors
+>**As it will** to increase chances of accurate calculations.
+
+To be tested
+
+- Research to understand how to help users identify cost paid by organisation. 
+
+
+
 
 
 ## Save and exit
