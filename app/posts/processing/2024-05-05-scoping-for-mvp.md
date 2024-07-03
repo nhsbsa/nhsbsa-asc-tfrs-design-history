@@ -92,15 +92,17 @@ Here is the view of evidence opened with multiple tabs
 
 #### What notes are useful for the processor to write/read back in the future?
 
-We started off with the assumption that this is a feature that will be very valuable to users, so they can leave context for future viewing on a claim, to log escalations, to add rejection notes, and it is a process that currently do offline and have to manually log. Having it with the claim with same time and make more organised. We hypothesied on potential categories for the reasons notes might be added. 
+We started off with the assumption that this is a feature that will be very valuable to users, so they can leave context for future viewing on a claim, to log escalations, to add rejection notes, and it is a process that currently do offline and have to manually log. Having it with the claim with same time and make more organised. We hypothesied on potential categories for the reasons notes might be added. We hypothesised organisation notes might be needed here to add higher level context to a claim, perhaps for fraud reasons but also cavieted that with would that be a process outside of this one of processing a single claim, surely a processor should just concentrate on the task of processing a single claim as unlikely they will be able to spot fraud at this level.
 
 >**We believe that** adding the feature of notes
 >**Will be useful information for** processors
 >**As it will** allow them the flexibility to capture a lot of additional information about a claim for a variety of reasons.
 
+ 
 To be tested
 
-- What would a processor need notes for?
+- What would a processor need notes for? Can we narrow down categories. 
+- Whose role is it to spot fraud?
 
 Screenshots
 
