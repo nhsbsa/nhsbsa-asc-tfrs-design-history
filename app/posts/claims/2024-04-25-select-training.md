@@ -1,5 +1,5 @@
 ---
-title: When and how users select training for a claim
+title: When and how users select training for a claim [WIP]
 description: Iterating how users select training to be more scalable and extensible to future requirements and accommodate the new published training list.
 author:
   name: Mark Portnell
@@ -32,8 +32,8 @@ Finally we know that we will need to accommodate different funding models in the
 
 
 ## How we tested our ideas and what we found
-Unfortunately we were not able to test this with users before development work progressed but we did get the opportunity to test these with users w/c 6 May 2024. What we found is users understood how we communicated around the 1 April 2024 policy date and they didn't feel that supplying completion date would be any issue as this information comes hand in hand with the certification. However we didn't feel that the findings on the policy date were completely concrete due to the nature of usability testing. 
+
 
 ## What we will do next
-We will monitor this closely through private beta and particularly look at feedback and analytics around the impact of the 1 April 2024 policy date and whether users still try to make claims for training paid for or started before this date. We believe that as the time progresses the risk of users trying to make claims for training started or paid for before this date will reduce. 
+
 
