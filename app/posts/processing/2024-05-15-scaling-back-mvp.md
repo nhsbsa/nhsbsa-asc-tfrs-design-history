@@ -75,15 +75,13 @@ Removed ability to save claim mid processing for MVP is a feature deemed nice to
 
 ## Remove adding rejection notes on a seperate page
 
-As the screens are condensed into one view, the rejection note's are also incorportated into the claim screen criteria check radio buttons conditional input on selection of no. This means there is one rejection note for evidence of payment criteria check and one for completion. When 
+As the screens are condensed into one view, the rejection note's are also incorportated into the claim screen criteria check radio buttons conditional input on selection of no. This means there is one rejection note for evidence of payment criteria check and one for completion. 
 
 #### Risks
-
-- 
+- Quite a lot happening in one part of the screen
 
 #### Mitigations
-
-- 
+- Because its one question and one rejection note for all the criteria it doesn't have too much impact.
 
 
 #### Screenshots

@@ -20,34 +20,11 @@ On feedback from research that happened w/c 15 May 2024 we iterated the design. 
 
 ## Why we did this work
 
-- [if applicable] Sprint goal and some background for the sprint
-- [if applicable] Sprint numbers is spanning over multiple sprints
-- Provide key findings of the research and discovery work
-- Timelines are an effective way to present the journey the work has taken from initial research to the design
-- Insight into your design decisions
+We did a round of user research on processing and iterated based off feedback.
 
 ## What our ideas were
-- Providing visuals of Information architecture
-- Including all interactions
-- Wireframe and interface ideation
-- Hypothesis
 
-## How we tested our ideas and what we found
-
-- Prototype URLs and version numbers must be provided as part of the UCD log
-- User testing feedback
-- URLs to Miro boards and prototypes where any iteration history is documented
-
-## What we will do next
-- For closing comments on the UCD log, give some information on what the next steps are with this piece of work, are there any further iterations that could be made but may not be as high priority just yet, is there further research to be done on a certain part of the design. Talk about things you were not able to do as part of this design that you want to be raised at a later stage and how this has been documented to be revisited.
-
-
-
-
---------
-
-
-## Notes
+### Notes
 
 #### Assumption: 
 - Would want categories to choose from as many purposes for notes.
@@ -65,13 +42,13 @@ On feedback from research that happened w/c 15 May 2024 we iterated the design. 
 
 
 
-## Confirmation screen
+### Confirmation screen
 
 #### Assumption: 
 - Would be wanted to know processing was complete success
 
 #### Finding:
-- confirmation screen was of limited use and processors were keen to check that the caim status has been updated 
+- confirmation screen was of limited use and processors were keen to check that the claim status has been updated 
 
 #### Iteration on design:
 - Hypothesis confirmation screen is unnecessary. Doesn’t tell anything. Removed and pass user back to the claim screen with updated status and success banner. 
@@ -83,7 +60,7 @@ On feedback from research that happened w/c 15 May 2024 we iterated the design. 
 
 
 
-## Cost per learner / reimbursement amount
+### Cost per learner / reimbursement amount
 
 #### Assumption: 
 - That the explanation provided would help users understand cost per learner against reimbursement amount.
@@ -108,10 +85,7 @@ To be tested
 - Research to understand how to help users identify cost paid by organisation. 
 
 
-
-
-
-## Save and exit
+### Save and exit
 
 #### Assumption: 
 - Would be wanted to know processing was complete success
@@ -124,6 +98,21 @@ Hypothesising processor might begin processing then as multiple tasks to complet
 
 #### Screenshots:
 - 
+
+## How we tested our ideas and what we found
+
+- Prototype URLs and version numbers must be provided as part of the UCD log
+- User testing feedback
+- URLs to Miro boards and prototypes where any iteration history is documented
+
+## What we will do next
+- For closing comments on the UCD log, give some information on what the next steps are with this piece of work, are there any further iterations that could be made but may not be as high priority just yet, is there further research to be done on a certain part of the design. Talk about things you were not able to do as part of this design that you want to be raised at a later stage and how this has been documented to be revisited.
+
+
+
+
+--------
+
 
 
 
