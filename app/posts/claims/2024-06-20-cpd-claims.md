@@ -95,6 +95,7 @@ Goals of work:
 ![A screenshot showing breakdown of budget in claim"]( budget.png "A screenshot showing breakdown of budget in claim")
 
 - We believe if a learner has claims in pending that take up all the learners remaining budget they are still allowed to have claims submitted for them as there is a chance these claims will be rejected. 
+- Because other organisations can submit claims for same learner if didn't allow claims to be submitted as long as budget after approved claims then what if org 1 submits a claim that takes budget to max in pending claims then org 2 goes to submit a claim but see's no budget so they can't, if it gets rejected org 2 won't know budget has become available, and shuts off budget to most likely org 1 getting it.
 
 #### Hypothesis 3
 >**We believe that** being allowed to submit a claim for when a learner has still budget in pending claims
