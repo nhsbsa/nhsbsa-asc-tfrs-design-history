@@ -136,7 +136,7 @@ Cons
 
 Pros
 - Simple to add
-- Handles longevity of maybe learner becoming no longer eligble
+- Handles longevity of maybe learner becoming no longer eligible
 
 Cons
 - A repetitive action you have to do every time you add same earner to a CDP claim. Caveat this with the amount of claims made are going to be few so this may not happen a lot.
@@ -169,15 +169,13 @@ Weighing the fact the budget is only £500 and the low amount of claims we expec
 - CPD was tested in Version number 10
 - There is a lot of confusion of what revalidation funding covers, and the difference between TU and CPD funding.
 - Confusion that with a TU they won't get full reimbursement but with a CPD claim they will, which the submitter will choose to claim for if the learner is eligible for both.
-- Issues over entering national insurance number to search for a learner
+- Issues over entering national insurance number to search for a learner.
 - Concerns over evidence of payment and whether this information is stored.
 - The findings were that the activity list was still much too confusing to submitter's and led to doubt in actions to take in the claim's journey. Lots of likelihood that the wrong option will be selected. This is a buisness requirement
 
-- Overall the research had generally positive feedback about being able to complete the process. The concerns and key barriers were relating more to the bigger picture procedural considerations. 
+- Overall the research had generally positive feedback about being able to complete the process. The concerns and key barriers were relating more to the bigger picture procedural considerations of differences between TU and CPD claims and how to choose between.
 
 
 ## What we will do next
 - Iterations on the CPD designs post user research playback.
-- Content updates focusing on explaining need of evidence of completion for a course, the budget inelgibility for a learner .
-- For closing comments on the UCD log, give some information on what the next steps are with this piece of work, are there any further iterations that could be made but may not be as high priority just yet, is there further research to be done on a certain part of the design. Talk about things you were not able to do as part of this design that you want to be raised at a later stage and how this has been documented to be revisited.
-
+- Content updates focusing on explaining need of evidence of completion for a course and the budget ineligibility for a learner.
