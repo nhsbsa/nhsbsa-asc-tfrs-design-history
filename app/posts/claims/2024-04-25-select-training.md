@@ -1,5 +1,5 @@
 ---
-title: When and how users select training for a claim [WIP]
+title: When and how users select training for a claim
 description: Iterating how users select training to be more scalable and extensible to future requirements and accommodate the new published training list.
 author:
   name: Mark Portnell
