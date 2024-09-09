@@ -16,6 +16,22 @@ aside:
     Password: ascbsa123
 ---
 
+Claim id's to test version 3:
+100
+Submitted: Z1Z-F1J6-3XF7-A
+Approved: Z8S-F1J6-4GH7-A
+Rejected: K93-SK68-3S2K-A
+
+60
+Submitted: WR5-R2P4-DSL4-B
+Approved: R4Y-NL7G-D967-B
+Rejected: NLE-BMDT-68ZI-B
+
+40
+Submitted: R7J-NC3G-D967-C
+Approved: R4Y-NL7G-D967-C
+Rejected: K92-HD52-7GD9-C
+
 ## Why we did this work
 
 With an aggressive delivery deadline fast approaching and tight time to technically deliver, the decision was made by … to simplify the processing a claims journey as much as possible to have the things the users need to execute but less less effort by tech. 
