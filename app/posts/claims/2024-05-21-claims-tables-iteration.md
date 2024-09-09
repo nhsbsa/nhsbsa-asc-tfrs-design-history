@@ -1,5 +1,5 @@
 ---
-title: Iterating how we present claims in tables
+title: Iterating how we present claims in tables and exploring claim types
 description: To allow for the 60/40 claims and the introduction of the claim type concept we iterated the claims tables.
 author:
   name: Mark Portnell
