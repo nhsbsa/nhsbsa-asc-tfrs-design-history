@@ -18,7 +18,7 @@ aside:
 
 With an aggressive delivery deadline fast approaching and tight time to technically deliver, the decision was made by … to simplify the processing a claims journey as much as possible to have the things the users need to execute but less less effort by tech. 
 
-In a workshop attended by the entire product team a series of key decisions were made to cut out or scale back certain features for this journey. These product decisions were all logged in our project decision log held in Mira along with any associated risks and mitigations. The extended journey is in V2 of the prototype, this version was untested with users before these decisions were made so changes were made in V3 of the prototype. V3 has been tested with 4 users in the week commencing 15 May 2024. Research aimed to understand the impact of MVP changes
+In a workshop attended by the entire product team a series of key decisions were made to cut out or scale back certain features for this journey. These product decisions were all logged in our project decision log held in Mira along with any associated risks and mitigations. The extended journey is in V2 of the prototype, this version was untested with users before these decisions were made so changes were made in V3 of the prototype. V3 has been tested with 4 users in the week commencing 15 May 2024.
 
 
 ## Remove claim notes
@@ -97,7 +97,11 @@ Added the date that the claim was either rejected or approved to the status tag 
 ------
 
 
-Future research outcomes:
-- People expected it to be one claim in two parts rather than our hypothesis of two claims with a link. 
+Future research:
+- Research to understand the impact of MVP changes
+
+
+Future Research outcomes:
+- People expected it to be one claim in two parts rather than our hypothesis of two claims with a link. Chronicled for later reflection
 
 

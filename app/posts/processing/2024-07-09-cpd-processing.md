@@ -4,7 +4,7 @@ description: CPD claims are in the MVP so added ability to process these claims.
 author:
   name: Hannah Williams
   url: '#'
-date: 2024-07/09
+date: 2024-07-09
 tags:
   - processing-version-3
   - process-a-cpd-claim
