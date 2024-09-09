@@ -16,12 +16,20 @@ aside:
     Password: ascbsa123
 ---
 
+## Why we did this work
+
 With an aggressive delivery deadline fast approaching and tight time to technically deliver, the decision was made by … to simplify the processing a claims journey as much as possible to have the things the users need to execute but less less effort by tech. 
 
 In a workshop attended by the entire product team a series of key decisions were made to cut out or scale back certain features for this journey. These product decisions were all logged in our project decision log held in Mira along with any associated risks and mitigations. The extended journey is in V2 of the prototype, this version was untested with users before these decisions were made so changes were made in V3 of the prototype. V3 has been tested with 4 users in the week commencing 15 May 2024.
 
 
-## Remove claim notes
+## What our ideas were
+
+Here is the new scaled back landing view of a claim in the processing a claim prototype journey:
+
+![A screenshot from the processing a claim prototype showing claim details view](claim-details-v3.png "Claim details view of a unprocessed claim")
+
+### Remove claim notes
 
 Notes are decided not to be necessary to the core user journey to process a claim.
 
@@ -36,44 +44,24 @@ Notes are decided not to be necessary to the core user journey to process a clai
 - date of approval or rejection added to status under claim id.
 
 
-#### Screenshots
+### Remove multiple screens
 
-
-
-## Remove multiple screens
-
-Multiple screens becomes more technical effort. Condensing into as few as possible by combining the critiera questions onto claim details screen for MVP, removed seperate screen for capturing reimbursement amount and returned it in a conditional input on criteria radio button input. 
+Multiple screens becomes more technical effort. Condensing into as few as possible by combining the critiera questions onto claim details screen for MVP and incorporating the reimbursement amount into a conditional input on criteria radio button input rather than on a seperate screen.
 
 #### Risks
 
 - This is a lot of load on the processor on one screen but also since the criteria check questions have become less specific then its still a maximum of two questions. 
-- We know the reimbursement amount is highly risky in getting correct so having it on the same view with a radio button conditional means less space and focus given to getting this correct.
+- We know the reimbursement amount is highly risky in getting correct so having it on the same view with a radio button conditional means less space to explain and less focus given to getting this correct.
 
 #### Mitigations
 
 - Training will be given on calculating the reimbursement amount and iterations on the content.
 
-#### Screenshots
+#### Screenshot
 
+![A screenshot from the processing a claim prototype showing claim details view](claim-details-yes.png "Claim details view with yes checked radio selections")
 
-
-## Remove save claim ability 
-
-Removed ability to save claim mid processing for MVP is a feature deemed nice to have rather than absolutely necessary so removed.
-
-#### Risks
-
-- Processors might find a claim's evidence more complex to work out whether checks off criteria or they have a query over the reimbursement amount so they might have done some involved work on the screen already and have to abandon to come back to start again which they will find inconvinient.  
-
-#### Mitigations
-
-- Processors will be aware they need to complete their checks in one go.
-
-#### Screenshots
-
-
-
-## Remove adding rejection notes on a seperate page
+### Remove adding rejection notes on a seperate page
 
 As the screens are condensed into one view, the rejection note's are also incorportated into the claim screen criteria check radio buttons conditional input on selection of no. This means there is one rejection note for evidence of payment criteria check and one for completion. 
 
@@ -83,15 +71,30 @@ As the screens are condensed into one view, the rejection note's are also incorp
 #### Mitigations
 - Because its one question and one rejection note for all the criteria it doesn't have too much impact.
 
+#### Screenshot
+![A screenshot from the processing a claim prototype showing claim details view](claim-details-no.png "Claim details view with no checked radio selections")
 
-#### Screenshots
+
+### Remove save claim ability 
+
+Removed ability to save claim mid processing for MVP as is a feature deemed nice to have rather than absolutely necessary.
+
+#### Risks
+
+- Processors might find a claim's evidence more complex to work out whether checks off criteria or they have a query over the reimbursement amount so they might have done some involved work on the screen already and have to abandon to come back to start again which they will find inconvenient.  
+
+#### Mitigations
+
+- Processors will be aware they need to complete their checks in one go.
 
 
-## Add rejected/approved date to status tag
+### Add rejected/approved date to status tag
 
 Added the date that the claim was either rejected or approved to the status tag at the top of the claim view. This is to mitigate the loss of the system generated notes where the date a claim was approved or rejected was captured, giving a processor context to the history of the claim. 
 
-#### Screenshots
+#### Screenshot
+![A screenshot from the processing a claim prototype showing claim details view](approved-claim.png "Claim details view with no checked radio selections")
+
 
 
 ------

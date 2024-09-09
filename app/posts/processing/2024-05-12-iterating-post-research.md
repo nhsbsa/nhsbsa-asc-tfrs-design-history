@@ -43,21 +43,33 @@ We did a round of user research on processing and iterated based off feedback.
 This centers around how to help a processor process a piece of evidence against a set of criteria.
 #### Assumption: 
 - our initial assumption was users would be helped by a single question per view
-- We also had the knowledge that there was going to be criteria against which to judge but we didn't know it specifically yet 
-- Combining criteria onto a single screen had a impact on rejection notes. Our initial assumption was would want to write rejection notes per criteria.
+- We also had the knowledge that there was going to be multiple criteria against which to judge but we didn't know it specifically yet, so we designed to allow for multiple questions.
 #### Finding:
 - people weren’t expecting a series of questions which led to confusion around the same evidence presented on each page
-- Buisness still weren't providing clarity on what criteria was and a chance its open to change
-- unclear to processers that comments left when a criteria was met would end up being passed to the submitter
-- processors would want to edit messages before they were sent to submitters
+- Buisness still weren't providing clarity on what criteria was and a chance the criteria would change as process developed in live.
 #### Iteration on design:
-- Combined criteria for each type of evidence into single question. Due to lack of complete criteria definitions and the complexity identified for MVP this was stripped back to a single question with the complete checks being moved offline.
+- Combined criteria for each type of evidence into single question. Due to lack of complete criteria definitions and the complexity identified for MVP this was stripped back to a single question on a different screen with the complete checks being moved offline.
+
+#### Screenshots:
+- 
+#### To test:
+- Research needed to understand whether combining the critiera onto one screen improves usability.
+
+### Rejection note per piece of criteria
+#### Assumption: 
+- Processor would want to write a rejection note for each criteria question
+#### Finding:
+- unclear to processers that comments left when a criteria was met would end up being passed to the submitter
+- processors wanted to edit messages before they were sent to submitters 
+- rejection notes were more per piece of evidence, rather than per criteria, the update to combine the criteria into one actually helps one note be added
+#### Iteration on design:
 - Also added edit rejection note view
 
 #### Screenshots:
 - 
 #### To test:
 - Research needed to understand whether combining the critiera onto one screen improves usability.
+
 
 
 ### Notes
