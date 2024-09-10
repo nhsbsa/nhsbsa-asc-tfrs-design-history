@@ -23,20 +23,18 @@ We needed to consider the view of the process a claim view of a claim that has a
 
 ## What our ideas were
 
->**We believe that** all the evaluated information to come to the approved or rejected conclusion
+>**We believe that** all the information available 
 >**Will be needed for** future processors to come back and look at a already processed claim
->**As it will** to see the outcome of a claim and the reason's why it was rejected, or how much was calculated to be reimbursed if approved.
+>**As it will** allow them to see the outcome of a claim and the reason's why it was rejected, or how much was calculated to be reimbursed if approved.
 
+#### MVP decision
 For MVP it was decided to not view the evidence. This is something added into the backlog as seems vital for reflecting on why a claim was approved or rejected or how will a future processor be able to understand why the processor came to that conclusion. 
 - Show answers from criteria checks and the no notes/reimbursement amount 
 - still want all the information inputted from the claim, just in a frozen state. 
 
-Here is approved processed claim state:
-![A screenshot from the processing a claim prototype showing the search claim screen](approved-claim-100.png "Claim ID search")
+![A screenshot from the processing a claim prototype showing the search claim screen](approved-claim-100.png "Approved processed claim")
 
-
-Here is rejected processed claim state:
-![A screenshot from the processing a claim prototype showing the search claim screen](rejected-claim-100.png "Claim ID search")
+![A screenshot from the processing a claim prototype showing the search claim screen](rejected-claim-100.png "Rejected processed claim")
 
 #### Considerations for future
 
