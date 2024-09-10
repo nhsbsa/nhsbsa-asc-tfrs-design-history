@@ -52,42 +52,33 @@ Notes are decided not to be necessary to the core user journey to process a clai
 #### Risks
 
 - We know this is a feature highly valuable to a processor as will need to still be captured somewhere. 
-- loss of the system notes means no knowledge of timeline of approved or rejected states. 
+- Loss of the system notes means no knowledge of timeline of approved or rejected states. 
 
 #### Mitigations
 
 - Will be moved to a offline process. 
-- date of approval or rejection added to status under claim id.
+- Date of approval or rejection added to status under claim id.
+- Added the date that the claim was either rejected or approved to the status tag at the top of the claim view. This is to mitigate the loss of the system generated notes where the date a claim was approved or rejected was captured, giving a processor context to the history of the claim. 
+
+![A screenshot from the processing a claim prototype showing claim details view](approved-claim.png "Approved claim with success banner and date on status")
 
 
 ### Remove multiple screens
 
-Multiple screens becomes more technical effort. Condensing into as few as possible by combining the critiera questions onto claim details screen for MVP and incorporating the reimbursement amount into a conditional input on criteria radio button input rather than on a seperate screen.
+Multiple screens becomes more technical effort. Condensing into as few as possible by combining the critiera questions onto claim details screen for MVP and incorporating the reimbursement amount and rejection notes into a conditional input on criteria radio button input rather than on a seperate screen.
 
 #### Risks
 
-- This is a lot of load on the processor on one screen but also since the criteria check questions have become less specific then its still a maximum of two questions. 
+- This is a lot of load on the processor on one screen but also since the criteria check questions have become less specific then its still a maximum of two questions and one input per selection.
 - We know the reimbursement amount is highly risky in getting correct so having it on the same view with a radio button conditional means less space to explain and less focus given to getting this correct.
 
 #### Mitigations
 
 - Training will be given on calculating the reimbursement amount and iterations on the content.
-
-#### Screenshot
+- Because its one question and one rejection note for all the criteria per evidence type it doesn't have too much impact.
 
 ![A screenshot from the processing a claim prototype showing claim details view](claim-details-yes.png "Claim details view with yes checked radio selections")
 
-### Remove adding rejection notes on a seperate page
-
-As the screens are condensed into one view, the rejection note's are also incorportated into the claim screen criteria check radio buttons conditional input on selection of no. This means there is one rejection note for evidence of payment criteria check and one for completion. 
-
-#### Risks
-- Quite a lot happening in one part of the screen
-
-#### Mitigations
-- Because its one question and one rejection note for all the criteria it doesn't have too much impact.
-
-#### Screenshot
 ![A screenshot from the processing a claim prototype showing claim details view](claim-details-no.png "Claim details view with no checked radio selections")
 
 
@@ -102,16 +93,6 @@ Removed ability to save claim mid processing for MVP as is a feature deemed nice
 #### Mitigations
 
 - Processors will be aware they need to complete their checks in one go.
-
-
-### Add rejected/approved date to status tag
-
-Added the date that the claim was either rejected or approved to the status tag at the top of the claim view. This is to mitigate the loss of the system generated notes where the date a claim was approved or rejected was captured, giving a processor context to the history of the claim. 
-
-#### Screenshot
-![A screenshot from the processing a claim prototype showing claim details view](approved-claim.png "Claim details view with no checked radio selections")
-
-
 
 ------
 
