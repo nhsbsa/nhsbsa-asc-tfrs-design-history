@@ -17,20 +17,11 @@ aside:
 
 ## Why we did this work
 
-CPD has been removed as a option for funding. Been stripped out of the version 4 prototype and this version will act as the new MVP. Version 3 holds the design for the last iteration of CPD.
+CPD has been removed as a option for funding because.... Version 4 of the prototype has stripped out CPD and this version will act as the new MVP. Version 3 holds the design for the last iteration of CPD.
 
+## What we did
+On the processing side this has no effect on the overall design journey as CPD was added in the service onto the TU journey trying to minimise amount of design and tech work needed due to tight delivery deadlines.
 
-## What our ideas were
-
-
-## How we tested our ideas and what we found
-
-- Prototype URLs and version numbers must be provided as part of the UCD log
-- User testing feedback
-- URLs to Miro boards and prototypes where any iteration history is documented
-
-## What we will do next
-- For closing comments on the UCD log, give some information on what the next steps are with this piece of work, are there any further iterations that could be made but may not be as high priority just yet, is there further research to be done on a certain part of the design. Talk about things you were not able to do as part of this design that you want to be raised at a later stage and how this has been documented to be revisited.
 
 
 

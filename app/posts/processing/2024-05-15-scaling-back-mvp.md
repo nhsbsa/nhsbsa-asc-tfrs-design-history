@@ -65,7 +65,7 @@ Notes are decided not to be necessary to the core user journey to process a clai
 
 ### Remove multiple screens
 
-Multiple screens becomes more technical effort. Condensing into as few as possible by combining the critiera questions onto claim details screen for MVP and incorporating the reimbursement amount and rejection notes into a conditional input on criteria radio button input rather than on a seperate screen.
+Multiple screens becomes more technical effort. Condensing into as few as possible by combining the critiera questions onto claim details screen for MVP and incorporating the reimbursement amount and rejection notes into a conditional input on criteria radio button input rather than on a seperate screen. Removed edit rejection notes from the outcome screen as considered easy enough to go back to the unprocessed claim screen, edit notes and click continue again.
 
 #### Risks
 
