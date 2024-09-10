@@ -36,7 +36,7 @@ On feedback from research that happened w/c 15 May 2024 we iterated the design. 
 - We decided it was not the processor’s job to spot fraud when processing a claim as that’s more high level above one claim. The job here is to process a single claim.
 - We tried various layouts to make the notes functionality all fit on one screen.
 
-![A screenshot from the processing a claim prototype showing the search claim screen](claim-id.png "Claim ID search")
+![A screenshot from the processing a claim prototype showing the unprocessed claim view](unprocessed-claim.png "Process a claim view")
 
 #### To test:
 - Understand whether the claims details presented help orientate users on what the claim is for and by whom.
@@ -52,7 +52,9 @@ This centers around how to help a processor process a piece of evidence against 
 #### Iteration on design:
 - Combined criteria for each type of evidence into single question. Due to lack of complete criteria definitions and the complexity identified for MVP this was stripped back to a single question on a different screen with the complete checks being moved offline.
 
-![A screenshot from the processing a claim prototype showing the search claim screen](claim-id.png "Claim ID search")
+![A screenshot from the processing a claim prototype showing the evidence review screen with yes selection](evidence-yes-selection.png "Evidence review - yes selection")
+
+![A screenshot from the processing a claim prototype showing the evidence review screen with no selection](evidence-no-selection.png "Evidence review - no selection with single rejection note")
 
 #### To test:
 - Research needed to understand whether combining the critiera onto one screen improves usability.
@@ -67,7 +69,12 @@ This centers around how to help a processor process a piece of evidence against 
 #### Iteration on design:
 - Also added edit rejection note view
 
-![A screenshot from the processing a claim prototype showing the search claim screen](claim-id.png "Claim ID search")
+![A screenshot from the processing a claim prototype showing reviewing of evidence of payment with one question and one rejection note](evidence-no-selection.png "Evidence review - no selection with single rejection note")
+
+![A screenshot from the processing a claim prototype showing the claim outcome screen for a rejection](claim-rejected.png "Claim outcome - rejection showing notes, one for payment, one for completion")
+
+![A screenshot from the processing a claim prototype showing the edit rejection notes screen](edit-rejection-notes.png "Edit rejection notes")
+
 
 #### To test:
 - Research needed to understand whether combining the critiera onto one screen improves usability.
@@ -83,7 +90,7 @@ This centers around how to help a processor process a piece of evidence against 
 - More simplified categories to see which are useful
 - Hypothesis system generated are helpful. So there is a history log of status updates.
 
-![A screenshot from the processing a claim prototype showing the search claim screen](claim-id.png "Claim ID search")
+![A screenshot from the processing a claim prototype showing the add note screen](add-note.png "Add note")
 
 #### To test:
 - 
@@ -98,7 +105,7 @@ This centers around how to help a processor process a piece of evidence against 
 - Hypothesis confirmation screen is unnecessary. Doesn’t tell anything. Removed and pass user back to the claim screen with updated status and success banner. 
 - Research needed to understand whether removing the confirmation screen and landing the users back on the claim screen met user expectations
 
-![A screenshot from the processing a claim prototype showing the search claim screen](claim-id.png "Claim ID search")
+![A screenshot from the processing a claim prototype showing the process a claim view for a approved claim](processed-claim.png "Processed and approved claim view")
 
 #### To test:
 - 
@@ -119,7 +126,7 @@ We beieve that a processor working out the cost per learner and thus the reimbur
 >**Will be useful information for** processors
 >**As it will** to increase chances of accurate calculations.
 
-![A screenshot from the processing a claim prototype showing the search claim screen](claim-id.png "Claim ID search")
+![A screenshot from the processing a claim prototype showing the search claim screen](reimbursement-amount.png "Reimbursement amount")
 
 To be tested
 - Research to understand how to help users identify cost paid by organisation. 
@@ -133,7 +140,7 @@ To be tested
 #### Iteration on design:
 Hypothesising processor might begin processing then as multiple tasks to complete and costs to work out they might go away and come back, annoying to have to start again. Button the save and exit needed. 
 
-![A screenshot from the processing a claim prototype showing the search claim screen](claim-id.png "Claim ID search")
+![A screenshot from the processing a claim prototype showing the search claim screen](unprocessed-claim.png "Claim ID search")
 
 ## How we tested our ideas and what we found
 
