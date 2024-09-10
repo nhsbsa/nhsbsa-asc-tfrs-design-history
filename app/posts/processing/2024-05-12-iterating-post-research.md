@@ -57,17 +57,17 @@ This centers around how to help a processor process a piece of evidence against 
 ![A screenshot from the processing a claim prototype showing the evidence review screen with no selection](evidence-no-selection.png "Evidence review - no selection with single rejection note")
 
 #### To test:
-- Research needed to understand whether combining the critiera onto one screen improves usability.
+- Research needed to understand whether combining the critiera into one question improves usability.
 
 ### Rejection note per piece of criteria
 #### Assumption: 
 - Processor would want to write a rejection note for each criteria question
 #### Finding:
-- Unclear to processers that comments left when a criteria was met would end up being passed to the submitter
+- Unclear to processers that comments left when a criteria wasn't met would end up being passed to the submitter
 - Processors wanted to edit messages before they were sent to submitters 
-- Rejection notes were more per piece of evidence, rather than per criteria, the update to combine the criteria into one actually helps one note be added
+- Rejection notes were more per piece of evidence, rather than per criteria, the update to combine the criteria into one question actually helps with then only one note being added per type of evidence.
 #### Iteration on design:
-- Also added edit rejection note view
+- Added edit rejection note view
 
 ![A screenshot from the processing a claim prototype showing reviewing of evidence of payment with one question and one rejection note](evidence-no-selection.png "Evidence review - no selection with single rejection note")
 
@@ -77,38 +77,39 @@ This centers around how to help a processor process a piece of evidence against 
 
 
 #### To test:
-- Research needed to understand whether combining the critiera onto one screen improves usability.
+- Research needed to understand whether having one note per type of evidence improves usability.
 
 
 ### Notes
 #### Assumption: 
 - Would want categories to choose from as many purposes for notes.
 #### Finding:
-- Too many categories were confusing
+- Too many categories were confusing to distinguish between
 - Notes are helpful
 #### Iteration on design:
-- More simplified categories to see which are useful
-- Hypothesis system generated are helpful. So there is a history log of status updates.
+- More simplified categories to see what the processor's would want to use rather than us leading them
+- We believe the system generate notes are helpful for there to be a history log of status updates to the claim.
 
 ![A screenshot from the processing a claim prototype showing the add note screen](add-note.png "Add note")
 
 #### To test:
-- 
+- What will processor's use notes for.
+- Will the history of a claim in system generated notes be useful
+- Do processor's find the layout too cluttered
 
 
 ### Confirmation screen
 #### Assumption: 
-- Would be wanted to know processing was complete success
+- That processor's would want to know processing was a complete success
 #### Finding:
-- Confirmation screen was of limited use and processors were keen to check that the claim status has been updated 
+- Confirmation screen was of limited use and processors were keen to check that the claim status has been updated on the claim details view
 #### Iteration on design:
-- Hypothesis confirmation screen is unnecessary. Doesn’t tell anything. Removed and pass user back to the claim screen with updated status and success banner. 
-- Research needed to understand whether removing the confirmation screen and landing the users back on the claim screen met user expectations
+- Removed the confirmation screen and instead pass user straight back to the claim screen with updated status and instead a success banner. 
 
 ![A screenshot from the processing a claim prototype showing the process a claim view for a approved claim](processed-claim.png "Processed and approved claim view")
 
 #### To test:
-- 
+- Research needed to understand whether removing the confirmation screen and landing the users back on the claim screen met user expectations
 
 
 ### Cost per learner / reimbursement amount
@@ -117,8 +118,9 @@ This centers around how to help a processor process a piece of evidence against 
 #### Finding:
 - Confusion between total cost paid by organisation for an invoice vs what was paid per learner
 #### Iteration on design:
-- Hypothesis this is still going to cause some trouble so this needs to remain on its own screen. Only present if result is approve. 
-- Research needed to understand whether seperating out the reimbursement question reduce the liklihood of errors.
+- We believe this is still going to cause some trouble so this area needs to remain on its own screen. 
+- We will only present the reimbursemnt screen if the process result is a approval based off criteria reviewed answers. 
+
 #### Screenshots:
 We beieve that a processor working out the cost per learner and thus the reimbursement amount is going to be a very tricky part of the journey, very prone to errors, with a big risk as could end up entering more money than the claimant is entitled to and BSA will be paying out more than meant to. We believe seperating this calculation out onto a seperate page to focus the processor on the task with more room for the content to guide through the stabs a initial first design aiming to maximise correct calculations.
 
@@ -130,23 +132,19 @@ We beieve that a processor working out the cost per learner and thus the reimbur
 
 To be tested
 - Research to understand how to help users identify cost paid by organisation. 
+- Research needed to understand whether seperating out the reimbursement question reduces the likelihood of errors.
 
-
-### Save and exit
+### Save and exit - NEW
 #### Assumption: 
-- Would be wanted to know processing was complete success
-#### Finding:
-- confirmation screen was of limited use and processors were keen to check that the caim status has been updated 
+- Processor might begin processing then as multiple tasks to complete and costs to work out they might go away and come back, annoying to have to start again.
 #### Iteration on design:
-Hypothesising processor might begin processing then as multiple tasks to complete and costs to work out they might go away and come back, annoying to have to start again. Button the save and exit needed. 
+-  Button for save and exit needed. 
 
 ![A screenshot from the processing a claim prototype showing the search claim screen](unprocessed-claim.png "Claim ID search")
 
-## How we tested our ideas and what we found
-
-- Prototype URLs and version numbers must be provided as part of the UCD log
-- User testing feedback
-- URLs to Miro boards and prototypes where any iteration history is documented
+To be tested
+- Research to understand if the save and exit functionality would be useful and in what scenarios.
 
 ## What we will do next
-- For closing comments on the UCD log, give some information on what the next steps are with this piece of work, are there any further iterations that could be made but may not be as high priority just yet, is there further research to be done on a certain part of the design. Talk about things you were not able to do as part of this design that you want to be raised at a later stage and how this has been documented to be revisited.
+- Next steps for processing are to consider the new buisness requirements of tight delivery deadlines 
+- More research is needed on the newly iterated designs but maybe to be done in the future if descoped.
