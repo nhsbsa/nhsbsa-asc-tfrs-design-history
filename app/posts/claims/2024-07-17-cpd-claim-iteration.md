@@ -40,14 +40,12 @@ We solved these issues in two ways:
 >**Will be a useful feature for** submitters
 >**As it will** be easier to train processors on which category to group activities under so this reporting would be more reliable rather than taken from the inconsistencies of submitters selections.
 
-![A screenshot of start page explaining both types of claims"](start-claim-explanation.png "A screenshot of start page explaining both types of claims")
-
 #### Hypothesis 2
 >**We believe that** removing the requirement for evidence of completion and adding a line in the declaration instead to mitigise fraud
 >**Will be a useful feature for** submitters
 >**As it will** cover all claims rather than basing the gathering of evidence on the inconsistent selection of formal and educational activity and then asking if its a course with some form of evidence of completion. As revalidation fund is more open to fraud this mitigates for all claims.
 
-![A screenshot of start page explaining both types of claims"](start-claim-explanation.png "A screenshot of start page explaining both types of claims")
+![A screenshot of start page explaining both types of claims"](cpd-declaration.png "A screenshot of start page explaining both types of claims")
 
 ### Learner eligibility
 - For CPD claims we need to know the learner is eligible. Previously we had the unspecific question of simply asking 'is this learner eligible' every time added to a claim, whether existing or new, but that put the onus on the submitter to know what makes them eligible, and also because the specific scheme guidance hadn’t yet dictated what the criteria was for eligibility so we couldn't be more specific. 
@@ -62,7 +60,14 @@ We solved these issues in two ways:
 - First question is 'Is the learner registered with the NMC or HCPC?'. Options of yes, no, and a page of what to do, or we also decided needed a third option of what if they don’t know and we add guidance for them if they don’t to go find out. 
 - Second question is 'Is the learner in an eligible role?' with roles specified, and same option of don't know.
 
-![A screenshot of start page explaining both types of claims"](start-claim-explanation.png "A screenshot of start page explaining both types of claims")
+![A screenshot of start page explaining both types of claims"](cpd-criteria-1.png "A screenshot of start page explaining both types of claims")
+
+![A screenshot of start page explaining both types of claims"](cpd-criteria-2.png "A screenshot of start page explaining both types of claims")
+
+![A screenshot of start page explaining both types of claims"](cpd-criteria-unsure-1.png "A screenshot of start page explaining both types of claims")
+
+![A screenshot of start page explaining both types of claims"](cpd-criteria-ineligible.png "A screenshot of start page explaining both types of claims")
+
 
 ### Activity description
 - Now that we removed the activity type question, the activity description increases in importance as this will be what displays in the table to help a submitter identify their claim in the future and the only thing that adds context to the claim.
@@ -73,7 +78,7 @@ We solved these issues in two ways:
 >**Will be a useful feature for** submitters and processors
 >**As it will** force the submitter to be succinct in what they type making it able to be displayed in the claims table to identify a claim.
 <!-- // description -->
-![A screenshot of start page explaining both types of claims"](start-claim-explanation.png "A screenshot of start page explaining both types of claims")
+![A screenshot of start page explaining both types of claims"](cpd-description.png "A screenshot of start page explaining both types of claims")
 <!-- // manage claims table -->
 ![A screenshot of start page explaining both types of claims"](start-claim-explanation.png "A screenshot of start page explaining both types of claims")
 
@@ -90,20 +95,7 @@ What we need to test:
 - Whether it frustrates a submitter not knowing how likely a claim is to be approved or rejected. Because claims can be submitted for a single learner from multiple organisations each submitter will have no knowledge without seeing a amount for pending claims of how many there are that have already been created. No ability to search their own claims tables to see if a learner has any other active claims from same organisation either.
 **check - i think we changed it to only allow claims to be submitted if have budget?
 
-![A screenshot of start page explaining both types of claims"](start-claim-explanation.png "A screenshot of start page explaining both types of claims")
-
-### Declaration
-- Speaking with the business over the question of whether we need to check....
-- We removed the check elsewhere?
-- We added line in the declaration which has been added to mitigate fraud. 
-
-#### Hypothesis 1
->**We believe that** adding a line in the delcaration about eligibility(?)
->**Will be a useful feature for** submitters
->**As it will** remove the confusion from earlier in the journey while still conveying importance of honesty in the submission and covering for fraud.
-
-![A screenshot of start page explaining both types of claims"](start-claim-explanation.png "A screenshot of start page explaining both types of claims")
-
+![A screenshot of start page explaining both types of claims"](cpd-filled-out-claim.png "A screenshot of start page explaining both types of claims")
 
 ### Content update of one activity per claim
 - Content update at the top to try to mitigate the circumstance that people might try to combine multiple activities in one claim. This is a concern as now they don't have to select a type, instead its a free text box, so we need to re-enforce one activity per claim. If this isn't mitigated at this point it could mess up reporting for processors in the future if activities are combined into one. 
@@ -116,9 +108,6 @@ What we need to test:
 
 What we need to test:
 - What is the impact of combining multiple activities for a learner into one, would the processing team allow it?
-
-![A screenshot of start page explaining both types of claims"](start-claim-explanation.png "A screenshot of start page explaining both types of claims")
-
 
 ## What we will do next
 These updates got completed in the prototype in version 11, but then the funding policy changed and CPD claims were no longer going to be able to be claimed for. These updates were stripped out in version 12, which is the version that reflects the current live service.
