@@ -1,6 +1,6 @@
 ---
 title: Iterating CPD claims
-description: Many decisions needed to be made
+description: After conducting research on CPD claim designs, we needed to iterate on the outcomes of our many hypothesis' that went into the design, led by some buisness questions that needed answers.
 author:
   name: Hannah Williams
   url: '#'
@@ -22,11 +22,9 @@ There were three key aspects of the CPD journey identified as not working and ne
 - Sprint number ... 
 - Sprint goal ... 
 
-
-Goals of work:
+#### Goals of work:
 - To improve upon parts of the user journey
 - To clarify buisness stances on various parts of the journey.
-
 
 ## What our ideas were
 

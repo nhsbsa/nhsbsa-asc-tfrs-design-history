@@ -15,27 +15,27 @@ aside:
     Password: ascbsa123
 ---
 
-So far the prototype only allows for TU claims to be submitted, we now want to bring in CPD claims. The expectation is that there are going to be less of these type of claims, so balancing user needs with coming up with a design flow that has the least amount of changes needed to the TU journey, with minimal technical effort. 
+So far the prototype only allows for TU claims to be submitted, as dictated by roadmap and priorities we now want to bring in CPD claims. The expectation is that there are going to be less of these type of claims, so the direction was to balance user needs with coming up with a design flow that has the least amount of changes needed to the TU journey, with minimal technical effort, to allow for less work and quicker delivery.
 
 ## Why we did this work
 
 - Sprint number ... 
 - Sprint goal ... 
 - CPD usability testing was originally conducted in round 2 w/c December 11th in Alpha. 
-- Various parts of the CPD journey were highlighted in testing to need further iteration and many parts needed to have further clarification of buisness requirements. For example, the list stating what could activities could be claimed for that was tested in research round 2 was found to be quite confusing for users in that quite a lot of the sections overlapped and wasn't clear which option to select to add to claim. 
-- TU claim journey has already been developed and tested and the amount of claims for CPD are going to be much lower in comparison. Taken this into consideration in the design process for CPD on balancing the needs for CPD against business priority and technical difficulty, to have the least amount of impact on the TU journey. 
-- CPD were orginially included in claims prototype version (?) but then pushed down the priority roadmap, and taken out of the MVP.
+- Various parts of the original CPD journey were highlighted in testing to need further iteration and many parts needed to have further clarification of buisness requirements. For example, the list stating what activities could be claimed for, tested in research round 2, was found to be quite confusing for users in that quite a lot of the sections overlapped and it wasn't clear which option the user should select to add to claim. 
+- The TU claim journey has already been developed and tested and the amount of claims for CPD are going to be much lower in comparison. Taking this into consideration in the design process for CPD, balancing the needs for CPD against business priority and technical difficulty, to have the least amount of impact on the TU journey. 
+- CPD was orginially included in claims prototype version (?) but then it was pushed down the priority roadmap, and taken out of the MVP.
 
-Goals of work:
-- Bring CPD back into the prototype from previous version where it had it
-- Iterate on the points of friction we know from previous testing were issues, causing minimal disruption to TU journey
+### Goals of work:
+- Bring CPD back into the prototype from the previous version where it had it, adapting it to fit updates to designs.
+- Iterate on the points of friction we know from previous testing were issues, causing minimal disruption to TU journey.
 
 
 ## What our ideas were
 
 ### Mental model of different types of claims
 
-- We believe there is much risk of confusion over the two types of claims available and what the difference will be of each funding pot and so which to select. We believe content explaining the differences is critical for the submitter's early on in the claims journey.
+- We believe there is much risk of confusion over the two types of claims available and what the difference will be of each funding pot and so which type the user selects. We believe content explaining the differences is critical for the submitter's early on in the claims journey.
 
 #### Hypothesis 1
 >**We believe that** explaining both types of claim funding types before they start
@@ -47,17 +47,17 @@ Goals of work:
 #### Hypothesis 2
 >**We believe that** keeping the two different types of funding in two seperate places to manage
 >**Will be a useful feature for** submitters
->**As it will** keep them more organised and clear in their minds of where to go to create and manage each type of claims. Also keeps it cleaner in the design as table headings for managing these claims will be different.
+>**As it will** keep them more organised and clear in their minds of where to go to create and manage each type of claim. Also keeps it cleaner in the design as table headings for managing these two types of claims will be different.
 
 ![A screenshot of the screen signposting between TU and CPD claims"](signposting-claims.png "A screenshot of the screen signposting between TU and CPD claims")
 
 ### Activity list
 
-- The activity list had many section categories and options within each that could select from which had been tested in previous UR and it was found that participants found the list long and confusing as much scope for overlap of activities and selecting the wrong one. 
+- The activity list had many section categories and options within each to select from, it had been tested in previous UR and it was found that participants found the list long and confusing as much scope for overlap of activities and selecting the wrong one. 
 
 ![A screenshot of the original activity list from previous prototype version 3"](original-activity-list.png "A screenshot of the original activity list from previous prototype version 3")
 
-- We had a session with the wider team to do a short activity to get to a consolidated list of CPD activities based on how we viewed the requirements. It was decided it was not a requirement of DH to report on this information of type of activity so we could be less specific in what is selected.
+- We had a session with the wider team to do a short activity to get to a consolidated list of CPD activities based on how we viewed the requirements. It was decided it was not a requirement of DH to report on this information of type of activity so we could be less specific in each selection.
 
 #### Hypothesis 1
 >**We believe that** consolidating the list into the header sections with examples of activities
@@ -66,7 +66,7 @@ Goals of work:
 
 ![A screenshot of the condensed activity list"](condensed-activity-list.png "A screenshot of the condensed activity list")
 
-- Also courses in this list require a evidence of completion and a start date to be submitted alongside but there is then the risk that people will accidentally select another option instead of course and then no evidence of completion will be submitted. We decided to extract this question of whether it is a course out to then explain in the content evidence of completion is required for this category.
+- Also courses in this list require a evidence of completion and a start date to be submitted alongside but there is then the risk that people will accidentally select another option instead of course and then no evidence of completion will be submitted. We decided to extract this question of whether it is a course out to then explain in the content that evidence of completion is required for this category.
 
 #### Hypothesis 2
 >**We believe that** seperating out the question of whether a activity selected as formal and education is a course onto a seperate screen
@@ -85,12 +85,12 @@ Goals of work:
 >**Will be a useful feature for** submitters
 >**As it will** allow them to see all the information on a learner and also leaves the adding the learner journey as is with minimal disruption to TU journey of adding the budget in earlier.
 
-- We believe there are three pieces of information important for a submitter to know about a claim, the total remaining, the amount that is in pending for any other claims for this learner that are submitted and not yet approved or rejected, and what then is available for the submitter to make a claim for. 
+- We believe there are three pieces of information important for a submitter to know about a claim: the total remaining, the amount that is in pending for any other claims for this learner that are submitted and not yet approved or rejected, and what then is available for the submitter to make a claim for. 
 
 #### Hypothesis 2
 >**We believe that** giving a submitter a breakdown of a learners budget in available, pending and remaining
 >**Will be a useful feature for** submitters
->**As it will** allow them to see all the information and able to digest a overview of what is happening for the learner on other claims.
+>**As it will** allow them to see all the information and able to digest a overview of what is happening for the learner on other claims, and how many more claims can potentially claim back for in the future.
 
 ![A screenshot showing breakdown of budget in claim"]( budget.png "A screenshot showing breakdown of budget in claim")
 
@@ -116,7 +116,7 @@ Goals of work:
 
 ### Eligibility check
 
-A new design question to consider was the business requirement that stated a learner must be eligible for CPD claims and this is something the submitter must acknowledge in their submission of the claim. Thinking about it with different options weighing pro and cons in technical difficulty and what the buisness is happy with came up with three options that then presented to the wider UCD team to see which one suited best.
+A new design question to consider was the business requirement that stated a learner must be eligible for CPD claims and this is something the submitter must acknowledge in their submission of the claim. Thinking about it with different options weighing pro and cons in technical difficulty and what the buisness is happy with, I came up with three options that were presented to the wider UCD team to see which one was preferred.
 
 #### Option 1
 - Asking the submitter is the learner is elgigible by adding a simple checkbox on the declaration form at the end of the journey.
@@ -161,7 +161,7 @@ Cons
 - What if the eligibility of a user changes in the future, need to be able to change this and that would require further technical complexity.
 
 #### Outcome
-Weighing the fact the budget is only £500 and the low amount of claims we expect are going to happen, we will go further with option 2 as this repetitive check will happen few times, and it scopes for longevitiy in case the eligibility changes.
+Weighing the fact the budget is only £500 and the low amount of claims we expect are going to happen, we will go further with option 2 as this repetitive check will happen only a few times, and it scopes for longevitiy in case the eligibility changes.
 
 
 ## How we tested our ideas and what we found
