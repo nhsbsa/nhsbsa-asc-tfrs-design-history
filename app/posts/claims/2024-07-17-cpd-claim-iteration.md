@@ -80,20 +80,46 @@ We solved these issues in two ways:
 <!-- // description -->
 ![A screenshot of start page explaining both types of claims"](cpd-description.png "A screenshot of start page explaining both types of claims")
 <!-- // manage claims table -->
-![A screenshot of start page explaining both types of claims"](start-claim-explanation.png "A screenshot of start page explaining both types of claims")
+![A screenshot of start page explaining both types of claims"](cpd-description-table.png "A screenshot of start page explaining both types of claims")
 
 ### Budget
 - We’ve updated the budget displayed as this was another section that came up in UR that needed a deeper dive into what information is important to the processor here, and a few edge cases that made displaying multiple pieces of info about budget of amount left, including submitted claims, complicated to understand.
-- It’s important to show the submitter how much is left on the learner though, so reduced complexity until we do further research, and now just show the budget of claims that are approved, not including claims yet to be processed. Since organisations can submit claims as long as there is still budget not including pending this is the only piece of information completely necessary to the journey.
+- It’s important to show the submitter how much is left on the learner though, so reduced complexity until we do further research.
+- Conversations on whether to allow claims to be submitted if learner already has claims that use budget submitted but not yet approved, or to allow not including pending. 
+
+#### Scenarios identified that might lead to risks:
+- Scenario 1: If multiple claims are submitted for one learner by multiple organisations, and if claim’s are not processed in order of time submitted, in different processor queue's, might org 2 get all the money and org 1 none if processor 2 gets to it first. Or org 2 gets all the reimbursement amount and org 1 the lesser remaining amount.
+- Scenario 2: More than 1 claim for same learner are submitted and put in multiple different processor's queues, if first claim gets all the budget left the other processors might get to a claim that already has no budget left and all they are going to do is reject - can we auto reject?
+- Scenario 3: Race condition multiple claims for same learner getting processed at the same moment by different processors (which is probs perhaps unlikely), might seem they have budget, both spend time processing a claim that only get told when go to submit that no budget left and unable to do so (is this a reject?) or need to go back again and recalculate reimbursement amount. First one there gets the money
+
+#### Ideas for process around checking budget that could mitigate some of edge cases
+- Accept risks
+- Process claims in order
+- All one learner's claims in one processor's queue
+- Can processor see whole case file for a learner
+- Show breakdown of pending claims in budget including of other orgs - lessens chances of lots of claims for one user that will end up rejected
+- All subsequent claims after budget 0 auto rejected
+- Can't submit claims if the amount in pending goes over total remaining budget left
+
+#### Outcome
+- Can't submit claims if the amount in pending goes over total remaining budget left
+- Processing times quick so chances of closing off fund to other orgs are small
+- Annoying to user to be stuck not being able to make claims but smaller risk than the other process issues
+- If we get calls into the contact centre along the lines of "there's no funding left on this learner, but I've only had £300 worth of claims paid" it will either be a case of there are claims that have been submitted by your organisation that have been submitted but not yet processed, there are claims that have been submitted by another organisation that have been submitted but not yet processed, there are claims that have been submitted by another organisation that have been submitted and paid - the advisor won't know which scenario it is, and will only be able to give vague advice and say something like "processing times are around X number of days, check back after this point"
+
+#### Examples of budget breakdown on learner:
+- Learner A: Has no claims submitted, budget available would show as £500
+- Learner B: Has £200 approved and no other submitted claims, budget available would show as £300
+- Learner C: Has £200 approved, a £200 claim submitted but not yet processed, budget available would show as £100
+- Learner D: Has £200 approved, a £300 claim submitted but not yet processed, budget available would show as no budget available
 
 #### Hypothesis 1
->**We believe that** only showing the budget remaining after approved claims, not including pending,
+>**We believe that** only showing the budget remaining after pending AND approved claims
 >**Will be a useful feature for** submitters
->**As it will** be the only piece of budget information absolutely vital to their journey into we understand further what might be useful and why.
+>**As it will** be the only piece of budget information absolutely vital to their journey until we understand further what might be useful and why.
 
 What we need to test:
-- Whether it frustrates a submitter not knowing how likely a claim is to be approved or rejected. Because claims can be submitted for a single learner from multiple organisations each submitter will have no knowledge without seeing a amount for pending claims of how many there are that have already been created. No ability to search their own claims tables to see if a learner has any other active claims from same organisation either.
-**check - i think we changed it to only allow claims to be submitted if have budget?
+- Whether it frustrates a submitter not being able to submit claims even though a pending claim for learner might be rejected, and they have to come back to check. Because claims can be submitted for a single learner from multiple organisations each submitter will have no knowledge without seeing a amount for pending claims of how many there are that have already been created. No ability currently to search their own claims tables to see if a learner has any other active claims from same organisation either, though that is on the future post MVP roadmap.
 
 ![A screenshot of start page explaining both types of claims"](cpd-filled-out-claim.png "A screenshot of start page explaining both types of claims")
 
