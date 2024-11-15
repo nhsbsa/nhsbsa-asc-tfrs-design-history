@@ -92,7 +92,7 @@ Other findings included:
 Overall this validated our hypotheses and design thinking. 
 
 ## What we will do next
-This feature will move into development and we will monitor it's usage further during private beta. 
+This feature will move into development and we will monitor it's usage further during private beta. Despite the finding where some users wondered whether a archive function would be useful we did not feel there was enough evidence for us to explore this further over other higher priority problem spaces. 
 
 
 
