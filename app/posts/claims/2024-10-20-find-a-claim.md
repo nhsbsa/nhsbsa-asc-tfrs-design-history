@@ -20,12 +20,31 @@ During alpha a few options were tried to allow users to search and filter for cl
 
 ## What our ideas were
 
-I started by bringing back in what had before. Played back to see how it felt to people, but without clarity on specific used, it felt a bit vague and felt like needed to zoom in on specific use cases. 
+I started by bringing back in what had before. 
 
-(screenshot of search and filter)
+>**We believe that** allowing search and filter
+>**Will be a useful feature for** submitters
+>**As it will** help them narrow down on available information to find their claim easily.
+
+Played back to see how it felt to people, but without clarity on specific uses, it felt a bit vague in what problems the search and filter were both trying to solve and felt like needed to zoom in on specific use cases. 
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="filter-no-search.png" alt="text" style="width: 100%; height: auto;">
+    <figcaption>text</figcaption>
+  </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="search-and-filter.png" alt="text" style="width: 100%; height: auto;">
+    <figcaption>text</figcaption>
+  </figure>
+  </div>
+</div>
 
 I held a workshop to clarify the specific needs trying to solve to focus designs and expectations.
-Few use cases that came out as to why a user might want to find a claim:
+#### Few use cases that came out as to why a user might want to find a claim:
 - Find an approved claim for financial reconciliation / verifying payment
 - Check claim status / amount approved or paid
 - Find a 60 claim to start the relevant 40 claim / to use that information for the 40 claim
@@ -47,7 +66,7 @@ Few use cases that came out as to why a user might want to find a claim:
 - To look at what evidence/ info provided for a course previously that I am claiming for again for a different learner
 
 
-Potential info to search on that would be helpful:
+#### Potential info to search on that would be helpful:
 - learner 
 - claim id
 - course name
@@ -60,7 +79,7 @@ Potential info to search on that would be helpful:
 - date range
 - with or without evidence
 
-Played back current designs and asked people to crit current painpoints in the search and filter designs, baring in mind what the use cases were trying to solve:
+#### Played back current designs and asked people to crit current painpoints in the search and filter designs, baring in mind what the use cases were trying to solve:
 - Table with filters is very congested on page
 - Could the filters be hidden by default and opt in to show when the user wants to filter
 - Content (ID, Date, etc) running onto multiple lines
@@ -73,7 +92,7 @@ Played back current designs and asked people to crit current painpoints in the s
 - Is the start date claim start date/ training start date
 - Not too sure the value of a start date
 
-Also asked does the design answer the use cases identified? Other ideas to solve?
+#### Also asked does the design answer the use cases identified? Other ideas to solve?
 - It allows users to find specific claims
 - It allows users to narrow into a claim with limited information about that claim
 - It could enable reporting requirements in the future (unkown at this stage)
@@ -82,7 +101,7 @@ Also asked does the design answer the use cases identified? Other ideas to solve
 - Is there a difference between not yet submitted and incomplete claims?
 - Is there the ability for a sig (or submitter) to search by submitter name (e.g., to check work)
 
-What are technical constraints?
+#### What are technical constraints?
 - Multiple use cases represented - scope and prioritisation in the backlog (MVP thinking required)
 - May be more complex technically e.g. if we needed to store various status change dates or derived values (cost vs benefit)
 - Searching on multiple fields may bring back a lot of results (performance and usability)
@@ -93,39 +112,69 @@ What are technical constraints?
 
 From use cases identified sort of two categories formed, one claim searching to do something on, v  group of claims exploration. Had to be careful here of ticket scope, determined this ticket is to fulfil the need of a user wanting to easily find one specific claim, rather than blurring and actually ending up more for reporting. From the current designs of a filter, it felt like from tech they thought uneccesary, and bridged into reporting. These findings came me a lot more to think about and refine search design with. 
 
-Next design crit on 29/8/24 with 8 new designs of various layouts and content.
+Next design crit on 29/8/24 with 8 new designs of various layouts and content. Highlighted below are the differences in design details
+
+Image 1
+>**We believe that** adding a quick search for claim id on manage claims screen that will take them straight to claim if exists
+>**Will be a useful feature for** submitters
+>**As it will** help them find their exact specific claim if they already have this information to hand
+
+Image 2-8
+>**We believe that** a advanced search
+>**Will be a useful feature for** submitters
+>**As it will** help them easily find a claim that they don't have the speicifc claim id for, but do have bits of other information about the claim.
 
 ![A screenshot taken of the step by step navigation pattern](idea-1-2.png "step by step navigation pattern")
+
+Image 2
+- keywords typing input or a drop down
+- input has risk of spelling mistakes bringing back 0 results
+- single value selection
+- having multiple columns, is that confusing?
+- wording, is it a search or a filter?
+
+Image 3
+- maybe its only the learner and training name that are worthwhile searching, as status is something they are trying to find out so isn’t the question, its the answer
+- is type something alone they would search for?
+- selecting a date range, what type of date? if selecting submitted by, then thats all the claim status except not yet submitted
+
+Image 4
+- drop down on what type of date searching for
+
+Image 5
+- do we give them all the options and find out in research what is useful? 
+- Is putting in single column less cognitively overwhelming
+
+Image 6
+- do we give them all the options and find out in research what is useful?
+- drop down, but search within the dropdown. is it still a multiple select, what is the need here?
+- is search dynamically technically complex?
+- Overcomplicating starting point?
+
+Image 7
+- Design to allow function of multiple selection of training and learners, what is the user need to do this? Is that more reporting?
+
+Image 8
+- Multiple selection variation of design to be less disjointed the selections from the choices.
+- Again what is the user need of multiple selection?
+
 ![A screenshot taken of the step by step navigation pattern](idea-3-4.png "step by step navigation pattern")
 ![A screenshot taken of the step by step navigation pattern](idea-5-6.png "step by step navigation pattern")
 ![A screenshot taken of the step by step navigation pattern](idea-7-8.png "step by step navigation pattern")
 
+Outcome was to have two versions to take into testing. A (which is based off version 3 above)- a more simple search on learner and training, both optional. Or B (which is based off version 2 above) - one with more options. See which the users felt would be more helpful, which categories are more useful and also how they felt about the layout and date range, as that is something that is a custom component. Interesting them being optional, as not a normal GDS recommended thing wanted to see how users felt.
 
-Outcome was to have two versions to take into testing. A (which is based off version 3 above)- a more simple search on learner and training, both optional. Or B (which is based off version 2 above) - one with more options. See which the users felt would be more helpful, which categories are more useful and also how they felt about the layout and date range, as that is something that is a custom component. 
-
-Outcome from testing to go with B
-
-
-workshop
-
-filters
-search
-break it down
-
-research on A and B versions
-
-remembering the point of work is to find a claim and not reporting
-
-Interesting them being optional, as not a normal GDS recommended thing
-
-
-![A screenshot taken of the step by step navigation pattern](step-by-step.png "step by step navigation pattern")
+>**We believe that** testing options 2 and 3
+>**Will be useful for** us to see what information the submitters need to find a claim
+>**As they will** confirm our hypothesis' about what info is vital and which are nice to have's.
 
 ## How we tested our ideas and what we found
 
+Outcome from testing to go with B
+Remembering the point of work is to find a claim and not reporting and B touches on reporting
+B had a lot of nice to have's, but A did the job.
+*ADD RESEARCH*
 
 ## What we will do next
-
-split into seperate pieces of work, claim id search on manage claims screen and advanced search of learner and training.
-
-Decided that sorting in tables will be brought in same time in the future as pagination
+- Split into seperate pieces of work, claim id search on manage claims screen and advanced search of learner and training.
+- Decided that sorting in tables will be brought in same time in the future as pagination
