@@ -3,7 +3,7 @@ title: Iterating CPD claims
 description: After conducting research on CPD claim designs, we needed to iterate on the outcomes of our many hypothesis' that went into the design, led by some buisness questions that needed answers.
 author:
   name: Hannah Williams
-  url: '#'
+  url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-07-17
 tags:
   - claims-version-11

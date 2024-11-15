@@ -3,7 +3,7 @@ title: CPD claims
 description: Expanding designs to allow for submitting CPD claims.
 author:
   name: Hannah Williams
-  url: '#'
+  url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-06-20
 tags:
   - claims-version-10
