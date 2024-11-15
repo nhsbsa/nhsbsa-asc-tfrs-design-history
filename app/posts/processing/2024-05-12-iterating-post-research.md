@@ -3,7 +3,7 @@ title: Iterating post research insights
 description: Off the back of user research we iterated on designs, not able to be validated as moved to MVP version swiftly.
 author:
   name: Hannah Williams
-  url: '#'
+  url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-05-12
 tags:
   - processing-version-2

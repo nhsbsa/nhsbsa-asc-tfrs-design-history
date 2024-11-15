@@ -3,7 +3,7 @@ title: CPD processing
 description: CPD claims are in the MVP so added ability to process these claims. 
 author:
   name: Hannah Williams
-  url: '#'
+  url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-07-09
 tags:
   - processing-version-3
