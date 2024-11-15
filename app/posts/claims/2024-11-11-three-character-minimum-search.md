@@ -1,6 +1,6 @@
 ---
-title: 3 character minimum search
-description: Post MVP. On advanced search, training and learner
+title: 3 character minimum search - sustainable design
+description: Post MVP. On advanced search, training and learner, sustainable design considerations
 author:
   name: Hannah Williams
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
