@@ -1,6 +1,6 @@
 ---
 title: Find a claim
-description: Post MVP. 
+description: Submitters need to be able to find a specific claim quickly from partail information
 author:
   name: Hannah Williams
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
@@ -16,29 +16,29 @@ aside:
 ---
 
 ## Why we did this work
-During alpha a few options were tried to allow users to search and filter for claims in their dashboard, this was removed from the prototypes to help descope the complexity of the MVP. The need for users to be able to find a claim easily is still present. Goal is to help a user find a claim easily. 
+During alpha a few options were tried to allow users to search and filter for claims in their dashboard, this was removed from the prototypes to help descope the complexity of the MVP. The need for users to be able to find a claim easily is still present.
 
 ## What our ideas were
 
-I started by bringing back in what had before. 
+I started by bringing back in what was previously implemented.
 
 >**We believe that** allowing search and filter
 >**Will be a useful feature for** submitters
 >**As it will** help them narrow down on available information to find their claim easily.
 
-Played back to see how it felt to people, but without clarity on specific uses, it felt a bit vague in what problems the search and filter were both trying to solve and felt like needed to zoom in on specific use cases. 
+I played the design back, but without clarity on specific uses, it felt a bit vague in what problems the search and filter were both trying to solve and felt like needed to zoom in on specific use cases. 
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
   <figure>
     <img src="filter-no-search.png" alt="text" style="width: 100%; height: auto;">
-    <figcaption>text</figcaption>
+    <figcaption>Filter applied but no search input entered</figcaption>
   </figure>
   </div>
   <div style="flex: 1; max-width: 48%;">
   <figure>
     <img src="search-and-filter.png" alt="text" style="width: 100%; height: auto;">
-    <figcaption>text</figcaption>
+    <figcaption>Filter and search applied</figcaption>
   </figure>
   </div>
 </div>
@@ -64,7 +64,6 @@ I held a workshop to clarify the specific needs trying to solve to focus designs
 - New person has joined the organisation and wants to learn more about the system
 - To re-use existing information in another claim ("Person A and B went on the same course, let me see what I entered for Person A")
 - To look at what evidence/ info provided for a course previously that I am claiming for again for a different learner
-
 
 #### Potential info to search on that would be helpful:
 - learner 

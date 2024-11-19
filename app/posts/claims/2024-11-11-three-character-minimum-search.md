@@ -1,6 +1,6 @@
 ---
-title: 3 character minimum search - sustainable design
-description: Post MVP. On advanced search, training and learner, sustainable design considerations
+title:  Search - sustainable design choices
+description: Implementing a minimum 3 character requirement on all search inputs to handle moving pagination and table sorting to further down roadmap
 author:
   name: Hannah Williams
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
@@ -17,28 +17,43 @@ aside:
 
 ## Why we did this work
 
-conversation about sustainable design with 3 character limit - searches updates across all of them. Not a great use of resources to search against something every time. Problems are less about 
+The introduction of a three-character minimum search limit emerged during advanced search design discussions. Initially, users could search with a single character, which had potential to produced lengthy result lists requiring pagination and table sorting features to be a higher priority to help the user work through results. These features are more technically complex and time-consuming to implement though so this prompted a consideration of the trade-offs between usability and roadmap priorities. It was decided that users likely have sufficient information to input at least three characters, making this a minimal inconvenience to users, while dramatically reducing number of results. Pagination and sorting were deprioritized and added to the backlog for post-MVP implementation across the service.
 
-
-Discussions with tech (Sean Devlin) about minimum character limit on searches (advanced, select training and select learner), he's said his preference would be that NI number, course code and qualification number were searched on in full following the same logic of claim id that its "a "Random" set of characters mapping to a unique id" for improving tech performance massively in search. So minimum 3 character limit only applies now to learner name and training name. New content updated with nick, and also added to the advanced search training field that can search with course code and qualification number following that we do that already for select training
-
-Tried to work out the logic of how Sean would do it in the backend, has to fit the formats of being a NI number etc for it to be searched against that table, validation before checked. 
-Then the logic for the training input would be has to be in format of 603/2939/7 to search for a qualification, otherwise I think course code could be 4/5 letters so theoretically could be a name or a course code that they've typed to search against. But if less/more than 4/5 letters then only search against a name? 
+>**We believe that** implemeting a 3 character minimum limit
+>**Will be a useful feature for** both tech and submitters
+>**As it will** narrow down the search results 
 
 ## What our ideas were
 
-Problem was in error handling, how far to take the line, because we want to help them but we don't want to assume about what they have typed in.
-Discussed with mark that the way to handle mistakes in inputs with whole NI numbers/qual codes/course codes being required is not to call them a error as pretty hard to validate what the intention of user was when can type multiple things into one input box, but instead add it to the "improve search results" section.
-1 - thinking to add "checking you have typed in whole NI number" line when typed something in learner box, same for "checking you have typed in whole qual number/course code" line when typed into training box.
-2 - adding the improve search results stuff to training
-2 - adding the improve search results stuff to learner search. Unsure on placement of this one and if weird under "add new learner" button
+- For the quick find a claim search on the manage claims screen, tech required full claim ID matches, disallowing partial matches. This was for reasons to reduce the load on the database searching.
+- Within the advanced claim search a learner could be searched with name or National Insurance number. Training could be searched with name, course code or qualtification number. 
+- The question was raised what is the tech considerations in allowing a 3 character minimum limit for learner name, NI numbers, titles, training course codes, and qualification numbers, as this would be a partial search and whether the same logic as the claim id needed to be applied. The decision needed to balance technical feasibility with user needs embracing a sustainable design approach.
+- Tech said name could be 3 characters, but prefered approach would be full matches for NI Numbers, Course Code and qualification Number. This was because searching across every field for every input which is a great use of resources to search against something every time. The backend instead will have to validate the input is in the format of a NI number, code or qualifitcation number before then searching against that field in the database. 
+- They are a "Random" set of characters mapping to a unique id. So in theory, a partial search isn't needed because if they know some of it they should know all of it as would have to have to hand.
+- We had the question of how do we handle errors around these inputs in the frontend, as it will involve a assumption over what we think they have typed in to return a specific helpful error. We decided not to call them a error as pretty hard to validate what the intention of user was when can type multiple things into one input box, but instead add it to the "improve search results" section with a hint to check spelling.
+- Did the same changes in the select training and select learner flow of making a new claim to make it consistent across the service.
 
-tweak the wording v slightly. If we put '(NI)' after 'National Insurance' in the hint text above the search fields, we could shorten the text below by just referring to NI number. Then on the advanced search screen we could combine the last 2 bullet points together. 
+This design is based off a few hypothesis we will look to bring up in testing.
+
+>**We believe that** requiring partial matching for learner name and training name
+>**Will be a useful feature for** submitters
+>**As it will** allow them to search for key words they know but not the full exact title which might be quite long.
+
+>**We believe that** requiring full matching value for Claim ID, NI number, Course code and Qualification number
+>**Will be a useful feature for** tech and submitters
+>**As it will** improve the tech performance dramatically as reduces the number of results, will only search if the value matches valid format of each respective type, and for submitters they will likey have the full value to hand if they have even a small part of it. 
+
+>**We believe that** providing a error for empty states
+>**Will be a useful feature for** submitters
+>**As it will** mean no searching happens for tech unless something to search against
+
+>**We believe that** providing a error for if either field has more than 0 but less than 3 characters
+>**Will be a useful feature for** tech and submitters
+>**As it will** mean no searching happens for tech unless something worthy to search upon and 3 characters is a reasonable limit to request users to know to not be inconvinient and still fulfills being a quick search for them.
 
 ![A screenshot taken of the step by step navigation pattern](step-by-step.png "step by step navigation pattern")
 
 ## How we tested our ideas and what we found
+- To be tested
 
-
-## What we will do next
 
