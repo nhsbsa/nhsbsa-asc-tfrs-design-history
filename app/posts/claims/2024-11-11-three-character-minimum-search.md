@@ -51,7 +51,50 @@ This design is based off a few hypothesis we will look to bring up in testing.
 >**Will be a useful feature for** tech and submitters
 >**As it will** mean no searching happens for tech unless something worthy to search upon and 3 characters is a reasonable limit to request users to know to not be inconvinient and still fulfills being a quick search for them.
 
-![A screenshot taken of the step by step navigation pattern](step-by-step.png "step by step navigation pattern")
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="advanced-search.png" alt="text" style="width: 100%; height: auto;">
+    <figcaption>Advanced search</figcaption>
+  </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="advanced-results.png" alt="text" style="width: 100%; height: auto;">
+    <figcaption>Results</figcaption>
+  </figure>
+  </div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="advanced-no-results.png" alt="text" style="width: 100%; height: auto;">
+    <figcaption>No results</figcaption>
+  </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="advanced-error.png" alt="text" style="width: 100%; height: auto;">
+    <figcaption>Error</figcaption>
+  </figure>
+  </div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="learner-no-results.png" alt="text" style="width: 100%; height: auto;">
+    <figcaption>Add learner to claim search- no results hint</figcaption>
+  </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="training-no-results.png" alt="text" style="width: 100%; height: auto;">
+    <figcaption>Add training to claim search- no results hint</figcaption>
+  </figure>
+  </div>
+</div>
+
 
 ## How we tested our ideas and what we found
 - To be tested

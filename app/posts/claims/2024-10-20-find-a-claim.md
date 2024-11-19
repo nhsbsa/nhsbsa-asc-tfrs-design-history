@@ -162,9 +162,24 @@ Image 8
 
 Outcome was to have two versions to take into testing. A (which is based off version 3 above)- a more simple search on learner and training, both optional. Or B (which is based off version 2 above) - one with more options. See which the users felt would be more helpful, which categories are more useful and also how they felt about the layout and date range, as that is something that is a custom component. Interesting having the fields being optional as this is not normally GDS recommended but we wanted to see whether users found it beneficial or confusing.
 
->**We believe that** testing options 2 and 3
+>**We believe that** testing options A and B
 >**Will be useful for** us to see what information the submitters need to find a claim
 >**As they will** confirm our hypothesis' about what info is vital and which are nice to have's.
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="research-a.png" alt="text" style="width: 100%; height: auto;">
+    <figcaption>Option A</figcaption>
+  </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="research-b.png" alt="text" style="width: 100%; height: auto;">
+    <figcaption>Option B</figcaption>
+  </figure>
+  </div>
+</div>
 
 ## How we tested our ideas and what we found
 - We spoke to 4 people as part of this round of user research
@@ -175,12 +190,12 @@ Outcome was to have two versions to take into testing. A (which is based off ver
 - Most users understood the role of advanced search in finding a claim, and clicked this option immediately after realising they could not search by claim ID.
 - ​The majority of users used the name of learner and course fields for their advanced search. This was for various reasons including that it was 'easier' to remember learner names; they would have access to NI number as part of the role; and that this information would be easy to obtain.
 
-Searching or reporting?
+#### Searching or reporting?
 - Users tested many of the fields as part of the test, but did not use them to search to complete the task. Some users felt that date range and claim status would be useful if they were missing certain pieces of information (i.e. name) but knew the rough date of the qualification or claim submission.
 - While users were interested in using the search fields, analysis shows that they were predominantly concerned with their usefulness in reporting. ​For example, one user wanted to use the date search field to check how many claims were submitted in a time period for auditing purposes. ​Others suggested that they would report on activity per financial year using this search page, or use the information in the table to update a training matrix.​
 - 
 
-Outcome
+#### Outcome
 - Research suggests users would use the advanced search function to 'report' on activity, rather than search for a claim. Therefore, although all users felt that Version B was better, this was not based on its ability to search, and therefore the simplified Version A would meet their needs of finding a claim.
 
 - Outcome from testing to go with B
