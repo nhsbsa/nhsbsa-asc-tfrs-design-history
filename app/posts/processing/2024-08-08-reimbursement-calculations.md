@@ -4,7 +4,7 @@ description: Explaining reimbursement amounts to processors.
 author:
   name: Nick Johnstone-Waddell
   url: 'mailto:hi.nick.johnstone.waddell@nhsbsa.nhs.uk'
-date: 2024-11-18
+date: 2024-08-08
 tags:
   - processing-version-3
   - process-a-claim
@@ -26,7 +26,7 @@ While the reimbursement calculations are not in themselves massively complicated
 
 ## What our ideas were
 
-In terms of the different types of claims, the first we looked at in the processing prototype was the more straightforward ‘100’ claim, where organisations get back the total eligible amount in one payment after the training is completed.
+In terms of the different types of claims, the first we looked at in the processing prototype was the more straightforward ‘100’ claim, where organisations get back the total reimbursement amount in one payment after the training is completed.
 
 On the claim processing outcome screen, we used the GDS details component to allow a processor to get more information on the reimbursement calculation.
 
@@ -36,16 +36,14 @@ Our first design used static content:
 
 ## How we tested our ideas and what we found
 
-Initial testing with processors indicated that the concept of providing an explanation was useful but the content itself was wordy and hard to follow without the use of actual figures from the claim.
+Usability testing with processors indicated that the concept of providing an explanation was useful but the content itself was wordy and hard to follow without the use of actual figures from the claim.
 
-So we iterated the component to show the calculation more clearly and with the actual costs from the claim being approved:
+## What we will do next
+
+We iterated the component to show the calculation more clearly and with the actual costs from the claim being approved:
 
 ![Making the explanation more useful in v3"](reimbursement-calculation-v3.png "Making the explanation more useful in v3")
 
 Feedback from a show and tell where we demonstrated this new content was extremely favourable, with someone saying:
 
 > From a CCS [contact centre services] perspective, the way you are describing the claim breakdown is excellent and will really help agents on the phone.
-
-## What we will do next
-
-We will do further research with processors during private beta to identify if this new content is working and how we can further reduce their cognitive load in processing claims.

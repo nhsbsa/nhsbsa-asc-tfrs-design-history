@@ -4,7 +4,7 @@ description: Helping processors provide useful information to submitters when a 
 author:
   name: Nick Johnstone-Waddell
   url: 'mailto:hi.nick.johnstone.waddell@nhsbsa.nhs.uk'
-date: 2024-11-18
+date: 2024-10-18
 tags:
   - processing-version-3
   - process-a-claim
@@ -20,11 +20,11 @@ aside:
 
 Every claim that is rejected by an NHSBSA processor will get a rejection note. This is a vital part of the audit trail. It’s also visible to the submitter and should enable them to understand what they did wrong and - importantly - what they should do next time to hopefully ensure the claim can be approved.
 
-Prior to the service going live it hadn’t been possible to do much work on rejection notes. This was partly due to lack of time but mainly because we had only a vague idea of what sort of reasons claims might be rejected. Talking to NHSBSA, it felt important to wait until the service was live and we had real data on rejected claims before we did much work on this.
+Prior to the service going live it hadn’t been possible to do much work on rejection notes. This was partly due to lack of time but mainly because we had only a vague idea of what sort of reasons claims might be rejected. Talking to NHSBSA, it felt important to wait until the service was live and we had real data on rejected claims before we did more work on this.
 
 ## What our ideas were
 
-Initially, the NHSBSA operations team helpfully came up with an initial set of rejection reasons for processors to use. These covered:
+The NHSBSA operations team helpfully came up with an initial set of rejection reasons for processors to use. These covered:
 
 * course not completed
 * course not eligible
@@ -42,6 +42,8 @@ Talking to processors, we identified various issues with these templates. They i
 
 When we explored how rejection notes were used on other systems run by the NHSBSA, the advice from other designers was to keep notes short and to the point and link to additional guidance rather than duplicating it.
 
+So we suspected we wanted more granularity of rejection reasons and shorter text so submitters could quickly understand the problem.
+
 ## How we tested our ideas and what we found
 
 The user researcher and content designer went to the NHSBSA office in Fleetwood for a day to investigate. Activities included:
@@ -50,31 +52,29 @@ The user researcher and content designer went to the NHSBSA office in Fleetwood 
 * a follow-up session with QAs to understand why rejection reasons are important and what makes a good or bad rejection note
 * observations of processors as they reviewed claims to understand pain points
 
+There was clear consensus that good rejection notes:
+
+* are clear and to the point
+* use appropriate writing style
+* include the reason for the rejection
+* help users get things right next time
+* are clear what claim they relate to
+
+Conversely, bad rejection notes:
+
+* have an unhelpful amount of detail
+* use poor writing style or structure
+* don't make it clear why the claim was rejected
+* provide no help to get it right next time
+* are not clear what claim they relate to
+
+This provided clear evidence that the initial set of rejection reason templates needed iterating.
+
+## What we will do next
+
 Based on this workshop we developed a new set of rejection reasons.
 
-### Evidence of payment​
-
-1. Missing information on evidence of payment
-2. Information on evidence of payment does not match claim​
-3. Organisation address on invoice does not match address on service​
-4. No invoice or no receipt​
-5. Issue with VAT number​
-6. Payment schedule not completed​ (this relates to an organisation not having completed payment for a course before submitting a claim but DHSC may relax this for 60/40 claims so the rejection reason may need further work)
-7. Claim submitted over 3 months after completion​ (this check is not currently required as DHSC is not currently enforcing this)
-8. Claim submitted before course started​ (this check is being built into the service)​
-
-### Evidence of completion​
-
-9. Missing information on completion certificate​
-10. Awarding date before completion date​
-11. Information in evidence of completion does not match claim​
-12. Incorrect learning provider​
-
-### Both​
-
-13. Photo or scan of evidence does not meet requirements
-
-For each reason we’d provide the template and an example to help processors implement it consistently.
+For each reason we provided the template and an example to help processors implement it consistently.
 
 For example:
 
@@ -98,8 +98,6 @@ For example:
 > The invoice or receipt do not currently show the name of the training provider.
 >
 > Our [help with evidence requirements](#) provides more information, including how to resubmit the claim.
-
-## What we will do next
 
 We’re setting up a workshop with NHSBSA operations to explore the new templates and check they’re at an appropriate level of granularity and detail.
 

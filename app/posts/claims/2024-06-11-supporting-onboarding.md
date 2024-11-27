@@ -4,11 +4,11 @@ description: How we supported NHSBSA to design an effective, scaleable onboardin
 author:
   name: Nick Johnstone-Waddell
   url: 'mailto:hi.nick.johnstone.waddell@nhsbsa.nhs.uk'
-date: 2024-11-18
-modified: 2024-11-18
+date: 2024-06-11
+modified: 2024-06-11
 tags:
   - onboarding
-  - private beta
+  - private-beta
   - content
 ---
 
@@ -62,9 +62,12 @@ By keeping it simple, the onboarding pack was ready by the launch of the service
 
 ## How we tested our ideas and what we found
 
-The emails worked well but as expected we quickly found many bits of wording we could improve. For example:
-we had feedback that some organisations were put off by thinking the new service would require a higher level of IT skills than they had, so we emphasised how quick and easy it is to start getting reimbursement
-due to deficiencies with the Azure B2C access management system, we learnt that we needed to stress that users should not click any buttons before being told to, as this could cause problems with setting up multifactor authentication
+Early testing of the emails with users suggested that it was hard for them to assess their usefulness outside of the real onboarding process. So we had agreed to put the emails into use and then gather rapid feedback. Processors were particularly well placed to provide feedback as SROs often told them during the onboarding calls whether the emails had been useful.
+
+We found that the emails worked well but we identified many bits of wording we could improve. For example:
+
+* we had feedback that some organisations were put off by thinking the new service would require a higher level of IT skills than they had, so we emphasised how quick and easy it is to start getting reimbursement
+* due to deficiencies with the Azure B2C access management system, we learnt that we needed to stress that users should not click any buttons before being told to, as this could cause problems with setting up multifactor authentication
 
 We also identified the need for 3 additional emails to remind organisations who had not completed the survey to identify their SRO and book their onboarding call, to provide a reminder the day before the onboarding call, and also to provide a summary of useful information following onboarding.
 
@@ -87,7 +90,7 @@ Feedback from the team suggested that if people read it, the content of the onbo
 * the SRO not having read the grant determination letter in advance and therefore being unable to sign the legal declaration, which could result in onboarding having to be postponed
 * incorrect expectations of the service from the SRO, for instance about training eligibility and evidence requirements
 
-The UCD team worked with NHSBSA operations to improve the onboarding process to address these issues. One thing we did was to create a simple comparison of our service to the Workforce Development Fund (WDF), the previous service which ours is replacing. What we noticed during onboarding calls was that many SROs had used the WDF and expected the new service to be very similar. But in fact our service has important differences, particularly around evidence requirements. Our hypothesis was that explaining these differences early on would lead to higher satisfaction with the service and a higher volume of approved claims.
+The UCD team worked with NHSBSA operations to improve the onboarding process to address these issues.
 
 There have also been significant issues with multi factor authentication (MFA) during onboarding. It’s taken a week or more for some users to be able to log into the service because of these.
 
@@ -96,3 +99,5 @@ There have also been significant issues with multi factor authentication (MFA) d
 We are implementing the onboarding improvements and will look at the claim processing analytics to see if the rate of approved claims goes up.
 
 We are also analysing the MFA problems users have had and will be producing new guidance to help address these.
+
+We also plan to talk to DHSC to look at how we can help people who are used to the Workforce Development FUnd (WDF) to better understand the new service.
