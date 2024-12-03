@@ -7,7 +7,7 @@ author:
 date: 2024-11-25
 tags:
   - processing-version-6
-  - process-a-claim
+  - org-view
 aside:
   title:  Processing Prototypes
   content: |
@@ -89,7 +89,7 @@ Ideas that came out:
 - break the search down into asking what they want to search with, then click continue and enter that info
 - find a org through three: claim specific (id), user specific (email address), organisation specific (workplace ID, postcode), then Verify the org (name, address and postcode) and the user (first name, last name and email) - based on search results - ID/CV
 
-One consideration was how to identify correct organisation before then doing CV check (as could be checking against the wrong org). For example, multiple orgs have same learner - only applicable when indirect search and multiple results. 
+One consideration was how to identify the correct organisation before then doing the CV check (as could be checking against the wrong org). For example, multiple orgs have same learner - only applicable when indirect search and multiple results. 
 
 Dot voting led most important to be decided as claim reference, email, workplace ID in a direct search should be a good starting point to go off and test.
 
@@ -115,5 +115,9 @@ Dot voting led most important to be decided as claim reference, email, workplace
 >**As it will** always lead to one result, organisation name could lead to multiple results. 
 
 ## How we tested our ideas and what we found
+
+- Held a design crit on friday with wider delivery team to see if my progress of ideas 
+
+
 
 ## What we will do next
