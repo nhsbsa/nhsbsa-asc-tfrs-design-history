@@ -1,5 +1,5 @@
 ---
-title: Complete a ID/CV check
+title: Complete a ID/CV check ideation
 description: Once a organisation has been found, BSA staff need to be able to verify who they are speaking to before they are they able to process a query
 author:
   name: Hannah Williams
@@ -77,7 +77,17 @@ As a team we considered how to display/group this information in a way that can 
 
 ## How we tested our ideas and what we found
 
-Held a design crit:
+Held a design crit of overall journey combining find a org and doing the ID/CV checks with found organisation. Worked in parallel with process a claim journey work as we think tie together once found the organisation.
+
+#### Find a organisation
+
+>**We believe that** adding a new option for a find a organisation
+>**Will be a useful feature for** BSA staff
+>**As it will** suit the different intentions they are coming with still, but still the journey's are cohesive as end up in same centralised org view
+
+>**We believe that** in idea 1 of having seperate input fields for each input
+>**Will be a useful feature for** tech
+>**As it will** reduce technical processing
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
@@ -94,6 +104,10 @@ Held a design crit:
   </div>
 </div>
 
+>**We believe that** in idea 2 of having seperate input fields for each input
+>**Will be a useful feature for** BSA staff
+>**As it will** be more screen reader friendly
+
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
   <figure>
@@ -108,6 +122,17 @@ Held a design crit:
   </figure>
   </div>
 </div>
+
+#### Perform ID/CV checks
+
+>**We believe that** having organisation information in a header that's always there
+>**Will be a useful feature for** BSA staff
+>**As it will** keep them orientated as everything else sits under that organisation
+
+>**We believe that** offering adding option to say who is on phone
+>**Will be a useful feature for** BSA staff
+>**As it will** help them keep track of who speaking to
+
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
@@ -124,7 +149,7 @@ Held a design crit:
   </div>
 </div>
 
-Outcomes to consider design development:
+#### Outcomes to consider for further design development:
 
 Find a organisation
 - Email search may give multiple results in the future as multiple organisations could have the same SRO. If this something to use now if a risk to change in the future to being a indirect search with results, and would have to alter how we handle?
@@ -139,10 +164,10 @@ View org details for ID/CV check
 - Idea 2 with the selection of who speaking to aligns with something that came from users
 - Idea 2 Maybe only relevant for CCS agents or processors that are performaing an outbound call
 
-To think:
-- Condense down the header with considerations of screen space used v usefulness or what used for
-- Who speaking to - not always helpful in every scenario, make it more contextually useful
+To think about:
+- How to condense down the header with considerations of screen space used versus usefulness of what is included
+- Who speaking to is not always helpful in every scenario, make it more contextually useful and prominent
  
 
 ## What we will do next
-- Build on designs
+- Take ideas through to the prototype which allows some finessing of the finer details, seeing those smaller interactions of the design as a whole flow.
