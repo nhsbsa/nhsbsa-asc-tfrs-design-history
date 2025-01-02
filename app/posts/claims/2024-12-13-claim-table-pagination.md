@@ -26,9 +26,9 @@ We started by looking back at the pagination design from v7 of the prototype.
 
 ![A screenshot taken of claims tables from version 7 of the prototype showing the pagination pattern.](v7-pagination.png "v7 Claim table with pagination")
 
-This design used the [MoJ pagination pattern] (https://design-patterns.service.justice.gov.uk/components/pagination/), while it was part of the design during Alpha and was present during usability testing of other elements it wasn't a focal point of testing, the interaction was also not fully implemented in the prototype at the time due to challenges with getting it to work alongside the in-built table sorting pattern. 
+This design used the [MoJ pagination pattern](https://design-patterns.service.justice.gov.uk/components/pagination/), while it was part of the design during Alpha and was present during usability testing of other elements it wasn't a focal point of testing, the interaction was also not fully implemented in the prototype at the time due to challenges with getting it to work alongside the in-built table sorting pattern. 
 
-When revisiting this design we opted to return to the standards GDS pagination pattern as, after discussion, we felt that the standard GDS pattern would be more accessible and we were looking for low risk options that have been extensively tested elsewhere so that we can forego further usability testing before development as this work was quite time critical. 
+When revisiting this design we opted to return to the standards GDS pagination pattern as, after discussion, we felt that the [standard GDS pattern](https://design-system.service.gov.uk/components/pagination/) would be more accessible and we were looking for low risk options that have been extensively tested elsewhere so that we can forego further usability testing before development as this work was quite time critical. 
 
 While bringing in the GDS pattern we also decided to keep the content that illustrates the number of results; "Showing 11 to 20 of 30 results" as we felt this alongside the GDS pagination pattern worked well in helped users understand where they were in the pages of claims. 
 
@@ -45,7 +45,7 @@ Some final considerations were made, we opted for 20 claims per page as this fel
 AS stated above due to time constraints we didn't have the room to test this with users, but given the use of a well established GDS pattern and existing indirect testing carried out in Alpha we felt there was minimal risk to developing this without further testing in our service. 
 
 ## What we will do next
-We will look to develop this design and monitor it during private beta for any issues. While unlikely if we need to we can iterate the design as needed further on in private beta. 
+We will look to develop this design and monitor it during private beta for any issues. While unlikely if we need to we can iterate the design as needed further on in private beta. P
 
 
 
