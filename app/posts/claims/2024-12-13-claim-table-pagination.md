@@ -45,7 +45,7 @@ Some final considerations were made, we opted for 20 claims per page as this fel
 AS stated above due to time constraints we didn't have the room to test this with users, but given the use of a well established GDS pattern and existing indirect testing carried out in Alpha we felt there was minimal risk to developing this without further testing in our service. 
 
 ## What we will do next
-We will look to develop this design and monitor it during private beta for any issues. While unlikely if we need to we can iterate the design as needed further on in private beta. P
+We will look to develop this design and monitor it during private beta for any issues. While unlikely if we need to we can iterate the design as needed further on in private beta.
 
 
 
