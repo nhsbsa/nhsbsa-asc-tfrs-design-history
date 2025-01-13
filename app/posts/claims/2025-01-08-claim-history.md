@@ -1,5 +1,5 @@
 ---
-title: Showing the journey a claim  ahs been on
+title: Showing the journey a claim has been on
 description: Adding back in the claim history so that organisations can see when claims moved through the process.
 author:
   name: Mark Portnell
