@@ -2,7 +2,7 @@
 title: Enabling multiple users from an organisation
 description: Enabling multiple users from an organisation means the signatory doesn't have to be the only submitter.  
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-06-27
 modified: 2024-07-08

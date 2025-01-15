@@ -2,7 +2,7 @@
 title: Explaining reimbursement calculations
 description: Explaining reimbursement amounts to processors.
 author:
-  name: Nick Johnstone-Waddell
+  name: Nick Johnstone-Waddell (Content designer)
   url: 'mailto:hi.nick.johnstone.waddell@nhsbsa.nhs.uk'
 date: 2024-08-08
 tags:

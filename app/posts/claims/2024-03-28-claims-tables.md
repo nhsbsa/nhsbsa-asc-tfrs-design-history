@@ -2,7 +2,7 @@
 title: Exploring different ways to display lists of claims
 description: With 60/40 claims on the horizon we explored different ways to present lists of claims to users.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-03-28
 modified: 2024-05-06

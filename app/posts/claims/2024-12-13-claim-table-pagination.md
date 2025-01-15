@@ -2,7 +2,7 @@
 title: Reintroducing pagination to the claims tables
 description: Adding back in the pagination on the claim tables so that users can see all the claims in a specific status.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-12-13
 tags:

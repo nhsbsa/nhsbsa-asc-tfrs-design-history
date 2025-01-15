@@ -2,7 +2,7 @@
 title:  Viewing uploaded evidence
 description: Allowing submitters to view evidence they have uploaded to the service.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-08-20
 tags:

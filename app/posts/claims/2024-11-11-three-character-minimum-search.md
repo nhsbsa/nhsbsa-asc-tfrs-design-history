@@ -2,7 +2,7 @@
 title:  Search - sustainable design choices
 description: Implementing a minimum 3 character requirement on all search inputs to handle moving pagination and table sorting to further down roadmap
 author:
-  name: Hannah Williams
+  name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-11-01
 modified: 2024-11-01

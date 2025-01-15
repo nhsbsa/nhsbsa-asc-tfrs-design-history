@@ -2,7 +2,7 @@
 title: Scaling back MVP
 description: With a tight delivery deadline fast approaching and an increasing amount of technical unknowns the decision was made by the product owner to scale back the MVP at the start of Beta.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-03-23
 tags:

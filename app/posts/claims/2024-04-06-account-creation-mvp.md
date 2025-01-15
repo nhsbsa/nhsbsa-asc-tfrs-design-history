@@ -2,7 +2,7 @@
 title: Account creation for signatories
 description: With a tight delivery deadline for the launch of private beta the organisation onboarding was heavily driven by technical constraints.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-04-06
 modified: 2024-04-15

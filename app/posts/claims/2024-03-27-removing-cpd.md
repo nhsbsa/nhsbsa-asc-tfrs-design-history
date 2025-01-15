@@ -2,7 +2,7 @@
 title: Removing references to revalidation funding for MVP
 description: Revalidation funding (CPD) claims will not be available for the start of Private Beta. To address this we removed references from the designs.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-03-27
 tags:

@@ -2,7 +2,7 @@
 title: Find a claim exploration
 description: Submitters need to be able to find a specific claim quickly from partial information
 author:
-  name: Hannah Williams
+  name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-10-20
 modified: 2024-10-20

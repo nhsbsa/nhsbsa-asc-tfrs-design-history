@@ -2,7 +2,7 @@
 title: Dealing with duplicate learners
 description: We can only have unique learner records in our service so we need to deal with users adding a duplicate learner to prevent this.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-04-15
 modified: 2024-05-20

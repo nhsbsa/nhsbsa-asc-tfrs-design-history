@@ -2,7 +2,7 @@
 title: Registering a organisation iteration
 description: A number of security risks were identified, work to handle signatory invites sent to the wrong email address
 author:
-  name: Hannah Williams
+  name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-08-25
 tags:

@@ -2,7 +2,7 @@
 title: Helping users meet payment evidence requirements
 description: Following a discovery during desk research we needed to shift to accommodate multiple pieces of payment evidence. 
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-04-16
 modified: 2024-05-16

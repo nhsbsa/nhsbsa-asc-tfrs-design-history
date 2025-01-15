@@ -2,7 +2,7 @@
 title: Showing the journey a claim has been on
 description: Adding back in the claim history so that organisations can see when claims moved through the process.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2025-01-08
 tags:

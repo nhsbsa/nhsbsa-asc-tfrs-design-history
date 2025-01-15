@@ -2,7 +2,7 @@
 title: Addressing time sensitive policy restrictions
 description: Two time sensitive policy requirements were introduced that we needed to address through design.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-04-08
 modified: 2024-05-16

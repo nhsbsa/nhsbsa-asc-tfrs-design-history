@@ -2,7 +2,7 @@
 title: Find a organisation and perform ID/CV checks final design pre research WIP
 description: Combining process a claim and org view
 author:
-  name: Hannah Williams
+  name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-12-13
 tags:

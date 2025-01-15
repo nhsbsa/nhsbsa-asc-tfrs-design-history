@@ -2,7 +2,7 @@
 title: Removing references to care skills funding
 description: After revalidation funding was removed from the scheme, we no longer needed to refer to care skills funding.
 author:
-  name: Nick Johnstone-Waddell
+  name: Nick Johnstone-Waddell (Content designer)
   url: 'mailto:hi.nick.johnstone.waddell@nhsbsa.nhs.uk'
 date: 2024-09-18
 modified: 2024-09-18
