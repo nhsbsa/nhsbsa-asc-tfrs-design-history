@@ -3,7 +3,7 @@ title: Scaling back MVP
 description: Due to MVP decisions we stripped back many of the design decisions to accommodate quicker technical delivery. 
 
 author:
-  name: Hannah Williams
+  name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-05-15
 tags:

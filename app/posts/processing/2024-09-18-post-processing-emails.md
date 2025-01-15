@@ -2,7 +2,7 @@
 title: Post-processing emails to users
 description: Informing submitters when a claim has been processed.
 author:
-  name: Nick Johnstone-Waddell
+  name: Nick Johnstone-Waddell (Content designer)
   url: 'mailto:hi.nick.johnstone.waddell@nhsbsa.nhs.uk'
 date: 2024-09-18
 tags:

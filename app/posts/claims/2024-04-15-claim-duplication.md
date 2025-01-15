@@ -2,7 +2,7 @@
 title: Dealing with duplicate claims
 description: The scheme rules dictate that a claim for each course will only be paid once per learner.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-04-15
 modified: 2024-05-20

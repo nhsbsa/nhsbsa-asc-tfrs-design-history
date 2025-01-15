@@ -2,7 +2,7 @@
 title: Deleting submitters
 description: We know there is high turnover in the sector in many roles and this includes the submitter
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-08-20
 modified: 2024-09-19

@@ -2,7 +2,7 @@
 title: Custom error state for the claim scaffold screen
 description: With the unique use of the summary list on the claim scaffold screen, we needed to design a custom error state for this screen.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-04-21
 modified: 2024-05-31

@@ -2,7 +2,7 @@
 title: Asking submitters to identify the training cost per learner
 description: Getting accurate data to calculate reimbursement amounts.
 author:
-  name: Nick Johnstone-Waddell
+  name: Nick Johnstone-Waddell (Content designer)
   url: 'mailto:hi.nick.johnstone.waddell@nhsbsa.nhs.uk'
 date: 2024-03-14
 tags:

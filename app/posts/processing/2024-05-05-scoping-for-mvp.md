@@ -2,7 +2,7 @@
 title: Scoping for MVP
 description: First ideation session focusing on what we think the journey should look like, based off assumptions and hypothesis'. Aimed to get a first design out to take learnings off in research. 
 author:
-  name: Hannah Williams
+  name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-05-05
 tags:

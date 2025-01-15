@@ -2,7 +2,7 @@
 title: CPD removal
 description: Due to funding decisions CPD will no longer be offered. 
 author:
-  name: Hannah Williams
+  name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-08-25
 tags:

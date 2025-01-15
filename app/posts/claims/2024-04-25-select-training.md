@@ -2,7 +2,7 @@
 title: When and how users select training for a claim
 description: Iterating how users select training to be more scalable and extensible to future requirements and accommodate the new published training list.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-04-25
 modified: 2024-05-16

@@ -2,7 +2,7 @@
 title: A template for a post
 description: This is an example of a standard design history post. Thjis would provide a summary fo the design hsitory post.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: '#'
 date: 2024-05-31
 tags:

@@ -2,7 +2,7 @@
 title: Changing from signatory to senior responsible officer
 description: How and why we changed the name of this role type.
 author:
-  name: Nick Johnstone-Waddell
+  name: Nick Johnstone-Waddell (Content designer)
   url: 'mailto:hi.nick.johnstone.waddell@nhsbsa.nhs.uk'
 date: 2024-08-12
 modified: 2024-08-12

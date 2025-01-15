@@ -2,7 +2,7 @@
 title: Complete a ID/CV check ideation
 description: Once a organisation has been found, BSA staff need to be able to verify who they are speaking to before they are they able to process a query
 author:
-  name: Hannah Williams
+  name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-11-26
 tags:

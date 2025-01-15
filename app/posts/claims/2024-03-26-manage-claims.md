@@ -2,7 +2,7 @@
 title: Iterating our manage claims screen
 description: We iterated the way users can manage claims to be more accessible and intuitive across all platforms.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-03-26
 modified: 2024-05-06

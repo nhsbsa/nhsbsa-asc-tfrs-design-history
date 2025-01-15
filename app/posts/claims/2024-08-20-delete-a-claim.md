@@ -2,7 +2,7 @@
 title: Deleting claims
 description: There are few scenarios that could lead to claims being created that can't be progressed and therefore needs to be deleted.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-08-20
 modified: 2024-09-19

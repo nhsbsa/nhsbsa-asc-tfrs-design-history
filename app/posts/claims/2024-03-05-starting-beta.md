@@ -2,7 +2,7 @@
 title: Evolving our approach to recording design decisions
 description: Reflecting on our design decision logs from Alpha and moving towards the Design History tool from X-GOVUK.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-03-05
 tags:

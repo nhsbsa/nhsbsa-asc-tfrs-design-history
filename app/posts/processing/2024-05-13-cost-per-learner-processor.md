@@ -2,7 +2,7 @@
 title: Moving the cost per learner calculation to processors
 description: Why we wanted processors rather than submitters to identify the training cost per learner.
 author:
-  name: Nick Johnstone-Waddell
+  name: Nick Johnstone-Waddell (Content designer)
   url: 'mailto:hi.nick.johnstone.waddell@nhsbsa.nhs.uk'
 date: 2024-05-13
 tags:

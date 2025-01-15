@@ -2,7 +2,7 @@
 title: Aligning user expectations
 description: How we improved onboarding to set more realistic user expectations of the service.
 author:
-  name: Nick Johnstone-Waddell
+  name: Nick Johnstone-Waddell (Content designer)
   url: 'mailto:hi.nick.johnstone.waddell@nhsbsa.nhs.uk'
 date: 2024-11-20
 modified: 2024-11-20

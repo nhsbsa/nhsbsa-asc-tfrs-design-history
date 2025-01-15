@@ -2,7 +2,7 @@
 title: Supporting the onboarding process
 description: How we supported NHSBSA to design an effective, scaleable onboarding process for private beta.
 author:
-  name: Nick Johnstone-Waddell
+  name: Nick Johnstone-Waddell (Content designer)
   url: 'mailto:hi.nick.johnstone.waddell@nhsbsa.nhs.uk'
 date: 2024-06-11
 modified: 2024-06-11
