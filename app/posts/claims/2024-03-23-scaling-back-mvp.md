@@ -21,7 +21,9 @@ aside:
     Password: ascbsa123
 ---
 
-With an aggressive delivery deadline fast approaching and an increasing amount of technical unknowns the decision was made by the product owner to scale back the MVP at the start of Beta. Across a couple of workshops attended by the entire product team a series of key decisions were made to cut out or scale back certain features for MVP. These product decisions were all logged in our project decision log held in Jira along with any associated risks and mitigations. We finished Alpha with v7 of the prototype, this version was not tested with users before these decisions were made and therefore changes were made in v8 of the prototype for future testing. As these decisions also impact design and explain how we moved from v7 to v8 and some of the changes are made.
+With an aggressive delivery deadline fast approaching and an increasing amount of technical unknowns the decision was made by the product owner to scale back the MVP at the start of Beta. Across a couple of workshops attended by the entire product team a series of key decisions were made to cut out or scale back certain features for MVP. These product decisions were all logged in our project decision log held in Jira along with any associated risks and mitigations. 
+
+We finished Alpha with v7 of the prototype, this version was not tested with users before these decisions were made and therefore changes were made in v8 of the prototype for future testing. As these decisions also impact design and explain how we moved from v7 to v8 and some of the changes are made.
 
 
 ## Using Azure B2C for authentication and account creation

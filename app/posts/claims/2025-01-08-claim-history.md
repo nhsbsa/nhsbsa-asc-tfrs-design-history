@@ -15,31 +15,34 @@ aside:
 ---
 
 ## Why we did this work
-As part of work done to scale back the MVP back in March to try and meet an aggressive delivery schedule we removed claims from the proposed designs for the claims app. Please see the design history post [Scaling back MVP](../scaling-back-mvp) that goes into further details about the aspects removed from MVP as part of that work. 
 
-One of the user needs that has been identified in the past is:
->**As a** submitter
->**I need to** to see when a claim was started and/or last updated
->**So that** I can track the claim's timeline
+As part of the work done to scale back the MVP in March to meet an aggressive delivery schedule, we removed claims from the proposed designs for the claims app. For more details about the aspects removed from the MVP, please refer to the design history post [Scaling back MVP](../scaling-back-mvp).
 
-Currently we do not meet this need given the removal of the claim history pattern. Although this hasn't been flagged by users as being a critical issue currently we were still working on the discovery phase of some big problem spaces and there was a gap in development work. Therefore the decision was made to look again at this as it was a small bit of work that could fill a vacant space in the development plan, however we wouldn't have any time to further test this with users.
+One of the user needs identified earlier is:
+
+> **As a** submitter  
+> **I need to** see when a claim was started and/or last updated  
+> **So that** I can track the claim's timeline.
+
+Currently, we do not meet this need due to the removal of the claim history pattern. Although this hasn’t been flagged as a critical issue by users, it remains a gap. As we were still in the discovery phase of some larger problem areas, and given the development space, we decided to revisit this feature. This would be a small addition to our development plan. However, we did not have time to test this with users.
 
 ## What our ideas were
-We started by looking back at the claim history design from v7 of the prototype.
 
-![A screenshot taken of a claim from version 7 of the prototype showing the claim history pattern.](v7-claim-history.png "v7 Claim history")
+We began by reviewing the claim history design from v7 of the prototype.
 
-This design used the [MoJ timeline pattern](https://design-patterns.service.justice.gov.uk/components/timeline/), while it was part of the design during Alpha and was present during usability testing of other elements it wasn't a focal point of testing, this was due to the time constraints and other higher priorities for the times we had with users.
+![A screenshot of a claim from version 7 of the prototype showing the claim history pattern.](v7-claim-history.png "v7 Claim history")
 
-When revisiting this design we opted to keep with the MoJ timeline approach as this closely aligned with the user need described. In addition we have previously heard (albeit from processors) that viewing dates in a summary list form can make it more difficult to understand. 
+This design used the [MoJ timeline pattern](https://design-patterns.service.justice.gov.uk/components/timeline/). While this was part of the design during Alpha and included in usability testing of other elements, it wasn’t a focal point of testing. This was due to time constraints and other higher priorities during our sessions with users.
 
-Next we reviewed the existing logic of the pattern we had used and agreed the following tweaks:
-- Supporting information would only show for the most recent status change
-- For consistency we would show the claim history even on not-yet-submitted claims with just one entry
-- We would show the individual responsible for the status change expect for claim created as this data doesn't currently exist
-- With the new design for 60/40 claims being a combined claim we would show status changes for both the 60 part and the 40 part together. 
+When revisiting this design, we decided to stick with the MoJ timeline approach as it closely aligned with the user need described above. Additionally, we had previously received feedback (mainly from processors) that viewing dates in a summary list format could be confusing.
 
-The final small tweak was to review the existing content and we made the decision to simply further and remove unnecessary content from the supporting information this was to ensure the content was more suitable to being viewed at a glance.
+We reviewed the existing logic behind the pattern and made the following adjustments:
+- **Supporting information** would only be shown for the most recent status change.
+- **Claim history** would be displayed even for not-yet-submitted claims, showing a single entry.
+- **Claim status changes** would show the individual responsible, except for the “Claim Created” entry, as this data doesn’t currently exist.
+- For **60/40 claims**, we would display status changes for both parts (60 and 40) together.
+
+We also made a final adjustment by removing unnecessary content from the supporting information to ensure that it was more suitable for quick viewing.
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
@@ -56,12 +59,10 @@ The final small tweak was to review the existing content and we made the decisio
   </div>
 </div>
 
-
 ## How we tested our ideas and what we found
-As stated above due to time constraints we didn't have the room to test this with users, but given the use of an established pattern from a GDS sub design system and existing indirect testing carried out in Alpha we felt there was minimal risk to developing this without further testing in our service. 
+
+As mentioned, due to time constraints, we didn’t have the opportunity to test this with users. However, we felt confident proceeding with development due to the use of a well-established GDS pattern, along with indirect testing carried out during Alpha. This led us to believe there was minimal risk in developing the feature without additional testing within our service.
 
 ## What we will do next
-We will look to develop this design and monitor it during private beta for any issues. While unlikely if we need to we can iterate the design as needed further on in private beta.
 
-
-
+We will proceed with developing this design and monitor its performance during private beta. While we don’t anticipate major issues, we will be ready to iterate the design as needed if any problems arise during private beta.
