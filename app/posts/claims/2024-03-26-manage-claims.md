@@ -16,68 +16,66 @@ aside:
     Password: bsaasc123
 ---
 
-
-
 ## Why we did this work
 
-At the end of Alpha the design for managing claims consisted of a single page with the tabs component on it. Each tab was for a specific state a claim could be in eg approved or submitted. Within each tab was a table with claims for that were in the corresponding state. 
+At the end of alpha, the design for managing claims consisted of a single page with a tabs component. Each tab represented a specific state a claim could be in (e.g., approved or submitted). Within each tab was a table displaying claims in that corresponding state.
 
-![A screenshot from v7 of the prototype showing managing claims screen.](manage-claims-v7.png "Manage claims screen from v7")
+![A screenshot from v7 of the prototype showing the managing claims screen.](manage-claims-v7.png "Manage claims screen from v7")
 
-While on the whole this screen tested well during Alpha, there were a few issues we had discovered with the design:
-- The removal of pagination in the table for MVP meant the tables could end up being very long on a single tab.
-- Tabs on smaller screen sizes are vertically stacked on smaller screen sizes meaning multiple, potentially large, tables stacked on top of one another.
-- Due to the amount of data that could be on each tab loading times could be affected (this is something we struggled to test in the prototype).
-- When using assistive technologies the multiple tabs and large quantities of claims could prove problematic and we struggled to test with users with accessibility needs during alpha.
-- We would be introducing new types of claims into these tables in the future for the 60/40 work and introducing another columns would increase cognitive load further on a page that already causes a high cognitive load.
+While the screen tested well during alpha, we identified a few issues with the design:
+- The removal of pagination in the table for MVP meant the tables could become very long within a single tab.
+- On smaller screen sizes, the tabs were vertically stacked, meaning multiple large tables were stacked on top of one another.
+- Due to the large amount of data, loading times could be affected (this was hard to test in the prototype).
+- Multiple tabs and a large number of claims could create accessibility challenges for users of assistive technologies, and we struggled to test with accessibility users during alpha.
+- Future changes, such as adding new claim types for the 60/40 work, would increase the cognitive load further, particularly with the need for additional columns on already complex pages.
 
-Given the above we decided to looks at ways we would simplify the design journey around managing claims while incorporating the MVP changes. 
+Given these issues, we decided to explore ways to simplify the design of the claims management journey, while still incorporating the MVP changes.
 
->**How might we** improve accessibility, extensibility and scalability of the manage claims journey while not degrading usability.
+> **How might we** improve accessibility, extensibility, and scalability of the manage claims journey, while ensuring we don’t degrade usability?
 
 ## What our ideas were
 
-Our starting point for this work was the idea that each tab should instead be separate pages of the service. We felt this would reduce the cognitive load by focussing a page on claims of a specific state without the other visual clutter. It would also allow the tables to better scale and extend as needed for more claims or additional features such as filters and search options in the future. 
+Our starting point was the idea that each tab should be a separate page within the service. We felt this would reduce cognitive load by focusing each page on claims of a specific state, without visual clutter from other states. It would also make the tables more scalable, allowing for future additions like filters or search options.
 
-The remaining challenge then became how we sign post to these different pages in an intuitive way. This sign posting page would also be the natural home for the start new claim button. 
+The remaining challenge was how to signpost these different pages in an intuitive way. This page would also naturally house the "Start new claim" button.
 
-We explored two ideas for this; the chevron card and basic card:
+We explored two design ideas for this: the chevron card and the basic card.
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
-  <figure>
-    <img src="basic-cards.png" alt="A screenshot of some basic cards" style="width: 100%; height: auto;">
-    <figcaption>Basic cards</figcaption>
-  </figure>
+    <figure>
+      <img src="basic-cards.png" alt="A screenshot of basic cards" style="width: 100%; height: auto;">
+      <figcaption>Basic cards</figcaption>
+    </figure>
   </div>
   <div style="flex: 1; max-width: 48%;">
-  <figure>
-    <img src="chevron-cards.png" alt="A screenshot of some chevron cards" style="width: 100%; height: auto;">
-    <figcaption>Chevron cards</figcaption>
-  </figure>
+    <figure>
+      <img src="chevron-cards.png" alt="A screenshot of chevron cards" style="width: 100%; height: auto;">
+      <figcaption>Chevron cards</figcaption>
+    </figure>
   </div>
 </div>
 
-After some deliberation we decided to opt for the chevron cards as they were more universally seen on the government website and therefore we formed a hypothesis that these would be better suited for this form of signposting.
+After deliberation, we opted for chevron cards as they are more commonly seen on government websites. We hypothesized that these would provide a familiar, easy-to-understand method of signposting.
 
->**We believe that** using the chevron card to sign post users to different claims state pages
->**Will be a useful feature for** submitters
->**As it will** help them clearly identify the different states claims can be in and allow users to easily navigate to these pages.
+> **We believe that** using chevron cards to signpost users to different claims state pages
+> **Will be a useful feature for** submitters
+> **As it will** help them easily identify different claim states and navigate to the relevant page.
 
 ## What we changed
 
-The below show the designs we created and tested in v8:
+Here are the designs we created and tested in v8:
 
-![A screenshot from v8 of the prototype showing managing claims screen.](manage-claims-v8.png "Manage claims")
+![A screenshot from v8 of the prototype showing the managing claims screen.](manage-claims-v8.png "Manage claims")
 
-![A screenshot from v8 of the prototype showing not yet submitted claims screen.](claims-table-v8.png "Not yet submitted claims")
+![A screenshot from v8 of the prototype showing the not yet submitted claims screen.](claims-table-v8.png "Not yet submitted claims")
 
 ## How we tested our ideas and what we found
-We ran usability testing on these designs week commencing 6th May 2024. Here is a summary of the findings related to the above changes:
-- users found it very easy to make and submit claims still despite changes. Minimal confusion and little to suggest they would struggle to do this independently
-- a shift to pages for the claims tables instead of tabs meant users were able to pick up quicker what was going on that before
 
+We ran usability testing on these designs in the week commencing 6th May 2024. Key findings include:
+- Users still found it easy to make and submit claims despite the changes. There was minimal confusion, and little to suggest they would struggle to do this independently.
+- The shift from tabs to separate pages for the claims tables meant users were able to understand the structure more quickly.
 
 ## What we will do next
-The changes we have made have improved usability as well as providing a better foundation for us to scale and extend as needed in the future, as a result we will move these changes into development and monitor any related findings early on in private beta.
 
+The changes we've made have improved usability and provided a better foundation for future scalability. As a result, we will move these changes into development and monitor related findings early on in private beta.
