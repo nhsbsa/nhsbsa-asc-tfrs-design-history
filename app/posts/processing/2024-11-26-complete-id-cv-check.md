@@ -1,5 +1,5 @@
 ---
-title: Complete a ID/CV check
+title: Complete a ID/CV check WIP
 description: Once a organisation has been found, BSA staff need to be able to verify who they are speaking to before they are they able to process a query
 author:
   name: Hannah Williams
@@ -17,32 +17,37 @@ aside:
 ---
 ## Why we did this work
 
-As part of the work to help organisations and BSA staff resolve organisation-related problems quickly, this is the second part of my ticket to give BSA staff functionality to complete the ID/CV check so then they can progress with the query within the centralised organisation view. Important while doing this piece of work to bear in mind the wider scope and potential future features to make sure we design in a way that is scalable and maintainable.
+As part of the work to help organisations and BSA staff resolve organisation-related problems quickly, this is the second part of my ticket to give BSA staff functionality to complete the ID/CV check so then they can progress with the query within a centralised organisation view. Important while doing this piece of work to bear in mind the wider scope and potential future features to make sure we design in a way that is scalable and maintainable.
 
 ![A diagram of high level activity flow of journey detailing what information is needed ](high-level-activity-flow.png "A diagram of high level activity flow of journey detailing what information is needed")
 
 
 #### Considerations to keep in mind:
-* The ID/CV checks aren’t going to be a recorded process, we will display the information and they then do the checks verbally. This view, where the find a organisation flow lands, needs to support this process providing the information necessary.
+* The ID/CV checks aren’t going to be a recorded process, we will display the information and they then do the checks verbally. This view, where the find a organisation flow lands, needs to support this process providing the information necessary. Makes sense this would happen within the centralised organisation view, making the design flexible to allow them to complete this and then the query.
 * How might we help CCS agents maintain sight of who they are speaking to from an org as this was a user need that came out during Alpha that staff forget who is on the phone.
 * How might we cater to different users priorities in this wider org view as this view is going to support many different user journeys including processing of a claim, as well as resolving queries, so the ID/CV check isn’t necessary to every journey that lands a user on this screen.
 * How to show the right information at the right time?
-* 
 
 
 Held a second ideation session with wider delivery team on 26th November to explore the concept of a org view.
 
-Below the requirements have been broken down into the information that needs to be accessible to complete ID/CV checks.ID/CV check requirements:
+Below the requirements have been broken down into the information that needs to be accessible to complete ID/CV checks.
+
+ID/CV check requirements:
 * Check a claim reference number
 * Check organisation name
 * Check first line of address
 * Check postcode of org
+
 If don’t possess one of these pieces then need to go through to the secondary check, where one of these need’s to be confirmed (this list is not exhaustive and potentially other alternatives):
+
 * Check submitter’s full name
 * Check submitter’s email address
 * Check learner’s full name
 * Check name of training course
+
 Other information that needs to be accessible based off ticket:
+
 * To check a claim reference does that mean need to see a list of all the claims/have a find claim function?
 * Bank details are part of ticket requirement
 
@@ -79,7 +84,7 @@ This work was being done alongside process a claim reworking. Thought of to brin
 Left as two routes in as the intentions the different users are coming in via are different but still the journey’s are cohesive as they end up in the same centralised org view and still have all the functionality available to them. The process a claim journey still needs access to wider org view to help processors. Something to be tested as to the understanding of these two options. 
 
 
-Perform ID/CV checks
+#### Perform ID/CV checks
 
 
 We believe that having organisation information in a header that’s always thereWill be a useful feature for BSA staffAs it will keep them orientated as everything else sits under that organisation
@@ -137,9 +142,20 @@ Two option in claims
 2. Just the find a claim 
 
 1. 
-We believe that only giving option to find a claim without showing all the claimsWill be a useful feature for BSA staffAs it will be a required check to have a claim reference to hand so this is all that is required for scope of ticket
+>**We believe that** only giving option to find a claim without showing all the claims
+>**Will be a useful feature for** BSA staff
+>**As it will** be a required check to have a claim reference to hand so this is all that is required for scope of ticket
 2. 
-We believe that displaying all the claimsWill be a useful feature for BSA staffAs it will give more scope in case they fail that check and have to proceed onto looking for a learner in which case still have access to claims. Needs to have table sorting?
+>**We believe that** displaying all the claims
+>**Will be a useful feature for** BSA staff
+>**As it will** give more scope in case they fail that check and have to proceed onto looking for a learner in which case still have access to claims. Needs to have table sorting?
 
 
-We believe that putting user tab firstWill be a useful feature for BSA staffAs only workplace id can be searched, it makes sense to land there, orientate themselves with who speaking to and then process 
+
+>**We believe that** putting user tab first
+>**Will be a useful feature for** BSA staff
+>**As** only workplace id can be searched, it makes sense to land there, orientate themselves with who speaking to and then process 
+
+>**We believe that** depending on what they search by lands them in a different place in the org view 
+>**Will be a useful feature for** bsa staff 
+>**As it will** follow their intentions e.g searching by claim ref will land them on that claim. 

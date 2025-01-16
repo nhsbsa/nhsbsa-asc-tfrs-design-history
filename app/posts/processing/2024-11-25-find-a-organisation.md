@@ -36,7 +36,7 @@ We have previously held a ideation day in person back in September exploring the
 #### Use cases of the org view 
 To be able to feed into how we might make the find a claim feature to look we needed to know the information that would fuel it, in particular what information might different use cases be coming to the search feature with to find a org? For part two of this ticket the user needs to be able to perform a ID/CV check with the org to verify who speaking to with some different information, so that also helped to understand the sort of information they may have to hand already for a search.
 
-CCS agent in org to BSA about org
+CCS agent in org to BSA about org:
 * Questioning rejection reason
 * Expected Outcome date or payment date following outcome
 * Authentication issue
@@ -44,7 +44,8 @@ CCS agent in org to BSA about org
 * Claim query, course/qualification query / Eligibility/ Scheme query
 * Detail change
 * A dispute
-BSA Processor to org to resolve a BSA query
+
+BSA Processor to org to resolve a BSA query:
 * Claim query
 * Onboarding issue
 * Authentication issue
@@ -65,50 +66,15 @@ ID/CD criteria:
 
 ## What our ideas were
 
-Holding a co-design session, I made sure to set the context of we are only trying to find a organisation, to reduce risk of scope creep. But also the importance of the tickets can’t only be thought about in isolation, need to consider designs made for flexibility and scalability. 
-So following the double diamond design theory, idea is to get as many ideas as possible, see what the potential of the solutions could be, fed in by various roles of design, tech, BA’s, research, so we make sure we are balancing the different voices in the design. We then used methods of dot voting on what came out of the ideation in a way to get majority view on narrowing down ideas to take forward.
+Holding a co-design session, I made sure to set the context of we are only trying to find a organisation, to reduce risk of scope creep. But also the importance of the tickets can’t only be thought about in isolation, need to consider designs made for flexibility and scalability.
 
->**We believe that** adding a new option for a find a organisation
->**Will be a useful feature for** BSA staff
->**As it will** suit the different intentions they are coming with still, but still the journey's are cohesive as end up in same centralised org view
+Following the double diamond design theory, we tried to get as many ideas as possible, see what the potential of the solutions could be, fed in by various roles of design, tech, BA’s, research, so we make sure we are balancing the different voices in the design. We then used methods of dot voting on what came out of the ideation in a way to get majority view on narrowing down ideas to take forward.
 
->**We believe that** having role based functionality in the org view 
->**Will be a useful feature for** css staff and processors 
->**As it will** 
-
-A consideration was how to identify the correct organisation before then doing the CV check (as could be checking against the wrong org). For example, multiple orgs have same learner - only applicable when indirect search and multiple results. Thought of ideas of a direct search that would land on one result would be best. So thinking about the info that could lead to one result.
+One idea was a advanced search. A consideration here though was how to identify the correct organisation before then doing the CV check (as could be checking against the wrong org). For example, multiple orgs have same learner, so would produce multiple results. Decided that a direct search that would land on one result would be best as reduces work so thinking about the info that could lead to one result.
 
 >**We believe that** searching by email address, claim reference and workplace ID
 >**Will be a useful feature for** bsa staff 
->**As it will** always lead to one result whereas organisation name could lead to multiple results. Also each is a different way in offering a variety of routes either via user, claim or org.
-
->**We believe that** depending on what they search by lands them in a different place in the org view 
->**Will be a useful feature for** bsa staff 
->**As it will** follow their intentions e.g searching by claim ref will land them on that claim. 
-
-<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-  <div style="flex: 1; max-width: 48%;">
-  <figure>
-    <img src="idea-1.png" alt="text" style="width: 100%; height: auto;">
-    <figcaption>Idea 1 of having a org view with overarching organisation details above then breaking the other functionality down into tabs</figcaption>
-  </figure>
-  </div>
-  <div style="flex: 1; max-width: 48%;">
-  <figure>
-    <img src="idea-2.png" alt="text" style="width: 100%; height: auto;">
-    <figcaption>Idea 2 of overview of flow through and where </figcaption>
-  </figure>
-  </div>
-</div>
-
-<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-  <div style="flex: 1; max-width: 48%;">
-  <figure>
-    <img src="idea-3.png" alt="text" style="width: 100%; height: auto;">
-    <figcaption>Idea 3 of breaking down the functionality to be modular and scalable</figcaption>
-  </figure>
-  </div>
-</div>
+>**As it will** always any of these would lead to one result whereas organisation name could lead to multiple results. Also each is a different way in offering a variety of routes either via user, claim or org.
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
@@ -130,6 +96,11 @@ A consideration was how to identify the correct organisation before then doing t
 >**As it will** be clear what can use and accepted formats, while because not partial matching this is ok with tech
 
 We evolved to remove multiple things to search by and only test workplace id as that was determined by policy to be the block as to whether they can continue in the journey or not. If they don't have at this point then no point going further. 
+
+>**We believe that** adding a new option in signposting page to find a organisation
+>**Will be a useful feature for** BSA staff
+>**As it will** suit the different intentions they are coming with of process a claim, find a org, register a org, which are all different things.
+
 
 #### Outcomes to consider for further design development:
 
