@@ -8,6 +8,7 @@ date: 2024-12-13
 tags:
   - processing-version-6
   - org-view
+  - design
 aside:
   title:  Processing Prototypes
   content: |

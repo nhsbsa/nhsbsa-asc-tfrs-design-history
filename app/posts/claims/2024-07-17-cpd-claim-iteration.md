@@ -8,6 +8,7 @@ date: 2024-07-17
 tags:
   - claims-version-11
   - claims-cpd
+  - design
 aside:
   title:  Claims Prototypes
   content: |

@@ -8,16 +8,13 @@ date: 2024-05-12
 tags:
   - processing-version-2
   - process-a-claim
+  - design
 aside:
   title:  Processing Prototypes
   content: |
     [View processing prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Processing) 
     Password: ascbsa123
 ---
-Version 2 Claim ID's
-Submitted: Z1Z-F1J6-3XF7-C
-Approved: Z8S-F1J6-4GH7-C
-Rejected: K93-SK68-3S2K-C
 
 ## Why we did this work
 

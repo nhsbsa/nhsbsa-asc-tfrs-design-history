@@ -9,6 +9,7 @@ date: 2024-05-15
 tags:
   - processing-version-3
   - process-a-60-claim
+  - design
 aside:
   title:  Processing Prototypes
   content: |
@@ -30,16 +31,26 @@ We needed to consider the view of the process a claim view of a claim that has a
 #### MVP decision
 For MVP it was decided to not view the evidence. This is something added into the backlog as seems vital for reflecting on why a claim was approved or rejected or how will a future processor be able to understand why the processor came to that conclusion. 
 - Show answers from criteria checks and the no notes/reimbursement amount 
-- still want all the information inputted from the claim, just in a frozen state. 
+- Still want all the information inputted from the claim, just in a frozen state. 
 
-![A screenshot from the processing a claim prototype showing the search claim screen](approved-claim-100.png "Approved processed claim")
-
-![A screenshot from the processing a claim prototype showing the search claim screen](rejected-claim-100.png "Rejected processed claim")
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="approved-claim-100.png" alt="text" style="width: 100%; height: auto;">
+    <figcaption>Approved processed claim</figcaption>
+  </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="rejected-claim-100.png" alt="text" style="width: 100%; height: auto;">
+    <figcaption>Rejected processed claim</figcaption>
+  </figure>
+  </div>
+</div>
 
 #### Considerations for future
 
-Notes would be nice to add context for future processor as no context of dates of submission.
+- Notes would be nice to add context for future processor as in this current design there is no information given of dates of submission.
 
 ## How we tested our ideas and what we found
-- In user research. 
-- Able to see all the information they needed.
+- In a round of user research, it was found that they were able to see all the information they needed.

@@ -8,17 +8,13 @@ date: 2024-05-05
 tags:
   - processing-version-1
   - process-a-claim
+  - design
 aside:
   title:  Processing Prototypes
   content: |
     [View processing prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Processing) 
     Password: ascbsa123
 ---
-
-Version 1 Claim ID's
-Submitted: Z1Z-F1J6-3XF7-C
-Approved: Z8S-F1J6-4GH7-C
-Rejected: Z8S-F1J6-9VGH-C
 
 We had a processing workstream kickoff on ... with the wider product team to begin the processing a claim piece of work. After understanding the constraints and the scope of the journey from multiple buisness and tech perspectives, we had a in-person workshop with the UCD team. We explored ideas of how this journey could look, what are the needs and wants of the users and then stripped it back to the MVP of what we deemed necessary to complete a processing claim journey based off assumptions and hypothesis'. We tested this inital design flow w/c 22 April 2024.
 
@@ -45,7 +41,6 @@ Our assumption is the processor will be given just the claim ID for the claim th
 To be tested
 - Whether they copy and paste the claim ID or type it in themselves.
 - Whether mistakes are made and then they have no other information to validate they have the correct claim so how likely is it they process the wrong claim.
-
 
 
 #### What claim detail information does the processor need to see when they land on a claim?
