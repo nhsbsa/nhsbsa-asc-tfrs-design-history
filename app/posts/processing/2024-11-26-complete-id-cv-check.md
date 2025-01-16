@@ -23,11 +23,10 @@ As part of the work to help organisations and BSA staff resolve organisation-rel
 
 
 #### Considerations to keep in mind:
-* The ID/CV checks aren’t going to be a recorded process, we will display the information and they then do the checks verbally. This view, where the find a organisation flow lands, needs to support this process providing the information necessary. Makes sense this would happen within the centralised organisation view, making the design flexible to allow them to complete this and then the query.
+* The ID/CV checks aren’t going to be a recorded process, we will display the information and they then do the checks verbally. This view, where the find a organisation flow lands, needs to support this process providing the information necessary. 
 * How might we help CCS agents maintain sight of who they are speaking to from an org as this was a user need that came out during Alpha that staff forget who is on the phone.
 * How might we cater to different users priorities in this wider org view as this view is going to support many different user journeys including processing of a claim, as well as resolving queries, so the ID/CV check isn’t necessary to every journey that lands a user on this screen.
 * How to show the right information at the right time?
-
 
 Held a second ideation session with wider delivery team on 26th November to explore the concept of a org view.
 
@@ -54,6 +53,10 @@ Other information that needs to be accessible based off ticket:
 
 In design need to consider how to display the information in a way that can be built up iteratively over time with new functionality being added. It needed to be usable on its own, but with a way to bring in other features that won’t affect usability. e.g. processing a claim issues we currently have of throwing everything in and is cognitively overwhelming.
 
+>**We believe that** having the information needed for ID/CV can be broken down into the header and different tabs within the org view 
+>**Will be a useful feature for** BSA staff
+>**As it will** allow them the flexibility to conduct their process moving easily between sections but it also accomondates for future design features and scalability of the view.
+
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
   <figure>
@@ -78,18 +81,24 @@ In design need to consider how to display the information in a way that can be b
   </div>
 </div>
 
-
 This work was being done alongside process a claim reworking. Thought of to bring the two journeys to end up in the same place made sense as the claims sit under the whole organisation. 
 
-Left as two routes in as the intentions the different users are coming in via are different but still the journey’s are cohesive as they end up in the same centralised org view and still have all the functionality available to them. The process a claim journey still needs access to wider org view to help processors. Something to be tested as to the understanding of these two options. 
+>**We believe that** keeping the journey's seperate in the signposting page as to what they want to do
+>**Will be a useful feature for** BSA staff
+>**As it will** suit the different intentions they are coming with of process a claim, find a org, register a org, but still the journey's are cohesive as end up in same centralised org view with all the functionality available to them.
+
+The process a claim journey still needs access to wider org view to help processors. Something to be tested as to the understanding of these two options. 
 
 
 #### Perform ID/CV checks
 
+>**We believe that** having organisation information in a header that’s always there
+>**Will be a useful feature for** BSA staff
+>**As it will** keep them orientated as everything else sits under that organisation
 
-We believe that having organisation information in a header that’s always thereWill be a useful feature for BSA staffAs it will keep them orientated as everything else sits under that organisation
+An idea was to whether have a place in the header to keep hold of who speaking to on the phone. We know this came out of research previously as something that would be helpful. 
 
-An idea was to whether have a place in the header to keep hold of who speaking to on the phone. We know this came out of research previously as something that would be helpful. But the design made it difficult as to capture so this is something to validate the need with in research.
+#### Design crit - header
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
@@ -106,8 +115,6 @@ An idea was to whether have a place in the header to keep hold of who speaking t
   </div>
 </div>
 
-
-View org details for ID/CV check
 * Idea 1 has SRO details that are almost too visually prominent alongside header title due to use of summary card
 * Idea 1 had others missing the SRO details on first look, not sure whether being in the grey box made it feel like ‘extra’ info rather than essential info
 * Idea 2 I like the org and SRO info together - flows better for reading
@@ -118,9 +125,7 @@ To think about:
 * How to condense down the header with considerations of screen space used versus usefulness of what is included
 * Who speaking to is not always helpful in every scenario, make it more contextually useful and prominent
 
-We believe that having the header take up not too much spaceWill be a useful feature for BSA staffAs it will not overwhelm. 
-
-Two option in claims 
+#### Design crit - claims tab
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
@@ -137,25 +142,26 @@ Two option in claims
   </div>
 </div>
 
-
-1. With all the claims in a table 
-2. Just the find a claim 
-
-1. 
+Idea 1
 >**We believe that** only giving option to find a claim without showing all the claims
 >**Will be a useful feature for** BSA staff
 >**As it will** be a required check to have a claim reference to hand so this is all that is required for scope of ticket
-2. 
+
+Idea 2
 >**We believe that** displaying all the claims
 >**Will be a useful feature for** BSA staff
 >**As it will** give more scope in case they fail that check and have to proceed onto looking for a learner in which case still have access to claims. Needs to have table sorting?
 
-
-
->**We believe that** putting user tab first
->**Will be a useful feature for** BSA staff
->**As** only workplace id can be searched, it makes sense to land there, orientate themselves with who speaking to and then process 
-
 >**We believe that** depending on what they search by lands them in a different place in the org view 
 >**Will be a useful feature for** bsa staff 
 >**As it will** follow their intentions e.g searching by claim ref will land them on that claim. 
+
+Decide for the scope of this ticket that will take into testing the find a claim search without the claims table. 
+
+
+#### Tabs
+
+>**We believe that** putting user tab first
+>**Will be a useful feature for** BSA staff
+>**As** since only workplace id can be searched, it makes sense to land there, orientate themselves with who speaking to and then progress with the query.
+

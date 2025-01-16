@@ -97,9 +97,9 @@ One idea was a advanced search. A consideration here though was how to identify 
 
 We evolved to remove multiple things to search by and only test workplace id as that was determined by policy to be the block as to whether they can continue in the journey or not. If they don't have at this point then no point going further. 
 
->**We believe that** adding a new option in signposting page to find a organisation
+>**We believe that** adding a new option on the signposting page to find a organisation
 >**Will be a useful feature for** BSA staff
->**As it will** suit the different intentions they are coming with of process a claim, find a org, register a org, which are all different things.
+>**As it will** suit the different intentions they are coming with of either process a claim, find a org, register a org, which are all different things.
 
 
 #### Outcomes to consider for further design development:
