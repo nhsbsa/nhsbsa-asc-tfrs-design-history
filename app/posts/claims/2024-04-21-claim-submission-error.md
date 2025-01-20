@@ -16,6 +16,12 @@ aside:
     Password: bsaasc123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 ## Why we did this work
 The claim scaffold screen features a somewhat unique use of the summary list component. This screen allows users to add the relevant information to each section in a flexible way, at times suitable for the user. Our design decision log from alpha covers the rationale behind using summary lists in this way, rather than other patterns like the task list.
 

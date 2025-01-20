@@ -15,6 +15,12 @@ aside:
     Password: ascbsa123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 ## Why we did this work
 
 For care skills claims there is a maximum reimbursement amount for every training course or qualification. This is set by DHSC as part of the [scheme guidance](https://www.gov.uk/government/publications/adult-social-care-learning-and-development-support-scheme/eligible-training-courses-and-qualifications).

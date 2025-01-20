@@ -16,6 +16,12 @@ aside:
     Password: bsaasc123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 ## Why we did this work
 Learners in our service are unique entities identified by their National Insurance (NI) number. Whenever a learner is added to the service for use in a claim, that learner is saved and can be used in future claims. As a result, if a user adds a new learner with an NI number that matches a learner already in the system, we need a mechanism to address this and prevent duplicate learners from being added.
 

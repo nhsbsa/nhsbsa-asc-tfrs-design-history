@@ -16,6 +16,12 @@ aside:
     Password: ascbsa123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 ## Why we did this work
 
 It was very apparent from the earliest rounds of UR in alpha that users did not want the reimbursement process to be a ‘black box’. They wanted to know what was happening to their claims, for instance, so they could predict when the money would reach their bank account and therefore manage their cash flow effectively.

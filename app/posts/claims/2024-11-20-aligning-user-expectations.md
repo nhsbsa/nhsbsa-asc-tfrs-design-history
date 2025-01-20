@@ -13,6 +13,12 @@ tags:
   - WDF
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 ## Why we did this work
 
 We suspected for a while that some new users of the service had unrealistic expectations of what they could get reimbursement for and how the claims process worked. We thought this was particularly likely for people who'd used the Workforce Development Fund (WDF) previously. This is the legacy reimbursement scheme that LDSS is replacing.

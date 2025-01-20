@@ -1,5 +1,5 @@
 ---
-title: Scaling back MVP
+title: Scaling back MVP (Claims)
 description: With a tight delivery deadline fast approaching and an increasing amount of technical unknowns the decision was made by the product owner to scale back the MVP at the start of Beta.
 author:
   name: Mark Portnell (Interaction designer)
@@ -20,6 +20,20 @@ aside:
     [v8 claims prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v8/) 
     Password: ascbsa123
 ---
+
+Contents
+--- [Introduction](#introduction)
+--- [Using Azure B2C for authentication and account creation](#using-azure-b2c-for-authentication-and-account-creation)
+--- [Remove eligible training list from service for MVP](#remove-eligible-training-list-from-service-for-mvp)
+--- [Remove paid status from MVP](#remove-paid-status-from-mvp)
+--- [Remove searching/filtering for MVP](#remove-searching/filtering-for-mvp)
+--- [Remove pagination for MVP](#remove-pagination-for-mvp)
+--- [Remove multiple learners per claim for MVP](#remove-multiple-learners-per-claim-for-mvp)
+--- [Remove ability to view uploaded evidence for MVP](#remove-ability-to-view-uploaded-evidence-for-mvp)
+--- [Remove training details for MVP](#remove-training-details-for-mvp)
+--- [Remove claim history information for MVP](#remove-claim-history-information-for-mvp)
+
+## Introduction
 
 With an aggressive delivery deadline fast approaching and an increasing amount of technical unknowns the decision was made by the product owner to scale back the MVP at the start of Beta. Across a couple of workshops attended by the entire product team a series of key decisions were made to cut out or scale back certain features for MVP. These product decisions were all logged in our project decision log held in Jira along with any associated risks and mitigations. 
 

@@ -15,6 +15,12 @@ aside:
     Password: ascbsa123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 ## Why we did this work
 
 As part of the work to help organisations and BSA staff resolve organisation-related problems quickly, this is the second part of my ticket to give BSA staff functionality to complete the ID/CV check so then they can progress with the query within the centralised organisation view. Important while doing this piece of work to bear in mind the wider scope and potential future features to make sure we design in a way that is scalable and maintainable.

@@ -1,3 +1,5 @@
+[Archived]
+
 ---
 title: Improving rejection notes
 description: Helping processors provide useful information to submitters when a claim is rejected.

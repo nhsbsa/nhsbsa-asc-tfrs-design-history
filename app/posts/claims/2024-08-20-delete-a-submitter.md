@@ -15,6 +15,12 @@ aside:
     Password: bsaasc123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 ## Why we did this work
 Senior Responsible Officers (SROs), previously called Signatories, can invite up to 9 additional submitters to use the service on behalf of the organisation. We identified a few scenarios where a submitter invited by an SRO might no longer need access to the service:
 

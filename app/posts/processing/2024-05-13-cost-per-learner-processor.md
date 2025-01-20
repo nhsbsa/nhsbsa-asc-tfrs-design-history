@@ -17,6 +17,12 @@ aside:
     Password: ascbsa123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 ## Why we did this work
 
 During alpha, we had explored [asking submitters to identify the training cost per learner](/claims/cost-per-learner-submitter/) so the service could accurately calculate the amount of reimbursement due.

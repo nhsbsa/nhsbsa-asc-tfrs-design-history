@@ -16,6 +16,12 @@ aside:
     Password: bsaasc123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 ## Why we did this work
 
 We knew that in the near future we would need designs to accommodate 60/40 claims. As part of our exploration of 60/40 claims, we considered the possibility of having three different types of claims in the service for care skills funding: 100%, 60%, and 40% claims. We were also exploring a design hypothesis for how users might manage revalidation funding claims.
