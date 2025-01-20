@@ -14,6 +14,11 @@ aside:
     Password: bsaasc123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+
 ## Why we did this work
 
 Once a submitter uploads a file as a piece of evidence, there is currently no way to view that file in the service. We identified a few scenarios that may mean an individual would benefit from viewing the evidence they uploaded:

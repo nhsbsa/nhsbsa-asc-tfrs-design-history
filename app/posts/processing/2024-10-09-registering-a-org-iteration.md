@@ -15,6 +15,13 @@ aside:
     Password: ascbsa123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
+
 Three journey flows developed, id's to search to force down particular journeys in the prototype:
 - New org (type in "G03944234"), add a signatory and invite them and org. 
 - A invited not registered signatory (type in "B02944934"), can send a new invite or edit details to send new

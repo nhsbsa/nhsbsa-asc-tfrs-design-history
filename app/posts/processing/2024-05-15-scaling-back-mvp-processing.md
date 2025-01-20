@@ -1,5 +1,5 @@
 ---
-title: Scaling back MVP
+title: Scaling back MVP (Processing)
 description: Due to MVP decisions we stripped back many of the design decisions to accommodate quicker technical delivery. 
 
 author:
@@ -15,6 +15,12 @@ aside:
     [View processing prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Processing) 
     Password: ascbsa123
 ---
+
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What we removed](#what-we-removed)
+--- [Next steps](#next-steps)
+
 
 Claim id's to test version 3:
 100
@@ -39,7 +45,7 @@ With an aggressive delivery deadline fast approaching and tight time to technica
 In a workshop attended by the entire product team a series of key decisions were made to cut out or scale back certain features for this journey. These product decisions were all logged in our project decision log held in Mira along with any associated risks and mitigations. The extended journey is in V2 of the prototype, this version was untested with users before these decisions were made so changes were made in V3 of the prototype. V3 has been tested with 4 users in the week commencing 15 May 2024.
 
 
-## What our ideas were
+## What we removed
 
 Here is the new scaled back landing view of a claim in the processing a claim prototype journey:
 
@@ -94,8 +100,7 @@ Removed ability to save claim mid processing for MVP as is a feature deemed nice
 
 - Processors will be aware they need to complete their checks in one go.
 
-------
-
+## Next steps
 
 Future research:
 - Research to understand the impact of MVP changes

@@ -12,6 +12,12 @@ tags:
   - content
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 ## Why we did this work
 
 DHSC and NHSBSA were keen to quickly onboard adult social care (ASC) organisations to the live service during private beta. This is important to see how the service is performing in the real world, understand how well the scheme is understood and utilise the fund effectively by getting as much money as possible to claimants.

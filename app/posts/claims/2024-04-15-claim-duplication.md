@@ -16,6 +16,12 @@ aside:
     Password: bsaasc123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 ## Why we did this work
 
 The scheme rules state that a claim will only be paid out once per training and learner combination. This means that organisations can't claim reimbursement for training that a learner takes more than once. We need to enforce this rule within our service.

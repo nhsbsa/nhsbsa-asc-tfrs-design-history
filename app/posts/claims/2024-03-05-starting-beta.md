@@ -14,6 +14,13 @@ aside:
     Password: bsaasc123
 ---
 
+Contents
+--- [Recording design decisions in alpha](#recording-design-decisions-in-alpha)
+--- [Challenges with the Confluence approach](#challenges-with-the-confluence-approach)
+--- [Transition to the x-govuk design history tool](#transition-to-the-x-govuk-design-history-tool)
+--- [Alignment with NHS BSA UCD logs](#alignment-with-nhs-bsa-ucd-logs)
+--- [Next steps](#next-steps)
+
 ## Recording design decisions in alpha
 During alpha, we recorded design decisions in Confluence using a simple table format. This method helped us:
 - Keep information organized.

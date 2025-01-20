@@ -14,6 +14,12 @@ aside:
     Password: bsaasc123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 ## Why we did this work
 
 As part of work done to scale back the MVP in March to try and meet an aggressive delivery schedule, we removed pagination from the proposed designs. Please see the design history post [Scaling back MVP](../scaling-back-mvp) for more details on the aspects removed from the MVP as part of that work. 

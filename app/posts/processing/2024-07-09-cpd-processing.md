@@ -15,6 +15,11 @@ aside:
     Password: ascbsa123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+
 ## Why we did this work
 
 The prototype has been expanded to allow CPD claims to be submitted. The expectation is that there are going to be less of these type of claims, so the work balanced user needs with coming up with a design flow that has the least amount of changes needed to the TU journey, with minimal technical effort. This means when bringing CPD claims now into the processing side of the service there is also minimal design effort, more following the patterns and process of what has already been done.

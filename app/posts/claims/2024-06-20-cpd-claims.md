@@ -15,6 +15,12 @@ aside:
     Password: ascbsa123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 So far the prototype only allows for TU claims to be submitted, as dictated by roadmap and priorities we now want to bring in CPD claims. The expectation is that there are going to be less of these type of claims, so the direction was to balance user needs with coming up with a design flow that has the least amount of changes needed to the TU journey, with minimal technical effort, to allow for less work and quicker delivery.
 
 ## Why we did this work

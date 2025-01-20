@@ -16,6 +16,12 @@ aside:
     Password: bsaasc123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 ## Why we did this work
 
 To use the service, organisations must first be onboarded, and users within those organisations will need accounts. Onboarding ensures that the organisations are legitimate, and the user authentication process helps reduce fraud and maintain a secure service.

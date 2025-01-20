@@ -16,6 +16,12 @@ aside:
     Password: bsaasc123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 ## Why we did this work
 
 At the end of alpha, the design for managing claims consisted of a single page with a tabs component. Each tab represented a specific state a claim could be in (e.g., approved or submitted). Within each tab was a table displaying claims in that corresponding state.

@@ -16,6 +16,12 @@ aside:
     Password: bsaasc123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 ## Why we did this work
 
 We had been given an agreed eligible training list for the care skills funding pot for the start of private beta. To date, we had made some assumptions and created a general structure for what we felt this data would contain and then designed around that. Now we had this new training list, and we needed to adapt how the training list is displayed in the select training screen to accommodate the new data structure.

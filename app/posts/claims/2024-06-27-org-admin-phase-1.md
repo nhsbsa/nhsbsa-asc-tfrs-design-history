@@ -15,6 +15,12 @@ aside:
     Password: bsaasc123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 ## Why we did this work
 
 For the start of private beta, a key constraint of the service was that it would only allow one user per organisation, this user was the signatory. Due to the delivery deadline and uncertainty around the legal aspect of the grant determination letter, our onboarding process for the start of private beta would need to have this signatory be the representative from the organisation who signs up and subsequently would be the only permitted user of the service from that organisation for day 1 of private beta. 

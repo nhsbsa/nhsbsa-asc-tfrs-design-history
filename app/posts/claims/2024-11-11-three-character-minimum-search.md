@@ -15,6 +15,11 @@ aside:
     Password: bsaasc123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+
 ## Why we did this work
 
 The introduction of a three-character minimum search limit emerged during advanced search design discussions. Initially, users could search with a single character, which had potential to produced lengthy result lists requiring pagination and table sorting features to be a higher priority to help the user work through results. These features are more technically complex and time-consuming to implement though so this prompted a consideration of the trade-offs between usability and roadmap priorities. It was decided that users likely have sufficient information to input at least three characters, making this a minimal inconvenience to users, while dramatically reducing number of results. Pagination and sorting were deprioritized and added to the backlog for post-MVP implementation across the service.

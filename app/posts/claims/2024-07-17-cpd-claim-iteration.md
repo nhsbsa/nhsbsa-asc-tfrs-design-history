@@ -15,6 +15,12 @@ aside:
     Password: ascbsa123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 There were three key aspects of the CPD journey identified as not working and needing further iteration. The activity type, evidence of completion collection, and CPD eligibility. Worked through options of design and held workshop to discuss and crit with business.
 
 ## Why we did this work

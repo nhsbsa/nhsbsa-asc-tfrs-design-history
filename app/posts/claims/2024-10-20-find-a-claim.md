@@ -15,6 +15,12 @@ aside:
     Password: bsaasc123
 ---
 
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
 ## Why we did this work
 During alpha a few options were tried to allow users to search and filter for claims in their dashboard, this was removed from the prototype to help descope the complexity of the MVP. The need for users to be able to find a claim easily is still present.
 
