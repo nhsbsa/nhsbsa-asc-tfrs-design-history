@@ -2,18 +2,27 @@
 title: Reducing the reliance on offline records
 description: Iterating the process a claim journey to reduce the reliance on offline records
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-12-20
 tags:
+  - private-beta
   - processing-version-7
-  - process-a-claim
+  - processing-view-a-claim
+  - processing-process-a-claim
+  - processing-claim-notes
+
 aside:
   title:  Processing Prototypes
   content: |
     [View claims v7 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/prototypes/design/v7/) 
     Password: bsaasc123
 ---
+
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
 
 ## Why we did this work
 
@@ -154,8 +163,4 @@ We decided it best for the error summary to appear at the top of the claim heade
 We dealt with this in the same way we have done in the previous versions, where we on'y show the data and information contained for that claim type.
 
 ## How we tested our ideas and what we found
-[To do]
-
-
-## What we will do next
-[To Do]
+Due to a de-prioritisation of this feature following design work but before usability testing. This as moved further down the roadmap. When we get back to this peiece of work in roadmap we will pick up testing at that point and update this post with findings and next steps. 
