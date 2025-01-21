@@ -7,7 +7,12 @@ author:
 date: 2024-04-25
 modified: 2024-05-16
 tags:
+  - private-beta
   - claims-version-8
+  - claims-start-a-claim
+  - claims-training
+  - 100-type-claims
+  - 60-40-type-claims
   - policy-restrictions
 aside:
   title:  Claims Prototypes

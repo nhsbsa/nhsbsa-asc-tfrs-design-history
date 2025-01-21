@@ -4,14 +4,18 @@ description: Implementing a minimum 3 character requirement on all search inputs
 author:
   name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
-date: 2024-11-01
-modified: 2024-11-01
+date: 2024-11-11
+modified: 2024-11-11
 tags:
+  - private-beta
   - claims-version-13
+  - claims-find-a-claim
+  - claims-training
+  - claims-learners
 aside:
   title:  Claims Prototypes
   content: |
-    [View claims v11 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v13/) 
+    [View claims v13 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v13/) 
     Password: bsaasc123
 ---
 

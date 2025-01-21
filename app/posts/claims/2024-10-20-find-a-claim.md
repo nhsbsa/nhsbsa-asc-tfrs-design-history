@@ -7,7 +7,10 @@ author:
 date: 2024-10-20
 modified: 2024-10-20
 tags:
+  - private-beta
   - claims-version-13
+  - claims-manage-claims
+  - claims-find-a-claim
 aside:
   title:  Claims Prototypes
   content: |

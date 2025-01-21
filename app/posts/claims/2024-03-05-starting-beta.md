@@ -7,6 +7,7 @@ author:
 date: 2024-03-05
 tags:
   - alpha
+  - claims-version-7
 aside:
   title:  Related content
   content: |

@@ -6,7 +6,9 @@ author:
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-12-13
 tags:
+  - private-beta
   - claims-version-13
+  - claims-manage-claims
 aside:
   title:  Claims Prototypes
   content: |

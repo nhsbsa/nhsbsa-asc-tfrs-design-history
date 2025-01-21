@@ -6,8 +6,10 @@ author:
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-06-20
 tags:
+  - private-beta
   - claims-version-10
-  - claims-cpd
+  - revalidation-funding
+
 aside:
   title:  Claims Prototypes
   content: |

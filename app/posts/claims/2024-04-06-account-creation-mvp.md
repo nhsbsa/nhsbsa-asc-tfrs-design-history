@@ -7,8 +7,10 @@ author:
 date: 2024-04-06
 modified: 2024-04-15
 tags:
+  - private-beta
   - claims-version-8
-  - account-creation
+  - claims-account-creation
+  - claims-authentication
 aside:
   title:  Claims Prototypes
   content: |

@@ -12,7 +12,7 @@ aside:
   title:  Claims Prototypes
   content: |
     [View claims prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Claims) 
-    Password: ascbsa123
+    Password: bsaasc123
 ---
 
 This is an example of a standard design history post. Thjis would provide a summary fo the design hsitory post.

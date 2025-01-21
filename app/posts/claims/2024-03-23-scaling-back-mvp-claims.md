@@ -6,19 +6,23 @@ author:
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-03-23
 tags:
-  - claims-version-8
+  - private-beta
   - claims-version-7
-  - manage-claims
-  - care-skills-100-claims
-  - account-creation
+  - claims-version-8
+  - claims-account-creation
+  - claims-authentication
+  - claims-manage-claims
+  - claims-training
+  - claims-learners
+  - claims-evidence
 aside:
   title:  Related content
   content: |
     [v7 claims prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v7/) 
-    Password: ascbsa123
+    Password: bsaasc123
 
     [v8 claims prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v8/) 
-    Password: ascbsa123
+    Password: bsaasc123
 ---
 
 Contents

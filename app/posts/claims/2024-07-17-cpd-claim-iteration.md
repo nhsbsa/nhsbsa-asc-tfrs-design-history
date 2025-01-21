@@ -6,13 +6,14 @@ author:
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-07-17
 tags:
+  - private-beta
   - claims-version-11
-  - claims-cpd
+  - revalidation-funding
 aside:
   title:  Claims Prototypes
   content: |
-    [View claims prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Claims) 
-    Password: ascbsa123
+    [View claims v11 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v11/) 
+    Password: bsaasc123
 ---
 
 Contents

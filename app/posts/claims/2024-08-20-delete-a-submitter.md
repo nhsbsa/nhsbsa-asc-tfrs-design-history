@@ -7,7 +7,9 @@ author:
 date: 2024-08-20
 modified: 2024-09-19
 tags:
+  - private-beta
   - claims-version-13
+  - claims-manage-team-members
 aside:
   title:  Claims Prototypes
   content: |
