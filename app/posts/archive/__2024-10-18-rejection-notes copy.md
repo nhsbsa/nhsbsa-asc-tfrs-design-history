@@ -1,8 +1,10 @@
+[Archived]
+
 ---
 title: Improving rejection notes
 description: Helping processors provide useful information to submitters when a claim is rejected.
 author:
-  name: Nick Johnstone-Waddell
+  name: Nick Johnstone-Waddell (Content designer)
   url: 'mailto:hi.nick.johnstone.waddell@nhsbsa.nhs.uk'
 date: 2024-10-18
 tags:
@@ -13,7 +15,7 @@ aside:
   title:  Processing Prototypes
   content: |
     [View processing prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Processing) 
-    Password: ascbsa123
+    Password: bsaasc123
 ---
 
 ## Why we did this work

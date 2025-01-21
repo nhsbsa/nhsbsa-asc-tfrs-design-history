@@ -2,18 +2,25 @@
 title: CPD processing
 description: CPD claims are in the MVP so added ability to process these claims. 
 author:
-  name: Hannah Williams
+  name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-07-09
 tags:
+  - private-beta
   - processing-version-3
-  - process-a-cpd-claim
+  - processing-process-a-claim
+  - revalidation-funding
 aside:
   title:  Processing Prototypes
   content: |
-    [View processing prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Processing) 
-    Password: ascbsa123
+    [View processing v3 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/prototypes/design/v3/) 
+    Password: bsaasc123
 ---
+
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
 
 ## Why we did this work
 

@@ -2,13 +2,15 @@
 title: Account creation for signatories
 description: With a tight delivery deadline for the launch of private beta the organisation onboarding was heavily driven by technical constraints.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-04-06
 modified: 2024-04-15
 tags:
+  - private-beta
   - claims-version-8
-  - account-creation
+  - claims-account-creation
+  - claims-authentication
 aside:
   title:  Claims Prototypes
   content: |
@@ -16,62 +18,71 @@ aside:
     Password: bsaasc123
 ---
 
-
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
 
 ## Why we did this work
 
-To use the service users organisations will need to be onboarded and in turn the users for the organisations will need accounts. The onboarding of organisations is the mechanism to ensure they are a legitimate organisation and the requirement for this and user authentication mean that we have the relevant checks in place to reduce fraud and ensure a more secure service.
+To use the service, organisations must first be onboarded, and users within those organisations will need accounts. Onboarding ensures that the organisations are legitimate, and the user authentication process helps reduce fraud and maintain a secure service.
 
-An additional nuance of the organisation onboarding process is the 'signatory'. This signatory is a suitably responsible person in the organisation who sign the grants determination letter on it's behalf which allows the organisation to make use of the fund. For MVP the signatory would be the only user of the service for that organisation.
+An additional aspect of the organisation onboarding process is the **signatory**. This person is a responsible representative from the organisation who signs the grants determination letter on behalf of the organisation, enabling them to access the fund. For MVP, the signatory would be the only user of the service for their organisation.
 
-Due to a tight deadline for the private beta launch the process for organisation onboarding and the account creation process for signatories was heavily tech driven. A core part of this was the use of the Azure B2C technology for the authentication part of the process. This meant the design was heavily constrained by this technology and producing designs and a flow that would involve the most minimal amount of tech effort to develop.
-
+Due to tight deadlines for the private beta launch, the organisation onboarding and signatory account creation process was heavily driven by technology. The use of Azure B2C for authentication meant the design was constrained by the technology, and the goal was to minimise the technical effort required to develop the solution.
 
 ## What our ideas were
 
-This process for designing this journey began from a process flow formed by the business analyst and technical architect. This flow was deemed the most minimal effort to develop and is where the discussion with design then started. After reviewing this business process two small additions were agreed to allow users to check information they had inputted in certain places. This resulted in the following process flow:
+The design process began with a flow defined by the business analyst and technical architect. This flow was chosen to minimise development effort, and design work started from there. After reviewing the business process, we agreed to add two small elements allowing users to verify their inputted information at certain stages. This resulted in the following process flow:
 
-![A screenshot from miro showing the initially agreed signatory onboarding process flow.](process-flow.jpg "Signatory onboarding process flow")
+![A screenshot from Miro showing the initial signatory onboarding process flow.](process-flow.jpg "Signatory onboarding process flow")
 
-The onboarding of organisations, in particular the signatory of the organisation is formed of two core parts. The first part of the process is registering the organisation which is done by a BSA processor. This would trigger an email to be sent through to the the signatory which initiates the second part of the process where they setup there login details and complete account setup in the service. 
+The onboarding process consists of two main steps: 
+1. Registering the organisation, done by a BSA processor, which triggers an email to the signatory.
+2. The signatory then sets up their login details and completes their account setup.
 
-One of the key limitations of the authentication is the use of Azure B2C which has limitations on the styling and content that can be changed. Those options are limited to changing of the background colour behind the modal and the logo. It was highlighted as risks that:
-- using Azure B2C may exclude or prevent some users accessing the service as it may not be accessible and does not align to GDS standards
-- the different styling could erode trust in the service
+A key limitation was Azure B2C, which restricts how much styling and content can be changed. The customisation options are limited to changing the background colour of the modal and the logo. We identified the following risks:
+- Azure B2C may not be fully accessible and doesn’t align with GDS standards, which could exclude some users.
+- The different styling could erode trust in the service.
 
 Here is an example of the Azure B2C screen:
-![A screenshot from the account creation of the prototype showing an example of a Azure B2C screen](azure-b2c.png "Azure B2C account creation")
 
-As a team we had two main concerns firstly that the requirement for users to use the authenticator app as part of the authentication process would cause a key pain point in the journey which created the following hypothesis:
+![A screenshot from the account creation prototype showing an example of an Azure B2C screen.](azure-b2c.png "Azure B2C account creation")
 
->**We believe that** using authenticator app as part of the authentication process
->**For** signatories
->**Will** exclude and prevent some users from signing up and accessing the service
+As a team, we had two main concerns:
+1. The use of the **authenticator app** as part of the authentication process could create a key pain point in the journey. This led to the following hypothesis:
 
-The other concern we had was around the steps taken once in the service that requires the signatory to add in bank details. We were concerned that the signatory may not have this information to hand and the journey did not easily accommodate users leaving the process and returning. Our general hypothesis was:
+   > **We believe that** using an authenticator app as part of the authentication process  
+   > **For** signatories  
+   > **Will** exclude or prevent some users from signing up and accessing the service.
 
->**We believe that** information needed for account setup will not held to hand by signatories and they will need to leave the journey to get that information returning at a later time to complete
+2. The requirement for the signatory to input **bank details** raised concerns. We were worried that they may not have this information at hand and that the journey didn’t easily support users leaving and returning later to complete it. Our hypothesis here was:
 
+   > **We believe that** signatories will not have the necessary information for account setup readily available,  
+   > **And they will need to leave the journey** to gather that information and return later to complete it.
 
-Given the technical and delivery constraints we were under the decision was made by the product owner to proceed with testing the very simplistic transactional journey with users. We would then assess following the results of this round of usability testing to understand how we might proceed. 
+Given the technical and delivery constraints, the product owner decided to proceed with testing this minimal transactional journey with users. We would then assess the results from usability testing to determine how to proceed.
 
-![A screenshot from v8 of the prototype showing the verify details screen from the account creation journey for the signatory.](verify-details.png "v8 'verify details' screen from the account creation journey")
+![A screenshot from v8 of the prototype showing the 'verify details' screen from the account creation journey.](verify-details.png "v8 'verify details' screen from the account creation journey")
 
-To view the version that was tested with users go to [v8 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v8/) (password: bsaasc123)
-
+To view the version that was tested with users, go to [v8 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v8/) (password: bsaasc123).
 
 ## How we tested our ideas and what we found
-We ran usability testing on this journey w/c 8 April 2024, we ran this with users some of which were signatories some of which were not. We found that
-- users unsure where pre-populated data would come from
-- authenticator app wasn't well understood and it would likely cause the most challenge and friction in the journey
-- bank details wouldn't usually be to hand for the signatory they would need to get this from colleagues and therefore may need to leave the journey and co,me back to it
 
-The results provided supporting arguments towards both our hypotheses, that users will struggle with the authenticator app and signatories may not have bank details to hand when completing this journey. 
+We ran usability testing on this journey during the week commencing 8 April 2024. We tested with a mix of signatories and non-signatories and found the following:
+- Users were unsure where pre-populated data would come from.
+- The authenticator app wasn’t well understood and would likely cause the most friction in the journey.
+- Signatories did not typically have their bank details to hand, so they would need to retrieve it from colleagues, requiring them to leave the journey and return later.
+
+The results supported both of our hypotheses: users would struggle with the authenticator app, and signatories would need to leave the journey to gather bank details.
 
 ## What we will do next
-Despite evidence that showed the authenticator app would cause a pain point for users the technical architect didn't feel this was enough to go to the NSA BSA technical authority with to allow us to move away from the authenticator app which is the preferred standard. We agreed that we would monitor this during Private Beta to gain further evidence. 
 
-We were also limited in exploring alterations to the journey flow to support users leaving to get the bank details and returning at a later time (for example by using a task list pattern). To try and accommodate the user behaviour we agreed to write copy in the invitation email to lay out what the signatory will need before starting the process. Additionally the journey progress would be saved so that if users returned at a later time they could pick up where they left off. 
+Despite evidence suggesting that the authenticator app would cause pain points for users, the technical architect felt that it wasn’t sufficient to approach the NSA BSA technical authority to remove the authenticator app, as it is the preferred standard. We agreed to monitor this during private beta to gather further evidence.
 
-We are aware that the entire onboarding process for organisations for the start of private beta will note scale well due to the lack of self service sign up options along with limitations on how this is initiated. As part of any work to address that we would look to iterate the existing account creation journey to better accommodate user behaviour. 
+We were also limited in exploring changes to the journey flow to support users leaving the process to get bank details and returning later (for example, using a task list pattern). To address this, we decided to include guidance in the invitation email about what the signatory would need before starting the process. Additionally, we ensured that the journey progress would be saved so users could return to where they left off.
+
+We are aware that the entire onboarding process for organisations in private beta will not scale well due to the lack of self-service sign-up options and the limitations of how the process is initiated. As we work on improving the process, we plan to iterate on the existing account creation journey to better accommodate user behaviour.
+
 

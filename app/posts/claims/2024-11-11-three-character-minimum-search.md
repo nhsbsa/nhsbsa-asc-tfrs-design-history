@@ -2,18 +2,27 @@
 title:  Search - sustainable design choices
 description: Implementing a minimum 3 character requirement on all search inputs to handle moving pagination and table sorting to further down roadmap
 author:
-  name: Hannah Williams
+  name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
-date: 2024-11-01
-modified: 2024-11-01
+date: 2024-11-11
+modified: 2024-11-11
 tags:
+  - private-beta
   - claims-version-13
+  - claims-find-a-claim
+  - claims-training
+  - claims-learners
 aside:
   title:  Claims Prototypes
   content: |
-    [View claims v11 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v13/) 
+    [View claims v13 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v13/) 
     Password: bsaasc123
 ---
+
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
 
 ## Why we did this work
 

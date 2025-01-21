@@ -2,18 +2,26 @@
 title: Asking submitters to identify the training cost per learner
 description: Getting accurate data to calculate reimbursement amounts.
 author:
-  name: Nick Johnstone-Waddell
+  name: Nick Johnstone-Waddell (Content designer)
   url: 'mailto:hi.nick.johnstone.waddell@nhsbsa.nhs.uk'
 date: 2024-03-14
 tags:
+  - alpha
   - claims-version-6
-  - content
+  - claims-start-a-claim
+  - processing-process-a-claim
 aside:
   title:  Processing Prototypes
   content: |
     [View processing prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Processing) 
-    Password: ascbsa123
+    Password: bsaasc123
 ---
+
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
 
 ## Why we did this work
 

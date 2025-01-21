@@ -2,18 +2,29 @@
 title: Scoping for MVP
 description: First ideation session focusing on what we think the journey should look like, based off assumptions and hypothesis'. Aimed to get a first design out to take learnings off in research. 
 author:
-  name: Hannah Williams
+  name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-05-05
 tags:
+  - private-beta
   - processing-version-1
-  - process-a-claim
+  - processing-find-a-claim
+  - processing-process-a-claim
+  - processing-claim-notes
+  - 100-type-claims
+
 aside:
   title:  Processing Prototypes
   content: |
-    [View processing prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Processing) 
-    Password: ascbsa123
+    [View processing v1 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/prototypes/design/v1/) 
+    Password: bsaasc123
 ---
+
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
 
 Version 1 Claim ID's
 Submitted: Z1Z-F1J6-3XF7-C

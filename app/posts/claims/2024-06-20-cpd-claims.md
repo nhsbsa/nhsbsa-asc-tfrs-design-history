@@ -2,18 +2,26 @@
 title: CPD claims
 description: Expanding designs to allow for submitting CPD claims.
 author:
-  name: Hannah Williams
+  name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-06-20
 tags:
+  - private-beta
   - claims-version-10
-  - claims-cpd
+  - revalidation-funding
+
 aside:
   title:  Claims Prototypes
   content: |
     [View claims prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Claims) 
     Password: ascbsa123
 ---
+
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
 
 So far the prototype only allows for TU claims to be submitted, as dictated by roadmap and priorities we now want to bring in CPD claims. The expectation is that there are going to be less of these type of claims, so the direction was to balance user needs with coming up with a design flow that has the least amount of changes needed to the TU journey, with minimal technical effort, to allow for less work and quicker delivery.
 

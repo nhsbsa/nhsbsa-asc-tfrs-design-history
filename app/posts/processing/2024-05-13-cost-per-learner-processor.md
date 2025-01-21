@@ -2,20 +2,28 @@
 title: Moving the cost per learner calculation to processors
 description: Why we wanted processors rather than submitters to identify the training cost per learner.
 author:
-  name: Nick Johnstone-Waddell
+  name: Nick Johnstone-Waddell (Content designer)
   url: 'mailto:hi.nick.johnstone.waddell@nhsbsa.nhs.uk'
 date: 2024-05-13
 tags:
+  - private-beta
   - claims-version-6
   - processing-version-3
-  - process-a-claim
-  - content
+  - processing-process-a-claim
+  - 100-type-claims
+  - 60-40-type-claims
 aside:
   title:  Processing Prototypes
   content: |
-    [View processing prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Processing) 
-    Password: ascbsa123
+    [View processing v3 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/prototypes/design/v3/) 
+    Password: bsaasc123
 ---
+
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
 
 ## Why we did this work
 
