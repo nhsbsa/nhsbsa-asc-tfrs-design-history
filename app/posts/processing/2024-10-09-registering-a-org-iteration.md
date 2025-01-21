@@ -6,12 +6,13 @@ author:
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-08-25
 tags:
+  - private-beta
   - processing-version-5
-  - process-a-cpd-claim
+  - processing-process-a-claim
 aside:
   title:  Processing Prototypes
   content: |
-    [View processing prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Processing) 
+    [View processing v5 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/prototypes/design/v5/) 
     Password: bsaasc123
 ---
 

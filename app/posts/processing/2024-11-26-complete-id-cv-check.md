@@ -6,12 +6,14 @@ author:
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-11-26
 tags:
+  - private-beta
   - processing-version-6
-  - org-view
+  - processing-view-org
+  - processing-id-cv
 aside:
   title:  Processing Prototypes
   content: |
-    [View processing prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Processing) 
+    [View processing v6 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/prototypes/design/v6/) 
     Password: bsaasc123
 ---
 

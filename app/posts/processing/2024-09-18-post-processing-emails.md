@@ -6,14 +6,9 @@ author:
   url: 'mailto:hi.nick.johnstone.waddell@nhsbsa.nhs.uk'
 date: 2024-09-18
 tags:
-  - processing-version-3
-  - process-a-claim
-  - content
-aside:
-  title:  Processing Prototypes
-  content: |
-    [View processing prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Processing) 
-    Password: bsaasc123
+  - private-beta
+  - processing-process-a-claim
+  - claims-support-and-guidance
 ---
 
 Contents
