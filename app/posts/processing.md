@@ -10,6 +10,6 @@ permalink: "processing/{% if pagination.pageNumber > 0 %}page/{{ pagination.page
 aside:
   title:  Processing Prototypes
   content: |
-    [View claims prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Processing) 
+    [View processing prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Processing) 
     Password: bsaasc123
 ---
