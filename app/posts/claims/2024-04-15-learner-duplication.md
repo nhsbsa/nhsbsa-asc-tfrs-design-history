@@ -2,13 +2,17 @@
 title: Dealing with duplicate learners
 description: We can only have unique learner records in our service so we need to deal with users adding a duplicate learner to prevent this.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-04-15
 modified: 2024-05-20
 tags:
+  - private-beta
   - claims-version-8
-  - manage-claims
+  - claims-start-a-claim
+  - claims-learners
+  - 100-type-claims
+  - 60-40-type-claims
 aside:
   title:  Claims Prototypes
   content: |
@@ -16,35 +20,40 @@ aside:
     Password: bsaasc123
 ---
 
-
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
 
 ## Why we did this work
-Learners in our service are unique entities in that they have a unique identifier in their national insurance number. Whenever a learner is added to the service for use in a claim that learner is saved and can be used in future claims. As a result of this if a user were to add a new learner and the National insurance number matches a learner that is already in the system then we need some mechanism to deal with this to prevent duplicate learners being added to the service.
+Learners in our service are unique entities identified by their National Insurance (NI) number. Whenever a learner is added to the service for use in a claim, that learner is saved and can be used in future claims. As a result, if a user adds a new learner with an NI number that matches a learner already in the system, we need a mechanism to address this and prevent duplicate learners from being added.
 
 ## What our ideas were
-Through some exploration of the problem space we identified three primary scenarios that might lead to above situation:
-1. A user mistakenly tries to add a learner again as they didn't search correctly and therefore doesn't realise the learner had already been added.
-2. A user mistakenly tries to add a learner again because they searched correctly but the learners details have changed (eg name change)
-3. A user mistypes a NI number when adding a new learner and this inadvertently matches an existing learner. (Rare)
+Through some exploration of the problem space, we identified three primary scenarios that might lead to the situation described above:
 
-For each of those scenarios we identified an appropriate corrective action:
+1. A user mistakenly tries to add a learner again because they didn't search correctly and therefore doesn't realize the learner has already been added.
+2. A user mistakenly tries to add a learner again because they searched correctly, but the learner’s details have changed (e.g., name change).
+3. A user mistypes an NI number when adding a new learner, which inadvertently matches an existing learner (rare).
+
+For each of these scenarios, we identified an appropriate corrective action:
 1. Add the existing learner to the claim instead of creating a new learner record.
-2. Update the existing learners record and add that to the claim.
-3. Go back to correct the mistake in the add new learner form.
+2. Update the existing learner’s record and add that to the claim.
+3. Correct the mistake in the “add new learner” form.
 
-To allow the user to self identify their scenario we had the following hypothesis:
+To allow users to self-identify their scenario, we had the following hypothesis:
 
->**We believe that** allowing users to compare information between the intended new learner and the matched learner record
->**Will be a useful feature for** submitters
->**As it will** help them identify the correct follow on action for their scenario.
+>**We believe that** allowing users to compare information between the intended new learner and the matched learner record  
+>**Will be a useful feature for** submitters  
+>**As it will** help them identify the correct follow-up action for their scenario.
 
-We first explored existing patterns across the GOV.UK space and came across the (compare information pattern)[https://design.homeoffice.gov.uk/patterns/compare-information] in the home office design system. Given our concerns about being able to test this with users before development we felt using a existing pattern would minimise risk. We incorporated this pattern into our service and allowed for the relative corrective actions. Unfortunately due to tight deadlines we did not have the time to explore learner record updates and this was something that was added to the backlog. 
+We first explored existing patterns across the GOV.UK space and came across the [Compare Information Pattern](https://design.homeoffice.gov.uk/patterns/compare-information) in the Home Office design system. Given our concerns about being able to test this with users before development, we felt using an existing pattern would minimize risk. We incorporated this pattern into our service, allowing for the relevant corrective actions. Unfortunately, due to tight deadlines, we did not have time to explore learner record updates, which has been added to the backlog.
 
-![A screenshot taken from v8 of the prototype showing the compare information pattern used to compare two sets of learners information](learner-duplication.png "The compare information pattern used to compare two sets of learners information")
+![A screenshot taken from v8 of the prototype showing the compare information pattern used to compare two sets of learners’ information](learner-duplication.png "The compare information pattern used to compare two sets of learners' information")
 
 ## How we tested our ideas and what we found
-Unfortunately due to aggressive deadlines we were unable to test this pattern properly before development or private beta. 
-
+Unfortunately, due to aggressive deadlines, we were unable to properly test this pattern before development or private beta.
 
 ## What we will do next
-While we feel the use of this pattern untested in our service is low risk due to it being taken from the home office design system we still have concerns around the lack of corrective action that deals with updating learner records. We have agreed that this is something we will try and monitor during private beta and conduct further research as necessary when we look to address the issue of updating learner records. 
+While we feel that the use of this pattern, untested in our service, is low risk due to its provenance in the Home Office design system, we still have concerns about the lack of corrective action for updating learner records. We have agreed to monitor this during private beta and conduct further research as necessary when addressing the issue of updating learner records.
+

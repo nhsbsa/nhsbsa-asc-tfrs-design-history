@@ -2,18 +2,19 @@
 title: CPD removal
 description: Due to funding decisions CPD will no longer be offered. 
 author:
-  name: Hannah Williams
+  name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-08-25
 tags:
-  - processing-version-4
-  - process-a-cpd-claim
-  - design
+  - private-beta
+  - processing-version-3
+  - processing-process-a-claim
+  - revalidation-funding
 aside:
   title:  Processing Prototypes
   content: |
-    [View processing prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Processing) 
-    Password: ascbsa123
+    [View processing v3 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/prototypes/design/v3/) 
+    Password: bsaasc123
 ---
 
 ## Why we did this work

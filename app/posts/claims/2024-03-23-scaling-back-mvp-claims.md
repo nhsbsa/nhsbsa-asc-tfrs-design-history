@@ -1,27 +1,47 @@
 ---
-title: Scaling back MVP
+title: Scaling back MVP (Claims)
 description: With a tight delivery deadline fast approaching and an increasing amount of technical unknowns the decision was made by the product owner to scale back the MVP at the start of Beta.
 author:
-  name: Mark Portnell
+  name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
 date: 2024-03-23
 tags:
-  - claims-version-8
+  - private-beta
   - claims-version-7
-  - manage-claims
-  - care-skills-100-claims
-  - account-creation
+  - claims-version-8
+  - claims-account-creation
+  - claims-authentication
+  - claims-manage-claims
+  - claims-training
+  - claims-learners
+  - claims-evidence
 aside:
   title:  Related content
   content: |
     [v7 claims prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v7/) 
-    Password: ascbsa123
+    Password: bsaasc123
 
     [v8 claims prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v8/) 
-    Password: ascbsa123
+    Password: bsaasc123
 ---
 
-With an aggressive delivery deadline fast approaching and an increasing amount of technical unknowns the decision was made by the product owner to scale back the MVP at the start of Beta. Across a couple of workshops attended by the entire product team a series of key decisions were made to cut out or scale back certain features for MVP. These product decisions were all logged in our project decision log held in Jira along with any associated risks and mitigations. We finished Alpha with v7 of the prototype, this version was not tested with users before these decisions were made and therefore changes were made in v8 of the prototype for future testing. As these decisions also impact design and explain how we moved from v7 to v8 and some of the changes are made.
+Contents
+--- [Introduction](#introduction)
+--- [Using Azure B2C for authentication and account creation](#using-azure-b2c-for-authentication-and-account-creation)
+--- [Remove eligible training list from service for MVP](#remove-eligible-training-list-from-service-for-mvp)
+--- [Remove paid status from MVP](#remove-paid-status-from-mvp)
+--- [Remove searching/filtering for MVP](#remove-searching/filtering-for-mvp)
+--- [Remove pagination for MVP](#remove-pagination-for-mvp)
+--- [Remove multiple learners per claim for MVP](#remove-multiple-learners-per-claim-for-mvp)
+--- [Remove ability to view uploaded evidence for MVP](#remove-ability-to-view-uploaded-evidence-for-mvp)
+--- [Remove training details for MVP](#remove-training-details-for-mvp)
+--- [Remove claim history information for MVP](#remove-claim-history-information-for-mvp)
+
+## Introduction
+
+With an aggressive delivery deadline fast approaching and an increasing amount of technical unknowns the decision was made by the product owner to scale back the MVP at the start of Beta. Across a couple of workshops attended by the entire product team a series of key decisions were made to cut out or scale back certain features for MVP. These product decisions were all logged in our project decision log held in Jira along with any associated risks and mitigations. 
+
+We finished Alpha with v7 of the prototype, this version was not tested with users before these decisions were made and therefore changes were made in v8 of the prototype for future testing. As these decisions also impact design and explain how we moved from v7 to v8 and some of the changes are made.
 
 
 ## Using Azure B2C for authentication and account creation

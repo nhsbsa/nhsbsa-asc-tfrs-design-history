@@ -2,19 +2,32 @@
 title: Iterating post research insights
 description: Off the back of user research we iterated on designs, not able to be validated as moved to MVP version swiftly.
 author:
-  name: Hannah Williams
+  name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
 date: 2024-05-12
 tags:
+  - private-beta
   - processing-version-2
-  - process-a-claim
-  - design
+  - processing-find-a-claim
+  - processing-process-a-claim
+  - processing-claim-notes
 aside:
   title:  Processing Prototypes
   content: |
-    [View processing prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Processing) 
-    Password: ascbsa123
+    [View processing v2 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/prototypes/design/v2/) 
+    Password: bsaasc123
 ---
+
+Contents
+--- [Why we did this work](#why-we-did-this-work)
+--- [What our ideas were](#what-our-ideas-were)
+--- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
+--- [What we will do next](#what-we-will-do-next)
+
+Version 2 Claim ID's
+Submitted: Z1Z-F1J6-3XF7-C
+Approved: Z8S-F1J6-4GH7-C
+Rejected: K93-SK68-3S2K-C
 
 ## Why we did this work
 

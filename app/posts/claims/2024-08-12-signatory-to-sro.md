@@ -2,20 +2,23 @@
 title: Changing from signatory to senior responsible officer
 description: How and why we changed the name of this role type.
 author:
-  name: Nick Johnstone-Waddell
+  name: Nick Johnstone-Waddell (Content designer)
   url: 'mailto:hi.nick.johnstone.waddell@nhsbsa.nhs.uk'
 date: 2024-08-12
 modified: 2024-08-12
 tags:
-  - claims-version-13
-  - content
   - private-beta
+  - claims-version-13
+  - claims-account-creation
+  - claims-support-and-guidance
 aside:
   title:  Claims Prototypes
   content: |
     [View claims v13 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v13/) 
     Password: bsaasc123
 ---
+
+
 
 ## Why we did this work
 
