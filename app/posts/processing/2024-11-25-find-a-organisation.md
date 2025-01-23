@@ -15,7 +15,22 @@ aside:
     [View processing v6 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/prototypes/design/v6/) 
     Password: bsaasc123
 
-    Claim reference ID's
+          Claim reference's to test:
+          
+          100
+          Submitted: Z1Z-F1J6-3XF7-A
+          Approved: Z8S-F1J6-4GH7-A
+          Rejected: K93-SK68-3S2K-A
+
+          60
+          Submitted: WR5-R2P4-DSL4-B
+          Approved: R4Y-NL7G-D967-B
+          Rejected: NLE-BMDT-68ZI-B
+
+          40
+          Submitted: R7J-NC3G-D967-C
+          Approved: R4Y-NL7G-D967-C
+          Rejected: Y6M-5DYB-TRCL-A
 ---
 
 Contents
@@ -42,7 +57,7 @@ We have previously held a ideation day in person back in September exploring the
 * Audit trail viewable at the appropriate level of detail
 
 #### Use cases of the org view 
-To be able to feed into how we might make the find a claim feature to look we needed to know the information that would fuel it, in particular what information might different use cases be coming to the search feature with to find a org? For part two of this ticket the user needs to be able to perform a ID/CV check with the org to verify who speaking to with some different information, so that also helped to understand the sort of information they may have to hand already for a search.
+To be able to feed into how we might make the find a claim feature to look we needed to know the information that would fuel it, in particular what information might different use cases be coming to the search feature with to find a org. For part two of this ticket the user needs to be able to perform a ID/CV check with the org to verify who speaking to with some different information, so that also helped to understand the sort of information they may have to hand already for a search.
 
 CCS agent in org to BSA about org:
 * Questioning rejection reason
