@@ -114,9 +114,9 @@ One idea was a advanced search. A consideration here though was how to identify 
   </div>
 </div>
 
->**We believe that** having one input box with examples of valid
+>**We believe that** having one input box with examples of valid inputs
 >**Will be a useful feature for** BSA staff
->**As it will** be clear what can use and accepted formats, while because not partial matching this is ok with tech
+>**As it will** be clear what is a accepted formats, and because it will still only lead to one direct match this is acceptable with tech.
 
 We evolved to remove multiple things to search by and only test workplace id as that was determined by policy to be the block as to whether they can continue in the journey or not. If they don't have at this point then no point going further. 
 
@@ -130,5 +130,10 @@ We evolved to remove multiple things to search by and only test workplace id as 
 * Email search may give multiple results in the future as multiple organisations could have the same SRO. If this something to use now if a risk to change in the future to being a indirect search with results, and would have to alter how we handle?
 * Having seperate fields for each find a org input is less of a issue for tech as no partial matches, but means it is harder to give specific errors.
 
+## How we tested our ideas and what we found
+- 
+
+## What we will do next
+- 
 
 

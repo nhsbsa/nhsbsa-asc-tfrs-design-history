@@ -46,6 +46,7 @@ As part of the work to help organisations and BSA staff resolve organisation-rel
 
 ![A diagram of high level activity flow of journey detailing what information is needed ](high-level-activity-flow.png "A diagram of high level activity flow of journey detailing what information is needed")
 
+## What our ideas were
 
 #### Considerations to keep in mind:
 * The ID/CV checks aren’t going to be a recorded process, we will display the information and they then do the checks verbally. This view, where the find a organisation flow lands, needs to support this process providing the information necessary. 
@@ -190,3 +191,9 @@ Decide for the scope of this ticket that will take into testing the find a claim
 >**Will be a useful feature for** BSA staff
 >**As** since only workplace id can be searched, it makes sense to land there, orientate themselves with who speaking to and then progress with the query.
 
+
+## How we tested our ideas and what we found
+- 
+
+## What we will do next
+- 
