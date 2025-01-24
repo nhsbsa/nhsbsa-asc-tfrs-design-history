@@ -16,6 +16,13 @@ aside:
   content: |
     [View processing v2 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/prototypes/design/v2/) 
     Password: bsaasc123
+
+          Claim reference's to test:
+
+          Submitted: Z1Z-F1J6-3XF7-C
+          Approved: Z8S-F1J6-4GH7-C
+          Rejected: K93-SK68-3S2K-C
+
 ---
 
 Contents
@@ -23,11 +30,6 @@ Contents
 --- [What our ideas were](#what-our-ideas-were)
 --- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
 --- [What we will do next](#what-we-will-do-next)
-
-Version 2 Claim ID's
-Submitted: Z1Z-F1J6-3XF7-C
-Approved: Z8S-F1J6-4GH7-C
-Rejected: K93-SK68-3S2K-C
 
 ## Why we did this work
 
@@ -152,9 +154,9 @@ To be tested
 
 ![A screenshot from the processing a claim prototype showing the search claim screen](unprocessed-claim.png "Claim ID search")
 
-To be tested
+#### To test:
 - Research to understand if the save and exit functionality would be useful and in what scenarios.
 
 ## What we will do next
 - Next steps for processing are to consider the new buisness requirements of tight delivery deadlines 
-- More research is needed on the newly iterated designs but maybe to be done in the future if descoped.
+- More research is needed on the newly iterated designs but this is to be done in the future if descoped.

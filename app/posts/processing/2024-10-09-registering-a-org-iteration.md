@@ -14,6 +14,23 @@ aside:
   content: |
     [View processing v5 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/prototypes/design/v5/) 
     Password: bsaasc123
+
+          Claim reference's to test:
+          
+          100
+          Submitted: Z1Z-F1J6-3XF7-A
+          Approved: Z8S-F1J6-4GH7-A
+          Rejected: K93-SK68-3S2K-A
+
+          60
+          Submitted: WR5-R2P4-DSL4-B
+          Approved: R4Y-NL7G-D967-B
+          Rejected: NLE-BMDT-68ZI-B
+
+          40
+          Submitted: R7J-NC3G-D967-C
+          Approved: R4Y-NL7G-D967-C
+          Rejected: K92-HD52-7GD9-C
 ---
 
 Contents
@@ -56,7 +73,7 @@ Where it is incorrect, they must be able to handle the following two scenarios:
 
 For the scenario of a completed registration of a incorrect person we contemplated adding a option to deactivate the account within the service seeing it as a quick win, then follow up with internal processes for incident management. I had questions on what would be next steps on a deactivation, do we then let them invite a new signatory in the service? Held a workshop with the delivery team to come to agreement.
 
-#### Post workshop 24th October a few updates agreed:
+#### Post workshop 24th October a few updates agreed
 
 ![A screenshot taken of the current journey showing question mark over the deactivated registered signatory flow](current-journey-register-org.png "Current journey showing question mark over the deactivated registered signatory flow")
 
@@ -67,10 +84,12 @@ Scenario: An organisation has in the past been registered with a signatory. The 
 - When deactivated and we exit the flow, then they re-enter and enter the workplace id, what are they presented with as they will have no registered signatory? Is the org still "registered" without one, what does it mean to be registered?
 - Do we show information of deactivated account history?
 
+#### Option 1
 ![A screenshot taken of option 1 of how to handle the deactivated signatory flow](option-1.png "Option 1")
 - The organisation has been registered and currently have an active signatory. The staff deactivate the signatory. Give a option to add a new signatory which takes them to the signatory sign up.
 - The organisation has previously been registered but then had the signatory deactivated. The staff has then gone out of the flow and entered the workplace ID again. A screen of "the org is registered but needs a new signatory" is shown, showing details of deactivate signatory and a button to sign up the new one. Question is the organisation still "registered" without a active signatory?
 
+#### Option 2
 ![A screenshot taken of option 2 of how to handle the deactivated signatory flow](option-2.png "Option 2")
 - The organisation has been registered. The staff wants to deactivate the signatory. Give a option to add a new signatory which takes them to the signatory sign up.
 - The organisation has previously been registered but then had the signatory deactivated. The staff has then gone out of the flow and entered the workplace ID again. With no active signatory the flow takes them straight to check org details are correct screen replicating the flow of if the organisation had never been registered and go through sign up flow again.

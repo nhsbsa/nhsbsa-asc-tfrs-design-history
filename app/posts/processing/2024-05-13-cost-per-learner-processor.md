@@ -17,6 +17,23 @@ aside:
   content: |
     [View processing v3 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/prototypes/design/v3/) 
     Password: bsaasc123
+
+          Claim reference's to test:
+
+          100
+          Submitted: Z1Z-F1J6-3XF7-A
+          Approved: Z8S-F1J6-4GH7-A
+          Rejected: K93-SK68-3S2K-A
+
+          60
+          Submitted: WR5-R2P4-DSL4-B
+          Approved: R4Y-NL7G-D967-B
+          Rejected: NLE-BMDT-68ZI-B
+
+          40
+          Submitted: R7J-NC3G-D967-C
+          Approved: R4Y-NL7G-D967-C
+          Rejected: K92-HD52-7GD9-C
 ---
 
 Contents

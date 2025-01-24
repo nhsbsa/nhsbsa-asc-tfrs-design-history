@@ -17,6 +17,23 @@ aside:
   content: |
     [View processing v3 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/prototypes/design/v3/) 
     Password: bsaasc123
+
+          Claim reference's to test:
+
+          100
+          Submitted: Z1Z-F1J6-3XF7-A
+          Approved: Z8S-F1J6-4GH7-A
+          Rejected: K93-SK68-3S2K-A
+
+          60
+          Submitted: WR5-R2P4-DSL4-B
+          Approved: R4Y-NL7G-D967-B
+          Rejected: NLE-BMDT-68ZI-B
+
+          40
+          Submitted: R7J-NC3G-D967-C
+          Approved: R4Y-NL7G-D967-C
+          Rejected: K92-HD52-7GD9-C
 ---
 
 Contents
@@ -24,26 +41,9 @@ Contents
 --- [What we removed](#what-we-removed)
 --- [Next steps](#next-steps)
 
-
-Claim id's to test version 3:
-100
-Submitted: Z1Z-F1J6-3XF7-A
-Approved: Z8S-F1J6-4GH7-A
-Rejected: K93-SK68-3S2K-A
-
-60
-Submitted: WR5-R2P4-DSL4-B
-Approved: R4Y-NL7G-D967-B
-Rejected: NLE-BMDT-68ZI-B
-
-40
-Submitted: R7J-NC3G-D967-C
-Approved: R4Y-NL7G-D967-C
-Rejected: K92-HD52-7GD9-C
-
 ## Why we did this work
 
-With an aggressive delivery deadline fast approaching and tight time to technically deliver, the decision was made by … to simplify the processing a claims journey as much as possible to have the things the users need to execute but less less effort by tech. 
+With an aggressive delivery deadline fast approaching and tight time to technically deliver, the decision was made to simplify the processing a claims journey as much as possible to have the things the users need to execute but less less effort by tech. 
 
 In a workshop attended by the entire product team a series of key decisions were made to cut out or scale back certain features for this journey. These product decisions were all logged in our project decision log held in Mira along with any associated risks and mitigations. The extended journey is in V2 of the prototype, this version was untested with users before these decisions were made so changes were made in V3 of the prototype. V3 has been tested with 4 users in the week commencing 15 May 2024.
 

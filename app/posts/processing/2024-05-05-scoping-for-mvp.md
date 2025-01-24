@@ -18,6 +18,12 @@ aside:
   content: |
     [View processing v1 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/prototypes/design/v1/) 
     Password: bsaasc123
+
+          Claim reference's to test:
+
+          Submitted: Z1Z-F1J6-3XF7-C
+          Approved: Z8S-F1J6-4GH7-C
+          Rejected: Z8S-F1J6-9VGH-C
 ---
 
 Contents
@@ -26,12 +32,7 @@ Contents
 --- [How we tested our ideas and what we found](#how-we-tested-our-ideas-and-what-we-found)
 --- [What we will do next](#what-we-will-do-next)
 
-Version 1 Claim ID's
-Submitted: Z1Z-F1J6-3XF7-C
-Approved: Z8S-F1J6-4GH7-C
-Rejected: Z8S-F1J6-9VGH-C
-
-We had a processing workstream kickoff on ... with the wider product team to begin the processing a claim piece of work. After understanding the constraints and the scope of the journey from multiple buisness and tech perspectives, we had a in-person workshop with the UCD team. We explored ideas of how this journey could look, what are the needs and wants of the users and then stripped it back to the MVP of what we deemed necessary to complete a processing claim journey based off assumptions and hypothesis'. We tested this inital design flow w/c 22 April 2024.
+We had a processing workstream kickoff with the wider product team to begin the processing a claim piece of work. After understanding the constraints and the scope of the journey from multiple buisness and tech perspectives, we had a in-person workshop with the UCD team. We explored ideas of how this journey could look, what are the needs and wants of the users and then stripped it back to the MVP of what we deemed necessary to complete a processing claim journey based off assumptions and hypothesis'. We tested this inital design flow w/c 22 April 2024.
 
 ## Why we did this work
 
@@ -53,10 +54,9 @@ Our assumption is the processor will be given just the claim ID for the claim th
 
 ![A screenshot from the processing a claim prototype showing the search claim screen](claim-id.png "Claim ID search")
 
-To be tested
+#### To be tested:
 - Whether they copy and paste the claim ID or type it in themselves.
 - Whether mistakes are made and then they have no other information to validate they have the correct claim so how likely is it they process the wrong claim.
-
 
 
 #### What claim detail information does the processor need to see when they land on a claim?
@@ -69,7 +69,7 @@ Our starting assumption for this question is that the purpose of a processor is 
 
 ![A screenshot from the processing a claim prototype showing the initial view a processor lands in with no additional claim details](claim-details.png "Process a claim view")
 
-To be tested
+#### To be tested:
 - Whether users have any other purpose and needs for any additional information about the claim beyond information provided in criteria checks. 
 
 
@@ -85,8 +85,7 @@ We started out looking into how other services present new evidence and investig
 
 ![A screenshot from the processing a claim prototype showing the view of evidence opened with multiple tabs](evidence.png "Piece of evidence opened in tab")
 
-To be tested
-
+#### To be tested:
 - Whether opening files in new tabs will pose usability issues and add confusion of which evidence has been viewed. 
 
 #### How can the processor check the evidence against the criteria?
@@ -101,7 +100,7 @@ As we have multiple pieces of criteria that multiple different pieces of evidenc
 
 ![A screenshot from the processing a claim prototype showing one question per screen](one-evidence-per.png "One criteria question per screen with option to view any piece of evidence")
 
-To be tested
+To be tested:
 - Research to understand whether criteria checking with one question per page is usable
 
 #### Cost per learner
@@ -114,7 +113,7 @@ We believe this is going to be a more difficult part of the journey for the proc
 
 ![A screenshot from the processing a claim prototype showing the view of criteria check per view with cost per learner input for evidence of payment question](cost-per-learner.png "Cost per learner on yes selection")
 
-To be tested
+To be tested:
 - Research to understand how to help users identify cost paid by organisation as we believe this is a area with lots of potential for error.
 
 #### Rejection notes
@@ -127,7 +126,7 @@ We believe a processor will want to capture a rejection reason for each no selec
 
 ![A screenshot from the processing a claim prototype showing the criteria check per view with rejection note input for each no selection](rejection-note-input.png "Rejection note on no selection")
 
-To be tested
+#### To be tested:
 - Research to understand how best to capture notes when criteria aren't met. 
 
 #### How will the processor judge that a claim is approved or rejected?
@@ -152,7 +151,7 @@ The outcome screen is a place we can summarise the outcome, and the next steps w
 
 ![A screenshot from the processing a claim prototype showing the criteria check per view with rejection note input for each no selection](claim-processed.png "Claim successfully processed viewed")
 
-To be tested
+#### To be tested:
 - Research to understand how users perceive prescriptive criteria checks that lead to a predetermined outcome.
 - Do processors understand reimbursement amount calculations
 
@@ -168,18 +167,21 @@ We started off with the assumption that this is a feature that will be very valu
 
 ![A screenshot from the processing a claim prototype showing note categories](note-categories.png "Note categories")
 
-To be tested
-
+#### To be tested:
 - Where the categories are helpful, too many, what else might a processor need notes for? 
 - Whose role is it to spot fraud, and should we include ability to talk about fraud within this section.
 
 
 ## How we tested our ideas and what we found
-***
-- We tested version 1 with (4?) different users. 
-- User testing feedback
-- URLs to Miro boards and prototypes where any iteration history is documented
+- We tested version 1 with 4 different users. 
+- Participants felt they wanted to see more details about the claim to help orientate themselves on what the submitter has submitted and thought it was odd to not see anything else on this screen.
+- People weren’t expecting a series of questions which led to confusion around the same evidence presented on each page.
+- Business still weren’t providing clarity on what criteria was and a chance the criteria would change as process developed in live.
+- Unclear to processers that comments left when a criteria wasn’t met would end up being passed to the submitter
+- Rejection notes were more per piece of evidence, rather than per criteria, the update to combine the criteria into one question actually helps with then only one note being added per type of evidence
+- Notes are helpful but too many categories were confusing to distinguish between.
+- Cost per learner/reimbursement amount is difficult to calculate.
 
 ## What we will do next
-Next steps are iterating the journey based on the user feedback in a new version 2. We can strip out the categories in the notes as it's better to see first what the processor might use for rather than us leading them with suggestions.
+Next steps are iterating the journey based on the user feedback in a new version 2.
 
