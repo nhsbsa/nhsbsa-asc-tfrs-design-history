@@ -191,11 +191,13 @@ Decide for the scope of this ticket that will take into testing the find a claim
 >**Will be a useful feature for** BSA staff
 >**As** since only workplace id can be searched, it makes sense to land there, orientate themselves with who speaking to and then progress with the query.
 
-
 ## How we tested our ideas and what we found
 - We tested the org view with CCS agents and processors week commencing 5th January 2025.
-- They were able to conduct ID/CV with the organisation view.
-- 
+- The main themes from the playback:
+  - They were able to conduct ID/CV with the organisation view.
+  - There was a need to see all claims for a organisation, the assumption that search for a claim would meet the user need was disproven
+  - They wanted to maintain a view of the selected claim as they navigated in and out of tabs
+  - Current processes may not work for ASC - lack of IVR and not capturing Workplace ID early enough in the journey
 
 ## What we will do next
-- 
+- Holding a post playback actions session with the wider delivery team to decide what actions to progress with.

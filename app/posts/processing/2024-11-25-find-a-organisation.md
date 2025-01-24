@@ -133,10 +133,11 @@ We evolved to remove multiple things to search by and only test workplace id as 
 ## How we tested our ideas and what we found
 - We tested the org view with CCS agents and processors week commencing 5th January 2025.
 - The main themes from the playback:
-  - Confusing options on signposting page
+  - Confusing options on signposting page, and for CCS agents because they would only be shown the Find a organisation option, this page could be removed
   - Mistakes typing in a verbally conveyed workplace id, in some cases staff think the user won't have the workplace id
-  - Processors were majority of the time going in through the process a claim route as they just saw abililty to search by claim id
-  - They were confused as to the view they landed in through different options
+  - Processors were majority of the time going in through the process a claim route as they just saw abililty to search by claim ID
+  - They were confused as to the view they landed in through different options. Evaluate whether separate routes in for processors are necessary and if one route in is acceptable
+  - Can't access the necessary information on the seperate add note view when writing note to fill in with specific info about a claim or the organisation
 
 ## What we will do next
 - Holding a post playback actions session with the wider delivery team to decide what actions to progress with.
