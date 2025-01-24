@@ -156,7 +156,7 @@ To think about:
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
   <figure>
-    <img src="claims.png" alt="text" style="width: 100%; height: auto;">
+    <img src="find-a-claim-tab.png" alt="text" style="width: 100%; height: auto;">
     <figcaption>Idea 1 of only find a claim</figcaption>
   </figure>
   </div>
@@ -182,14 +182,27 @@ Idea 2
 >**Will be a useful feature for** bsa staff 
 >**As it will** follow their intentions e.g searching by claim ref will land them on that claim. 
 
-Decide for the scope of this ticket that will take into testing the find a claim search without the claims table. 
+
+Decision: 
+It was decided for the scope of this ticket the find a claim search without the claims table might be able to answer the user need to complete ID/CV and this is what we will take into testing to validate. 
 
 
-#### Tabs
+#### Users tab
 
->**We believe that** putting user tab first
+![Screenshot of the users tab showing SRO and users details ](users-tab.png "Screenshot of the users tab showing SRO and users details")
+
+
+>**We believe that** putting users tab first
 >**Will be a useful feature for** BSA staff
 >**As** since only workplace id can be searched, it makes sense to land there, orientate themselves with who speaking to and then progress with the query.
+
+>**We believe that** sectioning out the SRO from the submitters information in tables
+>**Will be a useful feature for** BSA staff 
+>**As** it will be easy to scan the page and understand the roles and information provided
+
+>**We believe that** having a status on users 
+>**Will be a useful feature for** BSA staff 
+>**As** they will understand if the user has successfully registered or is still awaiting acceptance of the invitation.
 
 ## How we tested our ideas and what we found
 - We tested the org view with CCS agents and processors week commencing 5th January 2025.
