@@ -118,12 +118,16 @@ One idea was a advanced search. A consideration here though was how to identify 
 >**Will be a useful feature for** BSA staff
 >**As it will** be clear what is a accepted formats, and because it will still only lead to one direct match this is acceptable with tech.
 
+
 We evolved to remove multiple things to search by and only test workplace id as that was determined by policy to be the block as to whether they can continue in the journey or not. If they don't have at this point then no point going further. 
+
+![Screenshot of find a organisation feature searching by workplace ID ](find-org-workplace-id.png "Screenshot of find a organisation feature searching by workplace ID")
 
 >**We believe that** adding a new option on the signposting page to find a organisation
 >**Will be a useful feature for** BSA staff
 >**As it will** suit the different intentions they are coming with of either process a claim, find a org, register a org, which are all different things.
 
+![Screenshot of the signposting page with updated language on options ](final-signposting.png "Screenshot of the signposting page with updated language on options")
 
 #### Outcomes to consider for further design development:
 
@@ -137,7 +141,6 @@ We evolved to remove multiple things to search by and only test workplace id as 
   - Mistakes typing in a verbally conveyed workplace id, in some cases staff think the user won't have the workplace id
   - Processors were majority of the time going in through the process a claim route as they just saw abililty to search by claim ID
   - They were confused as to the view they landed in through different options. Evaluate whether separate routes in for processors are necessary and if one route in is acceptable
-  - Can't access the necessary information on the seperate add note view when writing note to fill in with specific info about a claim or the organisation
 
 ## What we will do next
 - Holding a post playback actions session with the wider delivery team to decide what actions to progress with.
