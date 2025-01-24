@@ -193,6 +193,8 @@ Decide for the scope of this ticket that will take into testing the find a claim
 
 
 ## How we tested our ideas and what we found
+- We tested the org view with CCS agents and processors week commencing 5th January 2025.
+- They were able to conduct ID/CV with the organisation view.
 - 
 
 ## What we will do next
