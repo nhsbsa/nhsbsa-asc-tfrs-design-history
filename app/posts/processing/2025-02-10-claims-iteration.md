@@ -70,7 +70,7 @@ Research insight: processors would be less likely to  be looking at not yet pro
 #### Job roles - CCS Agents
 
 - hidden functionality to process the claims
-
+- squished view still, did to limit tech work. But if they have time, they will make it two thirds width.
 
 ## How we tested our ideas and what we found
 

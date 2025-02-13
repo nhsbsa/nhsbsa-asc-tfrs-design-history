@@ -90,8 +90,10 @@ There was a concern about ID/CV process and the risk if they didn't do workplace
 #### Job roles
 
 - hide the find a claim and register a org route
+- ok that can only search with email and id, as we believe covers their scenarios.
 - hide the processing radio buttons inside a not yet processed claim. Everything else the same.
 - hidden functionality to process the claims
+
 
 
 #### Content updates
