@@ -188,8 +188,6 @@ It was decided for the scope of this ticket the find a claim search without the 
 
 
 
-
-
 #### Users tab
 
 ![Screenshot of the users tab showing SRO and users details ](users-tab.png "Screenshot of the users tab showing SRO and users details")
@@ -213,6 +211,36 @@ We needed a design for the scenario of what if a organisation was searched that 
 - We decided they would still get into the organisation view with content added to say the SRO needs to accept the invite in a warning banner within the org header. 
 - We would then utilise the users tab and the status' of users, with the SRO being labeled invited. We decided this would also be a good place to bring in the functionality of changing the SRO invited, taking it from the register a org journey.
 - Thought of hiding the claims tab as there would never be any content in here, but that would mean only one tab, and we would have to make a design to have a single tab view which is more tech work also. So kept claims in.
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="no-sro.png" alt="text" style="width: 100%; height: auto;">
+    <figcaption>No SRO view</figcaption>
+  </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="invite-sent.png" alt="text" style="width: 100%; height: auto;">
+    <figcaption>"resend invite"</figcaption>
+  </figure>
+  </div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="edit-details.png" alt="text" style="width: 100%; height: auto;">
+    <figcaption>Editing the inviting SRO's details, same views as in the register a org journey</figcaption>
+  </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="check-details.png" alt="text" style="width: 100%; height: auto;">
+    <figcaption>Confirming details before sending a new invite</figcaption>
+  </figure>
+  </div>
+</div>
 
 ## How we tested our ideas and what we found
 - We tested the org view with CCS agents and processors week commencing 5th January 2025.
