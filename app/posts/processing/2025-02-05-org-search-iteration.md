@@ -34,7 +34,7 @@ aside:
 ---
 
 ## Why we did this work
-We first tested the org view with processors and css agents in February and 
+We first tested the org view with processors and css agents in February and there were a number of areas highlighted as needing further iteration. Off the back of a actions meeting we decided the search terms of claim reference within the process a claim journey and workplace id
 
 It was found
 - missing scenarios as workplace ID wasn't always to hand
