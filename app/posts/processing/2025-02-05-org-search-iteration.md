@@ -82,9 +82,10 @@ There was a concern about ID/CV process and the risk if they didn't do workplace
 ![Screenshot of the new organisation notes tab ](notes-tab.png "Screenshot of the new organisation notes tab")
 
 #### Email
-- Can search by active, invited, inactive SRO’s, add into table
+- Can search by active, invited, inactive SRO’s, add into table to also show as want to be able to see if should carry on speaking to the person on the phone and understand full context.
 - Can search by active, invited submitters
-- Don’t have the dates active, so can’t order by most recent, will order by status then by first name
+- Don’t have the dates active, so can’t order by most recent, will order by status then by first name 
+
 
 #### Job roles
 

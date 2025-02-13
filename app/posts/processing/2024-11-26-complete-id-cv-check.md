@@ -194,7 +194,6 @@ It was decided for the scope of this ticket the find a claim search without the 
 
 ![Screenshot of the users tab showing SRO and users details ](users-tab.png "Screenshot of the users tab showing SRO and users details")
 
-
 >**We believe that** putting users tab first
 >**Will be a useful feature for** BSA staff
 >**As** since only workplace id can be searched, it makes sense to land there, orientate themselves with who speaking to and then progress with the query.
@@ -206,6 +205,12 @@ It was decided for the scope of this ticket the find a claim search without the 
 >**We believe that** having a status on users 
 >**Will be a useful feature for** BSA staff 
 >**As** they will understand if the user has successfully registered or is still awaiting acceptance of the invitation.
+
+
+#### States of invited and not registered SRO
+Needed a state of if the SRO hasn't yet accepted the invite.
+- Thought of hiding the tab as there would never be any content in here, but that would mean only one tab, and we would have to make a design to have a single tab view which is more tech work also. So kept claims in.
+- Because we now have the list of the SRO, and a state of being invited, we decided to bring in the functionality of changing the SRO invited, by bringing out that functionality from register a org journey to the org view. 
 
 ## How we tested our ideas and what we found
 - We tested the org view with CCS agents and processors week commencing 5th January 2025.

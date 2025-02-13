@@ -49,6 +49,15 @@ Add in claims table
 - second round or research said to Change submitted dates to processed, happy to have a line where no date present.
 - ordering within the status', decided by dates, processed dates for approved and rejected, submitted date for not yet processed.
 
+UR
+Research insight: processors would be less likely to  be looking at not yet processed claims in the table - as they'd be more likely to always search for a claim to process them based on the ID provided by OM...
+* And that the examples we have for browsing the table would relate more to processed claims - either via date for QAs to assess the most recent ones or via course title (but I think that could be an unexpected column to be ordered by). 
+- My thoughts: not yet processed claims are most useful to be at the top then? but if not then they would get buried under lots of approved and rejected claims
+- In the workshop when we were discussing it, there were no suggestions to (or evidence) for us to move them from the top.
+- Outcome:
+* But I think the table would be ripe for iterations further down the line e.g., sorting by columns etc so we could note to revisit it during any future table iterations Or alongside claim/ org notes later
+
+
 - they would want the last opened claim to stay open and not clear when going between tabs
 - also decided with tech that the processing of a claim would remain with the answers saved until they click into another claim, then the session would refresh.
 
