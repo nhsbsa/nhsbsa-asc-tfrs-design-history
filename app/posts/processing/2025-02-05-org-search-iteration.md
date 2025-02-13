@@ -112,5 +112,7 @@ For a CCS agent they won't be able to Process a claim or register a organisation
 
 ## How we tested our ideas and what we found
 
+- Sense checked the updates with BSA staff in a workshop, rather than a full usability test. They agreed the routes in were clearer, and the added ability to search with email will help. 
 
 ## What we will do next
+- Gone into development.

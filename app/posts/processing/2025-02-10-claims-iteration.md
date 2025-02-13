@@ -75,7 +75,6 @@ In the UR the user's stated they would expect the last opened claim to stay open
 
 It was agreed with tech that if the user clicked into another claim then this is when the session would clear.
 
-![Screenshot of the new organisation notes tab ](notes-tab.png "Screenshot of the new organisation notes tab")
 
 #### Job roles - CCS Agents
 With the introduction of job roles into the service, the functionality to process a claim is hidden for CCS agents. For ease of giving tech more work, we have just hidden the processing radio buttons on the screen, this means for the CCS agents the information of a claim is all squished to the left side. Agreed that if tech have time they will make it two thirds width.
