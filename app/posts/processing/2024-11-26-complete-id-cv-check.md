@@ -208,9 +208,11 @@ It was decided for the scope of this ticket the find a claim search without the 
 
 
 #### States of invited and not registered SRO
-Needed a state of if the SRO hasn't yet accepted the invite.
-- Thought of hiding the tab as there would never be any content in here, but that would mean only one tab, and we would have to make a design to have a single tab view which is more tech work also. So kept claims in.
-- Because we now have the list of the SRO, and a state of being invited, we decided to bring in the functionality of changing the SRO invited, by bringing out that functionality from register a org journey to the org view. 
+
+We needed a design for the scenario of what if a organisation was searched that had a SRO that had been invited but not yet registered. 
+- We decided they would still get into the organisation view with content added to say the SRO needs to accept the invite in a warning banner within the org header. 
+- We would then utilise the users tab and the status' of users, with the SRO being labeled invited. We decided this would also be a good place to bring in the functionality of changing the SRO invited, taking it from the register a org journey.
+- Thought of hiding the claims tab as there would never be any content in here, but that would mean only one tab, and we would have to make a design to have a single tab view which is more tech work also. So kept claims in.
 
 ## How we tested our ideas and what we found
 - We tested the org view with CCS agents and processors week commencing 5th January 2025.
