@@ -131,8 +131,7 @@ We evolved to remove multiple things to search by and only test workplace id as 
 
 #### Outcomes to consider for further design development:
 
-* Email search may give multiple results in the future as multiple organisations could have the same SRO. If this something to use now if a risk to change in the future to being a indirect search with results, and would have to alter how we handle?
-* Having seperate fields for each find a org input is less of a issue for tech as no partial matches, but means it is harder to give specific errors.
+* If Email search is considered again in the future, it may give multiple results in the future as multiple organisations could have the same SRO. Something to bear in mind that it may potentially change from being a direct search.
 
 ## How we tested our ideas and what we found
 - We tested the org view with CCS agents and processors week commencing 5th January 2025.
@@ -144,6 +143,6 @@ We evolved to remove multiple things to search by and only test workplace id as 
 
 ## What we will do next
 - Holding a post playback actions session with the wider delivery team to decide what actions to progress with.
-
+- Next updates will be done in version 7 of the prototype.
 
 

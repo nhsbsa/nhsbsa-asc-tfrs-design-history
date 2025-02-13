@@ -1,5 +1,5 @@
 ---
-title: Complete a ID/CV check WIP
+title: Complete a ID/CV check
 description: Once a organisation has been found, BSA staff need to be able to verify who they are speaking to before they are they able to process a query
 author:
   name: Hannah Williams (Interaction designer)
@@ -58,16 +58,15 @@ Held a second ideation session with wider delivery team on 26th November to expl
 
 Below the requirements have been broken down into the information that needs to be accessible to complete ID/CV checks.
 
-ID/CV check requirements:
-* Check a claim reference number
-* Check organisation name
-* Check first line of address
-* Check postcode of org
+#### Iterated ID/CV check requirements:
+* Caller's full name - check against SRO/submitters for org
+* Email address
+* Workplace ID - if they caller doesn't have the correct ID, they would have to call back
+* Organisation's address and postcode
+* Claim Reference - if the query is in relation to a claim
 
 If don’t possess one of these pieces then need to go through to the secondary check, where one of these need’s to be confirmed (this list is not exhaustive and potentially other alternatives):
 
-* Check submitter’s full name
-* Check submitter’s email address
 * Check learner’s full name
 * Check name of training course
 
@@ -76,8 +75,9 @@ Other information that needs to be accessible based off ticket:
 * To check a claim reference does that mean need to see a list of all the claims/have a find claim function?
 * Bank details are part of ticket requirement
 
+#### Designing with flexibility built into the concept - organisation view
 
-In design need to consider how to display the information in a way that can be built up iteratively over time with new functionality being added. It needed to be usable on its own, but with a way to bring in other features that won’t affect usability. e.g. processing a claim issues we currently have of throwing everything in and is cognitively overwhelming.
+In the design we needed to consider how to display the information in a way that can be built up iteratively over time with new functionality being added. It needed to be usable on its own, but with a way to bring in other features that won’t affect usability. e.g. processing a claim issues we currently have of throwing everything in and is cognitively overwhelming.
 
 >**We believe that** having the information needed for ID/CV can be broken down into the header and different tabs within the org view 
 >**Will be a useful feature for** BSA staff
@@ -107,16 +107,21 @@ In design need to consider how to display the information in a way that can be b
   </div>
 </div>
 
-This work was being done alongside process a claim reworking. Thought of to bring the two journeys to end up in the same place made sense as the claims sit under the whole organisation. 
+This work was being done alongside the process a claim journey rework. Having the two journeys end up in the same overarching organisation view made sense as the claims sit under the whole organisation in the mental model. But they are different intentions of tasks so the routes into the service on the signposting page would stay seperate. 
 
 >**We believe that** keeping the journey's seperate in the signposting page as to what they want to do
 >**Will be a useful feature for** BSA staff
 >**As it will** suit the different intentions they are coming with of process a claim, find a org, register a org, but still the journey's are cohesive as end up in same centralised org view with all the functionality available to them.
 
-The process a claim journey still needs access to wider org view to help processors. Something to be tested as to the understanding of these two options. 
+The process a claim journey still needs access to wider org view to help processors. Something to be tested as to the understanding of these two options. Depending on the route into the service of process a claim and find a org, we decided it would be helpful to land the user into specific places, also using the options like a quick link into where want to go in the service to complete their task.
+
+>**We believe that** depending on what they search by lands them in a different place in the org view 
+>**Will be a useful feature for** bsa staff 
+>**As it will** follow their intentions e.g searching by claim ref will land them on that claim. 
 
 
-#### Perform ID/CV checks
+
+### Perform ID/CV checks
 
 >**We believe that** having organisation information in a header that’s always there
 >**Will be a useful feature for** BSA staff
@@ -176,15 +181,13 @@ Idea 1
 Idea 2
 >**We believe that** displaying all the claims
 >**Will be a useful feature for** BSA staff
->**As it will** give more scope in case they fail that check and have to proceed onto looking for a learner in which case still have access to claims. Needs to have table sorting?
-
->**We believe that** depending on what they search by lands them in a different place in the org view 
->**Will be a useful feature for** bsa staff 
->**As it will** follow their intentions e.g searching by claim ref will land them on that claim. 
-
+>**As it will** give more scope in case they fail that check and have to proceed onto looking for a learner in which case still have access to claims. Does it need to have table sorting to be able to find a specific claim?
 
 Decision: 
 It was decided for the scope of this ticket the find a claim search without the claims table might be able to answer the user need to complete ID/CV and this is what we will take into testing to validate. 
+
+
+
 
 
 #### Users tab
@@ -207,10 +210,13 @@ It was decided for the scope of this ticket the find a claim search without the 
 ## How we tested our ideas and what we found
 - We tested the org view with CCS agents and processors week commencing 5th January 2025.
 - The main themes from the playback:
-  - They were able to conduct ID/CV with the organisation view.
+  - They were able to conduct ID/CV within the organisation view.
   - There was a need to see all claims for a organisation, the assumption that search for a claim would meet the user need was disproven
   - They wanted to maintain a view of the selected claim as they navigated in and out of tabs
   - Current processes may not work for ASC - lack of IVR and not capturing Workplace ID early enough in the journey
+  - There was confusion on the differences between the routes into the service
+  - Confusion on whether they were in the service at a claim level or at the organisation level. Some content review will be needed to see if can help the user better orientate themselves.
 
 ## What we will do next
 - Holding a post playback actions session with the wider delivery team to decide what actions to progress with.
+- Next updates will be done in version 7 of the prototype.
