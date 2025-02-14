@@ -34,67 +34,74 @@ aside:
 ---
 
 ## Why we did this work
-We first tested the org view with processors and css agents in February and there were a number of areas highlighted as needing further iteration. Off the back of a actions meeting we decided the search terms of claim reference within the process a claim journey and workplace id
+We tested the first iteration of the find and view a organisation journey with processors and css agents in w/c 5th February and there were a number of areas highlighted as needing further development. Post playback and actions meeting, these were the updates agreed upon to make:
 
-It was found
-- missing scenarios as workplace ID wasn't always to hand
-- verbal communication of these values led to mistakes 
-- routes in were confusing, something posed to content
+- Routes in to the service were confusing to the user about the differences between, unclear which to use.
+- Search terms
+  - It was found their were a number of scenarios that searching for a organisation with workplace ID wouldn't cover. For example...
+  - Verbal communication of a workplace ID over the phone led to mistakes in typing it in.
 
 ## What our ideas were
 
 #### Search terms 
-Speaking to research, we cross examined search terms for the scenarios they would cover for processors and ccs agents. 
+Speaking to research, the options for search terms were cross examined against the scenarios they would cover for processors and ccs agents. These scenarios include: mail referrals etc. TO ADD
 
-These scenarios include: mail referrals etc
+When deciding how to expand what the staff could search with, we wanted to balance covering the missing scenarios with not changing too much as we were only going to be able to sense check the changes with staff during a informal 2 hour workshop rather than do another complete usability test, and also had to be minimal in tech effort to make the changes.
 
-We wanted to balance covering scenarios with not changing too much as we were only going to be able to sense check and also minimal tech effort in changes.
+>**We believe that** email, claim ref and id
+>**Will be a useful feature for** staff to search with
+>**As it will** them to cover the scenarios of.... TO ADD
 
-- We believe email, claim ref and id were enough to cover all the scenarios that we might have been missing before e.g. mail referrals etc 
+There was a concern about the ID/CV process and the risk that if we opened up the search terms it wouldn't be enforcing workplace ID to be required first. Product had a discussion with ops and they agreed to take on the risks surrounding ID/CV process. 
 
-We believe splitting tbetween the two routes works with claim id in find a claim, and email and workplace id in find a org, means not two places to search the same thing. 
-And for CSS agents they won't have the find a claim option, but we believe email is enough to aid cover their scenarios. 
+#### Routes in 
 
-There was a concern about ID/CV process and the risk if they didn't do workplace ID first. Amy and Seyimi had a discussion with ops and they agreed to take on the risks surrounding ID/CV process. 
+Working with content, it was considered combining the two routes in into one. We believe that this would require too much content on the search page to explain all the functionality available in the org view and would be conflating the two intentions of the users.
 
-- So from here both routess still allow you to carry out all the same tasks, its the same org header and everything underneath, can process claims through both
-- Sort of think of them as direct links to where the user wants to go and do, at the place in the org view they can do it. 
-- So find a claim takes directly to claim 
-- More general org info through the other
-- We believe the content changes within the org view make it clearer to the user they are within the organisation.
-- Would be confusing to take away functionality because they’ve come in through a particular route, and they have to go out to go in through a different route. Still in both routes they have access to all the org information.
+>**We believe that** keeping the two routes seperate
+>**Will be a useful feature for** BSA staff
+>**As it will** keep intentions seperate of going directly to a specific claim, and doing something more general with the organisation information.
+
+Content included changing the "Process a claim" wording to "Find a claim", and within the org view, content was reviewed to make it clearer the user is within org level view through both routes.
+
+>**We believe that** keeping the ability to search with claim id within the find a claim route and adding ability to find a org with email and workplace id
+>**Will be a useful feature for** BSA staff
+>**As it will** not mean that you can search claim id in two places, which will help with the user's confusion about the differences between the options.
+
+>**We believe that** keeping both routes allowing you to access all the same functionality e.g. process a claim
+>**Will be a useful feature for** processors
+>**As it would** be confusing to take away functionality because they’ve come in through a particular route and they would have to go out and in again to access. Still in both routes they have access to all the org information.
+
 
 #### Search input design 
-* The need to have seperate input fields for each find a organisation type of search term was a consideration as if in the same box its harder to give specific error messages as would involving assuming what the value is of that's been entered. From tech, it was decided this is less of a issue in this search case as there will be no partial matches, just returning a direct result search, and from a content perspective we can 
+* The need to have seperate input fields for each find a organisation type of search term was a tech consideration as if they are all entered in the same box it's harder to give specific error messages as would involving assuming what the value is of that's been entered. From tech perspective, it was decided this is less of a issue in this search case as there will be no partial matches, just returning a direct result search, and from a content perspective because there are max two search terms and email is a well known format, we can have a error that still gives helpful information.
 
-- So when we doing the iteration initially of multiple search inputs we had come to conclusion with tech that having multiple terms in the same search input is ok in this case as can validate 
-- Just can’t be specific in format errors
-- So if its empty its this message
-- If it doesn’t fit the format of a ID or a email address its this message 
-- If it fits one but can’t find it its this error message 
-- And if they do it goes through 
-- B02944934
+>**We believe that** having the terms entered in one input field
+>**Will be a useful feature for** staff
+>**As it will** keep the search page simple
 
->**We believe that** 
->**Will be a useful feature for** 
->**As it will** 
-
-![Screenshot of the new organisation notes tab ](notes-tab.png "Screenshot of the new organisation notes tab")
 
 #### Email
-- Can search by active, invited, inactive SRO’s, add into table to also show as want to be able to see if should carry on speaking to the person on the phone and understand full context.
-- Can search by active, invited submitters
-- Don’t have the dates active, so can’t order by most recent, will order by status then by first name 
+To expand the search to allow to search by email, there are multiple status' that could be associated with these users'.
+
+>**We believe that** searching by active, invited, inactive SRO’s and displaying all these users in the Contact's SRO's section
+>**Will be a useful feature for** staff
+>**As it will** as want to be able to see if should carry on speaking to the person on the phone and understand full context.
+
+>**We believe that** searching by active, invited submitters and only displaying these users and not the inactive one's in the Contact's submitter's section
+>**Will be a useful feature for** staff
+>**As it will** be less important to see deleted submitter's.
+
+We won't capture the dates that each submitter is active, which also means then we can't display these user's in order of most recent. Decided to show in order of active/invited and then inactive, then within each status order them alphabetically which be helpful to provide some order.
 
 
 #### Job roles
+Two job roles in service of processor and CCS agent.
+For a CCS agent they won't be able to Process a claim or register a organisation. These are then options that are hidden on the signposting page. Since they will then only have one option we will istead naviagte them on login to the find a organisation search page. Processing of a claim functionality within the not yet processed claim view will also be hidden. 
 
-- hide the find a claim and register a org route
-- ok that can only search with email and id, as we believe covers their scenarios.
-- hide the processing radio buttons inside a not yet processed claim. Everything else the same.
-- hidden functionality to process the claims
-
-
+>**We believe that** only being able to search by email, workplace id
+>**Will be a useful feature for** ccs agents
+>**As it will** them to cover the scenarios of... TO ADD
 
 #### Content updates
 
@@ -105,5 +112,7 @@ There was a concern about ID/CV process and the risk if they didn't do workplace
 
 ## How we tested our ideas and what we found
 
+- Sense checked the updates with BSA staff in a workshop, rather than a full usability test. They agreed the routes in were clearer, and the added ability to search with email will help. 
 
 ## What we will do next
+- Gone into development.
