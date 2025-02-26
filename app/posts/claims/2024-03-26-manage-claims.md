@@ -11,7 +11,8 @@ tags:
   - claims-version-8
   - claims-manage-claims
   - 100-type-claims
-  - hidden-user-need-1
+relatedUserNeeds:
+  - user-need-1
 aside:
   title:  Claims Prototypes
   content: |

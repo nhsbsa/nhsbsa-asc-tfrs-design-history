@@ -9,6 +9,8 @@ tags:
   - private-beta
   - processing-process-a-claim
   - claims-support-and-guidance
+relatedUserNeeds:
+  - user-need-8
 ---
 
 Contents

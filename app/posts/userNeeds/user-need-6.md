@@ -1,5 +1,5 @@
 ---
 layout: user-need
-title: User need 6
+title: Claim flexibility
 id: user-need-6
 ---

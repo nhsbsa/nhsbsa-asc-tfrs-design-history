@@ -11,6 +11,8 @@ tags:
   - claims-version-13
   - claims-account-creation
   - claims-support-and-guidance
+relatedUserNeeds:
+  - user-need-10
 aside:
   title:  Claims Prototypes
   content: |

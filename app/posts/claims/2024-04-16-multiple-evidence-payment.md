@@ -13,6 +13,8 @@ tags:
   - claims-evidence
   - 100-type-claims
   - 60-40-type-claims
+relatedUserNeeds:
+  - user-need-3
 aside:
   title:  Claims Prototypes
   content: |

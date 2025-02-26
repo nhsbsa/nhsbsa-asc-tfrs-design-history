@@ -1,5 +1,5 @@
 ---
 layout: user-need
-title: User need 1
+title: Manage all my organisation's claims
 id: user-need-1
 ---

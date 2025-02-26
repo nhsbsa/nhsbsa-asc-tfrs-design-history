@@ -12,6 +12,8 @@ tags:
   - claims-manage-claims
   - 100-type-claims
   - 60-40-type-claims
+relatedUserNeeds:
+  - user-need-1
 aside:
   title:  Claims Prototypes
   content: |

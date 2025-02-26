@@ -11,6 +11,8 @@ tags:
   - claims-version-8
   - claims-account-creation
   - claims-authentication
+relatedUserNeeds:
+  - hidden-user-need-10
 aside:
   title:  Claims Prototypes
   content: |

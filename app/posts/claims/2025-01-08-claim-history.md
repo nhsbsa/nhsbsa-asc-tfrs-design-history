@@ -10,6 +10,8 @@ tags:
   - claims-version-13
   - claims-manage-claims
   - claims-start-a-claim
+relatedUserNeeds:
+  - user-need-1
 aside:
   title:  Claims Prototypes
   content: |

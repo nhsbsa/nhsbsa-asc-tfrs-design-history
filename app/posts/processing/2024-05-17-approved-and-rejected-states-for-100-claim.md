@@ -11,6 +11,8 @@ tags:
   - processing-version-3
   - processing-view-a-claim
   - 100-type-claims
+relatedUserNeeds:
+  - user-need-12
 aside:
   title:  Processing Prototypes
   content: |

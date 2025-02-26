@@ -11,7 +11,7 @@
         modified: modified,
         author: author,
         authors: authors,
-        tags: tags | filterHidden
+        tags: tags
       }) }}
     </div>
 
@@ -36,10 +36,29 @@
       {% endcall %}
     </div>
 
-    {% if aside or related %}
+    {% if aside or related or relatedUserNeeds %}
       <div class="govuk-grid-column-one-third-from-desktop">
-        {% include "layouts/shared/related.njk" %}
+        {% if aside or related %}
+          {% include "layouts/shared/related.njk" %}
+        {% endif %}
+        {% if relatedUserNeeds %}
+          {% if not(aside or related) %}<aside class="app-aside">{% endif %}
+              <h2 class="app-aside__heading">
+                User needs
+              </h2>
+              <div class="app-aside__body">
+                {% for need in relatedUserNeeds %}
+                  <a href="/userNeeds/{{ need | slug }}" class="govuk-link">{{ need }}</a>
+                {% endfor %}
+              </div>
+          
+          {% if not(aside or related) %}</aside>{% endif %}
+          
+        {% endif %}
       </div>
     {% endif %}
+
+    
+    
   </div>
 {% endblock %}

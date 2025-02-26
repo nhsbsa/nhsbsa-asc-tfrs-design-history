@@ -12,6 +12,8 @@ tags:
   - processing-process-a-claim
   - 100-type-claims
   - 60-40-type-claims
+relatedUserNeeds:
+  - user-need-11
 aside:
   title:  Processing Prototypes
   content: |

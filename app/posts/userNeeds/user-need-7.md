@@ -1,5 +1,5 @@
 ---
 layout: user-need
-title: User need 7
+title: Manage budget
 id: user-need-7
 ---

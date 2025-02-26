@@ -9,6 +9,8 @@ tags:
   - private-beta
   - claims-version-13
   - claims-evidence
+relatedUserNeeds:
+  - user-need-3
 aside:
   title:  Claims Prototypes
   content: |

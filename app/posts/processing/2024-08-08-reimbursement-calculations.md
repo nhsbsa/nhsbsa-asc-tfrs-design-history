@@ -9,6 +9,9 @@ tags:
   - private-beta
   - processing-version-3
   - processing-process-a-claim
+relatedUserNeeds:
+  - user-need-5
+  - user-need-8
 aside:
   title:  Processing Prototypes
   content: |

@@ -22,7 +22,7 @@ userNeeds.forEach((need, index) => {
   // Markdown content
   const content = `---
 layout: user-need
-title: User need ${postNumber}
+title: ${need.title}
 id: user-need-${postNumber}
 ---`;
 

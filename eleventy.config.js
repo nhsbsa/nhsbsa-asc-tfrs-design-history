@@ -44,9 +44,27 @@ module.exports = function (eleventyConfig) {
     return collection.getFilteredByGlob('app/posts/userNeeds/*.md')
   })
 
-  eleventyConfig.addFilter("filterHidden", function (array) {
-    if (!Array.isArray(array)) return array; // Ensure it's an array
-    return array.filter(item => typeof item === "string" && !item.startsWith("hidden-"));
+  eleventyConfig.addFilter("formatUserNeed", function (str) {
+    return str
+    .replace(/-/g, " ") // Replace hyphens with spaces
+    .replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize first letter of each word
+  });
+
+  eleventyConfig.addCollection('userNeedsMap', collection => {
+    let userNeedsMap = {};
+
+    collection.getAll().forEach((item) => {
+      if (item.data.relatedUserNeeds) {
+        item.data.relatedUserNeeds.forEach((relatedUserNeeds) => {
+          if (!userNeedsMap[relatedUserNeeds]) {
+            userNeedsMap[relatedUserNeeds] = [];
+          }
+          userNeedsMap[relatedUserNeeds].push(item);
+        });
+      }
+    });
+
+    return userNeedsMap;
   });
 
 

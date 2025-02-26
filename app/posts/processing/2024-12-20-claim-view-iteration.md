@@ -11,7 +11,9 @@ tags:
   - processing-view-a-claim
   - processing-process-a-claim
   - processing-claim-notes
-
+relatedUserNeeds:
+  - user-need-11
+  - user-need-12
 aside:
   title:  Processing Prototypes
   content: |

@@ -110,12 +110,6 @@
         "as": "submitter",
         "need": "to be able to see the rejected claim",
         "so": "I can compare what I submitted against the rejection reasons."
-      },
-      {
-        "id": "user-need-4.3",
-        "as": "submitter",
-        "need": "to see the time remaining until the claim deadline",
-        "so": "I can avoid missing the deadline for resubmission and not being reimbursed."
       }
     ]
   },
@@ -137,12 +131,6 @@
         "as": "provider",
         "need": "to know how much we can get reimbursed for each course we send our staff on",
         "so": "I can budget accordingly."
-      },
-      {
-        "id": "user-need-5.3",
-        "as": "provider",
-        "need": "to understand the scheme deadlines",
-        "so": "I can submit our claims on time."
       }
     ]
   },
@@ -243,28 +231,34 @@
   },
   {
     "id": "user-need-10",
-    "title": "Identifying senior responsible officers",
+    "title": "Registering for the service",
     "as": "ASC provider",
-    "need": "I need clear instructions on who our senior responsible officer (SRO) should be",
-    "so": "we can identify the right person to sign the grant declaration letter and get started using the service.",
+    "need": "to be able to register to use the service",
+    "so": "we can be set up correctly to start claiming the funding we are eligible for.",
     "secondaryNeeds": [
       {
         "id": "user-need-10.1",
-        "as": "provider",
-        "need": "to have clear instructions on who our senior responsible officer (SRO) should be",
-        "so": "we can identify the right person to sign the grant declaration letter and get started using the service."
-      },
-      {
-        "id": "user-need-10.2",
         "as": "provider",
         "need": "to quickly identify our senior responsible officer (SRO)",
         "so": "we can start claiming and receiving funding as soon as possible."
       },
       {
-        "id": "user-need-10.3",
+        "id": "user-need-10.2",
         "as": "provider",
         "need": "to know how the Grant Determination Letter (GDL) should be signed and submitted to BSA",
         "so": "this can be reviewed by the right people who administer the fund."
+      },
+      {
+        "id": "user-need-10.3",
+        "as": "provider",
+        "need": "to share our organisation’s bank details",
+        "so": "we can receive payment for successful claims to the correct account."
+      },
+      {
+        "id": "user-need-10.4",
+        "as": "provider",
+        "need": "to know the eligibility criteria for organisations to join the scheme",
+        "so": "I can check we have everything in place before we sign up."
       }
     ]
   },
@@ -337,6 +331,72 @@
         "as": "processor",
         "need": "document my own decisions and actions",
         "so": "future claim processors can understand my reasons for making the decisions and actions."
+      }
+    ]
+  },
+  {
+    "id": "user-need-13",
+    "title": "View organisation information",
+    "as": "contact centre agent",
+    "need": "to see information about an organisation,",
+    "so": "I can respond to the queries we get",
+    "secondaryNeeds": [
+      {
+        "id": "user-need-13.1",
+        "as": "contact centre agent",
+        "need": "to know what the status is on a claim, including details on any action taken on any claims",
+        "so": "I can answer any queries about the claims."
+      },
+      {
+        "id": "user-need-13.2",
+        "as": "contact centre agent",
+        "need": "to be able to see all the necessary organisation’s details to complete ID/CV",
+        "so": "I can ensure I am only sharing information with the right people."
+      },
+      {
+        "id": "user-need-13.3",
+        "as": "contact centre agent",
+        "need": "to be able to quickly log notes centrally after a call",
+        "so": "we have an audit trail of queries and actions and me and my colleagues can quickly find the information later."
+      }
+    ]
+  },
+  {
+    "id": "user-need-14",
+    "title": "Supporting organisations with registration",
+    "as": "onboarder",
+    "need": "to be able to register an organisation",
+    "so": "that they can make claims using the service.",
+    "secondaryNeeds": [
+      {
+        "id": "user-need-14.1",
+        "as": "onboarder",
+        "need": "to be able to identify eligible organisations who are interested in registering for the scheme",
+        "so": "I can contact them to arrange onboarding."
+      },
+      {
+        "id": "user-need-14.2",
+        "as": "onboarder",
+        "need": "to be able to confirm an organisation is eligible for the scheme",
+        "so": "I can ensure only eligible organisations are registered to use the service."
+      },
+      {
+        "id": "user-need-14.3",
+        "as": "onboarder",
+        "need": "to be able to guide the signatory through the registration process",
+        "so": "I can ensure it is successfully completed."
+      },
+      {
+        "id": "user-need-14.4",
+        "as": "onboarder",
+        "need": "to be able to verify the bank details that have been provided by the organisation",
+        "so": "I can ensure they are legitimately linked with the organisation, to prevent fraud ."
+      },
+      {
+        "id": "user-need-14.5",
+        "as": "onboarder",
+        "need": "to be able to edit and re-send an invite to an SRO",
+        "so": "I can deal with situations where the invite is not received by the correct person."
       }
     ]
   }

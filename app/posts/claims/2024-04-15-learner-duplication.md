@@ -13,6 +13,8 @@ tags:
   - claims-learners
   - 100-type-claims
   - 60-40-type-claims
+relatedUserNeeds:
+  - user-need-9
 aside:
   title:  Claims Prototypes
   content: |

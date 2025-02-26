@@ -10,7 +10,8 @@ tags:
   - private-beta
   - claims-version-9
   - claims-manage-claims
-
+relatedUserNeeds:
+  - user-need-1
 aside:
   title:  Claims Prototypes
   content: |

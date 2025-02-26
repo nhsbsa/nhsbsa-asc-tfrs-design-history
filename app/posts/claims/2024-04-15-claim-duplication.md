@@ -15,6 +15,9 @@ tags:
   - 100-type-claims
   - 60-40-type-claims
   - policy-restrictions
+relatedUserNeeds:
+  - user-need-1
+  - user-need-4
 aside:
   title:  Claims Prototypes
   content: |
