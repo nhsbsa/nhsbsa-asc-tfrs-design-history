@@ -25,12 +25,13 @@
     {% if userNeeds.length > 0 %}
         <ol class="app-document-list app-document-list--large">
         {% for need in userNeeds %}
+            {% set needCopy = "As a " + need.as + " I need " + need.need + " so that " + need.so %}
             <li class="app-document-list__item">
             <h2 class="app-document-list__item-title">
-                <a class="govuk-link" href="{{need.id}}?testid=32">{{ need.id}}</a>
+                <a class="govuk-link" href="{{need.id}}">{{ need.title}}</a>
             </h2>
             <p class="app-document-list__item-description">
-                {{need.need | markdown("inline") | safe}}
+                {{needCopy | markdown("inline") | safe}}
             </p>
             </li>
         {% endfor %}
