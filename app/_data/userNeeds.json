@@ -1,71 +1,342 @@
 [
   {
     "id": "user-need-1",
+    "title": "Manage all my organisation's claims",
     "as": "submitter",
-    "need": "be able to manage all my organisation's claims",
+    "need": "to be able to manage all my organisation's claims",
     "so": "I don't spend more time than I need to making and managing claims (and can focus on other tasks).",
     "secondaryNeeds": [
       {
         "id": "user-need-1.1",
         "as": "submitter",
-        "need": "check the statuses of my claims",
+        "need": "to check the statuses of my claims",
         "so": "I can monitor the progress of my claims."
       },
       {
         "id": "user-need-1.2",
         "as": "submitter",
-        "need": "know when payment will be received",
+        "need": "to know when payment will be received",
         "so": "I can plan my finances accordingly."
       },
       {
         "id": "user-need-1.3",
         "as": "submitter",
-        "need": "be notified if an issue arises with any of our claims",
+        "need": "to be notified if an issue arises with any of our claims",
         "so": "I can address the issue promptly."
       },
       {
         "id": "user-need-1.4",
         "as": "submitter",
-        "need": "identify and select the correct courses",
+        "need": "to identify and select the correct courses",
         "so": " I can quickly start a claim."
       }
     ]
   },
   {
     "id": "user-need-2",
+    "title": "Save my progress",
     "as": "submitter",
-    "need": "be able to save my progress",
+    "need": "to be able to save my progress",
     "so": "I can return to it later (for example when I have proof of completion).",
     "secondaryNeeds": [
       {
         "id": "user-need-2.1",
         "as": "submitter",
-        "need": "find a claim I've already started",
+        "need": "to find a claim I've already started",
         "so": "I can continue working on it without starting from scratch."
       },
       {
         "id": "user-need-2.2",
         "as": "submitter",
-        "need": "save the claim I'm working on even if I haven't finished inputting information",
+        "need": "to save the claim I'm working on even if I haven't finished inputting information",
         "so": "I can avoid losing my progress."
       },
       {
         "id": "user-need-2.3",
         "as": "submitter",
-        "need": "see when a claim was started and/or last updated",
+        "need": "to see when a claim was started and/or last updated",
         "so": "I can track the claim's timeline."
       },
       {
         "id": "user-need-2.4",
         "as": "submitter",
-        "need": "quickly identify what remains to be done in a partially completed claim",
-        "so": "I can complete the claim efficiently"
+        "need": "to quickly identify what remains to be done in a partially completed claim",
+        "so": "I can complete the claim efficiently."
+      }
+    ]
+  },
+  {
+    "id": "user-need-3",
+    "title": "Upload claim evidence",
+    "as": "submitter",
+    "need": "to easily upload claim evidence without the need to duplicate/resubmit",
+    "so": "I don't waste time and can focus on my most important duties.",
+    "secondaryNeeds": [
+      {
+        "id": "user-need-3.1",
+        "as": "submitter",
+        "need": "to know precisely what evidence is required",
+        "so": "I can prepare and upload the correct documentation."
       },
       {
-        "id": "user-need-2",
-        "as": "test2",
-        "need": "test2",
-        "so": "test2"
+        "id": "user-need-3.2",
+        "as": "submitter",
+        "need": "to provide necessary documentation to support my claim",
+        "so": "I can enable effective processing without needing to query evidence."
+      },
+      {
+        "id": "user-need-3.3",
+        "as": "submitter",
+        "need": "to see what evidence has already been added to a claim",
+        "so": "I can avoid duplication, double check its contents and ensure all required information is included."
+      }
+    ]
+  },
+  {
+    "id": "user-need-4",
+    "title": "Understand rejected claims",
+    "as": "submitter",
+    "need": "to understand why a claim I made has been rejected",
+    "so": "I can deal with it appropriately.",
+    "secondaryNeeds": [
+      {
+        "id": "user-need-4.1",
+        "as": "submitter",
+        "need": "to know the reason that my claim has been rejected",
+        "so": "I can ensure I am addressing the correct rejection issue."
+      },
+      {
+        "id": "user-need-4.2",
+        "as": "submitter",
+        "need": "to be able to see the rejected claim",
+        "so": "I can compare what I submitted against the rejection reasons."
+      },
+      {
+        "id": "user-need-4.3",
+        "as": "submitter",
+        "need": "to see the time remaining until the claim deadline",
+        "so": "I can avoid missing the deadline for resubmission and not being reimbursed."
+      }
+    ]
+  },
+  {
+    "id": "user-need-5",
+    "title": "Clear guidance",
+    "as": "ASC provider",
+    "need": "clear guidance",
+    "so": "I can understand who/what is eligible, what to submit and when, and know when I will receive reimbursement.",
+    "secondaryNeeds": [
+      {
+        "id": "user-need-5.1",
+        "as": "provider",
+        "need": "to know which courses are eligible",
+        "so": "I can ensure we only apply for reimbursement for eligible courses."
+      },
+      {
+        "id": "user-need-5.2",
+        "as": "provider",
+        "need": "to know how much we can get reimbursed for each course we send our staff on",
+        "so": "I can budget accordingly."
+      },
+      {
+        "id": "user-need-5.3",
+        "as": "provider",
+        "need": "to understand the scheme deadlines",
+        "so": "I can submit our claims on time."
+      }
+    ]
+  },
+  {
+    "id": "user-need-6",
+    "title": "Claim flexibility",
+    "as": "ASC provider",
+    "need": "flexibility in who can start, edit, or submit a claim for my organisation",
+    "so": "we don't become stuck if somebody needs to work on a claim that they didn't start.",
+    "secondaryNeeds": [
+      {
+        "id": "user-need-6.1",
+        "as": "provider",
+        "need": "colleagues to be able to pick up where others have left off",
+        "so": "myself and colleagues can collaborate on making claims."
+      },
+      {
+        "id": "user-need-6.2",
+        "as": "provider",
+        "need": "colleagues to be able to submit claims that somebody else has previously worked on",
+        "so": "I can avoid duplicating effort and ensure smooth transitions."
+      },
+      {
+        "id": "user-need-6.3",
+        "as": "provider",
+        "need": "to have multiple users within our organisation",
+        "so": "I can manage claims collaboratively."
+      },{
+        "id": "user-need-6.4",
+        "as": "provider",
+        "need": "to see who started a claim",
+        "so": "I can contact the appropriate person for more information if needed."
+      }
+    ]
+  },
+  {
+    "id": "user-need-7",
+    "title": "Manage budget",
+    "as": "ASC provider",
+    "need": "to see what we've already claimed for and how much budget we have left",
+    "so": "we can claim all the money that we are eligible for.",
+    "secondaryNeeds": [
+      {
+        "id": "user-need-7.1",
+        "as": "provider",
+        "need": "to see how much our organisation has been reimbursed (or applied for reimbursement) this FY and/or the remaining budget",
+        "so": "I can track our financials accurately and anticipate potential reimbursement."
+      }
+    ]
+  },
+  {
+    "id": "user-need-8",
+    "title": "See expected payments",
+    "as": "ASC provider",
+    "need": "see when we can expect to be paid",
+    "so": "I am able to manage my budget effectively.",
+    "secondaryNeeds": [
+      {
+        "id": "user-need-8.1",
+        "as": "provider",
+        "need": "to see when we can expect to be paid",
+        "so": "I am able to manage my budget effectively."
+      },
+      {
+        "id": "user-need-8.2",
+        "as": "provider",
+        "need": "to have notice of the payment date",
+        "so": "I can look out for the payment into my account and know if it hasn't been received."
+      },
+      {
+        "id": "user-need-8.3",
+        "as": "provider",
+        "need": "know which claim the payment relates to",
+        "so": "I know whether I have any outstanding claims to be paid."
+      }
+    ]
+  },
+  {
+    "id": "user-need-9",
+    "title": "Uniquely identify learners",
+    "as": "large ASC provider",
+    "need": "a way to uniquely identify learners in the service when I may not have unique identifiers myself (e.g. no HR system)",
+    "so": "I don't claim for the wrong learner (e.g., two people with the same name).",
+    "secondaryNeeds": [
+      {
+        "id": "user-need-9.1",
+        "as": "provider",
+        "need": "to uniquely identify learners in the service",
+        "so": "I don't claim for the wrong learner (e.g., two people with the same name)."
+      },
+      {
+        "id": "user-need-9.2",
+        "as": "provider",
+        "need": "to view info about the learner in addition to their unique identifier",
+        "so": "I can double check that I am claiming for the right person."
+      }
+    ]
+  },
+  {
+    "id": "user-need-10",
+    "title": "Identifying senior responsible officers",
+    "as": "ASC provider",
+    "need": "I need clear instructions on who our senior responsible officer (SRO) should be",
+    "so": "we can identify the right person to sign the grant declaration letter and get started using the service.",
+    "secondaryNeeds": [
+      {
+        "id": "user-need-10.1",
+        "as": "provider",
+        "need": "to have clear instructions on who our senior responsible officer (SRO) should be",
+        "so": "we can identify the right person to sign the grant declaration letter and get started using the service."
+      },
+      {
+        "id": "user-need-10.2",
+        "as": "provider",
+        "need": "to quickly identify our senior responsible officer (SRO)",
+        "so": "we can start claiming and receiving funding as soon as possible."
+      },
+      {
+        "id": "user-need-10.3",
+        "as": "provider",
+        "need": "to know how the Grant Determination Letter (GDL) should be signed and submitted to BSA",
+        "so": "this can be reviewed by the right people who administer the fund."
+      }
+    ]
+  },
+  {
+    "id": "user-need-11",
+    "title": "Clear evidence requirements",
+    "as": "claim processor",
+    "need": "evidence requirements to be clear,",
+    "so": "I can judge whether each piece of evidence is acceptable.",
+    "secondaryNeeds": [
+      {
+        "id": "user-need-11.1",
+        "as": "processor",
+        "need": "evidence requirements to be clear",
+        "so": "I can judge whether each piece of evidence is acceptable."
+      },
+      {
+        "id": "user-need-11.1",
+        "as": "processor",
+        "need": "to know which piece of evidence the requirement relates to",
+        "so": "I can apply the requirements to the right piece of evidence."
+      },
+      {
+        "id": "user-need-11.1",
+        "as": "processor",
+        "need": "to know where the evidence requirements are listed",
+        "so": "I can easily find them when needed."
+      },
+      {
+        "id": "user-need-11.1",
+        "as": "processor",
+        "need": "to easily apply the evidence requirements to the types of evidence provided",
+        "so": "I can process claims quickly and in accordance with the Service Level Agreements."
+      }
+    ]
+  },
+  {
+    "id": "user-need-12",
+    "title": "Understand previous claim decisions",
+    "as": "claim processor",
+    "need": "to know what decisions / actions have previously been made for a claim (either by myself or colleagues)",
+    "so": "I can make the most appropriate decision when processing a claim",
+    "secondaryNeeds": [
+      {
+        "id": "user-need-12.1",
+        "as": "processor",
+        "need": "to know what decisions/actions have previously been made for a claim",
+        "so": "I can make the most appropriate decision when processing a claim."
+      },
+      {
+        "id": "user-need-12.2",
+        "as": "processor",
+        "need": "see who has taken a decision or action for a claim",
+        "so": "I can ask them if I need further clarification on the decision."
+      },
+      {
+        "id": "user-need-12.3",
+        "as": "processor",
+        "need": "decisions and actions to be date-stamped",
+        "so": "I can see the order in which decisions and actions have been made."
+      },
+      {
+        "id": "user-need-12.4",
+        "as": "processor",
+        "need": "to know the rationale behind decisions and actions made",
+        "so": "I can understand why their decisions and actions were made."
+      },
+      {
+        "id": "user-need-12.5",
+        "as": "processor",
+        "need": "document my own decisions and actions",
+        "so": "future claim processors can understand my reasons for making the decisions and actions."
       }
     ]
   }

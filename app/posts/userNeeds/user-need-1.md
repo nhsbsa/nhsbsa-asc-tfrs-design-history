@@ -1,6 +1,5 @@
 ---
-layout: user-needs
-title: User needs
-description: The user needs for our service that have been identified through user research.
-permalink: "userNeeds/user-need-1/"
+layout: user-need
+title: User need 1
+id: user-need-1
 ---

@@ -14,7 +14,8 @@
     "start": "eleventy --serve --quiet",
     "preserve": "npm run build",
     "serve": "http-server",
-    "test": "standard"
+    "test": "standard",
+    "generateUserNeeds": "node scripts/generateUserNeeds.js"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",

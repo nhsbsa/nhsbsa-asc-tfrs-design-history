@@ -1,4 +1,4 @@
-{% extends "_layouts/post.njk" %}
+{% extends "layouts/post.njk" %}
 
 {% block content %}
 <div class="govuk-grid-row">
@@ -12,12 +12,12 @@
         }) }}
     </div>
     <div class="govuk-grid-column-two-thirds-from-desktop">
-      {{testid}}
+      {{data.id}}
         {% for need in userNeeds %}
             {% if need.id == id %}
                 <section class="govuk-!-margin-bottom-6" id="{{ need.id }}">
                     <p class="govuk-body"><span class="govuk-!-font-weight-bold">As a</span> {{ need.as }}</p>
-                    <p class="govuk-body"><span class="govuk-!-font-weight-bold">I need to</span> {{ need.need }}</p>
+                    <p class="govuk-body"><span class="govuk-!-font-weight-bold">I need</span> {{ need.need }}</p>
                     <p class="govuk-body"><span class="govuk-!-font-weight-bold">So that</span> {{ need.so }}</p>
                 </section>
                 {% if need.secondaryNeeds != null %}
@@ -26,7 +26,7 @@
                     <h3 class="govuk-heading-s">{{title}}.{{loop.index}}</h2>
                     <section class="govuk-!-margin-bottom-6" id="{{ secondaryNeed.id }}">
                         <p class="govuk-body"><span class="govuk-!-font-weight-bold">As a</span> {{ secondaryNeed.as }}</p>
-                        <p class="govuk-body"><span class="govuk-!-font-weight-bold">I need to</span> {{ secondaryNeed.need }}</p>
+                        <p class="govuk-body"><span class="govuk-!-font-weight-bold">I need</span> {{ secondaryNeed.need }}</p>
                         <p class="govuk-body"><span class="govuk-!-font-weight-bold">So that</span> {{ secondaryNeed.so }}</p>
                     </section>
                     {% endfor %}
