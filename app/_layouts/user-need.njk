@@ -1,0 +1,46 @@
+{% extends "_layouts/post.njk" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        {{ appDocumentHeader({
+          title: title | noOrphans,
+          modified: modified,
+          author: author,
+          authors: authors,
+          tags: tags
+        }) }}
+    </div>
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      {{testid}}
+        {% for need in userNeeds %}
+            {% if need.id == id %}
+                <section class="govuk-!-margin-bottom-6" id="{{ need.id }}">
+                    <p class="govuk-body"><span class="govuk-!-font-weight-bold">As a</span> {{ need.as }}</p>
+                    <p class="govuk-body"><span class="govuk-!-font-weight-bold">I need to</span> {{ need.need }}</p>
+                    <p class="govuk-body"><span class="govuk-!-font-weight-bold">So that</span> {{ need.so }}</p>
+                </section>
+                {% if need.secondaryNeeds != null %}
+                <h2 class="govuk-heading-m">Secondary needs</h2>
+                    {% for secondaryNeed in need.secondaryNeeds %}
+                    <h3 class="govuk-heading-s">{{title}}.{{loop.index}}</h2>
+                    <section class="govuk-!-margin-bottom-6" id="{{ secondaryNeed.id }}">
+                        <p class="govuk-body"><span class="govuk-!-font-weight-bold">As a</span> {{ secondaryNeed.as }}</p>
+                        <p class="govuk-body"><span class="govuk-!-font-weight-bold">I need to</span> {{ secondaryNeed.need }}</p>
+                        <p class="govuk-body"><span class="govuk-!-font-weight-bold">So that</span> {{ secondaryNeed.so }}</p>
+                    </section>
+                    {% endfor %}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="govuk-grid-column-two-thirds-from-desktop govuk-!-margin-top-6">
+      <h2 class="govuk-heading-m">Design work done relating to this need</h2>
+          {{ appDocumentList({
+          headingLevel: 3 if paginationHeading else 2,
+          classes: "app-document-list--large",
+          items: collections["hidden-" + id] | reverse
+          }) }}
+    </div>
+</div>
+{% endblock %}

@@ -19,6 +19,13 @@ module.exports = function (eleventyConfig) {
   // Passthrough
   eleventyConfig.addPassthroughCopy({ './app/images': '.' })
 
+  eleventyConfig.addCollection('partsOfService', collection => {
+    return collection.getFilteredByGlob([
+      'app/posts/claims.md',
+      'app/posts/processing.md'
+    ])
+  })
+
   eleventyConfig.addCollection('claims', collection => {
     return collection.getFilteredByGlob('app/posts/claims/*.md')
   })
@@ -26,6 +33,23 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection('processing', collection => {
     return collection.getFilteredByGlob('app/posts/processing/*.md')
   })
+
+  eleventyConfig.addCollection('userResearch', collection => {
+    return collection.getFilteredByGlob([
+      'app/posts/userNeeds.md',
+    ])
+  })
+
+  eleventyConfig.addCollection('userNeeds', collection => {
+    return collection.getFilteredByGlob('app/posts/userNeeds/*.md')
+  })
+
+  eleventyConfig.addFilter("filterHidden", function (array) {
+    if (!Array.isArray(array)) return array; // Ensure it's an array
+    return array.filter(item => typeof item === "string" && !item.startsWith("hidden-"));
+  });
+
+
 
 
   // Config
@@ -38,8 +62,7 @@ module.exports = function (eleventyConfig) {
       output: 'public',
       layouts: '_layouts',
       includes: '_components'
-    },
-
+    }
   }
 
 

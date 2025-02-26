@@ -1,0 +1,49 @@
+{% extends "layouts/base.njk" %}
+
+{%- set headerType = "no-border" -%}
+
+{% block main %}
+  {{ xGovukMasthead({
+    title: {
+      html: title | smart
+    } if title,
+    description: {
+      html: description | markdown("inline") | noOrphans
+    } if description,
+    breadcrumbs: {
+      classes: "govuk-!-display-none-print",
+      items: breadcrumbItems
+    } if showBreadcrumbs
+  }) }}
+
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <section class="govuk-grid-column-two-thirds-from-desktop">
+    {% if userNeeds.length > 0 %}
+        <ol class="app-document-list app-document-list--large">
+        {% for need in userNeeds %}
+            <li class="app-document-list__item">
+            <h2 class="app-document-list__item-title">
+                <a class="govuk-link" href="{{need.id}}?testid=32">{{ need.id}}</a>
+            </h2>
+            <p class="app-document-list__item-description">
+                {{need.need | markdown("inline") | safe}}
+            </p>
+            </li>
+        {% endfor %}
+        </ol>
+    {% else %}
+        <p class="govuk-body">No user needs found.</p>
+    {% endif %}
+  </section>
+
+  {% if aside or related %}
+  <div class="govuk-grid-column-one-third-from-desktop">
+    {% include "layouts/shared/related.njk" %}
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

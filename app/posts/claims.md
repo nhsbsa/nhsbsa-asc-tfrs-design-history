@@ -1,7 +1,7 @@
 ---
 layout: collection
 title: Claims
-description: The part of the digital service that allows employers to make and manage training reimbursment claims.
+description: The part of the digital service that allows employers to make and manage training reimbursement claims.
 pagination:
   data: collections.claims
   reverse: true
