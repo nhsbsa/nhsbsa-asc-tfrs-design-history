@@ -16,18 +16,14 @@
         {% for need in userNeeds %}
             {% if need.id == id %}
                 <section class="govuk-!-margin-bottom-6" id="{{ need.id }}">
-                    <p class="govuk-body"><span class="govuk-!-font-weight-bold">As a</span> {{ need.as }}</p>
-                    <p class="govuk-body"><span class="govuk-!-font-weight-bold">I need</span> {{ need.need }}</p>
-                    <p class="govuk-body"><span class="govuk-!-font-weight-bold">So that</span> {{ need.so }}</p>
+                    <p class="govuk-body"><span class="govuk-!-font-weight-bold">As a</span> {{ need.as }}<br><span class="govuk-!-font-weight-bold">I need</span> {{ need.need }}<br><span class="govuk-!-font-weight-bold">So that</span> {{ need.so }}</p>
                 </section>
                 {% if need.secondaryNeeds != null %}
                 <h2 class="govuk-heading-m">Secondary needs</h2>
                     {% for secondaryNeed in need.secondaryNeeds %}
-                    <h3 class="govuk-heading-s">{{secondaryNeed.id | extractNeedNo}}</h2>
+                    <h3 class="govuk-heading-s">{{secondaryNeed.id | extractNeedNo}}</h3>
                     <section class="govuk-!-margin-bottom-6" id="{{ secondaryNeed.id }}">
-                        <p class="govuk-body"><span class="govuk-!-font-weight-bold">As a</span> {{ secondaryNeed.as }}</p>
-                        <p class="govuk-body"><span class="govuk-!-font-weight-bold">I need</span> {{ secondaryNeed.need }}</p>
-                        <p class="govuk-body"><span class="govuk-!-font-weight-bold">So that</span> {{ secondaryNeed.so }}</p>
+                        <p class="govuk-body"><span class="govuk-!-font-weight-bold">As a</span> {{ secondaryNeed.as }}<br><span class="govuk-!-font-weight-bold">I need</span> {{ secondaryNeed.need }}<br><span class="govuk-!-font-weight-bold">So that</span> {{ secondaryNeed.so }}</p>
                     </section>
                     {% endfor %}
                 {% endif %}
@@ -35,7 +31,7 @@
         {% endfor %}
     </div>
     <div class="govuk-grid-column-two-thirds-from-desktop govuk-!-margin-top-6">
-      <h2 class="govuk-heading-m">Design work done relating to this need</h2>
+      <h2 class="govuk-heading-m">Design work relating to this need</h2>
           {{ appDocumentList({
           headingLevel: 3 if paginationHeading else 2,
           classes: "app-document-list--large",

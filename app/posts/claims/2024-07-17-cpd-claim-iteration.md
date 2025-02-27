@@ -10,7 +10,7 @@ tags:
   - claims-version-11
   - revalidation-funding
 aside:
-  title:  Claims Prototypes
+  title:  Claims prototypes
   content: |
     [View claims v11 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v11/) 
     Password: bsaasc123

@@ -12,7 +12,7 @@ tags:
   - claims-manage-claims
   - claims-support-and-guidance
 aside:
-  title:  Claims Prototypes
+  title:  Claims prototypes
   content: |
     [View claims v13 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v13/) 
     Password: bsaasc123

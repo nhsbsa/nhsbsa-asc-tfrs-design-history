@@ -9,7 +9,7 @@ tags:
   - claims-version-1
   - claims-journey-name
 aside:
-  title:  Claims Prototypes
+  title:  Claims prototypes
   content: |
     [View claims prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Claims) 
     Password: bsaasc123
