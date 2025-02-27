@@ -50,6 +50,30 @@ module.exports = function (eleventyConfig) {
     .replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize first letter of each word
   });
 
+  eleventyConfig.addFilter("extractNeedNo", function (str) {
+      let match = str.match(/(\d+(\.\d+)?)$/);
+      return match ? match[0] : null;
+  });
+
+  eleventyConfig.addFilter("capitalizeFirstWord", function (str) {
+    if (!str) return str; // Return if the string is empty
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  });
+
+  eleventyConfig.addFilter("groupNeedsByAs", function (needsArray) {
+    const grouped = {};
+    
+    needsArray.forEach(({ as: user, ...rest }) => {
+        if (!grouped[user]) {
+            grouped[user] = [];
+        }
+        
+        grouped[user].push(rest);
+    });
+    
+    return Object.entries(grouped).map(([user, needs]) => ({ user, needs }));
+});
+
   eleventyConfig.addCollection('userNeedsMap', collection => {
     let userNeedsMap = {};
 

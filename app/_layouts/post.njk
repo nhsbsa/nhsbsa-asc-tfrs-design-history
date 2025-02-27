@@ -44,12 +44,20 @@
         {% if relatedUserNeeds %}
           {% if not(aside or related) %}<aside class="app-aside">{% endif %}
               <h2 class="app-aside__heading">
-                User needs
+                Related user needs
               </h2>
               <div class="app-aside__body">
+                <ul class="govuk-list">
                 {% for need in relatedUserNeeds %}
-                  <a href="/userNeeds/{{ need | slug }}" class="govuk-link">{{ need }}</a>
+                  {% for n in userNeeds %}
+                    {% if n.id == need %}
+                      <li>
+                      <a href="/userNeeds/{{ need | slug }}" class="govuk-link">{{ n.id | extractNeedNo}}. {{ n.title}}</a>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
                 {% endfor %}
+                </ul>
               </div>
           
           {% if not(aside or related) %}</aside>{% endif %}
