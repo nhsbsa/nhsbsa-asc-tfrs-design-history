@@ -15,11 +15,14 @@
     "preserve": "npm run build",
     "serve": "http-server",
     "test": "standard",
-    "generateUserNeeds": "node scripts/generateUserNeeds.js"
+    "generateNeeds": "node scripts/generateUserNeeds.js",
+    "needsToCSV": "node scripts/convertUserNeedsTOCSV.js",
+    "needsToJSON": "node scripts/convertUserNeedsTOJSON.js"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@x-govuk/govuk-eleventy-plugin": "^6.2.1",
+    "csv-parser": "^3.2.0",
     "http-server": "^14.1.1",
     "rimraf": "^5.0.5",
     "sass": "^1.77.2"
