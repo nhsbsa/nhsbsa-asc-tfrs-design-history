@@ -11,8 +11,10 @@ tags:
   - processing-version-3
   - processing-view-a-claim
   - 100-type-claims
+relatedUserNeeds:
+  - user-need-12
 aside:
-  title:  Processing Prototypes
+  title:  Processing prototypes
   content: |
     [View processing v3 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/prototypes/design/v3/) 
     Password: bsaasc123

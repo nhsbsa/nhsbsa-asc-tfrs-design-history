@@ -1,0 +1,56 @@
+{% extends "layouts/base.njk" %}
+
+{%- set headerType = "no-border" -%}
+
+{% set groupedNeeds = userNeeds | groupNeedsByAs %}
+
+{% block main %}
+  {{ xGovukMasthead({
+    title: {
+      html: title | smart
+    } if title,
+    description: {
+      html: description | markdown("inline") | noOrphans
+    } if description,
+    breadcrumbs: {
+      classes: "govuk-!-display-none-print",
+      items: breadcrumbItems
+    } if showBreadcrumbs
+  }) }}
+
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <section class="govuk-grid-column-two-thirds-from-desktop">
+    {% if userNeeds.length > 0 %}
+        {% for needGroup in groupedNeeds %}
+          <h2 class="govuk-heading-l {% if loop.index > 1 %}govuk-!-margin-top-9{% endif %}">{{needGroup.user | capitalizeFirstWord}}</h2>
+          <ol class="app-document-list app-document-list--large">
+          {% for need in needGroup.needs %}
+              {% set needCopy = "As a " + need.as + " I need " + need.need + " so that " + need.so %}
+              <li class="app-document-list__item">
+              <h2 class="app-document-list__item-title">
+                  <a class="govuk-link" href="{{need.id}}">{{ need.id | extractNeedNo}}. {{ need.title}}</a>
+              </h2>
+              <p class="app-document-list__item-description">
+                  {{needCopy | markdown("inline") | safe}}
+              </p>
+              </li>
+          {% endfor %}
+          </ol>
+
+        {% endfor %}
+    {% else %}
+        <p class="govuk-body">No user needs found.</p>
+    {% endif %}
+  </section>
+
+  {% if aside or related %}
+  <div class="govuk-grid-column-one-third-from-desktop">
+    {% include "layouts/shared/related.njk" %}
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

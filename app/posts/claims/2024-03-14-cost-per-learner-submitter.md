@@ -11,7 +11,7 @@ tags:
   - claims-start-a-claim
   - processing-process-a-claim
 aside:
-  title:  Processing Prototypes
+  title:  Processing prototypes
   content: |
     [View processing prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Processing) 
     Password: bsaasc123

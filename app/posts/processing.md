@@ -8,7 +8,7 @@ pagination:
   size: 50
 permalink: "processing/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}{% endif %}/"
 aside:
-  title:  Processing Prototypes
+  title:  Processing prototypes
   content: |
     [View processing prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Processing) 
     Password: bsaasc123
