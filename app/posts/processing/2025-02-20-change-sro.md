@@ -91,7 +91,15 @@ Here are screenshots of the proposed designs of the contact screen for each scen
 
 We now needed to add another layer of content through this to ensure the different scenarios are clearly communicated as scenarios 1 and 2 would show the SRO in the same active state but one would require the new SRO to do some additional action during their registration, this would need to be communicated to the appropriate people as needed.
 
-TODO content changes
+Content updates were added to make it clear to users:
+
+- that they are able to either edit or change an SRO using the same flow
+- what they need to do outside of the service, for example, sign the grant determination letter 
+- what new functionality there is in the service, for example, the fact that adding a new SRO automatically deactivates the old one
+
+New content was created for the existing success banners to mirror each new scenario. 
+
+Four templated emails were also created to be sent out to edited and new SROs (see [Emails to adult social care providers](https://bsa2468.atlassian.net/wiki/spaces/ASCRS/pages/5002134478/Emails+to+adult+social+care+providers) - emails 7 to 10).
 
 This was then taken for final sign off from the business. 
 
