@@ -11,7 +11,9 @@ tags:
   - onboarding
   - processing-register-an-organisation
   - processing-view-org
-
+relatedUserNeeds:
+  - user-need-10
+  - user-need-14
 aside:
   title:  Processing Prototypes
   content: |
