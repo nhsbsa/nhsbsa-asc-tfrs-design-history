@@ -9,8 +9,11 @@ tags:
   - private-beta
   - claims-version-13
   - claims-manage-claims
+relatedUserNeeds:
+  - user-need-1
+  - user-need-2
 aside:
-  title:  Claims Prototypes
+  title:  Claims prototypes
   content: |
     [View claims v13 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v13/) 
     Password: bsaasc123

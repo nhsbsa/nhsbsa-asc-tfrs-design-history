@@ -36,10 +36,37 @@
       {% endcall %}
     </div>
 
-    {% if aside or related %}
+    {% if aside or related or relatedUserNeeds %}
       <div class="govuk-grid-column-one-third-from-desktop">
-        {% include "layouts/shared/related.njk" %}
+        {% if aside or related %}
+          {% include "layouts/shared/related.njk" %}
+        {% endif %}
+        {% if relatedUserNeeds %}
+          {% if not(aside or related) %}<aside class="app-aside">{% endif %}
+              <h2 class="app-aside__heading">
+                Related user needs
+              </h2>
+              <div class="app-aside__body">
+                <ul class="govuk-list">
+                {% for need in relatedUserNeeds %}
+                  {% for n in userNeeds %}
+                    {% if n.id == need %}
+                      <li>
+                      <a href="/userNeeds/{{ need | slug }}" class="govuk-link">{{ n.id | extractNeedNo}}. {{ n.title}}</a>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+                </ul>
+              </div>
+          
+          {% if not(aside or related) %}</aside>{% endif %}
+          
+        {% endif %}
       </div>
     {% endif %}
+
+    
+    
   </div>
 {% endblock %}

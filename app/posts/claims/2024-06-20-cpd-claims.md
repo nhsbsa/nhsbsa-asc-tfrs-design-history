@@ -11,7 +11,7 @@ tags:
   - revalidation-funding
 
 aside:
-  title:  Claims Prototypes
+  title:  Claims prototypes
   content: |
     [View claims prototypes](https://adult-social-care-7fe9bafd955a.herokuapp.com/version-index?area=Claims) 
     Password: ascbsa123

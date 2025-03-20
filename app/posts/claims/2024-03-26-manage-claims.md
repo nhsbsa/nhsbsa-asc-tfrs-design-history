@@ -11,8 +11,10 @@ tags:
   - claims-version-8
   - claims-manage-claims
   - 100-type-claims
+relatedUserNeeds:
+  - user-need-1
 aside:
-  title:  Claims Prototypes
+  title:  Claims prototypes
   content: |
     [View claims v8 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v8/) 
     Password: bsaasc123

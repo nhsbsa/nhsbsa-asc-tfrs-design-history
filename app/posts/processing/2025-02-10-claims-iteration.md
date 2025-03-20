@@ -10,7 +10,7 @@ tags:
   - processing-version-7
   - processing-view-org
 aside:
-  title:  Processing Prototypes
+  title:  Processing prototypes
   content: |
     [View processing v7 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/prototypes/design/v7/) 
     Password: bsaasc123
