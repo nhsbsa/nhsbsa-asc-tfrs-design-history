@@ -28,7 +28,7 @@ Contents
 
 As detailed in the post covering the work to allow back office staff to add a new Senior responsible officer (SRO): [Allowing organisation to change SRO](../change-sro). As part of that work we were showing all inactive SROs alongside the active SRO.
 
-![A screenshot showing v7 of the prototype where we are showing inactive SROs](change-sro.jpg "A screenshot from the change SRO post showing inactive SROs")
+![A screenshot showing v7 of the prototype where we are showing inactive SROs](change-sro.png "A screenshot from the change SRO post showing inactive SROs")
 
 It was identified that by showing inactive SROs it implies that we would show inactive submitters if there were any. But this isn't the case. We agreed that there was an opportunity to make this better meet those expectations. However we wanted to do this in a way that was quick to develop with minimal changes to the existing design. We also had to account for the fact that the list of inactive submitters could theoretically grow quite large and are less useful that the active and invited submitters. 
 
@@ -61,9 +61,9 @@ The final aspect was to just ensure we dealt with the 4 different permutations t
 4. Some active/invited submitters and some inactive submitters
 
 This involved some variations in content between the different states:
-1. No Submitters added yet.
-2. No submitters have been deleted by the SRO.
-3. There are currently no active or invited submitters.
+1. "No Submitters added yet."
+2. "No submitters have been deleted by the SRO."
+3. "There are currently no active or invited submitters."
 4. As per the design in option 2 above.
 
 ## How we tested our ideas and what we found
