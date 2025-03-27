@@ -129,8 +129,45 @@ The final aspect of the design would be to prevent users from submitting claims 
 
 ## How we tested our ideas and what we found
 
-TODO
+### Who we tested with
+7 participants:​
+- 6 SROs and submitter​
+- 1 submitters only​
+
+Range of organisations:​
+- 3 small, 3 medium, 1 large (range of staff 10-750)​
+- Type of care: residential, day, community and domiciliary care
+
+### How we tested
+- Task-based moderated usability testing with ASC org users​
+- Pre-task semi-structured interview questions​
+- Post-task follow up questions​
+- Themed and affinity sorted data​
+- Scenario: You have/ Your SRO has signed up your organisation to the scheme, but have/has not yet added any details of where your claim reimbursements can be paid to.
+
+### What we found: the headlines
+- All users completed bank details successfully and thought the flow was 'straightforward'​
+- It was acceptable for users to be able to create claims (but not submit them) prior to adding bank details​
+- Separating bank details from the onboarding flow is useful as users may not have access to bank details when onboarding to the service​
+- Most participants missed the 'important' information banner initially​
+- Who can add or see these details? – it should only be the SRO​
+- Tabs were welcomed by users as a way to navigate the service and generally met user expectations of what they'd find within them​
+- After adding bank details all users clicked on the claims tab as their 'next' thing to do – it was positively rated that the tab title was always there​
+- Participants thought there should be different levels of access for tabs, with submitters not thought to need access to the bank details and manage team tabs as they wouldn't be expected to add or view bank details or invite users
+
+### UR recommendations
+1. Content and design changes could be made to both SRO and submitter 'add bank details' banners to make them clearer visually and that action is required​
+2. SRO users need more reassurance of what they can do and see is different to what their submitters can do and see​
+3. SRO users need more information about 'what happens' next in the verification process​
+4. Consider content review of the 'adding bank details' page e.g., sort code and name on account​
+5. Consider the difference between the needs of those who are SROs + submitters and those who are submitters only – more hand holding is likely required for submitters only
+6. Explore the possibility of more than one bank account for organisations with multiple locations
 
 ## What we will do next
-
-TODO
+Following our review of the recommendations and agreeing actions to take forward we agreed the following for each of the recommendations above:
+1. Due to the notification banner being a standard GDS component we didn't feel there was enough evidence yet to iterate the design of the whole banner. However we felt there was opportunity to iterate the content with in it to try and increase clarity.
+2. Iterate the content on the, manage team, bank details and inputting of bank details screen to clarify who can do and see what and how bank details are used and stored securely by BSA.
+3. Iterate the content on the 'what happens next' section to better illustrate the process to users as well as exploring adding an additional email to the existing verification process to confirm the outcome whether successful or not to SROs. It was recognised that this content would need further iteration as the process to verify bank details will soon be iterated as well. 
+4. Iterate the hint text around the two mentioned input fields to better clarify to users what is expected. 
+5. Giv en this recommendation is broader than just bank details we will add to the backlog a task to review the onboarding experience and support given to submitters support and iterate as needed.
+6. Given the effort to support multiple bank accounts for a single organisation and the limited evidence of this need to date we agreed that further evidence of this would be required before we would take this forward. 
