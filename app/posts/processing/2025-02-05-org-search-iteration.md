@@ -1,5 +1,5 @@
 ---
-title: Expanding search terms to find a organisation WIP
+title: Expanding search terms to find a organisation
 description: Work to iterate the routes into the organisation view and the search terms used to cover all the scenarios.
 author:
   name: Hannah Williams (Interaction designer)
@@ -34,11 +34,11 @@ aside:
 ---
 
 ## Why we did this work
-We tested the first iteration of the find and view a organisation journey with processors and css agents in w/c 5th February and there were a number of areas highlighted as needing further development. Post playback and actions meeting, these were the updates agreed upon to make:
+We tested the first iteration of the find and view a organisation journey with processors and css agents in w/c 5th February and there were a number of areas highlighted as needing further development. Post playback and actions meeting, these were the areas it was agreed upon to make updates:
 
-- Routes in to the service were confusing to the user about the differences between, unclear which to use.
+- The multiple routes in to the service were confusing to the user about the differences between which to use and where each would lead them. 
 - Search terms
-  - It was found their were a number of scenarios that searching for a organisation with workplace ID wouldn't cover. For example...
+  - It was found there were a number of scenarios that searching for a organisation with workplace ID wouldn't cover. For example...
   - Verbal communication of a workplace ID over the phone led to mistakes in typing it in.
 
 ## What our ideas were
