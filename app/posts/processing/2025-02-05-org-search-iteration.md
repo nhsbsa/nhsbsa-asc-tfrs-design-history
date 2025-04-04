@@ -62,22 +62,12 @@ Working with content, it was considered combining the two routes in into one. We
 >**Will be a useful feature for** BSA staff
 >**As it will** keep intentions seperate of going directly to a specific claim, and doing something more general with the organisation information. 
 
-![Search screen](v7-claim-view.png "Routes in")
+![Search screen](signposting-page.png "Routes in - signposting page")
 
-<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-  <div style="flex: 1; max-width: 48%;">
-  <figure>
-    <img src="tabs.png" alt="A screenshot of idea 1 showing vertical tabs for each section of the claim" style="width: 100%; height: auto;">
-    <figcaption>Find a claim</figcaption>
-  </figure>
-  </div>
-  <div style="flex: 1; max-width: 48%;">
-  <figure>
-    <img src="quick-links.png" alt="A screenshot of idea 2 showing a continuous page of the claim contents with a sticky table of contents link pattern to the left" style="width: 100%; height: auto;">
-    <figcaption>Find a organisation</figcaption>
-  </figure>
-  </div>
-</div>
+![Search screen](find-claim.png "Find a claim search")
+
+![Search screen](find-org.png "Find a organisation search")
+
 
 Content included changing the "Process a claim" wording to "Find a claim", and within the org view, content was reviewed to make it clearer the user is within org level view through both routes.
 
@@ -87,7 +77,7 @@ Content included changing the "Process a claim" wording to "Find a claim", and w
 
 >**We believe that** keeping both routes allowing you to access all the same functionality e.g. can process a claim through both
 >**Will be a useful feature for** processors
->**As it would** be confusing to take away functionality because they’ve come in through a particular route and they would have to go out and in again to access. They stil have access to all the org information.
+>**As it would** be confusing to take away functionality because they’ve come in through a particular route and they would have to go out and in again to access. They stil want to have access to all the org information.
 
 
 #### Search input design 
@@ -116,16 +106,14 @@ We won't capture the dates that each submitter is active, which also means then 
 Two job roles in service of processor and CCS agent.
 For a CCS agent they won't be able to Process a claim or register a organisation. These are then options that are hidden on the signposting page. Since they will then only have one option we will istead naviagte them on login to the find a organisation search page. Processing of a claim functionality within the not yet processed claim view will also be hidden. 
 
->**We believe that** only being able to search by email, workplace id
->**Will be a useful feature for** ccs agents
->**As it will** them to cover the scenarios of... TO ADD
-
 #### Content updates
 
-- Tab now called Claims
+![Search screen](org-view.png "Organisation view")
+
 - Tab now called Contacts
-- Tab now called Organisation notes
-- Add in reference to process a claim, thats enough to still make clear thats something they can do through these routes
+- Tab now called Claims
+- Reordered tabs so Contacts comes first
+- Add in reference to process a claim in signposting route, that's believed to be enough to still make clear thats something they can do through these routes
 
 ## How we tested our ideas and what we found
 
