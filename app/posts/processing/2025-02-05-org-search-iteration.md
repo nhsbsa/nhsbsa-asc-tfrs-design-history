@@ -44,13 +44,13 @@ We tested the first iteration of the find and view a organisation journey with p
 ## What our ideas were
 
 #### Search terms 
-Speaking to research, the options for search terms were cross examined against the scenarios they would cover for processors and ccs agents. These scenarios include: mail referrals etc. TO ADD
+Speaking to the UR team, the options for search terms were cross examined against the scenarios they would cover for processors and ccs agents. These scenarios include: mail referrals etc.
 
 When deciding how to expand what the staff could search with, we wanted to balance covering the missing scenarios with not changing too much as we were only going to be able to sense check the changes with staff during a informal 2 hour workshop rather than do another complete usability test, and also had to be minimal in tech effort to make the changes.
 
->**We believe that** email, claim ref and id
+>**We believe that** user's email, claim reference number and workplace ID
 >**Will be a useful feature for** staff to search with
->**As it will** them to cover the scenarios of.... TO ADD
+>**As it will** them to cover all of the scenarios user's have between them to find a org, and offers them the flexibility to choose which is easiest for them reducing the friction at the start of their journey. 
 
 There was a concern about the ID/CV process and the risk that if we opened up the search terms it wouldn't be enforcing workplace ID to be required first. Product had a discussion with ops and they agreed to take on the risks surrounding ID/CV process. 
 
@@ -60,17 +60,34 @@ Working with content, it was considered combining the two routes in into one. We
 
 >**We believe that** keeping the two routes seperate
 >**Will be a useful feature for** BSA staff
->**As it will** keep intentions seperate of going directly to a specific claim, and doing something more general with the organisation information.
+>**As it will** keep intentions seperate of going directly to a specific claim, and doing something more general with the organisation information. 
+
+![Search screen](v7-claim-view.png "Routes in")
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="tabs.png" alt="A screenshot of idea 1 showing vertical tabs for each section of the claim" style="width: 100%; height: auto;">
+    <figcaption>Find a claim</figcaption>
+  </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+  <figure>
+    <img src="quick-links.png" alt="A screenshot of idea 2 showing a continuous page of the claim contents with a sticky table of contents link pattern to the left" style="width: 100%; height: auto;">
+    <figcaption>Find a organisation</figcaption>
+  </figure>
+  </div>
+</div>
 
 Content included changing the "Process a claim" wording to "Find a claim", and within the org view, content was reviewed to make it clearer the user is within org level view through both routes.
 
->**We believe that** keeping the ability to search with claim id within the find a claim route and adding ability to find a org with email and workplace id
+>**We believe that** keeping the ability to search with claim reference number within the find a claim route and adding ability to find a org with email and workplace ID
 >**Will be a useful feature for** BSA staff
->**As it will** not mean that you can search claim id in two places, which will help with the user's confusion about the differences between the options.
+>**As it will** not mean that you can search claim reference in two places, which will help with the user's confusion and distinction about the differences between the options.
 
->**We believe that** keeping both routes allowing you to access all the same functionality e.g. process a claim
+>**We believe that** keeping both routes allowing you to access all the same functionality e.g. can process a claim through both
 >**Will be a useful feature for** processors
->**As it would** be confusing to take away functionality because they’ve come in through a particular route and they would have to go out and in again to access. Still in both routes they have access to all the org information.
+>**As it would** be confusing to take away functionality because they’ve come in through a particular route and they would have to go out and in again to access. They stil have access to all the org information.
 
 
 #### Search input design 
