@@ -80,44 +80,65 @@ We chose to introduce the extra option to allow edits, assuming that processors,
 
 ### First design iteration
 
-There's two sides of this work, here I am detailing the processor side where they need to highlight in some way a claim needs editing. Then there is the submitter/org side where they receive the feedback and update the claim as necessary to get it closer to a approval. 
+There's two sides of this work, here I am detailing the processor side where they need to highlight in some way a claim needs editing. Then there is the submitter/org side where they receive the feedback and update the claim as necessary to get it closer to a approval. Link to that post <a href="../claims/edit-a-claim">here</a>.
 
 #### Current design usability issues
 
 I began by trying to make edit a claim work in our current view, as this would enable quicker devliery. 
-(ADD OLD VIEW)
+
+![Previous process a claim view](process-claim-old.png "Previous process a claim view")
 
 Integrating the edit functionality required adding more elements to a view that wasn’t designed to be iterative. It already has usability issues and isn’t fully GDS-compliant due to past "quick win" decisions. With the additional logic and complexity introduced by editing a claim, the current view simply can’t support the required functionality. This raised a key question: has this screen reached its limit?
 
-A redesign was previously considered when notes were introduced, but it was deprioritized due to technical effort and never tested. (LINK TO PREVIOUS POST)
+A redesign was previously considered when notes were introduced, but it was deprioritized due to technical effort and never tested. Here is a <a href="../processing/claim-view-iteration">post</a> that details this redesign.
 
 With more features on the roadmap, the current view is reaching a breaking point. This challenge will keep recurring—so at what point do we decide it’s time for a fundamental change? 
 
-We’ve decided to bring the processing view redesign back into scope, applying the same scalability principles used in the org view to ensure it can support future features.
+We’ve decided to bring the processing view redesign back into scope, allowing us to apply the same scalability principles used in the org view to ensure it can support future features.
 
 ### Redesign - Tabs
 
 New layout breaking down into tabs to make the information more digestible and less cognitively overwhelming than having it all in the view at once. 
 
+![New claim view broken down into tabs.](process-tab.png "New claim view broken down into tabs")
+
 #### Process a claim tab
 - The process a claim journey follows a one question per page model aligned with GDS principles. 
+
+
+![Evidence of payment check - step 1](evidence-payment-check.png "Evidence of payment check - step 1")
+
 - Each decision point leads to a tailored journey:
 - Does it meet evidence of payment criteria?
   - Yes: Moves to the cost-per-learner screen, continuing through the processing journey to either the evidence of completion review (for a 100% claim) or the outcome screen (for a 60/40 claim).
   - Needs Action: Prompts the processor to provide a reason before continuing the journey.
   - Rejection: Breaks the user out of the flow to provide a rejection reason before moving to the outcome screen. This assumption requires testing to confirm whether users expect to exit the process at this point or would expect to complete processing in the event of a dispute.
 
+![Cost per learner - step 2](cost-per-learner.png "Cost per learner - step 2 of a claim that has met payment evidence criteria")
+
+![Check completion - step 3](completion-check.png "Check completion - step 3")
+
 >**We believe that** following the one question per page model aligned with GDS principles 
 >**Will be a useful feature for** claim processors
 >**As it will** ensures they only see relevant information at each stage reducing the cognitive load
 
->**We believe that** following a linear model  
+>**We believe that** following a linear model
 >**Will be a useful feature for** claim processors
 >**As it will** allow us to tailor the flow based on what answers they select, streamlining the process to the necessary questions.
+
+![Payment did not meet criteria reason](payment-rejection-reason.png "Alternative route of payment did not meet criteria reason leading to a rejection")
+
+![Queried evidence review reason](confirm-reject.png "Alternative route of payment did not meet criteria reason leading to a queried state")
+
 
 >**We believe that** having the other tabs available to see further details while processing and maintaining where the processor is up to in the journey
 >**Will be a useful feature for** claim processors
 >**As it will** allow them the flexibility of checking additional infomation if necessary at no cost to their progress of processing.
+
+As I was analysing some of the reasons outlined in the R2R for when a claim would be pended or rejected a few questions arose into which step of the processing flow these issues would come to light and whether they would fit into the question categories of evidence of payment or completion or would be within a additional category. I added in a extra question at the end of the flow to find out if processor's would ever use it.
+
+![Any other reason to reject claim check - step 4](other-reason-check.png "Any other reason to reject claim check - step 4")
+
 
 >**We believe that** adding in a extra question in the processing flow of "Should this claim be rejected for any other reason"
 >**Will be a useful feature for** claim processors
@@ -128,11 +149,55 @@ New layout breaking down into tabs to make the information more digestible and l
 - Whether the new question for any other reasons a claim should be rejected is useful, especially at the end of the journey.
 
 
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="confirm-approve.png" alt="A screenshot from v13 of the prototype showing the delete registered user confirmation" style="width: 100%; height: auto;">
+      <figcaption>Confirm approve</figcaption>
+    </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="outcome-approved.png" alt="A screenshot from v13 of the prototype showing the delete invited user confirmation" style="width: 100%; height: auto;">
+      <figcaption>Outcome approved</figcaption>
+    </figure>
+  </div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="confirm-queried.png" alt="A screenshot from v13 of the prototype showing the delete registered user confirmation" style="width: 100%; height: auto;">
+      <figcaption>Confirm query</figcaption>
+    </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="outcome-queried.png" alt="A screenshot from v13 of the prototype showing the delete invited user confirmation" style="width: 100%; height: auto;">
+      <figcaption>Outcome query</figcaption>
+    </figure>
+  </div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="confirm-reject.png" alt="A screenshot from v13 of the prototype showing the delete registered user confirmation" style="width: 100%; height: auto;">
+      <figcaption>Confirm reject</figcaption>
+    </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="outcome-rejected.png" alt="A screenshot from v13 of the prototype showing the delete invited user confirmation" style="width: 100%; height: auto;">
+      <figcaption>Outcome reject</figcaption>
+    </figure>
+  </div>
+</div>
+
 #### Claim history tab
 
->**We believe that** adding the claim history
->**Will be a useful feature for** claim processors
->**As it will** allow them to gain full context of a claim and it's history, especially on resubmitted claims to see the prevous query notes and then how a organisation has actioned it, if failed again it lets them see it need to be more specific in the next note. 
+
+![Claim history tab - 100 claim](history-tab-100.png "Claim history tab - 100 claim")
 
 >**We believe that** adding the claim history
 >**Will be a useful feature for** claim processors
@@ -140,13 +205,25 @@ New layout breaking down into tabs to make the information more digestible and l
 
 >**We believe that** including all the dates from a claim including training, payment, start, completion as well as claim lifecyle dates
 >**Will be a useful feature for** claim processors
->**As it will** put the whole claim into context for the processor. ]
+>**As it will** put the whole claim into context for the processor.
+
+>**We believe that** adding the claim history
+>**Will be a useful feature for** claim processors
+>**As it will** allow them to gain full context of a claim and it's history, especially on resubmitted claims to see the prevous query notes and then how a organisation has actioned it, if failed again it lets them see it need to be more specific in the next note. 
+
+![View previous claim submission](view-claim.png "View previous claim submission")
+
+![View rejection note](view-rejection-note.png "View rejection note")
+
 
 **To test**
-- Whether displaying the previous submissions and the notes is enough for the processor to be able to compare the differences, but we need to show the changes broken down in a more granular way. 
+- Whether displaying the previous submissions and the notes is enough for the processor to be able to compare the differences, or we need to show the changes broken down in a more granular way. 
 
 
 #### Details tab
+
+![Details tab](details-tab.png "Details tab")
+
 
 >**We believe that** having a tab for just claim details and grouping into sections
 >**Will be a useful feature for** claim processors
@@ -154,6 +231,9 @@ New layout breaking down into tabs to make the information more digestible and l
 
 
 #### Evidence tab
+
+![Evidence tab](evidence-tab.png "Evidence tab")
+
 
 >**We believe that** grouping the evidence together
 >**Will be a useful feature for** claim processors
@@ -165,6 +245,8 @@ New layout breaking down into tabs to make the information more digestible and l
 
 #### Outcome tab
 
+![Outcome tab](outcome-approved.png "Outcome tab")
+
 >**We believe that** showing process a claim or outcome tab based on whether the claim is yet to be processed
 >**Will be a useful feature for** claim processors
 >**As it will** guide them towards what state the claim is in and whether any action is needed.
@@ -173,9 +255,21 @@ New layout breaking down into tabs to make the information more digestible and l
 
 We had some questions over which designs a processor would prefer so we decided to implement one in the prototype and show screenshots of the alternative to see if that would be preferred.
 
+Design 1
+
+![Alternative questions](alternativeOption1.png "Alternative questions for determining whether to allow edits - part 1")
+
+![Alternative questions](alternativeOption1Part2.png "Alternative questions for determining whether to allow edits - part 2")
+
+
 >**We believe that** breaking down the question further 
 >**Will be a useful feature for** claim processors
 >**As it will** reduce confusion over the meaning of the options of rejection and allow edit
+
+
+Design 2
+
+![Extracting processing questions out to modal](alternativeOption2.png "Extracting processing questions out to modal")
 
 
 >**We believe that** extracting the processing flow questions out into a modal
