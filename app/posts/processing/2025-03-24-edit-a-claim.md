@@ -1,5 +1,5 @@
 ---
-title:   Edit a claim
+title:   Edit a claim - processor side
 description: 
 author:
   name: Hannah Williams (Interaction designer)
@@ -10,7 +10,9 @@ tags:
   - processing-version-8
   - processing-edit-a-claim
 relatedUserNeeds:
-  - user-need-10
+  - user-need-4
+  - user-need-11
+  - user-need-12
 aside:
   title:  Processing prototypes
   content: |

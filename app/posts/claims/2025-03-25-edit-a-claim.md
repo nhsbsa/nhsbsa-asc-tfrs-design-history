@@ -1,5 +1,5 @@
 ---
-title:   Edit a claim
+title:   Edit a claim - submitter side
 description: 
 author:
   name: Hannah Williams (Interaction designer)
@@ -9,7 +9,9 @@ tags:
   - private-beta
   - claims-version-15
 relatedUserNeeds:
-  - user-need-10
+  - user-need-4
+  - user-need-2
+  - user-need-6
 aside:
   title:  Claims prototypes
   content: |
