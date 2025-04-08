@@ -1,5 +1,5 @@
 ---
-title: Expanding search terms to find a organisation WIP
+title: Expanding search terms to find a organisation
 description: Work to iterate the routes into the organisation view and the search terms used to cover all the scenarios.
 author:
   name: Hannah Williams (Interaction designer)
@@ -9,6 +9,8 @@ tags:
   - private-beta
   - processing-version-7
   - processing-find-an-org
+relatedUserNeeds:
+  - user-need-13
 aside:
   title:  Processing prototypes
   content: |
@@ -34,23 +36,23 @@ aside:
 ---
 
 ## Why we did this work
-We tested the first iteration of the find and view a organisation journey with processors and css agents in w/c 5th February and there were a number of areas highlighted as needing further development. Post playback and actions meeting, these were the updates agreed upon to make:
+We tested the first iteration of the find and view a organisation journey with processors and css agents in w/c 5th February and there were a number of areas highlighted as needing further development. Post playback and actions meeting, these were the areas it was agreed upon to make updates:
 
-- Routes in to the service were confusing to the user about the differences between, unclear which to use.
+- The multiple routes in to the service were confusing to the user about the differences between which to use and where each would lead them. 
 - Search terms
-  - It was found their were a number of scenarios that searching for a organisation with workplace ID wouldn't cover. For example...
+  - It was found there were a number of scenarios that searching for a organisation with workplace ID wouldn't cover. For example...
   - Verbal communication of a workplace ID over the phone led to mistakes in typing it in.
 
 ## What our ideas were
 
 #### Search terms 
-Speaking to research, the options for search terms were cross examined against the scenarios they would cover for processors and ccs agents. These scenarios include: mail referrals etc. TO ADD
+Speaking to the UR team, the options for search terms were cross examined against the scenarios they would cover for processors and ccs agents. These scenarios include: mail referrals etc.
 
 When deciding how to expand what the staff could search with, we wanted to balance covering the missing scenarios with not changing too much as we were only going to be able to sense check the changes with staff during a informal 2 hour workshop rather than do another complete usability test, and also had to be minimal in tech effort to make the changes.
 
->**We believe that** email, claim ref and id
+>**We believe that** user's email, claim reference number and workplace ID
 >**Will be a useful feature for** staff to search with
->**As it will** them to cover the scenarios of.... TO ADD
+>**As it will** them to cover all of the scenarios user's have between them to find a org, and offers them the flexibility to choose which is easiest for them reducing the friction at the start of their journey. 
 
 There was a concern about the ID/CV process and the risk that if we opened up the search terms it wouldn't be enforcing workplace ID to be required first. Product had a discussion with ops and they agreed to take on the risks surrounding ID/CV process. 
 
@@ -60,17 +62,24 @@ Working with content, it was considered combining the two routes in into one. We
 
 >**We believe that** keeping the two routes seperate
 >**Will be a useful feature for** BSA staff
->**As it will** keep intentions seperate of going directly to a specific claim, and doing something more general with the organisation information.
+>**As it will** keep intentions seperate of going directly to a specific claim, and doing something more general with the organisation information. 
+
+![Search screen](signposting-page.png "Routes in - signposting page")
+
+![Search screen](find-claim.png "Find a claim search")
+
+![Search screen](find-org.png "Find a organisation search")
+
 
 Content included changing the "Process a claim" wording to "Find a claim", and within the org view, content was reviewed to make it clearer the user is within org level view through both routes.
 
->**We believe that** keeping the ability to search with claim id within the find a claim route and adding ability to find a org with email and workplace id
+>**We believe that** keeping the ability to search with claim reference number within the find a claim route and adding ability to find a org with email and workplace ID
 >**Will be a useful feature for** BSA staff
->**As it will** not mean that you can search claim id in two places, which will help with the user's confusion about the differences between the options.
+>**As it will** not mean that you can search claim reference in two places, which will help with the user's confusion and distinction about the differences between the options.
 
->**We believe that** keeping both routes allowing you to access all the same functionality e.g. process a claim
+>**We believe that** keeping both routes allowing you to access all the same functionality e.g. can process a claim through both
 >**Will be a useful feature for** processors
->**As it would** be confusing to take away functionality because they’ve come in through a particular route and they would have to go out and in again to access. Still in both routes they have access to all the org information.
+>**As it would** be confusing to take away functionality because they’ve come in through a particular route and they would have to go out and in again to access. They stil want to have access to all the org information.
 
 
 #### Search input design 
@@ -99,16 +108,14 @@ We won't capture the dates that each submitter is active, which also means then 
 Two job roles in service of processor and CCS agent.
 For a CCS agent they won't be able to Process a claim or register a organisation. These are then options that are hidden on the signposting page. Since they will then only have one option we will istead naviagte them on login to the find a organisation search page. Processing of a claim functionality within the not yet processed claim view will also be hidden. 
 
->**We believe that** only being able to search by email, workplace id
->**Will be a useful feature for** ccs agents
->**As it will** them to cover the scenarios of... TO ADD
-
 #### Content updates
 
-- Tab now called Claims
+![Search screen](org-view.png "Organisation view")
+
 - Tab now called Contacts
-- Tab now called Organisation notes
-- Add in reference to process a claim, thats enough to still make clear thats something they can do through these routes
+- Tab now called Claims
+- Reordered tabs so Contacts comes first
+- Add in reference to process a claim in signposting route, that's believed to be enough to still make clear thats something they can do through these routes
 
 ## How we tested our ideas and what we found
 
