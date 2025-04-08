@@ -1,5 +1,5 @@
 ---
-title: Claims table and claim interaction WIP
+title: Claims table and claim interaction
 description: The need to have all the claims accessible came from research
 author:
   name: Hannah Williams (Interaction designer)
@@ -9,6 +9,8 @@ tags:
   - private-beta
   - processing-version-7
   - processing-view-org
+relatedUserNeeds:
+  - user-need-13
 aside:
   title:  Processing prototypes
   content: |
@@ -41,8 +43,8 @@ We first tested the org view with processors and css agents in February and we d
 ### Add in claims table
 
 UR Insight:
-- processors would be less likely to  be looking at not yet processed claims in the table - as they'd be more likely to always search for a claim to process them based on the ID provided by OM...
-- the examples we have for browsing the table would relate more to processed claims - either via date for QAs to assess the most recent ones or via course title (but I think that could be an unexpected column to be ordered by). 
+- Processors would be less likely to  be looking at not yet processed claims in the table as they'd be more likely to always search for a claim to process based on the ID provided by OM.
+- The user needs we have for browsing the table would relate more to processed claims. When thinking about the way to order the claims it would be helpful to search either via date for QAs to assess the most recent ones or via course title (but we think that could be an unexpected column to be ordered by). 
 
 >**We believe that** having all the status's of claims in one table
 >**Will be a useful feature for** BSA staff
@@ -54,12 +56,13 @@ UR Insight:
 
 ### Change submitted date column to processed date
 
-Second round of research said to change submitted dates column to processed dates as this would be more helpful to scan to find a specific claim, happy to have a line where no date present. 
+Second round of research produced the insight to change submitted dates column to processed dates as this would be more helpful to scan to find a specific claim, and the users are happy to have a line where there is no processed date present for not yet processed claims. 
+
 Sorting has been pushed down the roadmap to implement on the tables but the claims table is able to be paginated as that's something tech have now implemented in the service.
 
->**We believe that** ordering each status claims by then submitted date for the claims not yet processed, and most recent rejected/approved
+>**We believe that** ordering each the claims within each status by submitted date for the claims not yet processed, and most recent rejected/approved date for processed claims
 >**Will be a useful feature for** BSA staff
->**As it will** show the more recent claims on the first page of paginated table, which will be more likely to be the claims wanted to be seen.
+>**As it will** show the more recent claims on the first page of paginated table, which will be more likely to be the claims they want to see.
 
 ### Claim tab interation
 
@@ -67,17 +70,17 @@ In the UR the user's stated they would expect the last opened claim to stay open
 
 >**We believe that** keeping the opened claim open when clicking between tabs
 >**Will be a useful feature for** BSA staff
->**As it will** mean they don't have to keep researching for it when orientating themselves with other information in the org view.
+>**As it will** mean they don't have to keep re-searching for it when they are orientating themselves with the other information in the other org view tabs.
 
->**We believe that** if the processor has begun processing the claim, that maintaining the information they have typed in e.g. rejection reasons
+>**We believe that** if the processor has begun processing the claim, then maintaining the information they have typed in e.g. rejection reasons
 >**Will be a useful feature for** BSA staff
->**As it will** they can click between tabs to find other information they need to help in the claim processing. 
+>**As they can** click between tabs to find other information they need to help in the claim processing and not have to start the processing again. 
 
-It was agreed with tech that if the user clicked into another claim then this is when the session would clear.
+It was agreed with tech that if the user clicked into another claim then this is when the session and cached data would clear.
 
 
 #### Job roles - CCS Agents
-With the introduction of job roles into the service, the functionality to process a claim is hidden for CCS agents. For ease of giving tech more work, we have just hidden the processing radio buttons on the screen, this means for the CCS agents the information of a claim is all squished to the left side. Agreed that if tech have time they will make it two thirds width.
+With the introduction of job roles into the service, the functionality to process a claim is hidden for CCS agents. For ease of giving tech more work, we have just hidden the processing radio buttons on the screen, this means for the CCS agents the information of a claim is all squished to the left side. We agreed that if tech have time they will make it two thirds width for CCS agents.
 
 ## What we will do next
 
