@@ -74,11 +74,19 @@ This would remove the burden from being on the processor at the time of processi
 Both options had their pros and cons. Part of our design process is to make an informed decision, form a hypothesis, and test it in User Research to validate our assumptions.
 
 #### Decision & Assumptions
+
+Key question for this decision is - **where does the burden of deciding who can edit a claim or not lie**? 
+
 We chose to introduce the extra option to allow edits, assuming that processors, at the point of assessment, could reliably decide whether a claim should be actioned or rejected. To address open questions, we made the following assumptions:
 
 - Disputed rejections wouldn't be handled within this system. Instead, they would be escalated through a backend live support ticket.
 - The volume of claims that submitters would want to delete instead of resubmitting would be low. As a result, those claims would remain in the "queried" state.
 - The claim reference would remain the same throughout the process. This would allow us to pause work items in OM, with tasks automatically resuming when the claim reappears as active in the output file.
+
+>**We believe that** allowing the processors to decide whether a claim can be edited or flat out rejected
+>**Will be a useful feature for** claim processors
+>**As it will** be a decision they have all the information to be able to answer, and it stops the submitters endlessly reopening a claim. 
+
 
 ### First design iteration
 
@@ -285,6 +293,9 @@ Design 2
 We divided this work into two aspects: the submitter's journey of editing a claim and the processor's workflow. Each was explored and tested separately, as both were complex and required sufficient time for research, design, and testing. The user research discussion guides for each were extensive, reinforcing the need for a focused approach.
 
 The processor side of the research commenced 26th March and was conducted with 6 participants. 
+
+#### Key findings
+- key question that came out of research of is where the burden lands of deciding whether a claim should/can be edited. 
 
 
 ## What we will do next
