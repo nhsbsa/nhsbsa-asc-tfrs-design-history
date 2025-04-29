@@ -1,10 +1,13 @@
 ---
 title: Removing bank details from the SRO onboarding journey
 description: To better support the possibility of self-serve onboarding and facilitate more automated bank details checks.
-author:
-  name: Mark Portnell (Interaction designer)
-  url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
+authors:
+    - name: Mark Portnell (Interaction designer)
+      url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
+    - name: Martine Gallie (Content designer)
+      url: 'mailto:hi.martine.gallie@nhsbsa.nhs.uk'
 date: 2025-03-07
+modified: 2024-04-28
 tags:
   - private-beta
   - claims-version-13
@@ -165,9 +168,48 @@ Range of organisations:​
 
 ## What we will do next
 Following our review of the recommendations and agreeing actions to take forward we agreed the following for each of the recommendations above:
-1. Due to the notification banner being a standard GDS component we didn't feel there was enough evidence yet to iterate the design of the whole banner. However we felt there was opportunity to iterate the content with in it to try and increase clarity.
-2. Iterate the content on the, manage team, bank details and inputting of bank details screen to clarify who can do and see what and how bank details are used and stored securely by BSA.
-3. Iterate the content on the 'what happens next' section to better illustrate the process to users as well as exploring adding an additional email to the existing verification process to confirm the outcome whether successful or not to SROs. It was recognised that this content would need further iteration as the process to verify bank details will soon be iterated as well. 
-4. Iterate the hint text around the two mentioned input fields to better clarify to users what is expected. 
-5. Giv en this recommendation is broader than just bank details we will add to the backlog a task to review the onboarding experience and support given to submitters support and iterate as needed.
+1. Due to the notification banner being a standard GDS component we didn’t feel there was enough evidence yet to iterate the design of the whole banner. However we felt there was opportunity to iterate the content within it to try and increase clarity.
+
+    GOV.UK [guidance on notification banners](https://design-system.service.gov.uk/components/notification-banner/) says: ‘You can use h3 headings in [the banner] to help structure your content.’ On this basis, we iterated the banners to call out the fact that action is needed, which we believe will have more impact:
+
+    ##### SRO submitter
+    ![A screenshot of the iterated notification banner for the SRO](SRO-banner-iteration.png "The iterated version of the notification banner for the SRO")  
+
+    ##### Submitter
+    ![A screenshot of the iterated notification banner for a submitter](submitter-banner-iteration.png "The iterated version of the notification banner for a submitter")  
+
+2. Iterate the content on the manage team, bank details and inputting of bank details screen to clarify who can do and see what and how bank details are used and stored securely by BSA.
+
+    We added content to all three screens to make it clear that the SRO is the only person in their organisation who is able to add or view bank details, add submitters and sign the GDL.
+
+    ##### Manage submitters (previously ‘Manage team’)
+    ![A screenshot of the new manage submitters screen content](manage-submitters.png "The iterated manage submitters content")  
+
+    ##### Bank details
+    ![A screenshot of the new bank details content](bank-details.png "The iterated bank details content")  
+
+    ##### Bank details input
+    ![A screenshot of the new bank details input content](bank-details-input.png "The iterated content on the bank details input screen")  
+
+3. Iterate the content on the 'what happens next' section to better illustrate the process to users as well as exploring adding an additional email to the existing verification process to confirm the outcome whether successful or not to SROs. It was recognised that this content would need further iteration as the process to verify bank details will soon be iterated as well.
+
+    The content was rewritten to clarify the process used to verify bank details.
+    
+    It was recognised that this content would need further iteration as the process to verify bank details will soon be iterated as well.
+
+    ![A screenshot of the new content above the call to actions on the bank details input screen](cta-section.png "The iterated content above the call to action on the bank details input screen")  
+
+4. Iterate the hint text around the two mentioned input fields to better clarify to users what is expected.
+
+    ##### Name on the account text input
+    We requested data showing what people are entering into the account name input in order to validate the decision to change the hint text. This showed that the most common error people make is to enter the organisation name on the bank name incorrectly.
+
+    The hint text was changed to emphasise the need to enter the organisation name correctly:
+
+    [hint text] Enter the name of your organisation exactly as it appears on the account
+
+    ##### Sort code text input
+    As per [GOV.UK bank details guidance](https://design-system.service.gov.uk/patterns/bank-details/), we will let users enter their sort code in whatever format is familiar to them, allowing for spaces, hyphens and dashes.
+
+5. Given this recommendation is broader than just bank details we will add to the backlog a task to review the onboarding experience and support given to submitters and iterate as needed.
 6. Given the effort to support multiple bank accounts for a single organisation and the limited evidence of this need to date we agreed that further evidence of this would be required before we would take this forward. 
