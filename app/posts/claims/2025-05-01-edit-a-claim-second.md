@@ -27,13 +27,33 @@ Contents
 
 ## Why we did this work
 
-Multiple conversations need to happen at the start of this piece of work to get answers still to requiremnt questions and also to clarify scope of what we are tackling in this second iteration.
+Multiple conversations needed to happen at the start of this piece of work to get answers to requirement questions and also to clarify scope of what we are tackling in this second iteration.
 
-- How long are we allowing resubmissions for. How does financial year play a part. Are we stopping on a system or processor level. Is it a waste of time to allow them to resubmit 6 months on when the processor won't even look at it? Reconciliation of costs? Submitted in march then edited? Should we enforce that have to submit claim within 3 months of completion - stops 10,000 claims coming in at end, potential to miss things?
+### Policy questions
+**Question:** 
+How long are we allowing resubmissions for, and how does financial year play a part? Are we stopping on a system or processor level?
+**Answer:** 
+Will be stopped on the processor level so nothing we need to build into the design
 
-- Cleaning up claims list. Involves chat with tech understanding the difficulty and effort involved. Result was effort would be they already have a archived status for not yet submitted deleted claims. Couldn't reuse because we want a difference between showing the archived edited ones, and the deleted not submitted ones. Effort is making a new status is low. 
+**Question:** 
+Is abandon/archive a claim in scope to allow the organisations to clean up their claims lists which they use as to do lists.
+**Answer:** 
+Involved a chat with tech understanding the difficulty and effort involved. Result was effort would be they already have a archived status for not yet submitted deleted claims. Couldn't reuse because we want a difference between showing the archived edited ones, and the deleted not submitted ones. Effort for making a new status is low. Archiving a claim grows in usefullness as a feature with time as claims lists fill up. 
 
-- Currently for a 60-claim, only 60 claim sections can be edited. For a 40 claim, only 40 claim sections can be edited. Question around how do we expect submitters to recover if a 40 claim is queried due to incorrect learner, which is a field that is filled in on the 60 part of the claim?
+**Question:** 
+Currently for a 60-claim, only 60 claim sections can be edited. For a 40 claim, only 40 claim sections can be edited. Question around how do we expect submitters to recover if a 40 claim is queried due to incorrect learner?
+**Answer:** 
+This is already a known constraint in production. Decision that it is out of scope to fix it within edit a claim, as many policy answers are still needed.
+
+### Scope questions
+
+#### View previous submissions
+
+As this redesign to better address the needs 
+The user needs:
+- I need to be able to see who else in my organisation had previously (re)submitted a claim so I can gather some more contextual info. 
+- I need to be able to understand/ see what I submitted previously that wasn't accepted so I don't make the same mistake again.
+
 
 - Supporting notes
 

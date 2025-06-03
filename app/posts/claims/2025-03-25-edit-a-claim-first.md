@@ -75,9 +75,11 @@ This design needed to match the decision on the side of processing to introduce 
 
 ![Queried claim](queried-claim.png "Queried claim")
 
->**We believe that** the claim history
->**Will be a useful feature for** organisation / submitters
->**As it will** allow them to understand the full picture of a claim.
+There is a auditing requirement around all changes made to the claims should be visible to both submitters and processors to be aware of changes made. This includes: details of the submitters, date stamp of change, evidence provided at each submission. 
+
+>**We believe that** the claim history 
+>**Will be a useful feature for** organisation / submitters particulary within edit a claim
+>**As it will** allow them to understand the full picture of a claim's journey, making it even more important in edit a claim scenarios as the history becomes more complex.
 
 >**We believe that** seeing the previous query notes and claim submissions
 >**Will be a useful feature for** organisation / submitters
@@ -142,11 +144,11 @@ Range of organisations:​
 - Post-task follow up questions​
 - Scenario: 
 
-### What we found - MORE TO ADD
+### What we found
 - The claim scaffold screen was cognitively overwhelming with the claim history added. The additional blue links to see all the information and the multiple query and claim details confused users as to which is most relevant. 
 - Some users wanted to search by learner information instead of claim reference number​
-- Not sure which list a save and edited queried claim should live in 
-- That the users wanted to be able to edit any field. This is still locked into being only for the 60/40 parts and issues have been noted as to what if the incorrect learner was inputted on 60 part, in the 40 part where the leanrer's evidence is added this has potential to not be able to be recovered.
+- The users weren't sure which list a save and edited queried claim should live in 
+- That the users wanted to be able to edit any field. This is still locked into being only for the 60/40 parts and issues have been noted as to what if the incorrect learner was inputted on 60 part, in the 40 part where the learner's evidence is added this has potential to not be able to be recovered.
 - User's wanted to be able to tidy up their queried claims list, as they use it as a to do list. In the scenario they decided they didn't want to edit and resubmit a claim they would want to be able to clear it from this list. 
 - 
 
@@ -168,11 +170,11 @@ Range of organisations:​
 
 
 ### Assumptions
-  Before of the tight dealdine to deliver the first iteration there were a number of assumptions that went into the design. For the next iteration I also need to make sure I had all these answers and account for them:
+  Because of the tight deadline to deliver the first iteration there were a number of assumptions that went into the design. I need to make sure I have all these answers to account for them in the next iteration:
   - Make it clear how to access offline process / contact us in case of disputes of outcomes
-  - In what window period can a claim be resubmitted in
-  - 
-
+  - How long do they have to resubmit - are we stopping on a system level or processor level?
+  - If we bring in archive, what are timeframes for bringing back archived claims to queried and allowing resubmission?
+  - How can a 40 part be recovered if the wrong learner has been inputted on the 60, and you an only edit 60 fields on a 60, and 40 fields on a 40. 
 
 
 ## What we will do next
