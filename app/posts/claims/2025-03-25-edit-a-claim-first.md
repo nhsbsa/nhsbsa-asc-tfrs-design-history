@@ -1,5 +1,5 @@
 ---
-title:   Edit a claim - submitter side
+title:   Edit a claim - submitter side (first iteration)
 description: 
 author:
   name: Hannah Williams (Interaction designer)
@@ -32,7 +32,6 @@ This work is part of the roadmap to ready to reduce the volume of claims that ar
 More information on how we approached this piece of work has been documented in this <a href="#">post.</a>
 
 This design needed to match the decision on the side of processing to introduce the extra option to allow edits to the same claim, putting a claim into a queried state. The designs on the claim side needed to show this change of state and provide action and functionality for the organisation to make changes and re-submit.
-
 
 ## What our ideas were
 
@@ -76,9 +75,11 @@ This design needed to match the decision on the side of processing to introduce 
 
 ![Queried claim](queried-claim.png "Queried claim")
 
->**We believe that** the claim history
->**Will be a useful feature for** organisation / submitters
->**As it will** allow them to understand the full picture of a claim.
+There is a auditing requirement around all changes made to the claims should be visible to both submitters and processors to be aware of changes made. This includes: details of the submitters, date stamp of change, evidence provided at each submission. 
+
+>**We believe that** the claim history 
+>**Will be a useful feature for** organisation / submitters particulary within edit a claim
+>**As it will** allow them to understand the full picture of a claim's journey, making it even more important in edit a claim scenarios as the history becomes more complex.
 
 >**We believe that** seeing the previous query notes and claim submissions
 >**Will be a useful feature for** organisation / submitters
@@ -126,12 +127,72 @@ This design needed to match the decision on the side of processing to introduce 
 
 We divided this work into two aspects: the submitter's journey of editing a claim and the processor's workflow. Each was explored and tested separately, as both were complex and required sufficient time for research, design, and testing. The user research discussion guides for each were extensive, reinforcing the need for a focused approach.
 
-The processor side of the research commenced 7th March and was conducted with 6 participants. 
+The claim side of the research commenced May and was conducted with X participants. 
 
+### Who we tested with
+X participants:​
+- X SROs and submitter​
+- X submitters only​
+
+Range of organisations:​
+- X small, X medium, X large (range of staff X-X)​
+- Type of care: residential, day, community and domiciliary care
+
+### How we tested
+- Task-based moderated usability testing with ASC org users​
+- Pre-task semi-structured interview questions​
+- Post-task follow up questions​
+- Scenario: 
+
+### What we found
+- The claim scaffold screen felt overwhelming, especially with claim history and multiple blue links. Users were confused about which information was most relevant.
+- Some users preferred searching by learner info rather than claim reference number.
+- Uncertainty around which list an edited, saved queried claim should appear in.
+- Users wanted to edit any field, but editing is limited to 60/40 parts. This raised concerns—for example, if a learner is incorrectly entered in the 60 part, it can’t be corrected in the 40 part.
+- Users treat the queried claims list as a to-do list and wanted the option to remove claims they no longer intend to edit and resubmit.
+
+### UR recommendations
+Edit a claim has strong potential to reduce friction in the resubmission journey and improve claim tracking, but will require further design iteration and testing to fully realise its value.
+
+Key recommendations:
+- Clarify the "queried" status to better communicate the need for user action.
+
+- Iterate the claim scaffold screen by improving layout and hierarchy:
+    - Prioritise key information submitters need to act on
+    - Make the query note more visible and prominent than claim history notes
+    - Reduce the visual prominence of claim history
+    - Highlight information relevant to the specific claim type (e.g. 40 claims)
+    - Differentiate label colours (e.g. queried vs. 60) to avoid confusion
+
+- Ensure processors can send all relevant information at once to avoid fragmented communication.
+
+- Allow users to tidy up their queried claims list if they don’t plan to resubmit—preferred over enforcing time-based status changes.
+
+- Reconsider introducing alternative contact methods (e.g. online chat) for support with queries and rejections.
+
+- Review rejection and query reason templates to make it clear whether resubmission is possible.
+
+- Reassess the value of allowing users to add contextual notes to reduce ambiguity around submitted evidence.
+
+### Assumptions
+Due to the tight deadline for the first iteration, several design assumptions were made. For the next phase, I need clarity on the following to inform improvements:
+- How users can access offline support or contact us for disputes
+- Resubmission timeframes—are they enforced by the system or left to the processor to manage?
+- If archive is introduced, what are the rules for restoring archived claims and allowing resubmission?
+- How to recover a 40 part if the wrong learner was entered on the 60 part, given that fields are only editable within their respective sections
 
 ## What we will do next
 
-- Analysis, playback workshop with the wider team to work together to get to recommendations to take forward, then next iteration of designs and research round two.
+Following user research analysis and a playback workshop with the wider team, we agreed on the following actions for the next design iteration and research round:
+- Iterate Edit a claim to better meet user needs around this feature
+- Refine language to clearly communicate meaning and required actions
+- Simplify the claim scaffold screen to reduce cognitive load
+- Rework claim history to better support user needs
+- Consider multiple learners in the scaffold design, as this upcoming feature could impact layout
+- Explore options for clearing queried claims, challenging the initial assumption that few claims would be abandoned. If these claims move to a new state, we may also need a way to bring them back
+
+
+
 
 
 
