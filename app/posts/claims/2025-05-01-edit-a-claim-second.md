@@ -50,7 +50,7 @@ In a chat with tech they stated that the making of a new status for archive woul
 **Question:** 
 Are we bringing the ability to handle ambiguity into scope? This feature would address a need that’s emerged: some organisations are including cover letters with their evidence or sending clarifications via email, which are then lost outside the service. The question is whether we should allow users to upload a supporting note or provide a way to add additional evidence for clarification.
 **Answer:** 
-We weighed the effort required for organisations to create cover letters and for tech to support multiple evidence uploads against adding a simpler component for a supporting note. The decision was to introduce a single supporting note that can be edited and updated, with visibility of the note in previous submissions. Editing the note alone is sufficient to resubmit a claim without needing to change other information. This is already a component that designed in version 7, but not tested, so the design effort is low.
+We weighed the effort required for organisations to create cover letters and for tech to support multiple evidence uploads against adding a simpler component for a supporting note. The decision was to introduce a single supporting note that can be edited and updated, with visibility of the note in previous submissions. Editing the note alone is sufficient to resubmit a claim without needing to change other information. This is already a component that was designed in version 7, but not tested, so the design effort is low.
 
 
 
@@ -73,7 +73,7 @@ Held a in person workshop with design and content, to come together to thing abo
   </div>
 </div>
 
-The main issue we focused on was that the screen felt cognitively overwhelming—users didn’t know where to look first. We approached the day by asking: What is the ideal order in which users should consume the information on this page? We considered what the submitter needs to see every time versus only occasionally, and used those insights to prioritise elements of the design and guide the user through the page. Given that users have different workflows, the design also needed to allow for some flexibility. A recurring theme in user research was the desire to see "everything all on one page"—to view all information in context—so our challenge was to deliver that while keeping it digestible and easy to navigate.
+The main issue we focused on was that the screen felt cognitively overwhelming—users didn’t know where to look first. We approached the day by asking: **What is the ideal order in which users should consume the information on this page**? We considered what the submitter needs to see every time versus only occasionally, and used those insights to prioritise elements of the design and guide the user through the page. Given that users have different workflows, the design also needed to allow for some flexibility. A recurring theme in user research was the desire to see "everything all on one page"—to view all information in context—so our challenge was to deliver that while keeping it digestible and easy to navigate.
 
 #### Order of consumption:
 1. Orientation
@@ -184,6 +184,7 @@ Decided that rather than try to answer the needs all together, to split up into 
 
 ![Claim history timeline](100-comparison.png "Comparison table - 100 claim")
 
+- You can navigate to this component by selecting the "View previous submissions" button within the claim details section.
 - This component focuses on showing the claim’s context and journey, addressing shortcomings in the previous design that displayed elements in isolation—for example, the query note is only useful next to its relevant submission.
 - The new claim submission comparison component lets users view the current draft alongside edits made so far, with a scrollable interface to track changes over time. A highlight feature draws attention to values that have changed.
 - Finding a solution that meets user needs while being accessible has been challenging. Tables generally meet WCAG standards, and the scrollable pane complies with WCAG 1.4.10 Reflow. However, highlighting differences must be used carefully, as overuse can increase cognitive load, especially for screen reader users.
@@ -194,7 +195,7 @@ Decided that rather than try to answer the needs all together, to split up into 
 
 ![Supporting note](supporting-note.png "Supporting note")
 
-Following the decision to include a supporting note to address ambiguity, we added a row within the claim details for it, rather than putting it in its own seperate section like in version 7. The "Add supporting information" link opens a separate page with a free-text box for input. In 60/40 claims, each part has its own optional note section, as not all submissions require extra information. We'll test whether users understand the purpose of this space or if further guidance is needed.
+Following the decision to include a supporting note to address ambiguity, we added a row within the claim details for it, rather than putting it in its own seperate section like in version 7. The "Add supporting information" link opens a separate page with a free-text box for input. In 60/40 claims, each part has its own note section. The field is optional as not all submissions will require extra information. We'll test whether users understand the purpose of this space or if further guidance is needed.
 
 #### What next 
 

@@ -145,48 +145,51 @@ Range of organisations:​
 - Scenario: 
 
 ### What we found
-- The claim scaffold screen was cognitively overwhelming with the claim history added. The additional blue links to see all the information and the multiple query and claim details confused users as to which is most relevant. 
-- Some users wanted to search by learner information instead of claim reference number​
-- The users weren't sure which list a save and edited queried claim should live in 
-- That the users wanted to be able to edit any field. This is still locked into being only for the 60/40 parts and issues have been noted as to what if the incorrect learner was inputted on 60 part, in the 40 part where the learner's evidence is added this has potential to not be able to be recovered.
-- User's wanted to be able to tidy up their queried claims list, as they use it as a to do list. In the scenario they decided they didn't want to edit and resubmit a claim they would want to be able to clear it from this list. 
-- 
-
+- The claim scaffold screen felt overwhelming, especially with claim history and multiple blue links. Users were confused about which information was most relevant.
+- Some users preferred searching by learner info rather than claim reference number.
+- Uncertainty around which list an edited, saved queried claim should appear in.
+- Users wanted to edit any field, but editing is limited to 60/40 parts. This raised concerns—for example, if a learner is incorrectly entered in the 60 part, it can’t be corrected in the 40 part.
+- Users treat the queried claims list as a to-do list and wanted the option to remove claims they no longer intend to edit and resubmit.
 
 ### UR recommendations
-- Edit a claim has the potential to be a high value feature to users that could reduce significant friction in the resubmission journey and support the tracking of claim status, but will require some design iteration to reach this​ - the design should be iterated and retested to ensure the potential benefits are realised
-- ​That the language used for the 'queried' status is reviewed so it is clearer to users what it means, particularly to emphasise the need for action
-- Iterate claim scaffold screen design by reviewing the page layout including:
-  -  Making sure the most important information for submitters to act on is most prominent on the page including 
-  - Making the query note more visible and clearer so that it takes precedence over any notes in the claim history
-  - Situating the claim history differently so it is less prominent
-  - Relevant information for the claim type in question is more prominent (ie. 40 claims)
-  - Change the colour of queried or 60 label so they don't match
-  - That the processing side of the feature enables processors to review and send all relevant information to submitters at the same time
-  - When users feel they cannot meet the criteria to re-submit a claim, they want a way to manage and 'tidy' their queried claims another way. This would be preferred by participants in favour of resubmission timeframes being introduced to change claim statuses
-  - To revisit whether there are alternative methods  of contact (ie. online chat) for users to speak to NHSBSA about queries and rejections.
-  - To revisit rejection reason template and developing query reason wording to ensure that it's clear whether users can resubmit or not
-  - ​To revisit whether it would be of enough value to increase the scope, so users can provide contextual information (e.g., in the form of a note) to reduce the ambiguity of evidence submitted
+Edit a claim has strong potential to reduce friction in the resubmission journey and improve claim tracking, but will require further design iteration and testing to fully realise its value.
 
+Key recommendations:
+- Clarify the "queried" status to better communicate the need for user action.
+
+- Iterate the claim scaffold screen by improving layout and hierarchy:
+    - Prioritise key information submitters need to act on
+    - Make the query note more visible and prominent than claim history notes
+    - Reduce the visual prominence of claim history
+    - Highlight information relevant to the specific claim type (e.g. 40 claims)
+    - Differentiate label colours (e.g. queried vs. 60) to avoid confusion
+
+- Ensure processors can send all relevant information at once to avoid fragmented communication.
+
+- Allow users to tidy up their queried claims list if they don’t plan to resubmit—preferred over enforcing time-based status changes.
+
+- Reconsider introducing alternative contact methods (e.g. online chat) for support with queries and rejections.
+
+- Review rejection and query reason templates to make it clear whether resubmission is possible.
+
+- Reassess the value of allowing users to add contextual notes to reduce ambiguity around submitted evidence.
 
 ### Assumptions
-  Because of the tight deadline to deliver the first iteration there were a number of assumptions that went into the design. I need to make sure I have all these answers to account for them in the next iteration:
-  - Make it clear how to access offline process / contact us in case of disputes of outcomes
-  - How long do they have to resubmit - are we stopping on a system level or processor level?
-  - If we bring in archive, what are timeframes for bringing back archived claims to queried and allowing resubmission?
-  - How can a 40 part be recovered if the wrong learner has been inputted on the 60, and you an only edit 60 fields on a 60, and 40 fields on a 40. 
-
+Due to the tight deadline for the first iteration, several design assumptions were made. For the next phase, I need clarity on the following to inform improvements:
+- How users can access offline support or contact us for disputes
+- Resubmission timeframes—are they enforced by the system or left to the processor to manage?
+- If archive is introduced, what are the rules for restoring archived claims and allowing resubmission?
+- How to recover a 40 part if the wrong learner was entered on the 60 part, given that fields are only editable within their respective sections
 
 ## What we will do next
 
-- Following the UR analysis and playback workshop with the wider team to work together to get to recommendations to take forward, we agreed to take the following actions to go into the next iteration of designs and research round two.
-1. Iterate edit a claim to better meet the needs for this feature.
-2. Iterate language used to be more clearly understood by users what it means and that there is action for them to do.
-3. Iterate the claim scaffold screen to be less cognitively overwhelming.
-4. Iterate the claim history to make sure hitting the needs of the users.
-5. Iterate the claim scaffold screen with also multiple learners in mind as this is a feature further down on the roadmap but that has the potential to change the design of this once more if not considered now.
-6. Explore functionality to let the orgs clear up their queried claim's list. This fits as a finding around the assumption from the first iteration that the volume of claims where they will never want to resubmit will be low enough to not include in inital scope. If it moves to a new state then will need the functionality to potetnailly bring it back in.
-
+Following user research analysis and a playback workshop with the wider team, we agreed on the following actions for the next design iteration and research round:
+- Iterate Edit a claim to better meet user needs around this feature
+- Refine language to clearly communicate meaning and required actions
+- Simplify the claim scaffold screen to reduce cognitive load
+- Rework claim history to better support user needs
+- Consider multiple learners in the scaffold design, as this upcoming feature could impact layout
+- Explore options for clearing queried claims, challenging the initial assumption that few claims would be abandoned. If these claims move to a new state, we may also need a way to bring them back
 
 
 
