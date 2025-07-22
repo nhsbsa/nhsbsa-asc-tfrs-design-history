@@ -258,6 +258,6 @@ When changing information the inputs now display the previously entered informat
 ![Information inputs retaining previously entered values](input-info.png "Information inputs retaining previously entered values")
 
 **Content update:** 
-- Finalised state and descriptions for needs action
+- Finalised state name and descriptions for needs action status
 - Rejection status description
-- Help pages
+- Guidance pages 
