@@ -56,7 +56,7 @@ We weighed the effort required for organisations to create cover letters and for
 
 ## What our ideas were
 
-Held a in person workshop with design and content, to come together to thing about the problems aroung the claim scaffold screen. 
+Held a in person workshop with design and content, to come together to thing about the problems around the claim scaffold screen. 
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
@@ -76,10 +76,10 @@ Held a in person workshop with design and content, to come together to thing abo
 The main issue we focused on was that the screen felt cognitively overwhelming—users didn’t know where to look first. We approached the day by asking: **What is the ideal order in which users should consume the information on this page**? We considered what the submitter needs to see every time versus only occasionally, and used those insights to prioritise elements of the design and guide the user through the page. Given that users have different workflows, the design also needed to allow for some flexibility. A recurring theme in user research was the desire to see "everything all on one page"—to view all information in context—so our challenge was to deliver that while keeping it digestible and easy to navigate.
 
 #### Order of consumption:
-1. Orientation
-2. What do I need to do right now / what is most relevant to the user based on the claim status.
-3. Claim details or maybe they want to go to the claim history at this point to see context
-4. What happens next
+1. **Orientation** - supply enough information so the user immediately knows they are viewing the correct claim.
+2. **What do I need to do right now** - inform the user with what is most relevant based on the claim status and its current progress.
+3. **Claim details** or **Claim history** - show both next as it's flexible on what the user might want to do at this point, see the current claim or view its history
+4. **What happens next** - inform the user of what happens once completed any outstanding actions
 
 ### Re-organised Content and Visual Hierarchy
 
@@ -87,12 +87,12 @@ The main issue we focused on was that the screen felt cognitively overwhelming�
 >**Will be a useful feature for** organisation / submitters 
 >**As it will** reduce the cognitive overload while still allowing them to complete their task.
 
-![A 40 claim sent back for editing](40-sent-back-for-edit.png "A 40 claim sent back for editing")
+![A 40 claim sent back for editing](40-sent-back-for-edit.png "A 40 claim sent back for editing in the new layout")
 
 
 #### Orientation
 
-![Orientation](orientation.png "Orientation - Claim details")
+![Orientation](orientation.png "Order of consumption 1.Orientation")
 
 >**We believe that** displaying the Claim ID, status, date relevant to status and a snapshot of max reimbursement amount in the orientation section of a claim
 >**Will be a useful feature for** organisation / submitters 
@@ -102,7 +102,7 @@ The main issue we focused on was that the screen felt cognitively overwhelming�
 
 #### Immediate relevance
 
-![Immediate relevance](immediate-relevance.png "Immediate relevance")
+![Immediate relevance](immediate-relevance.png "Order of consumption 2.Immediate relevance")
 
 
 >**We believe that** the next section showing immediately relevant information based on the claim of the status
@@ -151,7 +151,7 @@ We held a workshop to clarify the key needs for claim history and how designs co
 
 Issues with the current design included:
 - Cognitive overload from showing all information at once
-- Query notes not prominent enough, drawing attention too early
+- Current query note was not prominent enough, and the historical query notes were drawing attention too early
 - Difficulty comparing information between submissions
 - Lack of visibility for the latest transaction; all history treated equally
 - Visual clutter, worsened by numerous blue links
@@ -164,7 +164,7 @@ Issues with the current design included:
 ![IDea 2](idea-2.png "Initial idea 2 - Stripping the timeline out of the homescreen also to reduce visual clutter")
 
 
-The compare claims component allows side-by-side viewing and places the query note in context, so only one query appears outside the main screen. However, it limits users to viewing two claims at a time and still presents a lot of information on screen. We considered using jump links to reduce visible content, but risked important details being missed. There’s also concern whether users would understand having the current claim on the left and find it repetitive to view entire claims side by side when usually only a few details change. Overall, it still didn’t seem like the most effective way to compare claim history.
+Both of these compare claims component allow side-by-side viewing and place the query note in context, so only one query appears outside the main screen. However, it limits users to viewing two claims at a time and still presents a lot of information on screen. We considered using jump links to reduce visible content, but risked important details being missed. There’s also concern whether users would understand having the current claim on the left and find it repetitive to view entire claims side by side when usually only a few details change. Overall, it still didn’t seem like the most effective way to compare claim history.
 
 Decided that rather than try to answer the needs all together, to split up into different parts of the design. 
 1. The need to see dates and journey of a claim is the highlevel **timeline**
@@ -186,9 +186,9 @@ Decided that rather than try to answer the needs all together, to split up into 
 
 - You can navigate to this component by selecting the "View previous submissions" button within the claim details section.
 - This component focuses on showing the claim’s context and journey, addressing shortcomings in the previous design that displayed elements in isolation—for example, the query note is only useful next to its relevant submission.
-- The new claim submission comparison component lets users view the current draft alongside edits made so far, with a scrollable interface to track changes over time. A highlight feature draws attention to values that have changed.
+- The new claim submission comparison component lets users view the current draft alongside edits made so far, with a scrollable interface to track changes over time. A highlight feature draws attention to values that have changed over time.
 - Finding a solution that meets user needs while being accessible has been challenging. Tables generally meet WCAG standards, and the scrollable pane complies with WCAG 1.4.10 Reflow. However, highlighting differences must be used carefully, as overuse can increase cognitive load, especially for screen reader users.
-- This will be a key focus for testing. The current design aims to balance usability and accessibility, but alternatives like showing only changed rows instead of full claims will also be considered.
+- The above will be a key focus for testing. The current design aims to balance usability and accessibility, but alternatives like showing only changed rows instead of full claims will also be considered.
 
 
 #### Supporting note
@@ -199,12 +199,12 @@ Following the decision to include a supporting note to address ambiguity, we add
 
 #### What next 
 
-![What happens next](what-happens-next.png "What happens next")
+![What happens next](what-happens-next.png "Order of consumption 4.What happens next")
 
 The final section is a clearly defined “What happens next?” area, acting as a guide for future steps.
 
 In response to the recommendation to better understand scenarios where users edit and save a claim for later, we:
-- Updated button language to “Save edits and come back later”
+- Updated button language to “Save edits and come back later” for a needs editing claim.
 - Plan to monitor user behaviour—currently, these claims will appear in the queried list
 - If needed, we may highlight edited claims at the top of the queried list for better visibility
 
@@ -228,11 +228,36 @@ Moved reimbursement amount details out of the main view—key info now appears i
 - Scenarios: one with the table comparison feature and one without to find out how much of a issue not developing this right away would be, as the prioritiy is getting the feature out into the sector the sooner the better. 
 
 ### What we found 
-- Awaiting UR playback post analysis 
+- Post UR playback and analysis we found that most of our design hypothesis' and decisions were validated. User’s found it usable, it worked as they expected, and it solved lots of the problems that came from the first iteration.
+- Minor tweaks are required, mainly around content. 
+
+![Final design](final-6040.png "Final design")
 
 
+**Design update:** 
 
+UR finding: The link to view the previous submissions could be lost as it was over by the relevant claim part rather than where the users expected to find it by the claim history.
 
+- It felt like previous submissions were to do directly with the claim history so put within that section 
+- A issue for a 60/40 claim was that there would be two links next to each other so what order to put them in. If put 60 first then 40 in order would that then make them read the timeline the wrong way. 
+- We heard in the scenario of if editing 40 then they don't need to see the 60 previous submissions. For a "needs action" 60/40 claim we now just show the link for the part that they are editing. 
+- In all other status’s, if more than one submission we show both, in order of 60 then 40. 
 
+**Design update:** 
 
+Error Message: Currently when a user tries to resubmit a claim without making any edits only the error box at the top would display. Because we couldn't be granular in the information supplied on which part of the claim needed changing, the link couldn't link to a specific part of the claim.
 
+- Options were to highlight the whole claim details, but that didn't feel right when not everything needed changing. Also in a 60/40 claim there was already a timeline element in the component of the claim details which could be visually confusing with a error highlighted also. 
+- Reading threads in git and asking in the UX design community, I got inspiration that at the moment after the error the question the user would ask would be "What do I need to change". Linking therefore to the edit claim and resubmit blue box makes sense as the place to direct the user to to find out. If we directed them straight down to the claim details we would actually be directing their attention past this box.
+
+![Error when no fields updated](error-6040.png "Error when no fields have been updated")
+
+**Design update:** 
+When changing information the inputs now display the previously entered information to reduce the chance of another mistake.
+
+![Information inputs retaining previously entered values](input-info.png "Information inputs retaining previously entered values")
+
+**Content update:** 
+- Finalised state name and descriptions for needs action status
+- Rejection status description
+- Guidance pages 
