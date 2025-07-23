@@ -127,22 +127,29 @@ There is a auditing requirement around all changes made to the claims should be 
 
 We divided this work into two aspects: the submitter's journey of editing a claim and the processor's workflow. Each was explored and tested separately, as both were complex and required sufficient time for research, design, and testing. The user research discussion guides for each were extensive, reinforcing the need for a focused approach.
 
-The claim side of the research commenced May and was conducted with X participants. 
+The claim side of the research commenced May and was conducted with 7 participants. 
 
 ### Who we tested with
-X participants:​
-- X SROs and submitter​
-- X submitters only​
+7 participants:​
+- 6 SROs and submitter​
+- 1 submitters only​
 
 Range of organisations:​
-- X small, X medium, X large (range of staff X-X)​
+- 3 small, 3 medium, 1 large (range of staff 10-750)​
 - Type of care: residential, day, community and domiciliary care
+
+Claims status:
+- 5 rejected and accepted
+- 1 accepted only
+- 1 rejected only (resubmission in progress)
+
+Accessibility needs:
+- 1 participant with motor and cognitive impairments
 
 ### How we tested
 - Task-based moderated usability testing with ASC org users​
 - Pre-task semi-structured interview questions​
 - Post-task follow up questions​
-- Scenario: 
 
 ### What we found
 - The claim scaffold screen felt overwhelming, especially with claim history and multiple blue links. Users were confused about which information was most relevant.
