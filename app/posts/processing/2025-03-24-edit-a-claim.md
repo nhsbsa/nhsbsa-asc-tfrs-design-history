@@ -277,18 +277,52 @@ Design 2
 >**Will be a useful feature for** claim processors
 >**As it will** mean they can navigate all the information in the tabs to find out what they need and not having duplication of information.
 
+## How we tested our ideas and what we found
 
-## How we tested
+### Who we tested with
+7 participants:​
+- 5 processors
+- 2 QA's
+
+### How we tested
 - We divided the edit a claim work into two aspects: the submitter's journey of editing a claim and the processor's workflow. Each was explored and tested separately, as both were complex and required sufficient time for research, design, and testing. 
-- Task-based moderated usability testing with 6 ASC org users​
+- Task-based moderated usability testing
 - Commenced 26th March
-- Pre-task semi-structured interview questions​
+- Pre-task semi-structured interview questions​:
+  1. What is the current flow processors follow when processing a claim?
+  2. How well does the new design for processing a claim work for processors?
+  3. How well does the new 'action needed' feature work for processors?
 - Post-task follow up questions​
 - The user research discussion guides for each were extensive, reinforcing the need for a focused approach.
+- 3 Scenarios covering the alternatives
 
-## What we found 
+### What we found 
+
+- There were two users who read the claim history timeline the wrong way, but it also is a tested MOJ component. Potential for design to further signal the way to read it
+- That the new processing flow added a lot of steps for the users and they would have preferred it "all on one screen".
+- That they didn't expect the flow to stop them when they rejected part of the claim, they would want to finish prrocessing in case they were mistaken. 
+- That they would want to be able to reject for a another reason at the part of the flow they they find it out and not have to wait til the end.
+
+### UR recommendations
+- Iterate the claim processing flow:
+    - Processor flow should be revisited to ensure that it allows for a balance between flexibility for cross checking information whilst supporting a more consistent processing journey, including allowing cross checking of information and ensuring evidence is only available in one place so not opened twice
+    - Review navigation paths and labels in light of new design
+    - Review claim history chronology to ensure clear to users
+- Consider impact of future features, such as multiple learners per claim to future proof any changes to the processor flow. 
+- Review wording for the three options to make it clear what the 'reject' option means compared to 'needs action'
+- Redesign how users reject for reasons other than for evidence reasons to take account being able to do this at any stage of the process but not for every claim they process
+
+Actions from the org side with crossover to the processor side:
+- Revisit whether it would be of enough value to increase the scope of feature, so processors can request contextual information (e.g. in the form of a note) to reduce the ambiguity of evidence submitted and align with expectation on the 'pending' of a claim
+- That the processing side of the feature enables processors to review and send all relevant information to submitters at the same time
+- To revisit rejection reason template and developing query reason wording to ensure that it's clear whether users can resubmit or not
 
 
 ## What we will do next
+- Held a workshop with the wider team to work together to get to recommendations to take forward. 
+- Design then took forward recommendations and held further workshops where more clarification and scope decisions were needed, then next iteration of designs and research round two.
 
-- Analysis, playback workshop with the wider team to work together to get to recommendations to take forward, then next iteration of designs and research round two.
+### Scope decision 
+- Our design for the new processing flow didn't meet the needs enough, and along with the fact multiple learners is coming it was decided to go back to the original designs and expand the processing questions to add in option to allow edits there. 
+
+

@@ -224,18 +224,24 @@ Moved reimbursement amount details out of the main view—key info now appears i
 ## How we tested our ideas and what we found
 
 ### Who we tested with
-X participants:​
-- X SROs and submitter​
-- X submitters only​
+6 participants:​
+- 5 SROs and submitter​
+- 1 submitters only​
 
 Range of organisations:​
-- X small, X medium, X large (range of staff X-X)​
-- Type of care: residential, day, community and domiciliary care
+- 1 small, 3 medium, 2 large (range of staff 15-20k)​
+- Type of care: residential, day, community
 
 ### How we tested
 - Task-based moderated usability testing with ASC org users​
-- Pre-task semi-structured interview questions​
+- Pre-task semi-structured interview questions​:
+  1. What is the best language to use for this feature?
+  2. Is claim history essential for users to be able to successfully edit and resubmit a claim?
+  3. Can users understand what they need to do to complete the task and re-submit a "sent back for editing" claim?
+  4. Do users know what information to add into/ how to use supporting notes to support their submission?
+  5. Is it clear to users where to go and what to do if they are unsure about how to re-submit a queried claim?
 - Post-task follow up questions​
+- A language activity asking "What is the best language to use for this feature, so it is clear to users what this status is and what they need to do?"
 - Scenarios: one with the table comparison feature and one without to find out how much of a issue not developing this right away would be, as the prioritiy is getting the feature out into the sector the sooner the better. 
 
 ### What we found
@@ -278,7 +284,7 @@ When changing information the inputs now display the previously entered informat
 
 As this playback slide from the second round of UR shows, “needs action” worked best for participants as it made it clear that the claim would only be processed once the submitter took action.  
 
-![Image to add](input-info.png "Image to add")
+![Playback screenshot](needs-action.png "Playback screenshot")
 
 To clarify that it was the submitter that needs to take action, the following description was added on the ‘Manage claims’ screen: ‘Claims sent back by processors because they need some edits before they can progress.’ (UR participants also said that the term ‘sent back’ helped them to understand that the submitter needed to take action.)
 
