@@ -15,7 +15,7 @@ relatedUserNeeds:
 aside:
   title:  Claims prototypes
   content: |
-    [View claims v15 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v15/) 
+    [View claims v15 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/v15/) 
     Password: bsaasc123
 ---
 
