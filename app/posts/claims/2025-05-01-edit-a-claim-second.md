@@ -27,7 +27,7 @@ Contents
 
 ## Why we did this work
 
-At the start of this work, multiple conversations were needed to clarify requirements and define the scope for this second iteration. As the "edit a claim" feature progressed, it became clear that the work was more complex than initially expected. We had to prioritise essential user needs over nice-to-haves, helping shape what to deliver now versus later in the roadmap, with the goal of releasing a valuable feature quickly. This iteration builds on insights from the first round of user research and the internal business decisions outlined below.
+At the start of this work, multiple conversations were needed to clarify requirements and define the scope for this second iteration. As the “edit a claim” feature progressed, it became clear that the work was more complex than initially expected. We had to prioritise essential user needs over nice-to-haves, helping shape what to deliver now versus later in the roadmap, with the goal of releasing a valuable feature quickly. This iteration builds on insights from the first round of user research and the internal business decisions outlined below.
 
 ### Policy questions
 **Question:** 
@@ -215,11 +215,22 @@ In response to the recommendation to better understand scenarios where users edi
 - Still testing different status text variations in research to improve clarity.
 - Removed the related links section; instead, we’ve embedded key links contextually—e.g. evidence requirements within the edits box, or BSA contact details where support might be needed.
 - Simplified claim history by removing repeated words like “claim,” leaving only key statuses: queried, submitted, approved.
-- Still exploring how to handle potentially long query notes. We're assessing average note length to decide whether to display them in full or design for the 1,000-character limit. Since this is critical info, we're cautious about using reveal components, which are often missed by users.
+- Still exploring how to handle potentially long query notes. We’re assessing average note length to decide whether to display them in full or design for the 1,000-character limit. Since this is critical info, we’re cautious about using reveal components, which are often missed by users.
 
-#### Reimburseamount amount
-Moved reimbursement amount details out of the main view—key info now appears in the orientation section and approved claims box, with the rest accessible via a separate page link. This reduced visual clutter while ensuring users get the right information at the right point in their journey.
+#### Reimbursement amount
+Moved reimbursement amount details out of the main view—key info now appears in the orientation section and approved claims box, with the rest accessible via a separate page link. This reduced visual clutter while ensuring users get the right information at the right point in their journey
 
+
+## How we tested our ideas and what we found
+
+### Who we tested with
+X participants:​
+- X SROs and submitter​
+- X submitters only​
+
+Range of organisations:​
+- X small, X medium, X large (range of staff X-X)​
+- Type of care: residential, day, community and domiciliary care
 
 ### How we tested
 - Task-based moderated usability testing with ASC org users​
@@ -227,7 +238,8 @@ Moved reimbursement amount details out of the main view—key info now appears i
 - Post-task follow up questions​
 - Scenarios: one with the table comparison feature and one without to find out how much of a issue not developing this right away would be, as the prioritiy is getting the feature out into the sector the sooner the better. 
 
-### What we found 
+### What we found
+
 - Post UR playback and analysis we found that most of our design hypothesis' and decisions were validated. User’s found it usable, it worked as they expected, and it solved lots of the problems that came from the first iteration.
 - Minor tweaks are required, mainly around content. 
 
@@ -239,16 +251,16 @@ Moved reimbursement amount details out of the main view—key info now appears i
 UR finding: The link to view the previous submissions could be lost as it was over by the relevant claim part rather than where the users expected to find it by the claim history.
 
 - It felt like previous submissions were to do directly with the claim history so put within that section 
-- A issue for a 60/40 claim was that there would be two links next to each other so what order to put them in. If put 60 first then 40 in order would that then make them read the timeline the wrong way. 
+- A issue for a 60/40 claim was that there would be two links next to each other so what order to put them in. If put 60 first then 40 in order would that then make them read the timeline the wrong way?
 - We heard in the scenario of if editing 40 then they don't need to see the 60 previous submissions. For a "needs action" 60/40 claim we now just show the link for the part that they are editing. 
 - In all other status’s, if more than one submission we show both, in order of 60 then 40. 
 
 **Design update:** 
 
-Error Message: Currently when a user tries to resubmit a claim without making any edits only the error box at the top would display. Because we couldn't be granular in the information supplied on which part of the claim needed changing, the link couldn't link to a specific part of the claim.
+Error Message: Currently when a user tries to resubmit a claim without making any edits only the error box at the top would display. Because we couldn’t be granular in the information supplied on which part of the claim needed changing, the link couldn’t link to a specific part of the claim.
 
-- Options were to highlight the whole claim details, but that didn't feel right when not everything needed changing. Also in a 60/40 claim there was already a timeline element in the component of the claim details which could be visually confusing with a error highlighted also. 
-- Reading threads in git and asking in the UX design community, I got inspiration that at the moment after the error the question the user would ask would be "What do I need to change". Linking therefore to the edit claim and resubmit blue box makes sense as the place to direct the user to to find out. If we directed them straight down to the claim details we would actually be directing their attention past this box.
+- Options were to highlight the whole claim details, but that didn’t feel right when not everything needed changing. Also in a 60/40 claim there was already a timeline element in the component of the claim details which could be visually confusing with a error highlighted also. 
+- Reading threads in git and asking in the UX design community, I got inspiration that at the moment after the error the question the user would ask would be “What do I need to change”. Linking therefore to the edit claim and resubmit blue box makes sense as the place to direct the user to to find out. If we directed them straight down to the claim details we would actually be directing their attention past this box.
 
 ![Error when no fields updated](error-6040.png "Error when no fields have been updated")
 
@@ -258,6 +270,33 @@ When changing information the inputs now display the previously entered informat
 ![Information inputs retaining previously entered values](input-info.png "Information inputs retaining previously entered values")
 
 **Content update:** 
-- Finalised state name and descriptions for needs action status
-- Rejection status description
-- Guidance pages 
+- Finalised state name and description - analysis of the language used by participants in the UR for the first iteration identified some key terms for us to test in the second iteration. The phrases we tested were:
+  - sent back for editing 
+  - needs changing
+  - needs action
+  - needs editing
+
+As this playback slide from the second round of UR shows, “needs action” worked best for participants as it made it clear that the claim would only be processed once the submitter took action.  
+
+![Image to add](input-info.png "Image to add")
+
+To clarify that it was the submitter that needs to take action, the following description was added on the ‘Manage claims’ screen: ‘Claims sent back by processors because they need some edits before they can progress.’ (UR participants also said that the term ‘sent back’ helped them to understand that the submitter needed to take action.)
+
+#### New rejection status description
+
+To help processors distinguish between “needs action” and “rejected” claims, we also added a new description for rejected claims on the “Manage claims” screen: Claims that have been rejected and therefore cannot be edited and resubmitted.
+
+#### New guidance pages
+
+As the look of the service is now changing significantly, we decided that this was a good time to retire the videos that were created to support users with starting a new claim and what evidence to provide. 
+
+Instead we have created 3 new web pages:
+- What evidence you need to provide
+- Help with starting a new claim
+- How we calculate reimbursement amounts (this replaces the reimbursement content that was originally on the claim details screen itself)
+
+These will be easier to maintain as we continue to iterate the service.
+
+## What we will do next
+
+This work has now been handed over to the BA's to write tickets and gone into development. 

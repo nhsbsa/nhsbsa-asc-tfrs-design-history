@@ -86,7 +86,7 @@ There's two sides of this work, here I am detailing the processor side where the
 
 #### Current design usability issues
 
-I began by trying to make edit a claim work in our current view, as this would enable quicker devliery. 
+I began by trying to make edit a claim work in our current view, as this would enable quicker delivery. 
 
 ![Previous process a claim view](process-claim-old.png "Previous process a claim view")
 
@@ -273,18 +273,20 @@ Design 2
 
 ![Extracting processing questions out to modal](alternativeOption2.png "Extracting processing questions out to modal")
 
-
 >**We believe that** extracting the processing flow questions out into a modal
 >**Will be a useful feature for** claim processors
 >**As it will** mean they can navigate all the information in the tabs to find out what they need and not having duplication of information.
 
 
+## How we tested
+- We divided the edit a claim work into two aspects: the submitter's journey of editing a claim and the processor's workflow. Each was explored and tested separately, as both were complex and required sufficient time for research, design, and testing. 
+- Task-based moderated usability testing with 6 ASC org users​
+- Commenced 26th March
+- Pre-task semi-structured interview questions​
+- Post-task follow up questions​
+- The user research discussion guides for each were extensive, reinforcing the need for a focused approach.
 
-## How we tested our ideas and what we found
-
-We divided this work into two aspects: the submitter's journey of editing a claim and the processor's workflow. Each was explored and tested separately, as both were complex and required sufficient time for research, design, and testing. The user research discussion guides for each were extensive, reinforcing the need for a focused approach.
-
-The processor side of the research commenced 26th March and was conducted with 6 participants. 
+## What we found 
 
 
 ## What we will do next
