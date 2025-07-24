@@ -28,11 +28,11 @@ Contents
 
 ## Why we did this work
 
-Our first iteration of design and testing on this problem space is documenting in the post [Edit a claim - processor side](../edit-a-claim). In that first iteration we sought to use design work we had done previously but didn't move into testing due to a change in priorities. That work was documented in the post [Reducing the reliance on offline records](../claim-view-iteration). 
+Our first iteration of design and testing on this problem space is documented in the post [Edit a claim - processor side](../edit-a-claim). In that first iteration we sought to use design work we had done previously but didn't move into testing due to a change in priorities. That work was documented in the post [Reducing the reliance on offline records](../claim-view-iteration). 
 
-What we tested in the first round of edit a claim work involved this revamped claim view. What we had were mixed findings on this new claim view and due to the size of changes alongside the edit a claim options made for more difficult research analysis. Following cross discipline discussions we agreed that the priority was to get the edit a claim feature out as quickly as possible. This meant that the substantial changes made to the claim view with the lack of clear concensus in insights was not a viable route of exploration for us. 
+What we tested in the first round of edit a claim work involved this revamped claim view. What we had were mixed findings on this new claim view and the size of changes alongside the edit a claim options made for more difficult research analysis. Following cross discipline discussions we agreed that the priority was to get the edit a claim feature out as quickly as possible. This meant that the substantial changes made to the claim view, with the lack of clear consensus in insights, was not a viable route of exploration for us. 
 
-We agreed that we would constraint ourselves to minimise any changes to the keep to the structure of the current claim design that is in live. This meant that the edit a claim option would be surfaced through an additional radio button answer to the existing two evidence questions. The overall flow of the screens would also remain the same with only screens that are essential to meet business requirements being added. This may result in reduced usability as we know from previous research that the existing design of the claim view has usability issues. 
+We agreed that we would constrain ourselves and minimise any changes to the structure of the current live claim design. This meant that the edit a claim option would be surfaced through an additional radio button answer to the existing two evidence questions. The overall flow of the screens would also remain the same with only screens that are essential to meet business requirements being added. This may result in reduced usability as we know from previous research that the existing design of the claim view has usability issues. 
 
 ## What our ideas were
 
@@ -53,14 +53,43 @@ Reverting back to the design of a claim that is in live meant that our starting 
   </div>
 </div>
 
-Keeping within the constraints we agreed above we decided to allow the option to send back the claim for editing by the submitter by using an additional radio button option for each processing question. This would split out 'No' into two options one that allows the submitter to make amends and the other that would reject the claim outright. The following logic would then apply:
+Keeping within the constraints we agreed above we decided to allow the option to send back the claim for editing by the submitter by using an additional radio button option for each processing question. This would split out 'No' into two options: one that allows the submitter to make amends and the other that would reject the claim outright. The following logic would then apply:
 - If both answers are 'yes' then the claim will be approved. 
 - If at least one answer is 'no, reject" then the claim will be rejected. 
 - If at least one answer is 'no, send back for editing' and the other is yes then it will be sent back for editing. 
 
-Next we needed to agree the content for these options. [TODO content write up]
+Next we needed to agree the content for these options.
 
-This resulted in the following design for the options:
+This was done through a face-to-face workshop with band 4 processors and trainers.
+
+Participants iterated content twice following discussions around:
+- the difference between claims that are rejected outright and those that can be sent back to the submitter for editing
+- the need for submitters and processors to share a similar language
+
+While participants agreed unanimously on the term ‘reject’ for rejected claims, they arrived at 2 options for claims that need to be sent back: 
+- Pend - action required
+- Action required
+
+These were both chosen for their similarity to submitters’ preferred status name for claims that are sent back: “Needs action” – see [Edit a claim - submitter side (second iteration)](../claims/edit-a-claim-second).
+
+Following a dot vote, all but one participant voted for “Action required”. 
+
+### Intro text for notes
+
+Given that there are now 2 “no” options that processors can select, the intros to the rejection and action notes needed to highlight the difference between them – see below. 
+
+#### No - reject:
+
+Why has this claim been rejected?
+<span class="govuk-caption-m">This note tells the organisation why their claim has been rejected and therefore cannot be edited and resubmitted</span>
+
+#### No - action required:
+
+What action does the organisation need to take?
+<span class="govuk-caption-m">This note tells the organisation what edits they need to make before they resubmit this claim</span>
+
+
+These updates resulted in the following design for the options:
 
 ![The new radio button options.](radio-options.png "A screenshot from v9 of the processing prototype that shows the new radio button options.")
 
@@ -104,8 +133,27 @@ The resulting new screen designs look like this:
 
 ## How we tested our ideas and what we found
 
-TODO
+We ran a round of usability testing with 5 processors. This round tested the following iterations of the design, that were guided by the research
+insights and recommended from the previous round of research: 
+- Reverting to previous processor flow​
+- Removal of the third question [Is there any other reason why this claim should be rejected?]​
+- Two questions with 3 options in original flow​
+- Content changes to 3 options​
+- Previous submission history
+
+Here is a summary of what we saw and heard:
+- Processors want to be able to send back for action for issues currently approved at risk' so their processing is accurate
+- Inconsistent processing for the same scenarios
+- Inconsistent processing behaviour for a reject and communication of claim issues
+- Claim history met users' needs and aligns with WoW and will form a key first part of processing resubmitted claims
+- Users often missed the link for the claim submission history
+- Having the submission history available changed the processing flow for users and some start processing checks from the history
+- Claim history may reduce reliance on notes spreadsheet but not replace it 
 
 ## What we will do next
 
-TODO
+Following a review of the insights and recommendations we agreed the following actions:
+- Work the operational teams to update guidance for processing behaviour
+- Assess the risks of iterating the design to only have one evidence question that covered both checks without further testing
+- Assess the location of the view previous submissions link.
+- Provide a link between the 60 and 40 parts of the claim on the previous submissions table. 
