@@ -18,10 +18,10 @@ tags:
 aside:
   title:  Related content
   content: |
-    [v7 claims prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v7/) 
+    [v7 claims prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/v7/) 
     Password: bsaasc123
 
-    [v8 claims prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/prototypes/design/v8/) 
+    [v8 claims prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/v8/) 
     Password: bsaasc123
 ---
 

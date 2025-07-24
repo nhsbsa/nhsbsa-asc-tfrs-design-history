@@ -17,7 +17,7 @@ relatedUserNeeds:
 aside:
   title:  Processing prototypes
   content: |
-    [View processing v2 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/prototypes/design/v2/) 
+    [View processing v2 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/v2/) 
     Password: bsaasc123
 
           Claim reference's to test:

@@ -14,7 +14,7 @@ relatedUserNeeds:
 aside:
   title:  Processing Prototypes
   content: |
-    [View claims v8 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/prototypes/design/v8/) 
+    [View claims v8 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/v8/) 
     Password: bsaasc123
 ---
 
