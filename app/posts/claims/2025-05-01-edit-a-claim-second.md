@@ -1,6 +1,6 @@
 ---
-title:   Edit a claim - submitter side (second iteration)
-description: 
+title: Iterating the edit a claim designs for organisations
+description: Following the first round of usability testing on edit a claim we iterated the design based on the insights and further business analysis.
 author:
   name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
@@ -8,6 +8,7 @@ date: 2025-05-01
 tags:
   - private-beta
   - claims-version-16
+  - edit-claim
 relatedUserNeeds:
   - user-need-4
   - user-need-2

@@ -1,5 +1,5 @@
 ---
-title: Iterating the Edit a claim designs - processor side
+title: Iterating the edit a claim designs for processors
 description: Following the first round of usability testing on edit a claim we returned to the drawing board for the next iteration.
 author:
   name: Mark Portnell (Interaction designer)
@@ -8,7 +8,7 @@ date: 2025-07-23
 tags:
   - private-beta
   - processing-version-8
-  - processing-edit-a-claim
+  - edit-claim
 relatedUserNeeds:
   - user-need-4
   - user-need-11
