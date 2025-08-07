@@ -154,6 +154,15 @@ Here is a summary of what we saw and heard:
 
 Following a review of the insights and recommendations we agreed the following actions:
 - Work the operational teams to update guidance for processing behaviour
-- Assess the risks of iterating the design to only have one evidence question that covered both checks without further testing
 - Assess the location of the view previous submissions link.
 - Provide a link between the 60 and 40 parts of the claim on the previous submissions table. 
+
+### Assessing the location of the view previous submissions link
+After testing with processors, we found that users often missed the submissions link. Initially, we looked at the styling of the link to make it stand out or look prominent. After a discussion with the team it was clear that its also the way the previous submissions content and link was placed and nested in the explanation of what a 40 part claim is. Swapping the placement to be just before the submitter tables, allows us to match the flow in which processors start to look at a claim and gives it breathing space from the content above. It provides space away from the content that processors are most likely to spot as an action.
+
+![The new placement of previous submissions button.](view-previous-submissionv12.png "A screenshot from v10 of the processing prototype that shows the new previous submission button placement.")
+
+### Providing a link between 60 and 40 parts of a claim on previous submissions 
+As the previous submissions table led processors to start processing the claim on this page, we added a link at the bottom of the table view, to assist and aid processors of a quicker way to view a 40 or 60 part of the claim if there is one available. The link placement is below the table as we found in user research they would focus on the importance of understanding why it was submitted previously before looking at the second part of the claim. 
+
+![The new button 60/40 part claim link on previous submissions.](40-Part-Claim-link.png "A screenshot from v10 of the processing prototype that shows the added link for 60/40 part claims.")
