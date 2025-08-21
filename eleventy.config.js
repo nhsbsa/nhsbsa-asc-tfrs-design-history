@@ -8,7 +8,7 @@ module.exports = function (eleventyConfig) {
     headingPermalinks: true,
     header: {
       organisationLogo: false,
-      productName: 'Claim for adult social care training and development',
+      productName: 'Claim for adult social care learning and development',
       search: {
         indexPath: '/search.json',
         sitemapPath: '/sitemap'

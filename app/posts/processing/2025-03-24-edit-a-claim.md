@@ -1,6 +1,6 @@
 ---
-title:   Edit a claim - processor side
-description: 
+title: Allows processors to send claims back for editing
+description: To allow organisations to edit claims, processors need to be able to send claims back for editing by organisations.
 author:
   name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
@@ -8,7 +8,7 @@ date: 2025-03-24
 tags:
   - private-beta
   - processing-version-8
-  - processing-edit-a-claim
+  - edit-claim
 relatedUserNeeds:
   - user-need-4
   - user-need-11

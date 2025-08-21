@@ -1,6 +1,6 @@
 ---
-title:   Edit a claim - submitter side (first iteration)
-description: 
+title: Giving organisations the ability to edit a claim and resubmit it
+description: Currently when a claim is rejected organisations have to create a new claim to be able to resubmit. Exploring allowing users to edit a claim to see if this would solve this problem. 
 author:
   name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
@@ -8,6 +8,7 @@ date: 2025-03-25
 tags:
   - private-beta
   - claims-version-15
+  - edit-claim
 relatedUserNeeds:
   - user-need-4
   - user-need-2
