@@ -107,3 +107,6 @@ Actions from user research are :
 - Display the max reimbursement rate so processors are able to see it in the claim details 
 - Continue to review evidence of payments coming through the service, to identify gaps in guidance 
 - Add a field in the current 60 payment plan to enter current total paid and consider displaying this on the 40 claim. 
+
+## Max reimbursement rate 
+During the actions discussion, as a team we decided that the value of showing the max reimbursement rate in the training section of a claim would be a high value and a quick win for processors. Having Max reimbursement placed within the claim details, was pointed out as where processors typically look at the claim and match it against the evidence given. So we added this to show on all claim types, we also choose to leave the content within the radio buttons for a detailed explanation and breakdown of cost per learner. 
