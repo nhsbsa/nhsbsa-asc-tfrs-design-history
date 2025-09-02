@@ -1,20 +1,20 @@
 ---
-title: 
-description: 
-author:
-  name:
-  url: 
+title: Showing 60/40 payment plans
+description: A design history post on the design rationale for 60/40 payment plans 
+author: 
+  name: Sara Gulliver (Interaction designer)
+  url: 'mailto:hi.sara.gulliver@nhsbsa.nhs.uk'
 date: 2025-08-19
 tags:
   - private-beta
   - processing-version-11
   - payment-plan
 relatedUserNeeds:
-  - user-need-
-  - user-need-
-  - user-need-
+  - user-need-11
+  - user-need-12
+  - user-need-13
 aside:
-  title:  
+  title:  Showing 60/40 payment plans
   content: |
     [View processing v11 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/processing/v11/) 
     Password: bsaasc123
@@ -108,5 +108,5 @@ Actions from user research are :
 - Continue to review evidence of payments coming through the service, to identify gaps in guidance 
 - Add a field in the current 60 payment plan to enter current total paid and consider displaying this on the 40 claim. 
 
-## Max reimbursement rate 
+### Max reimbursement rate 
 During the actions discussion, as a team we decided that the value of showing the max reimbursement rate in the training section of a claim would be a high value and a quick win for processors. Having Max reimbursement placed within the claim details, was pointed out as where processors typically look at the claim and match it against the evidence given. So we added this to show on all claim types, we also choose to leave the content within the radio buttons for a detailed explanation and breakdown of cost per learner. 
