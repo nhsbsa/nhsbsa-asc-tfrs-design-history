@@ -71,7 +71,11 @@ We went ahead with Option 2 with a focus on the processor side, as processors ar
 
 - Design one was embedding the question within the yes radio conditional would be the best option for click reduction and both questions are related to each other within the process. Once we iterated these, we felt that embedding may lead to the question being missed, as the cost per learner question in reviewing the claim is content heavy, and could lead to processors becoming confused by the question. 
 
+![design one embedding the question within a yes conditional](option2-paymentplan.png "A screenshot from design crit board showing the first design.")
+
 - Design two was looking at taking the payment plan question out and having it seperate and asking if the claim has been paid in full. Posing the question first would mean that it would fit within current process of looking at the evidence first and understanding what kind of claim it is. Cost per learner would appear below this as this question links directly to approving, not accepted or editing a claim.
+
+![design two taking the payment plan question out](URdesign-paymentplan.png "A screenshot of v11 of the prototype showing the payment plan question out of the conditional.")
 
 We decided to take design two into the testing phase, as this was our riskiest assumption as this would also be testing new functionality of showing several yes/no questions on the same page.
 
@@ -110,3 +114,5 @@ Actions from user research are :
 
 ### Max reimbursement rate 
 During the actions discussion, as a team we decided that the value of showing the max reimbursement rate in the training section of a claim would be a high value and a quick win for processors. Having Max reimbursement placed within the claim details, was pointed out as where processors typically look at the claim and match it against the evidence given. So we added this to show on all claim types, we also choose to leave the content within the radio buttons for a detailed explanation and breakdown of cost per learner. 
+
+![Final design after user research.](final-paymentplan.png "A screenshot from the v11 of the prototype showing final design with max reimbursement rate added.")
