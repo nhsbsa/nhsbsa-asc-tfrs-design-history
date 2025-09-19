@@ -132,4 +132,44 @@ On submission:
 
 ## How we tested our ideas and what we found
 
-This is going into user testing, updates will be posted here once complete.
+Goals from testing:
+
+1. Understand how payment plans work between organisations and training providers.
+2. Test whether users understand why they need to upload further payment evidence and what they should include
+3. Test how well the proposed designs meet these needs / ways of working
+4. Explore user's understanding and awareness of the scheme eligibility around payment plans
+
+### Who we tested with
+5 participants:​
+- 3 SROs and submitter​
+- 2 submitters only​
+
+Range of organisations:​
+- different sizes and types of orgs
+
+Payment arrangement and claim models used
+- 3 paid for training in installments (2 submitted 60/40 claims, 1 submitted 60/40 and 100 claims)
+
+### How we tested
+- 5 x moderated usability testing sessions (plus semi-structured interview questions)
+- 1 scenario (testing both 60 and 40 part of claim)
+- Themed and affinity mapped findings
+  - Sorted into payment plan specific and wider findings incl. multiple learner
+
+### What we found
+
+The headline from user testing was that our hypothesis were validated, and no further updates to the design are needed. 
+
+The designs work inline with current user mental models around paying and claiming for training. The option to add 40 evidence did not over complicate the user experience. Participants who had only completed 100 claims, were able to complete the 60/40 scenarios we set.
+- Designs have been handed over to development.
+
+Other things to consider: 
+
+There continues to be a knowledge gap for organisations outside their familiar ways of claiming and paying for training. 60/40 is synonymous with the claim model and the payment plan. Conversely, 100 claim users may be unaware they can use the claim model while paying in instalments.
+- Hold to revist later.
+
+Most users struggled to find the 40 claim, often looking in the 'Submitted' section.
+- We have backlogged this for later.
+
+We started to hear feedback around the increasing complexity of the service.
+- Something we have decided that could be looked at further in the multiple learners piece of work. 
