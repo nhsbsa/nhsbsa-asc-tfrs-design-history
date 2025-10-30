@@ -8,6 +8,7 @@ date: 2025-05-01
 tags:
   - private-beta
   - claims-version-16
+  - claims-version-17
   - edit-claim
 relatedUserNeeds:
   - user-need-4
