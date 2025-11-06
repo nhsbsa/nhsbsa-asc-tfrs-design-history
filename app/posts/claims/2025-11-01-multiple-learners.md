@@ -1,6 +1,6 @@
 ---
-title: Communicating changes to the service to users
-description: We have refined how we communicate releases to the our users to ensure major changes are better understood. 
+title: Supporting multiple learners per claim
+description: Orgs often send multiple learners on the same training, but currently have to submit all the information again for each learner, even if the course details and evidence of payment are the same. 
 author:
   name: Mark Portnell (Interaction designer)
   url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
@@ -72,13 +72,13 @@ Here are some of the concepts we took to users:
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
     <figure>
-      <img src="claim1.jpg" alt="" style="width: 100%; height: auto;">
+      <img src="claim1.png" alt="" style="width: 100%; height: auto;">
       <figcaption>Claim concept 1</figcaption>
     </figure>
   </div>
   <div style="flex: 1; max-width: 48%;">
     <figure>
-      <img src="claim2.jpg" alt="" style="width: 100%; height: auto;">
+      <img src="claim2.png" alt="" style="width: 100%; height: auto;">
       <figcaption>Claim concept 2</figcaption>
     </figure>
   </div>
@@ -87,13 +87,13 @@ Here are some of the concepts we took to users:
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
     <figure>
-      <img src="learners1.jpg" alt="" style="width: 100%; height: auto;">
+      <img src="learners1.png" alt="" style="width: 100%; height: auto;">
       <figcaption>Learners concept 1</figcaption>
     </figure>
   </div>
   <div style="flex: 1; max-width: 48%;">
     <figure>
-      <img src="learners2.jpg" alt="" style="width: 100%; height: auto;">
+      <img src="learners2.png" alt="" style="width: 100%; height: auto;">
       <figcaption>Learners concept 2</figcaption>
     </figure>
   </div>
