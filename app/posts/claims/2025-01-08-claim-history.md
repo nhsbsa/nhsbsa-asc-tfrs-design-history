@@ -27,7 +27,7 @@ Contents
 
 ## Why we did this work
 
-As part of the work done to scale back the MVP in March to meet an aggressive delivery schedule, we removed claims from the proposed designs for the claims app. For more details about the aspects removed from the MVP, please refer to the design history post [Scaling back MVP](../scaling-back-mvp-claims).
+As part of the work done to scale back the MVP in March 2024 to meet an aggressive delivery schedule, we removed claims from the proposed designs for the claims app. For more details about the aspects removed from the MVP, please refer to the design history post [Scaling back MVP](../scaling-back-mvp-claims).
 
 One of the user needs identified earlier is:
 
