@@ -27,7 +27,7 @@ Contents
 
 ## Why we did this work
 
-As part of work done to scale back the MVP in March to try and meet an aggressive delivery schedule, we removed pagination from the proposed designs. Please see the design history post [Scaling back MVP](../scaling-back-mvp-claims) for more details on the aspects removed from the MVP as part of that work. 
+As part of work done to scale back the MVP in March 2024 to try and meet an aggressive delivery schedule, we removed pagination from the proposed designs. Please see the design history post [Scaling back MVP](../scaling-back-mvp-claims) for more details on the aspects removed from the MVP as part of that work. 
 
 Despite pagination being removed, a technical limitation was put in place on how many claims could be displayed in a table at once. This limitation was introduced to reduce any performance impact that could arise from loading too many claims at a time. Initially, the risk to the user experience was minimal because it would take some time for an organisation to amass enough claims of a particular status to exceed the 100-claim limit. The intention was to reintroduce pagination as an organisation neared this threshold.
 
