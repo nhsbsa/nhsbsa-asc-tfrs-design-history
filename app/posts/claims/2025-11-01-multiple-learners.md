@@ -1,5 +1,5 @@
 ---
-title: Supporting multiple learners per claim
+title: Supporting multiple learners per claim (Submitter)
 description: Orgs often send multiple learners on the same training, but currently have to submit all the information again for each learner, even if the course details and evidence of payment are the same. 
 author:
   name: Mark Portnell (Interaction designer)
@@ -7,7 +7,7 @@ author:
 date: 2025-11-01
 tags:
   - private-beta
-  - comms
+  - multiple-learners
 ---
 
 Contents
@@ -23,7 +23,7 @@ When submitters are creating multiple claims for the same course, using the same
 
 As part of work done to scale back the MVP in March 2024 to try and meet an aggressive delivery schedule, we removed the ability to add multiple learners to a claim from the proposed designs. Please see the design history post [Scaling back MVP](../scaling-back-mvp-claims) for more details on the aspects removed from the MVP as part of that work.
 
-We have now returned to this problem space which has continued to be highlighted by users in research as a major paint point in their use of the service. 
+We have now returned to this problem space which has continued to be highlighted by users in research as a major pain point in their use of the service. 
 
 ## What our ideas were
 During the definition and discovery work that was done around this problem space we explored some different models of a claim that might address the issues. The two main concepts were:
