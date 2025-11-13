@@ -24,7 +24,7 @@
     "@x-govuk/govuk-eleventy-plugin": "^6.2.1",
     "csv-parser": "^3.2.0",
     "http-server": "^14.1.1",
-    "rimraf": "^5.0.5",
+    "rimraf": "^6.0.1",
     "sass": "^1.77.2"
   },
   "devDependencies": {
