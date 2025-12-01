@@ -26,30 +26,43 @@ Below are the next designs. They combine elements of the concepts that tested we
 
 ## What our ideas were
 
+### Manage claims 
+
+![Manage claims table](manage-claims.png "Manage claims table")
+
+- We added in the count of learners column into the table, painting a picture of what the claim looks like without diving into the detail. Trying to find a claim for a specific learner name by giving a drop down here wouldn't be the most efficient if the need is to find a particular claim for a learner quick. This would be better answered with something like a advanced search
+
 ### Claim details 
+
+![A multiple learner 100 claim](not-yet-submitted-100.png "A multiple learner 100 claim")
 
 > **We believe that** keeping the claim details screen as familiar as possible to current designs
 > **Will be a useful feature for** submitters
-> **As it will** allow them to adapt more quickly to using it
+> **As it will** allow them to adapt more quickly to using the feature
 
-> **We believe that** separating the bulk of learner-completion information into its own management screen 
+> **We believe that** having a summary section on the claim-details page for learner completions rather than the specific details
 > **Will be a useful feature for** submitters
-> **As it will** prevent the claim-details screen from becoming overloaded, making the information more digestible and allowing easier handling of large amounts of learner data through added space and features such as tabs.
-
-> **We believe that** having a summary section on the claim-details page for learner completions
-> **Will be a useful feature for** submitters
-> **As it will** provide a quick overview of the claim’s status based on familiar information—such as dates and evidence—and help them easily see what specific details are still outstanding
+> **As it will** provide a quick overview of the claim’s status based on familiar information—such as dates and evidence—and help them easily see what specific details are still outstanding without having to dive into the details of potentially many learners
 
 #### Links 
 > **We believe that** moving the claim history to a link placed next to “View previous submissions”
 > **Will be a useful feature for** submitters
 > **As it will** reduce the variation and volume of font sizes in the claim-details page—an issue highlighted by users—while still allowing us to test whether this change affects its usefulness as an “at-a-glance” view of the claim.
 
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="claim-history.png" alt="" style="width: 100%; height: auto;">
+      <figcaption>Claim history page</figcaption>
+    </figure>
+  </div>
+</div>
+
 - Having multiple “change” links on the learner, completion date and evidence of completions values — when they all led to the same place — did not work well. GDS guidance recommends avoiding multiple links that direct to the same destination, and users were unsure what to expect. In addition, the claim-details page now contains many blue links with different functions, so we conducted a link audit to identify ways to reduce them
 
 > **We believe that** going forward with the "Manage" button 
 > **Will be a useful feature for** submitters
-> **As it will** their expectation of being taken to a single place where they can update all completion information
+> **As it will** meet their expectation of being taken to a single place where they can update all completion information
 
 #### 60/40 claims 
 
@@ -57,16 +70,19 @@ We also needed to consider how the design would function across all claim types.
 
 Updates:
 
-We explored collapsing the section that isn’t being worked on, but key information such as training details would end up hidden.
-
-A new question emerged: do the training and learner details actually sit outside the 60/40 split, with the remaining sections being the only parts directly tied to the 60/40 structure?
-
-This led to a reframing: a claim is essentially one training item plus any number of learners. That’s consistent across both 100% and 60/40 claims, so we explored extracting this shared information and placing it at the top.
-
-We collapsed the inactive part of the 60/40 split to save space and removed the timeline, which immediately made the page simpler and easier to navigate
+- We explored collapsing the section that isn’t being worked on, but key information such as training details would end up hidden.
+- A new question emerged: do the training and learner details actually sit outside the 60/40 split, with the remaining sections being the only parts directly tied to the 60/40 structure?
+- This led to a reframing: a claim is essentially one training item plus any number of learners. That’s consistent across both 100% and 60/40 claims, so we explored extracting this shared information and placing it at the top.
+- We collapsed the inactive part of the 60/40 split to save space and removed the timeline, which immediately made the page simpler and easier to navigate
 
 
 ### Manage learners screen 
+
+![A multiple learner 100 claim](manage-learners.png "A multiple learner 100 claim")
+
+> **We believe that** separating the bulk of learner-completion information into its own management screen 
+> **Will be a useful feature for** submitters
+> **As it will** prevent the claim-details screen from becoming overloaded, making the information more digestible and allowing easier handling of large amounts of learner data through added space and features such as tabs.
 
 > **We believe that** framing a learner as a name, a corresponding piece of completion evidence, and a completion date—displayed together in individual learner cards
 > **Will be a useful feature for** submitters
@@ -75,56 +91,145 @@ We collapsed the inactive part of the 60/40 split to save space and removed the 
 - The idea of bulk upload of certificates is something we are evaluating the tech effort for, which if introduced would perhaps change this flow in the future
 
 #### Completion dates
-The completion date could apply to all learners or to each individual learner. From research, we knew users expected the design to adapt based on which option they chose, so we needed a way for them to feed this choice into the design.
+Completion dates can apply to all learners or to individual learners. Research showed users expected the interface to adapt based on this choice, so we needed a clear way for them to indicate it. Users often missed the “add one to all” link, and although the idea of asking whether a date applied to one or all learners tested well, its placement in the flow wasn’t working
 
-We found that users often missed the link to “add one to all.”
 
-The concept of asking whether the date applied to one or all learners worked well, but the placement of this question in the design and flow wasn’t quite right.
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="completion-date-question.png" alt="" style="width: 100%; height: auto;">
+      <figcaption>Learners concept 2</figcaption>
+    </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="completion-date-all.png" alt="" style="width: 100%; height: auto;">
+      <figcaption>Learners concept 1</figcaption>
+    </figure>
+  </div>
+</div>
 
-> **We believe that** moving the completion-date choice to the Manage learners screen and embedding it into the flow, while displaying the question for reference
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="manage-learners-single-date.png" alt="" style="width: 100%; height: auto;">
+      <figcaption>Single completion date</figcaption>
+    </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="different-completion-dates.png" alt="" style="width: 100%; height: auto;">
+      <figcaption>Multiple completion dates</figcaption>
+    </figure>
+  </div>
+</div>
+
+> **We believe that** moving the completion-date choice to the Manage learners screen
 > **Will be a useful feature for** submitters
-> **As it will** allow them to easily set or change whether the date applies to one learner or all, fitting naturally into their workflow
+> **As it will** make it easier to set or change whether a date applies to one learner or all, in a way that fits naturally into their workflow
 
-- asked it when first adding a completion date, then the summary apepars at top.
-- If yes, add to all,
-- If no, just adds for the specific learner
-- If yes then changes to no, keeps same completion date on everyone, then they can change individually
-- How to deal with completion dates
-If a single learner and added completion date on that screen, then add another, then would show both learner cards with the original learner's completion date shown 
+Key behaviours:
+- The question appears the first time a completion date is added, then a summary appears at the top.
+- Selecting Yes applies the date to all learners.
+- Selecting No applies it only to the specific learner.
+- If users switch from Yes to No, existing dates remain in place and can be edited individually.
+- If a completion date is added for a single learner and another learner is added later, both learner cards appear, with the original learner’s date preserved 
 
 #### Tabs
-* Managing learners within a claim can become challenging as the number of learners increases. In testing, 5 out of 6 participants indicated that they preferred the tabbed approach to learner management
+Managing learners becomes harder as their number increases. In testing, 5 of 6 participants preferred using tabs to organise learners
 
-> **We believe that** showing learners in a way that highlights only those who still require additional information
+> **We believe that** that highlighting clearly the learners who still need information
 > **Will be a useful feature for** submitters
-> **As it will** provide a clear way of breaking up the information and focusing attention on learners who still need actions completed
+> **As it will** break content into clear sections and focus the attention on what still requires action
 
-- Having to do and done tabs, once filled in a card, it moves to done
-- For needs action tabs, if edit it stays in needs action with edited tag, removed tab if its been submitted before, submitted tab can't be edited
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="manage-learners-single-date.png" alt="" style="width: 100%; height: auto;">
+      <figcaption>Not yet submitted claim tabs</figcaption>
+    </figure>
+  </div>
+    <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="empty-done-tab.png" alt="" style="width: 100%; height: auto;">
+      <figcaption>Empty done tab</figcaption>
+    </figure>
+  </div>
+</div>
 
-- Think fits expectation of the tab interaction behaviour
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="edited-needs-action-tab.png" alt="" style="width: 100%; height: auto;">
+      <figcaption>Needs action claim tabs</figcaption>
+    </figure>
+  </div>
+    <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="removed-tab.png" alt="" style="width: 100%; height: auto;">
+      <figcaption>Needs action claim - removed tab</figcaption>
+    </figure>
+  </div>
+</div>
+
+For claims that haven’t been submitted yet, the tabs are:
+- To do – learners who still need information
+- Done – learners whose information is complete
+
+For claims that need action after being sent back, the tabs change to:
+- Needs action – learners requiring updates or corrections
+- Completed - learners who have been marked complete by the processor and can't be edited
+- Removed – learners who are no longer elibigle and are removed by submitter
 
 #### Advanced search 
 - Actions meeting decided adding in the advanced search for a specific learner's claim wasn’t in scope for multiple learners
 
 #### Start date
-- This is still undergoing further research to find out the needs 
-- Asking in the usability testing on the processor side whether they do something with it (insight was band 3’s say yes, trainers say no?)
+- We’re continuing research to understand user needs around capturing start dates
 
 #### One learner v multiple learners in the design 
-As our designs developed with multiple learners in mind, we had to make sure still worked for single learner, and that the introduction of multiple learners didn't now make that a overcomplicated journey. 
+As we introduced multi-learner functionality, we needed to ensure the journey still worked smoothly for single-learner claims and didn’t become unnecessarily complex.
 
-Currently might only have one learner card on manage learners page, if a single learner claim
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="single-learner-empty.png" alt="" style="width: 100%; height: auto;">
+      <figcaption>Single learner claim empty details</figcaption>
+    </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="single-learner-claim.png" alt="" style="width: 100%; height: auto;">
+      <figcaption>Single learner claim filled in details</figcaption>
+    </figure>
+  </div>
+</div>
 
-We imagined the expectation if there was only one learner, there is no need to go to any other screens, similar to the current journey. With this idea then we needed to make it work on the one page and expand into a multi learner claim if the org so wished. How to make the transition natural in the flow?
-
-Added "add another" to links, no manage learners button until added a second learner
+> **We believe that** allowing the single-learner flow to remain simple while naturally expanding into a multi-learner experience
+> **Will be a useful feature for** submitters
+> **As it will** maintain a straightforward, one-page journey for single learners, while enabling organisations to add more learners through clear actions like “Add another and only showing the Manage learners option when it becomes relevant.
 
 
 #### Content
-Removed a lot of the content when reqorked 60/40
-- Edit learners alert text links to the specific learners cards in the manage learners screen 
-- Edit tags show on the top level claim details for any information of that type that has changed on any of the learners 
+- We removed a significant amount of content during the 60/40 rework, focusing on clarity and relevance.
+- The Edit learners alert box now links directly to the relevant learner cards on the Manage learners screen.
+- Edit tags appear on the top-level claim details, indicating when information of that type has changed for any learner.
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="edited-needs-action-tab-learner.png" alt="" style="width: 100%; height: auto;">
+      <figcaption>Edited needs action claim</figcaption>
+    </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="needs-action-claim-details-edited.png" alt="" style="width: 100%; height: auto;">
+      <figcaption>Multiple completion dates</figcaption>
+    </figure>
+  </div>
+</div>
+
 
 
 ## How we tested our ideas and what we found
