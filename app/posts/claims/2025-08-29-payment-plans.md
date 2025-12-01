@@ -1,6 +1,6 @@
 ---
 title:   60/40 payment plan claims
-description: 
+description: Expanding functionality to allow for payment plan claims
 author:
   name: Hannah Williams (Interaction designer)
   url: 'mailto:hi.hannah.williams@nhsbsa.nhs.uk'
