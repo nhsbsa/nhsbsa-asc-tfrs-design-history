@@ -136,6 +136,46 @@ For this first iteration we did not tackle the view previous submissions table a
 
 
 ## How we tested our ideas and what we found
+We tested our designs with 5 participants that consisted of 3 band 3 processors and 2 band 4 processors/QAs. We ran moderated usability testing sessions (plus semi-structured interview questions)​, in each session particpants completed two scenarios which aimed to test the more difficult scenarios users face. 
 
+The headline findings were:
+- Overall designs tested well, meeting processor's needs, exceeding expectations and helping to increase processing confidence​
+- The new page layout, with the modal, adds value, meets needs as a checklist and for navigation​
+- Although there are no new barriers introduced by multiple learner claims, it does compound some existing pain points​
+
+Other aspects of testing that worked well:
+
+##### Cost per learner
+Processors had no issues calculating this as 'per learner' and it was useful to have the system calculate the total reimbursement amount
+
+##### 'Save and finish later'
+This feature is needed and worked as expected, including that any entered text would save at this point
+
+##### Continuing a partially processed claim (that they have processed themselves)
+Acceptable to start on payment evidence step as may want to recheck and can easily identify where they have processed to and jump to that learner
+
+##### Final outcome page - Statuses and presentation of learner information
+Meets needs – learners categorised by outcome, needs action or rejected learners at top and alphabetical within these categories
+
+##### Finding a learner on a processed claim / claim overview page
+Learner links worked as expected, or just scrolled to find the learner
+
+##### Checking dates
+Checking the dates generally worked but:​
+- Completion dates – would be treated differently if all the completion dates are the same or different, need to ensure processors understand 'date range' for differing completion dates​
+- Start date - some said it is needed and checked for end of year cut-off, if training is paid for before the cut off but started after, it Is currently still eligible
+
+Finally the throughts that came out of research before the next steps:
+1. As a processor I found value in the modal. 
+2. As a processor I would like further learner outcome indicators prior to sending the claim back.
+3. As a processor I'm concerned about how much space action notes might take up on the confirmation screen.
+4. As a processor I want reassurance that when partially processing a multi-learner claim, I am fairly credited for work needed to ensure the entire claim is accurately processed and my colleague is credited for the work they previously conducted. 
+5. As a processor I may need time to adapt to multiple completion dates when processing learner details and cross referencing with attached evidence.
+6. As a processor in the world of multiple learners, I am aware there may be more edits made to a claim beyond the reasons I sent it back for action. The process of reviewing an entire resubmitted claim will take me longer than it does currently. 
+7. As a processor the reduced size of the organisation name within the claim, feels like an unnecessary change. 
+8. As a processor using the 'change organisation' link doesn't speak to my intentions when looking to leave the claim I am working in. 
 
 ## What we will do next
+We have agreed to take the designs forward and iterated all the points raised above. The exception was point 3 where we felt that if we can design and test a solution to point 2 then point 3 is less importnant. We will test this hypothesis in the next round of testing with users.
+
+Overall this iteration was largely very successful and this was in part due to the co-design session that allowed us to converge on a better solution for the first iteration.
