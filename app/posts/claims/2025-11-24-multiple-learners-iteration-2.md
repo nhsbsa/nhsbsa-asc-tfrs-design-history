@@ -45,36 +45,46 @@ Below are the next designs. They combine elements of the concepts that tested we
 > **As it will** provide a quick overview of the claim’s status based on familiar information—such as dates and evidence—and help them easily see what specific details are still outstanding without having to dive into the details of potentially many learners
 
 #### Links 
+
+Adding “change” links on the learner, completion date and evidence of completions values — when they all led to the same place — did not work well. GDS guidance recommends avoiding multiple links that direct to the same destination, and users in concept testing were unsure what to expect. In addition, the claim-details page now contains many blue links with different functions, so we also conducted a link audit to identify ways to reduce them.
+
+> **We believe that** adding a "Completion" section to the claim and going forward with the "Manage" button 
+> **Will be a useful feature for** submitters
+> **As it will** meet their expectation of being taken to a single place where they can update all completion information, and it fits the design more of it being a summary.
+
 > **We believe that** moving the claim history to a link placed next to “View previous submissions”
 > **Will be a useful feature for** submitters
 > **As it will** reduce the variation and volume of font sizes in the claim-details page—an issue highlighted by users—while still allowing us to test whether this change affects its usefulness as an “at-a-glance” view of the claim.
 
-<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-  <div style="flex: 1; max-width: 48%;">
-    <figure>
-      <img src="claim-history.png" alt="" style="width: 100%; height: auto;">
-      <figcaption>Claim history page</figcaption>
-    </figure>
-  </div>
-</div>
-
-- Having multiple “change” links on the learner, completion date and evidence of completions values — when they all led to the same place — did not work well. GDS guidance recommends avoiding multiple links that direct to the same destination, and users were unsure what to expect. In addition, the claim-details page now contains many blue links with different functions, so we conducted a link audit to identify ways to reduce them
-
-> **We believe that** going forward with the "Manage" button 
-> **Will be a useful feature for** submitters
-> **As it will** meet their expectation of being taken to a single place where they can update all completion information
+![Claim history page](claim-history.png "Claim history page")
 
 #### 60/40 claims 
 
-We also needed to consider how the design would function across all claim types. During concept testing, we hadn’t fully explored how the ideas would work for 60/40 claims. To fit the "Manage" button design, we realised the 60% section would require its own dedicated area for a learners-management button but only for a single learners row. There is also already a lot of duplicated learner information on the 60/40 screen—potentially even more once the list of learner names appears in the edit alert box. This raised the question of whether now is the right time to rethink the layout, as it was created some time ago and no longer feels like the best fit.
+We also needed to consider how the design would function across all claim types. During concept testing, we hadn’t fully explored how the ideas would work for 60/40 claims. To fit the "Manage" button design, we realised the 60 section would require its own dedicated area for a learners-management button but only for a single learners row. There is also already a lot of duplicated learner information on the 60/40 screen with learners having a section in each to show changes—potentially even more once the list of learner names appears in the edit alert box. This raised the question of whether now is the right time to rethink the layout, as it was created some time ago and no longer feels like the best fit.
+
+![Original 60/40 claim](original6040.png "Original 60/40 claim")
 
 Updates:
 
 - We explored collapsing the section that isn’t being worked on, but key information such as training details would end up hidden.
 - A new question emerged: do the training and learner details actually sit outside the 60/40 split, with the remaining sections being the only parts directly tied to the 60/40 structure?
-- This led to a reframing: a claim is essentially one training item plus any number of learners. That’s consistent across both 100% and 60/40 claims, so we explored extracting this shared information and placing it at the top.
+- This led to a reframing: a claim is essentially one training item plus any number of learners. That’s consistent across both 100 and 60/40 claims, so we extracted this shared information and placing it at the top.
 - We collapsed the inactive part of the 60/40 split to save space and removed the timeline, which immediately made the page simpler and easier to navigate
 
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="6040-collapsed.png" alt="" style="width: 100%; height: auto;">
+      <figcaption>New - 60/40 design collapsed</figcaption>
+    </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="6040-expanded.png" alt="" style="width: 100%; height: auto;">
+      <figcaption>New - 60/40 design expanded</figcaption>
+    </figure>
+  </div>
+</div>
 
 ### Manage learners screen 
 
@@ -91,20 +101,20 @@ Updates:
 - The idea of bulk upload of certificates is something we are evaluating the tech effort for, which if introduced would perhaps change this flow in the future
 
 #### Completion dates
-Completion dates can apply to all learners or to individual learners. Research showed users expected the interface to adapt based on this choice, so we needed a clear way for them to indicate it. Users often missed the “add one to all” link, and although the idea of asking whether a date applied to one or all learners tested well, its placement in the flow wasn’t working
+Completion dates can apply to all learners or to individual learners. Research showed users expected the interface to adapt based on this choice, so we needed a clear way for them to indicate it. Users often missed the “add one to all” link we explored in concept testing, and although the idea of asking whether a date applied to one or all learners tested well, its placement in the flow wasn’t working.
 
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
     <figure>
       <img src="completion-date-question.png" alt="" style="width: 100%; height: auto;">
-      <figcaption>Learners concept 2</figcaption>
+      <figcaption>Question 1 - is the completion date or all or one learner</figcaption>
     </figure>
   </div>
   <div style="flex: 1; max-width: 48%;">
     <figure>
       <img src="completion-date-all.png" alt="" style="width: 100%; height: auto;">
-      <figcaption>Learners concept 1</figcaption>
+      <figcaption>Question 2 - (depending on the previous answer either asks) all learners date or single learner date</figcaption>
     </figure>
   </div>
 </div>
@@ -113,13 +123,13 @@ Completion dates can apply to all learners or to individual learners. Research s
   <div style="flex: 1; max-width: 48%;">
     <figure>
       <img src="manage-learners-single-date.png" alt="" style="width: 100%; height: auto;">
-      <figcaption>Single completion date</figcaption>
+      <figcaption>Displays answer for single completion date</figcaption>
     </figure>
   </div>
   <div style="flex: 1; max-width: 48%;">
     <figure>
       <img src="different-completion-dates.png" alt="" style="width: 100%; height: auto;">
-      <figcaption>Multiple completion dates</figcaption>
+      <figcaption>Displays answer for multiple completion dates</figcaption>
     </figure>
   </div>
 </div>
@@ -136,7 +146,7 @@ Key behaviours:
 - If a completion date is added for a single learner and another learner is added later, both learner cards appear, with the original learner’s date preserved 
 
 #### Tabs
-Managing learners becomes harder as their number increases. In testing, 5 of 6 participants preferred using tabs to organise learners
+Managing learners becomes harder as their number increases. In concept testing, 5 of 6 participants preferred using tabs to organise learners
 
 > **We believe that** that highlighting clearly the learners who still need information
 > **Will be a useful feature for** submitters
@@ -207,7 +217,7 @@ As we introduced multi-learner functionality, we needed to ensure the journey st
 
 > **We believe that** allowing the single-learner flow to remain simple while naturally expanding into a multi-learner experience
 > **Will be a useful feature for** submitters
-> **As it will** maintain a straightforward, one-page journey for single learners, while enabling organisations to add more learners through clear actions like “Add another and only showing the Manage learners option when it becomes relevant.
+> **As it will** maintain a straightforward, one-page journey for single learners, while enabling organisations to add more learners through clear actions like “Add another" and only showing the Manage learners option when it becomes relevant.
 
 
 #### Content
@@ -234,4 +244,8 @@ As we introduced multi-learner functionality, we needed to ensure the journey st
 
 ## How we tested our ideas and what we found
 
+This work went into usability testing 12th November. This section will be updated with the findings post playback and actions meeting where we decide next steps.
+
 ## What we will do next
+
+Based off the findings we will iterate and go back into another round of testing if deemed necessary.
