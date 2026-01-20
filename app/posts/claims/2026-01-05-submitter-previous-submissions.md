@@ -7,10 +7,13 @@ author:
 date: 2025-11-24
 tags:
 - private-beta
+- multiple-learners
+- edit-claim
+- claims-version-21
 aside:
   title:  Claims prototypes
   content: |
-    [View claims v21 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/v16/) 
+    [View claims v21 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/v21/) 
     Password: bsaasc123
 ---
 

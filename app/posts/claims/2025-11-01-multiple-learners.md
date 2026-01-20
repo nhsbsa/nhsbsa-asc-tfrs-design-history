@@ -8,8 +8,14 @@ date: 2025-11-01
 tags:
   - private-beta
   - multiple-learners
+  - claims-version-19
 relatedUserNeeds:
   - user-need-3
+aside:
+  title:  Claims prototypes
+  content: |
+    [View claims v19 prototype](https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/v19/) 
+    Password: bsaasc123
 ---
 
 Contents
