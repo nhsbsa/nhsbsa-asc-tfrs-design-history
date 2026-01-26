@@ -1,5 +1,5 @@
 ---
-title: Comparing previous submissions - multiple learners
+title: Comparing previous submissions - multiple learners (processing side)
 description: Introduction of multiple learners on a claim means we needed to update our designs for comparing what has happened on previous submissions
 author:
   name: Hannah Williams (Interaction designer)

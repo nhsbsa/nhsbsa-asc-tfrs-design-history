@@ -32,7 +32,6 @@ Previously, the comparison table was designed to work for both processors and su
 
 A multi-learner claim can include an unlimited number of learners, each with their own completion date and completion certificate as evidence. Attempting to display all of this information within the existing table design risks overwhelming both the page and the user.
 
-
 #### V19 previous designs for submitter side
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
@@ -49,10 +48,12 @@ A multi-learner claim can include an unlimited number of learners, each with the
   </div>
 </div>
 
-
 ## What our ideas were
 
-The ideas for the submissions table have been detailed in this blog post on the processing side. 
+
+<a href="../../processing/previous-submissions-table-iteration">The ideas for the submissions table have been detailed in this blog post on the processing side. </a> 
+
+Below are additional design updates for specifically the submitter side.
 
 #### V21 New designs
 
@@ -86,16 +87,13 @@ The ideas for the submissions table have been detailed in this blog post on the 
   </div>
 </div>
 
-
-Additional design for submitter side:
-
 #### Timeline
 
-We questioned whether the timeline was primarily surfacing metadata such as submission count, creation dates, and authorship — much of which already exists in the previous submissions table — and whether these elements could instead be abstracted into the claim details page (for example, by showing a submission count), allowing the timeline to be removed altogether. However, we recognised that the timeline and the submissions table serve different but complementary needs: the timeline provides a fast, high-level understanding of the claim’s journey, while the table supports deeper comparison. We therefore decided to keep both concepts in play and validate their usefulness through testing
+We questioned whether the timeline was primarily surfacing metadata such as submission count, creation dates, and authorship — much of which already exists in the previous submissions table — and whether these elements could instead be abstracted into the claim details page (for example, by showing a submission count), allowing the timeline to be removed altogether. However, we recognised that the timeline and the submissions table serve different but complementary needs: the timeline provides a fast, high-level understanding of the claim’s journey, while the table supports deeper comparison. We therefore decided to keep both concepts in play and validate their usefulness through testing.
 
 #### Content
 
-- Changed content on links to be more obvious where they are leading to e.g. "View claim timeline", "View claim history"
+- Changed content on links to be more obvious where they are leading to e.g. "View claim timeline", "View claim history".
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
@@ -114,8 +112,13 @@ We questioned whether the timeline was primarily surfacing metadata such as subm
 
 ## How we tested our ideas and what we found
 
-Going into testing week commencing 12th January 2026. 
+This work went into usability testing 12th January. This section will be updated with the findings post playback and actions meeting where we decide next steps.
 
 Questions focusing on:
 - Is the timeline still useful when removed from the claim details to its own seperate screen, no longer "at a glance".
+
+
+## What we will do next
+
+Based off the findings we will iterate and go back into another round of testing if deemed necessary.
 
