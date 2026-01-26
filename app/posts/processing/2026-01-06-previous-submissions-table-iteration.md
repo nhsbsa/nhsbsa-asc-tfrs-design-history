@@ -29,15 +29,15 @@ Contents
 
 As the service has evolved to support multiple learners on a single claim, we needed to update the designs for comparing changes between previous submissions. Below are the earlier designs for the claim page, including the claim timeline and the link to the “compare previous submissions” tables—version 19 for the submitter side of the service prototype and version 11 for the processor side.
 
-Previously, the comparison table was designed to work for both processors and submitters in order to reduce development time. However, we needed to ensure that the design continued to balance the distinct needs of both user groups.
+Previously, the comparison table was designed to work for both processors and submitters in order to reduce development time. To still keep development effort low one reusable component was still considered optimal but we needed to ensure that the design continued to balance the distinct needs of both user groups.
 
 A multi-learner claim can include an unlimited number of learners, each with their own completion date and completion certificate as evidence. Attempting to display all of this information within the existing table design risks overwhelming both the page and the user.
 
-#### Processor side 
+#### Processor side - single learner design
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
     <figure>
-      <img src="claims-link-submissions.png" alt="A screenshot from V11 - Claim details link" style="width: 100%; height: auto;">
+      <img src="processor-claim-details.png" alt="A screenshot from V11 - Claim details link" style="width: 100%; height: auto;">
       <figcaption>V11 - Claim details link</figcaption>
     </figure>
   </div>
@@ -49,7 +49,7 @@ A multi-learner claim can include an unlimited number of learners, each with the
   </div>
 </div>
 
-#### Submitter side
+#### Submitter side - single learner design
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
     <figure>
@@ -94,9 +94,9 @@ The existing designs do not scale well to multi-learner claims because:
 - There is no clear way to show removed learners
 - Comparing evidence for a specific learner becomes difficult due to the number of file links
 - Changes to learner names are hard to track while maintaining links to the same evidence and completion dates
-- Notes increase in number and may be required per learner, often with associated actions
+- Completion notes increase in number and may be required per learner, often with associated actions
 
-### Framing the problem: How Might We statements
+### Framing the problem: "How Might We" statements
 
 We translated these needs into “How Might We” statements to guide the design direction for both user groups
 
@@ -117,18 +117,18 @@ We translated these needs into “How Might We” statements to guide the design
 
 #### Shared needs
 - How might we balance seeing everything with focusing on what matters most?
-- How might we make it easy to check whether requested edits have been actioned
+- How might we make it easy to check whether requested edits have been actioned?
 - How might we make reviewing evidence quick and simple?
 
-Finally, we questioned whether the designs need to support two distinct views: one for seeing information in context during submission and processing, and another for understanding the bigger picture across all submissions (for example, in a comparison table). We agreed this was something to explore further through user testing.
+Finally, we questioned whether the designs need to support two distinct needs: one for seeing information in context during submission and processing, and another for understanding the bigger picture across all submissions (for example, in a comparison table). We agreed this was something to explore further through user testing.
 
 #### Exploring comparison approaches
 
-We explored alternative ways of comparing information and narrowed our thinking to two main directions
+We explored alternative ways of comparing information and narrowed our thinking to two main directions.
 
 ### Idea 1 - Timeline
 
-The timeline works well as a high-level overview of a claim’s journey, but on its own it felt insufficient for understanding detailed changes. We explored whether we could combine the timeline with elements of the comparison table, allowing users to see what changed in the context of each submission. The idea was to surface high-level changes first, then let users drill down into more detail as needed
+The timeline works well as a high-level overview of a claim’s journey, but on its own it felt insufficient for understanding detailed changes. We explored whether we could combine the timeline with elements of the comparison table, allowing users to see what had changed in the context of each submission. The idea was to surface high-level changes first, then let users drill down into more detail as needed
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
@@ -219,10 +219,36 @@ We identified the original table as the most effective way for users to scan and
 
 ## How we tested our ideas and what we found
 
-Went into testing pre christmas.
+Went into testing pre christmas on the processor side. 
+
+#### Who did they test with
+5 Participants:
+4 x band 3 processors
+1 x band 4 processor / QA
+(3 had previously tested ML, 2 had not)
+
+#### How did they test
+
+Moderated usability testing sessions and semi structured interview questions
+
+Scenario 1 - Single learner 40 claim from start to finish
+Scenario 2 - Partially processed 100 claim, 2nd submissions, 20 learners in total (3 to process)
+Scenario 3 - 40 claim resubmission, 3 learners to process, 3rd submission
+
+### Findings:
+- Designs are workable as in, considering learnability of a few elements. 
+- Submission history largely worked but there are some training needs to ensure it is used to its potential. 
+- A need to identify which learners have been previously edited during processing and ability to quickly navigate to this information 
+
 
 ## What we will do next
 
-Findings and actions:
+We will implement the following design updates, then this piece of work will be handed over to the tech team to begin development.
 
-- They want to see what has changed during the processing. This was a ptoentail idea we had considered before as to whether a need by should we hihglight during the processing if something has specifially changed and link them out to the table.
+### Design updates
+
+A need to identify which learners have been previously edited during processing. 
+
+- This was a potential idea we had considered before as to whether we should highlight during the processing if something has specifially changed and link them out to the table. Design update is to add edited tags to any value in a claim that had been edited from the previous submission. "View edits" link would take them directly to that area in the claim history.
+
+![The design of a claim that has been edited from its previous submission in processing journey](edited-claim.png "Claim that has been edited from its previous submission in processing journey")
