@@ -88,4 +88,78 @@ Something we will look to test in the next round for this design is the affect t
 ## How we tested our ideas and what we found
 
 
+Went into testing pre christmas on the processor side. 
+
+#### Who did they test with
+5 Participants:
+4 x band 3 processors
+1 x band 4 processor / QA
+(3 had previously tested ML, 2 had not)
+
+#### How did they test
+
+Moderated usability testing sessions and semi structured interview questions
+
+Scenario 1 - Single learner 40 claim from start to finish
+Scenario 2 - Partially processed 100 claim, 2nd submissions, 20 learners in total (3 to process)
+Scenario 3 - 40 claim resubmission, 3 learners to process, 3rd submission
+
+### Findings:
+
+Overall feedback was positive. Designs are already workable as they are, considering learnability of a few elements. There are a few pain points that would affect processors clarity and time daily however, if can be relieved now. We held a actions meeting and these are the findings and the actions decided.
+
+#### Went well:
+- No issues processing a single learner in the world of multiple learners
+- Resized org name was good
+- Able to easily find the 60 part throughout the journey 
+- Negotiating back to the claim build page 
+- Completion date range 
+- Claim outcome will work as part of MVP 
+- They like the new check my answers screen. Great for navigation, post processing checks and understanding partially processed claims.
+
+#### Improvements and actions:
+
+![The design of updated claim progress modal](claim-details-modal-update.png "Updated claim progress modal")
+
+![The design of the updated check my answers screen](check-answers-update.png "Updated check my answers screen")
+
+
+1. Some users struggled to see what learner they were processing using the modal 
+  
+  Why: 
+  - Increasingly reliant for modal for navigation. The grey background on the learners name in the modal is not always clear enough, and depending where on the page and level of zoom I am, the name of the learner is not always visible. 
+  
+  Action: 
+  - Make it clearer in the modal which is selected using UI with wider blue, and changing it from being a link the one they are on e.g. black text no underline
+
+
+2. Navigating to and from a specific learner history while processing that learner is tedious. This also linked to another finding of identifying which learners have been previously edited during processing
+  
+  Why:
+  - Number of clicks to access learners notes while processing. Leaving the submission history currently returns me to the claim details where I have to start the journey again. 
+  
+  Action: 
+  - Show edited tags on values during processing if changed from previous submission
+  - Add view edits link next to edited values to take them directly to that place in the claim history table 
+  - Including any of the claim values also 
+  - Navigating back takes where they came from, and not to the claim details
+
+3. Needing to be able to differentiate quickly between needs action and criteria met outcome on each learner during processing
+
+    Why: 
+    - Currently having a green done for both outcomes can make that challenging
+     
+    Action:
+    - Use the same coloured tags for 'needs action' 'criteria met' as we use against claims currently within the modal and 'check your answers' page
+    - Switch around the colour and tags, remove done 
+
+4. When returning to a partially processed claim, they expected the processing flow to jump to the next unprocessed learners, but instead next takes to start and takes through the learners regardless of it processed
+
+Action: 
+- When clicking save and continue take you to the next unprocessed learner or if all learners have been processed it take you to check page
+- This may result in some skipping through the list, grouping unprocessed learners together might mitigate the issue but would be more effort to do that as well, so one to consider in the future if needed.
+- When get to end and their are still unprocessed learners, it goes to check my answers screen and they can see that info
+
 ## What we will do next
+
+We will implement the design updates, then this piece of work will be handed over to the tech team to begin development.
