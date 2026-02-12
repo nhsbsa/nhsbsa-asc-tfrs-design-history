@@ -24,7 +24,7 @@ Contents
 
 ## Why we did this work
 
- We have iterated on insights from our first round of usability testing. You can read more about that in our previous blog post <a href="../multiple-learners-iteration-2">Second iteration of multiple learners for usability testing</a>. The actions we agreed to take forward itno the next iteration were summarised in the follow how mught we statements:
+ We have iterated on insights from our first round of usability testing. You can read more about that in our previous blog post <a href="../multiple-learners-iteration-2">Second iteration of multiple learners for usability testing</a>. The actions we agreed to take forward itno the next iteration were summarised in the follow how might we statements:
 
 - **How might we** make user edits for a needs action claim more evident to users?
 - **How might we** ensure submitters can add an additional learner easily​?

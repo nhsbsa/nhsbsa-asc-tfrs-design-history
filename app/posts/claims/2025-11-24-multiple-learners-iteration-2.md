@@ -204,7 +204,7 @@ For claims that need action after being sent back, the tabs change to:
 #### Start date
 - We’re continuing research to understand user needs around capturing start dates
 
-#### One learner v multiple learners in the design 
+#### One learner V multiple learners in the design 
 As we introduced multi-learner functionality, we needed to ensure the journey still worked smoothly for single-learner claims and didn’t become unnecessarily complex.
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
@@ -224,7 +224,7 @@ As we introduced multi-learner functionality, we needed to ensure the journey st
 
 > **We believe that** allowing the single-learner flow to remain simple while naturally expanding into a multi-learner experience
 > **Will be a useful feature for** submitters
-> **As it will** maintain a straightforward, one-page journey for single learners, while enabling organisations to add more learners through clear actions like “Add another" and only showing the Manage learners option when it becomes relevant.
+> **As it will** maintain a straightforward, one-page journey for single learners, while enabling organisations to add more learners through clear actions like “Add another" and only showing the Manage learners journey when it becomes relevant.
 
 
 #### Content
@@ -251,8 +251,40 @@ As we introduced multi-learner functionality, we needed to ensure the journey st
 
 ## How we tested our ideas and what we found
 
-This work went into usability testing 12th November. This section will be updated with the findings post playback and actions meeting where we decide next steps.
+This work went into usability testing 12th November.
+
+Some of the findings post-playback and the "How might we's" they've been turned into:
+
+#### 1. The submitter wasn't always sure when edits had been made to a needs action claim because:
+- the edited status alone wasn't enough of a indicator
+- the edited learners remained in the same tab and the rejection reason remained
+- felt hadn't done anything to confirm the edits they had made. 
+
+"How might we" make user edits for a needs action claim more evident to users?
+
+#### 2. The submitter, due to being used to single learner claims, didn't find the adding of a second learner immediately obvious.
+
+"How might we" ensure submitters can add an additional learner easily?
+
+#### 3. The submitter was sometimes unsure about how to proceed from the learner management screen because:
+- they felt they needed to confirm their actions in the learner management screen to progress and the back to claims link did not stand out enough at this stage.
+
+"How might we" make users confident they can proceed with their claim after adding learners?
+
+#### 4. The submitter found it difficult to make an informed decision about what learners to include in a 60 / 40 claim (ie. whether to submit individual claims for learners or a multiple learner claim for the whole cohort) ​becuase:
+- likely to miss the content in the initial funding model description(especially if already used to the different funding models)
+- they are unaware from the current in-service content, that they are able to remove learners befoe submitted a 40 claim (until had a 60 accepted)
+- it's not clear, at the point when they add another learner to a claim, that their funding may be delayed if one learner finishes much later than the others
+
+"How might we" ensure the right messaging is given around the impact of adding multiple learners on a 60/40, at the right point in the journey?
+
+#### 5. The submitter struggled to find 40 claims from the manage claims screen because:
+- their first instinct was to look in "submitted" claims
+- they don't always associate 60/40 as two seperate claims
+
+"How might we" make finding 40 claims easier than it currently is?
+
 
 ## What we will do next
 
-Based off the findings we will iterate and go back into another round of testing if deemed necessary.
+We will hold a actions meeting where we decide next steps, which will be detailed in the next blog post. Based off the findings we will iterate and go back into another round of testing if deemed necessary.
