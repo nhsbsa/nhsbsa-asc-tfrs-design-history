@@ -9,6 +9,7 @@ tags:
   - private-beta
   - multiple-learners
   - claims-version-21
+  - claims-version-22
 aside:
   title:  Claims prototypes
   content: |
@@ -102,12 +103,90 @@ Following some quick ideation we came up with the following hypothesis:
 
 We decided to keep the content of the button the same as this was generic enough to cover all scenarios and ensure consistency.
 
-![A screenshoting showing the 'back to claim details' primary action button](back-to-claim-details-button.png "A screenshoting showing the 'back to claim details' primary action button")
+![A screenshot showing the 'back to claim details' primary action button](back-to-claim-details-button.png "A screenshot showing the 'back to claim details' primary action button")
 
 ## How we tested our ideas and what we found
 
-This work went into usability testing 12th January. This section will be updated with the findings post playback and actions meeting where we decide next steps.
+This work went into usability testing 12th January. We tested with 6 users, 5 of which had submitted claims and 1 who had onboarded but not submitted claims yet. This covered a range of org sizes and types of care provided. Prior to test no one had any experience with the new 'edit a claim' feature and submission history feature released in December 2025. 
+
+Here is a summary of the high level findings:
+- The design changes go some way to addressing issues seen in previous rounds and the feature has real value (particularly for 100 claims)​
+- There was concerns around the lack of flexibility multiple learners offers for 60 / 40 claims, and the implication of its use were regularly missed​
+- Making edits to a claim sent back for action flowed better than previous iterations, but some users are still uncertain on how to submit edits 
+- Claim history is difficult form some users to understand and has limited use in organisations with only one submitter​
+- We saw further evidence supporting previous research findings, such as providing suitable evidence, finding existing claims and the need to know payment dates​
+
+The following insights were then taken into discussion:
+1. How might we make progressing edits in a needs action claim more evident to users?
+2. How might we make accessing needs action learners more evident to users?
+3. How might we ensure a submitter can easily access key information about what has happened previously in a claim?
+4. How might we decide whether multiple learners should be released for 60/40 as part of MVP?
+5. How might we ensure rules around 60/40 are understood by users when selecting multiple learners?
 
 ## What we will do next
 
-Based off the findings we will iterate and go back into another round of testing if deemed necessary.
+As the insights showed that only smaller changes were required and need to move work into develop we agreed the following changes against each of the insights that would then move into development:
+
+### 1. How might we make progressing edits in a needs action claim more evident to users?
+The core idea was the replace the "back to claim detail button" with something a bit more action oriented that would suggest how they move forward in their journey. Two different placements were considered and two different designs of the call to action were considered. The shift from the back button to this new style would be triggered when the last learner was moved out of needs action:
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="action-style1.png" alt="A design of the manage learners page with an alert box with an action above the tabs" style="width: 100%; height: auto;">
+      <figcaption>Placement option 1 with style option 1</figcaption>
+    </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="action-style2.png" alt="A design of the manage learners page with an tocket panel with an action within the needs action tab" style="width: 100%; height: auto;">
+      <figcaption>Placement option 2 with style option 2</figcaption>
+    </figure>
+  </div>
+</div>
+
+We decided upon placement option 1 with style option 2. Alongside this change we also iterated the content of the tabs to tie together the idea that they are making edits rather than the needs action language which we are reserving for the claim status only.
+
+![A screenshot showing the updated design with a ticket panel sat above the tabs](final-design.png "The final design")
+
+### 2. How might we make accessing needs action learners more evident to users?
+Due to the fact we weren't retesting this with users we didn't want to make major changes to how the requested edits are displayed to users in the alert box of a needs action claim. The two key issues that were identified were:
+- Users thinking the guidance link about what evidence they need to provide would tell them the request edits. 
+- Users weren't sure what clicking on the learner name link would do. 
+
+To combat this we moved the guidance link into the opening paragraph and adapted the content around it to call out that this was guidance. We also added hint text for multi learner claims that clarified to the user what would happen if the user clicked on the learner name links.
+
+![A screenshot showing the updated design for thhe alert box, where the guidance link has moved to the opening paragraph and there is help text informing the users that clicking on the learner name will show the requested edits.](alert-box-design.png "The final alert box design for a needs action claim")
+
+### 3. How might we ensure a submitter can easily access key information about what has happened previously in a claim?
+The view previous submissions table was always the most challenging part of the "edit a claim" feature. Showing the changes over time between each submission also gets significantly more difficult to do when there are multiple learners on a claim. Further research has shown that the key information for users are:
+- claim journey milestones
+- who submitted the submissions
+- requested edits of rejection reasons
+
+The detail of what has changed between submissions was of less use to users and with the introduction of multiple learners became much harder for them to understand the details anyway. We therefore made the decision to strip the design back removing the view previous submissions table and focussing on enhaving the timeline to include any requested edits for previous submissions. As the view previous submissions would still be found on the processor side it would allow processors and CCS agents to support users if they did have queries about what changes had been made previously.
+
+We explored embedding the requested edits fully into the timeline but found this to be overwhelming particularly as they could be quite long for multiple learner claims. Therefore we decided upon add a simple link under the timeline entry that opened a new page allowed the users to more easily digest the information.
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="timeline.png" alt="A screenshot of the claim timeline with the new links to the requested edits" style="width: 100%; height: auto;">
+      <figcaption>The new claim timeline design</figcaption>
+    </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="edit-note.png" alt="A new page showing the requested edits for a particular submissions" style="width: 100%; height: auto;">
+      <figcaption>The new page design showing the requested edits.</figcaption>
+    </figure>
+  </div>
+</div>
+
+### 4. and 5. An approach to multiple learner 60/40 claims
+Multiple learners has already been much more challenging for 60/40. We needed to make a decision of whether to include support for multiple learners on 60/40 claims for the initial release of multiple learners. The following factors impact this decision:
+- the implications for submitters adding multiple learners to 60/40 claims is different to 100 claims and the impact it might have is often not clear.
+- Research has shown that submitters are less likely use multiple learners for 60/40 claims
+- Data analysis of existing data shows that around 40% of possible multi-learner claims would be for 60/40 claims but as more OMMT claims come in (which are only eligible for 60/40), this proporation is only likely to decrease. 
+- further research and design work would be required to try and resolve the outstanding challenges for multiple learners on 60/40 claims. 
+
+As a result of these factors we made the decision to focus on releasing multiple learners for 100 claims as part of the MVP solution and plan to return to it for 60/40 claims further into our roadmap. 
