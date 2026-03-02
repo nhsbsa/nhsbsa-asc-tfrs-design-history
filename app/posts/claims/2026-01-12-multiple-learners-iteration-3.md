@@ -182,7 +182,7 @@ We explored embedding the requested edits fully into the timeline but found this
   </div>
 </div>
 
-### 4. and 5. An approach to multiple learner 60/40 claims
+### 4. and 5. approaching multiple learner 60/40 claims
 Multiple learners has already been much more challenging for 60/40. We needed to make a decision of whether to include support for multiple learners on 60/40 claims for the initial release of multiple learners. The following factors impact this decision:
 - the implications for submitters adding multiple learners to 60/40 claims is different to 100 claims and the impact it might have is often not clear.
 - Research has shown that submitters are less likely use multiple learners for 60/40 claims
