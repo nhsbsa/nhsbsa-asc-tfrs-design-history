@@ -53,7 +53,7 @@ With this in mind we aproached this looking at the broader steps of the journey 
 6. Back office staff review this information and determine an outcome. 
 7. Once the registration request is approved the SRO signs the GDL for that organisations and provides bank details.
 
-We have already done work around step 2 which is described in the design history post <a href="../self-serve-eligibility">understanding whether the service is right for my organisation</a>.
+We have already done work around step 2 which is described in the design history post <a href="../self-serve-eligibility">Helping self-serve users to understand eligibility</a>.
 
 To allow users to save and finish at a later date and to improve the security of how we allow access to these in progress registrations, we decided that users must first create an authenticated account in the service. 
 
@@ -130,7 +130,7 @@ Here are a couple of screenshots of some of the designs.
   </div>
   <div style="flex: 1; max-width: 48%;">
     <figure>
-      <img src=".png" alt="The screen that asks the user to check the details from the ASC-WDS to confirm that they are correct" style="width: 100%; height: auto;">
+      <img src="is-this-you.png" alt="The screen that asks the user to check the details from the ASC-WDS to confirm that they are correct" style="width: 100%; height: auto;">
       <figcaption>2. Are you the Senior Responsible Officer (SRO) for the organisation you want to register?</figcaption>
     </figure>
   </div>
