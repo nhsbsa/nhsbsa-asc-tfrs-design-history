@@ -47,7 +47,7 @@ This is the design tested previously with single learner claims.
 </div>
 
 
-Started off my approach by considering what still worked and what needed to change for multiple learners. Put together a MVP design and held a multidisciplinary team meeting to get agreement on some assumptions.
+I started by reviewing what still worked from the original approach and identifying what needed to change to support multiple learners. From there, I created an MVP design and facilitated a multidisciplinary team discussion to align on key assumptions and agree on the initial direction.
 
 ### IDEA 1 
 Showing the matched learner name with the additonal count of learners column 
@@ -70,24 +70,20 @@ Showing the matched learner name with the additonal count of learners column
 Assumptions: 
 
 #### Search by learner and course name in previous design 
-- They can search for claim id on the previous page or search for claims by status in the individual status tables. 
-- Believe learner and training is still what is next useful to search by on a single or multiple learner claim.
+- Users could already search by claim ID on the previous page or filter claims by status within the individual status tables
+- Learner and training/course name were still considered the most useful search criteria for both single-learner and multi-learner claims
 
-#### Sort is out of scope
-- And unnecessary because
-
-#### No pagination 
-- Because we are encouraging the use to whittle down through refining their search inputs instead
+#### No column sort or pagination 
+- We are encouraging the user to whittle down results through refining their search inputs instead
 
 #### Learners column
-- Ok to not display names if searched by training because if they knew learner name they would have searched for it, so doesn’t add anything to show learners 
-- Show learner name if searched for it as it confirms its found the right learner with full name as could be multiple matches
+- Learner names did not need to be displayed when users searched by training/course, as the assumption was that users who knew the learner’s name would search for it directly. In those cases, displaying learner names added limited value
+- When users searched by learner name, the full learner name would be displayed to help confirm they had found the correct learner, particularly where multiple matches could exist
 
-
-From discussions with the tech team it was pointed out the rules on input have now changed on elswhere we search for training and learner to add to a claim and we are wanting to apply the same logic to search behaviour here too to keep consistent.
+During discussions with the engineering team, it was highlighted that the input rules used elsewhere in the product for searching learners and training when adding to a claim had since changed. To maintain consistency across the user experience, the same search logic and behaviour would also need to be applied here.
 
 Update:
-- Removal of 3 minimum character limit, it means more likely to have multiple name matches, how to display a long list of names and how to display this in the learners column as we assume they will want visual confirmation in the UI of who specifically is on the claim.
+- Removing the three-character minimum search limit increases the likelihood of multiple learner name matches. This raised new considerations around how to display longer lists of learner names within the learners column, while still giving users clear visual confirmation of who was included on a claim
 
 ### IDEA 2 
 Matched learners column, highlighting name matches and training matches
@@ -123,35 +119,40 @@ Matched learners column, highlighting name matches and training matches
 
 ### Discussions
 
-A solution could be to not have the matched learners column and the mvp just show the number of learners on a claim.  
+One proposed solution was to remove the matched learners column entirely and, for the MVP, display only the number of learners associated with a claim.
 
-The question is will that mean they will be annoyed to not see the learners and doesn’t give value? How risky is this based on what we know and can reasonably hypothesis?
+One proposed solution was to remove the matched learners column entirely and, for the MVP, display only the number of learners associated with a claim. The key question was whether removing learner names would reduce the feature’s usefulness or create frustration for users. 
 
-The hypothesis would be that if they knew the learner they would have searched for it, therefore the claims brought up will be for that learner? Otherwise they are just looking for a claim for a course in a certain state and learners in their mental model of searching are irrelevant. 
+Based on existing assumptions, the hypothesis was that:
+- If users knew the learner, they would search for them directly, meaning the returned claims would already be relevant to that learner.
+- If users were searching by course and claim state instead, learner names were less important within their mental model of the task.
 
-What do we know about how users search?
 
-Do users usually search by just first name therefore a lot of claims will be brought back and they will have to go digging into each to find if its the right person? 
-- Asked tech to see if we can find out more information on what terms they usually search in select learner search, but that is not info we currently collect and it would be hard to distinguish what the intention of what the inputs were, would have to analyse by eye. 
-- Asking UR what was behaviour in previous advanced search, we don’t have much on whether its likely to be partial or whole thing they type in
+This raised further questions around actual search behaviour:
+- Do users typically search using only a first name or partial name input, resulting in many matching claims that require further investigation?
+- Or do they generally provide enough information to narrow results effectively?
 
-The previous UR findings were:
-* No one chose to use the 'advanced search' option while they had the claim reference number.
-* When no claim ID - Most users understood the role of advanced search in finding a claim, clicking this option immediately after realising they could not search by claim ID.
-* The majority of users used the name of learner and course fields for their advanced search. This was for various reasons including that it was 'easier' to remember learner names; they would have access to NI number as part of the role; and that this information would be easy to obtain.
-* Some users felt that date range and claim status would be useful if they were missing certain pieces of information (i.e. name) but knew the rough date of the qualification or claim submission.
-- Most likely coming in for a learner on a claim
+To better understand this, the engineering team was asked whether existing search data could reveal common input patterns from learner search flows. However, this data was not currently captured in a way that could reliably identify user intent without manual analysis
 
-Is it a hypothesis that they will search the same way, or will how we design this feature change behaviour, if they aren’t finding their claiming typing in first name, will they start typing in both?
+Previous user research on advanced search showed that:
+- Users did not use advanced search when they already had a claim reference number.
+- When no claim ID was available, users quickly understood advanced search as the appropriate route to find a claim.
+- Most users searched using learner name and course fields, largely because learner names were easier to remember and readily available.
+- Date range and claim status were seen as secondary filters when users lacked learner details.
 
-Also unlikely they will search using partial NI number as who will know that off the top of their head, likely to only bring back one result. 
+These findings suggested that users were most commonly searching for claims connected to a learner, rather than browsing claims more broadly.
+
+There was also discussion around whether search behaviour itself might change depending on the design. For example, if users could not easily identify the correct learner from results, would they adapt by entering fuller names instead of partial searches?
+
+It was considered unlikely that users would search using partial NI numbers, as these are difficult to remember and would typically return very few matches anyway
 
 #### 3 Amigos
 Held a 3 amigos chat with tech, PM, UR and design, to decide whether for the design of not displaying matched learners to work do they need to search for full name to ensure results are whittled down enough to be useful or does it not deliver enough value? 
 
-UR says it doesn’t give enough value by not seeing the name on a claim
-- Most likely they are coming in to find a claim for a learner
-- They might not know last name or it be too complicated to type so likely it would be a partial input search
+The outcome from user research was that removing learner names significantly reduced usefulness:
+- Users were most likely entering the flow to find a claim for a specific learner.
+- Users might only know or enter a first name, particularly if a surname was difficult to spell or unavailable.
+- Partial-input searching was therefore considered a realistic and common behaviour.
 
 ### IDEA 3
 
@@ -185,52 +186,70 @@ UR says it doesn’t give enough value by not seeing the name on a claim
   </div>
 </div>
 
-- The number of learners is a details component revealing the names of matched learners if searched for a learner input
-- showing also names of all other learners on claim
-- no highlight 
-- alphabetical lists 
+- Display the number of learners as a details component that expands to reveal matched learners when a learner search input has been used
+- Also display the names of all other learners associated with the claim
+- No highlighting of matched terms 
+- Learners listed alphabetically 
 
-Discussion with UR is the design with details component showing matching and also then other learners works as a in-between as they can dive into each details on this screen rather than going through to the claim. We know from previous UR people used the details component within the claim when testing ML so they are familiar. The one question would be how much of a pain - if any - is searching for a NI and not getting a return of Ni. However, a assumption would be it's more than likely they would have both the NI and name to hand.
+Discussion with user research suggested this approach provided a useful middle ground. Users could inspect learner names directly from the search results without needing to open each claim individually. Previous multi-learner testing had also shown that users were already familiar with using details components within claims.
 
-On the confirmation aspect its the same as we had it in the previous single learner design also that if they searched a NI number it would just display the learner name and this tested ok. Could also safely assume what they've typed in (which if is a NI number its most likely is the full thing), and its a direct match to the learner name we show. Not the slickest experience searching through drop downs but good enough?
+One consideration was the experience of searching by NI number and not seeing the NI reflected in the results. However, the assumption was that users would typically have both the learner name and NI number available when searching.
 
+From a confirmation perspective, this aligned with the previous single-learner advanced search design, where searching by NI number only surfaced the learner’s name in results, which had previously tested well. It was also considered reasonable to assume that NI number searches would generally be exact matches, giving users confidence that the returned learner was correct.
+
+While searching through expandable lists was not considered the most seamless interaction, it was viewed as sufficient for the MVP.
 
 ### Final validation rules:
 - Only matches if letter is start of first or last name or NI number, doesn’t match the middle of a name
 - NI doesn’t match if it has gaps 
 
-
 ### Ordering of the claims
 
-Once they've typed in their inputs, how do users next search and expect results to be ordered? Considered a few different scenarios as they change how they expect things to be ordered:
+After users entered search inputs, there were several considerations around how results should be ordered depending on the search scenario
 
-If they've searched by ONLY training input which could be NAME or CODE e.g. Oliver McGowan or OMMT
-- would they expect it to be ordered by training name or code, then claim status if a few training names are the same?
+#### Scenarios considered
 
-If they've searched by both training and learner
-- is it the same as training above as thats something they can visually see 
+Training-only search
+For searches using only training name or code (e.g. “Oliver McGowan” or “OMMT”):
+- Would users expect ordering by training name or code?
+- If multiple training names matched, would claim status become the next most useful ordering factor?
 
-If they've searched by ONLY learner e.g. Roy
-- would they then be looking at training name or claim status (what if they don't know the training)
+Training and learner search
+When both training and learner inputs were used:
+- Would ordering by training still make the most sense, as this was the most visually identifiable information
 
-#### UR
-- Previously had good feedback on ordering by status of learners within a claim but not convinced that feedback directly translates to this use case.
-- Generally speaking, when people search for a course during research sessions the sense was they are generally firstly focused on the name of that course as that's usually how it's ordered as is? followed by the training provider
-- If the user has only searched by learner, UR don't think they've got enough evidence on this to confidently say either way
-- Ideally you could search the name then sort the columns
+Learner-only search
+For searches using only a learner name:
+- Would users care more about training name or claim status?
+- What happens if they do not know the training associated with the learner?
+
+#### User research feedback 
+User research highlighted that:
+- Previous positive feedback around ordering learners by status within claims did not necessarily translate directly to this search experience.
+- During research sessions, users searching for courses generally focused first on the course name, as this is commonly how course lists are organised elsewhere
+- There was not enough evidence to confidently determine preferred ordering behaviour for learner-only searches
+- Ideally, users would be able to both search and sort columns independently
 
 #### Decision 
 
-Since we don't have enough evidence on certain scenarios as to what works best, decided to sort by status and then training name within each status, as something that works across all input combinations
+Due to limited evidence across some scenarios, the decision was to:
+- Order claims by status first
+- Then order by training name within each status group.
 
-Hypothesis is if they've search by training then most likely they will have typed in enough of the name to have whittled down the results to a few so not ordering by training name won't be too much of a problem. Also the scenario that they've come to advanced search when they don't know which bucket their claim is in, sorting by status will help
+This approach was considered the most consistent across all search combinations
+
+The hypothesis was that:
+- Users searching by training would likely enter enough of the course name to reduce the result set significantly.
+- Sorting primarily by status would also support the common scenario where users were unsure which claim bucket their claim belonged to.
+
 
 ## What we will do next
 
-### Questions
-- Should we test this as we have outstanding questions to validate around how users search and.
-- Is column sorting a better experience for users? If we do sort should we also consider filters that can be applied to to whittle down claims?
+### Outstanding questions
+- Should this design be tested further to validate assumptions around user search behaviour
+- Would column sorting provide a better experience?
+- If sorting is introduced, should additional filters also be considered to help users narrow down claims more effectively?
 - Perhaps this piece of work points to needing to ask a bigger question and think about how users find claim more holistically, including the manage claims buckets claims sit in and search by claim id. Maybe we scrap and have all the claims on a page and they use filters to whittle down would work better?
 
-Question to decide next is where on priorities this work is to test and to consider as a whole based on reduced team size incoming. 
+The next step is to determine the priority of this work, particularly in the context of upcoming team size reductions and broader roadmap considerations. 
 
