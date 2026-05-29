@@ -7,7 +7,7 @@ author:
 date: 2026-04-21
 tags:
 - private-beta
-- self-serve
+- self-serve-onboarding
 - claims-version-23
 aside:
   title:  Claims prototypes
