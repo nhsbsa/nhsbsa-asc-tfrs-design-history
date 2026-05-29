@@ -7,7 +7,7 @@ author:
 date: 2026-04-23
 tags:
 - private-beta
-- self-serve
+- self-serve-onboarding
 - claims-version-24
 aside:
   title:  Claims prototypes
@@ -137,8 +137,25 @@ Here are a couple of screenshots of some of the designs.
 </div>
 
 ## How we tested our ideas and what we found
+We held 7 session with senior responsible officers (SROs), 6 of which had been through the existing onboarding experience. Our high level aims were to understand:
+- If the eligibilty content is as effective with a 'hands off' approach, does it do it's job as users work through registration 
+- the effectiveness and usability of the registration journey
+- what impact, if any, addtional evidence requirements have on organisations
 
+The headline findings from this round of research were as follows:
+- The flow from eligbility through to the end of the registration journey worked as expected. uSers did not feel they needed to return to the eligibility content as they worked through registration. 
+- Additional evidence requirements will not stop organisations who are motivated to join the scheme from onboarding. However, users did offer some considerations around what we ask for
+- Some evidence requirements will take time for SROs to collate, this is not an issue for users, but something we should be aware of from an operational perspective
+- Removing the onboarding call will not prevent organisations from being able to onboard. However, we should review how we communicate with organisations once they have submitted an application
+
+Further details can be found in the <a href="https://nhsbsauk.sharepoint.com/:p:/r/teams/UserResearchLibrary/_layouts/15/Doc.aspx?sourcedoc=%7Bdce6721f-a146-46f8-8ef9-537aae006590%7D&action=edit&wdPreviousSession=351f4dc8-ecb4-e92e-dc0b-51fb50d3038c">playback deck</a>.
 
 ## What we will do next
+Following the playback of the research findings we held an actions meeting to agree what we would take forward into the next iteration:
 
+1. Follow up with stakeholders around why we are allowing council tax bills as proof of address as users felt that this wouldn't be relevant for businesses. 
+2. Investigate whether we can pull CQC registration numbers from the ASC-WDS API has users may have multiple of these and this would reduce duplication of information input.
+3. Iterate content around the next steps after submiting your registration details as the existing content didn't clear communicate to users what to expect.
+4. Ensure support staff (processors and CCS agents) are clear on how to support users with MFA issues. 
+5. Explore how to support additional address lines for organisations who may require an address line 3.
 
