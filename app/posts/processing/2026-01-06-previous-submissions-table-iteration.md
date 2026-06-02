@@ -252,3 +252,24 @@ A need to identify which learners have been previously edited during processing.
 - This was a potential idea we had considered before as to whether we should highlight during the processing if something has specifially changed and link them out to the table. Design update is to add edited tags to any value in a claim that had been edited from the previous submission. "View edits" link would take them directly to that area in the claim history.
 
 ![The design of a claim that has been edited from its previous submission in processing journey](edited-claim.png "Claim that has been edited from its previous submission in processing journey")
+
+#### Processed by row 
+
+We have also been informed by the tech team that the user name is not currently stored in the database, only the processor's email address. So we needed to consider the design implications on the processed by row in the table. If we just added in the email address, it could look a bit clunky in an already busy table. We questioned the specific need around processor's being able to see who has previously processed claims.
+
+UR insights:
+- Processors do check over previous submissions and they may have questions about a previous submission. 
+- Currently, they could find some information in the notes spreadsheet if the processor from the first submission left comments about it
+- Could be a hypothesis that if there were notes, then the processor can see the name there. If no notes, then it could be there is nothing of interest about the claim, therefore less likely to want to message the processor and less of a need to display 
+- Also the previous OM task linked to the workplace and claim ID might detail the processor name if searched for.
+
+Decision:
+
+There is still a need to be able to get in touch with previous processor with questions about a claim even if there are no notes saying claim is something of interest, especially thinking about the impact and complexity introduced with multiple learner claims. Also we are wanting to move away from spreadsheets and having the processors have to check for names and things outside of the service. 
+
+Solution:
+
+* Show the email but break with the "@" sign based off the GDS advisory on breaking up long emails <a href="https://design-system.service.gov.uk/styles/font-override-classes/#breaking-up-long-words">here</a>.
+
+
+![A screenshot from v15 - showing updated processed by row displaying processor email](processed-by-row.png "Claim table - showing updated processed by row displaying processor email")
