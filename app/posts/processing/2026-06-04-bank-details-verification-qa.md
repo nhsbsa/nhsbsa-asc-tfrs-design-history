@@ -29,7 +29,7 @@ Bank details verification is currently a largely manual process involving multip
 
 The existing journey requires organisations to enter their bank details into the service, after which checks using the AccessPay API are completed outside the service by operational teams, with potential back and forth communication happening with orgs over the phone or email. Updates are made using service desk requests or additional clairification is recorded in a spreadsheet. Results are then manually transferred between spreadsheets before being made available to claim processors who are processing claims. They may begin processing while bank details are still unverified. 
 
-More into the decision on the approach for this piece of work can be found on the claims side post here.
+More into the decision on the approach for this piece of work can be found on the claims side post <a href="../claims/bank-details-org">here</a>.
 
 ## What our ideas were
 

@@ -49,6 +49,12 @@ The current journey is:
       <figcaption>Current bank details tab - SRO only</figcaption>
     </figure>
   </div>
+    <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="current-journey.png" alt="Single learner - duplicate claim error" style="width: 100%; height: auto;">
+      <figcaption>Current journey api checks</figcaption>
+    </figure>
+  </div>
 </div>
 
 Spreadsheets:
