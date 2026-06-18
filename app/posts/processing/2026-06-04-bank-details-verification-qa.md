@@ -83,7 +83,14 @@ We went with option 2 as this allows us to capture the actual AccessPay result w
   </div>
 </div>
 
-{# [diagram of the inputs needed for each result] #}
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="access-pay-results.png" alt="Requirements for each result - conditional reveal" style="width: 100%; height: auto;">
+      <figcaption>Requirements for each result - conditional reveal</figcaption>
+    </figure>
+  </div>
+</div>
 
 Scenarios and outcomes:
 
