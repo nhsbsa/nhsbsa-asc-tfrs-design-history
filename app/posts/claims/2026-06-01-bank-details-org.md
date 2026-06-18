@@ -305,10 +305,10 @@ This approach addresses the most significant user and operational risks while al
 - We also explored how organisations interpreted the different stages of the journey and whether there was - sufficient clarity around when they could begin submitting claims.
 - Testing is ongoing and will help us understand whether the proposed MVP provides enough visibility and reassurance while maintaining a simpler solution for the first iteration.
 
-#### Who did they test with
+{# #### Who did they test with
 X Participants:
 X x band X processors
-X x band X processor / QA
+X x band X processor / QA #}
 
 #### How did they test
 
