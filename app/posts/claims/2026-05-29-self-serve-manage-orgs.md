@@ -89,8 +89,33 @@ Our final layer in the design was the content, focussed around the use of the wo
 We felt that this design would offer the best effort to value ratio for the service and would allow us to get a solution out there sooner. We will take this into testing to ensure that there is enough value gained for users from the approach we are looking to take.
 
 ## How we tested our ideas and what we found
+We ran 6 sessions with SROs (one with low digital confidence). We aimed to understand:
 
+- Reflections on the 'My organisation' page as a post login starting point, particularly when a user is only responsible for one organisation​
+- Assess understanding of onboarding statuses
+
+Our headline findings were:
+- Navigating back to manage organisation was the most apparent pain point, with all users – who manage one organisation – not relating to the 'change organisation' link
+- The 'My Organisation' page did cause some initial confusion for users who were not immediately aware if they were looking at information primarily associated with an individual (the SRO), or the organisation
+- Landing on 'My Organisation' after logging in was not always viewed as adding additional value, however it wasn't viewed as a pain point. This opinion would likely be different for users managing multiple organisations
+
+The following issues were identified:
+- Users faced issues determining whether the view was an individual or organisational level view, first impressions were split on this across sessions ​
+- When given time to read the content, most understood why in some organisations they could manage submitters but in others they could not​
+- Some did indicate as a user responsible for one organisation they did not need to view this screen as a first page in the journey​
+- Navigating back to manage organisations proved tricky for all users, organisation details and my account were frequently clicked on first, rather than 'Change organisation'​
+- The statuses were mostly understood, the meaning of 'Active' was clear, as stated there wasn't certainty as to whether it was the individual who was active or the organisation​
+- Users were split on whether displaying the active status while bank verification was incomplete was suitable​
+- The draft, submitted and rejected statuses were largely understood by users, those who were unsure were happy with the explanation given for them
+
+Further details can be found in the <a href="https://nhsbsauk.sharepoint.com/:p:/r/teams/UserResearchLibrary/_layouts/15/doc2.aspx?sourcedoc=%7B793F9A10-9B4D-44C9-B940-CEEE1576E1CC%7D&file=Self%20Serve%20Round%202%20-%20Mange%20Orgs%20%26%20Bank%20Verification.pptx&action=edit&mobileredirect=true">playback deck</a>.
 
 ## What we will do next
+Following our actions meeting we agreed to take forward the following actions:
+1. Iterate the manage orgs screen to ensure users are able to understand they are looking at an organisational focused screen.
+2. Iterate the design to make navigating back to the 'My organisation' screen clearer to single organisation users.
+3. Iterate how we display the status of organisations who are 'active' but awaiting bank verification.
+4. Explore options for how the journey could address the differing needs of single or mutliple organisation users.
 
+We will iterate the designs before taking them into a final round of research alongside the rest of the self serve onboarding journey. 
 
