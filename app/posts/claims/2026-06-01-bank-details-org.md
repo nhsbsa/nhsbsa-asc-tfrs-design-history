@@ -32,15 +32,16 @@ The existing journey requires organisations to enter their bank details into the
 
 The current journey is:
 - 2 API checks that happen at different points of the journey (AllPay and AccessPay)
-- SRO inputs details
-- First check with AllPay that just verifies legitimate combo of inputs, doesn’t verify legitimate bank account. 
-- Digital support team then export the full org info weekly from service and saved into a sharepoint
-- Exported to another spreadsheet for QA’s to do checks
-- Results get entered into another spreadsheet where processors of claims can then see results of checks
-- Once entered details orgs can already start submitting claims before they’ve been fully verified offline, so could have gone through work of submitting when issues with bank details and causes delays, and processors could already have begun processing but when they go to check spreadsheet they might not have the result so then they ask QA for what’s happening 
-- If a issue, QA contacts the org offline 
+- SRO inputs bank details into the service
+- On confirm, check happens using the AllPay aPI that just verifies legitimate combination of inputs, doesn’t verify legitimate bank account. If they pass they can submit.
+- Orgs can now submit claims
+- Weekly the Digital support team export organisation's bank detail information from the service and save into a sharepoint document
+- Info is exported to another spreadsheet for QA’s to do the checks
+- QA enters info into AccessPay portal, and receive either a result of "Full match, partial match, unable to check, no match"
+- If a issue, QA contacts the org offline to receieve clarification or updated details. Interim results are recorded in the QA spreadsheet with notes. 
 - If details need to change, QA makes a service desk request to change
-- The details of the organisation are displayed in the service visible only the the SRO. There is no indication whether they are verified. 
+- Final results get entered into another spreadsheet where processors of claims can see whether the details are verified or not when processing claims. Somethings the result will be empty if the check hasn't yet been completed.
+- The details of the organisation are displayed in the service visible only to the SRO. There is no indication whether they are verified. 
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
@@ -59,7 +60,7 @@ The current journey is:
 
 Spreadsheets:
 1. Spreadsheet of bank details entered by orgs exported out of the service weekly
-2. Spreadsheet QA's do the checks and record the results and if any further details are required from the org
+2. Spreadsheet QA's do the checks from and record any results and communications into, along with any further details required from the org
 3. Spreadsheet processors check for verification result
 
 This creates several problems:
@@ -72,18 +73,19 @@ This creates several problems:
 
 #### Previous investigations
 
-As this work had previously been explored by a different team, we began by running a workstream kickoff session to ensure everyone had a shared understanding of the current process, problem space and any changes since the previous discovery work.
+As this work had previously been explored by a different team, we began by running a workstream kickoff session to ensure everyone had a shared understanding of the current process, problem space and any changes since the previous discovery work. We mapped the end-to-end process, reviewed previous research and operational knowledge, and validated whether the original assumptions remained accurate.
 
-We mapped the end-to-end process, reviewed previous research and operational knowledge, and validated whether the original assumptions remained accurate.
-{# 
-[Screenshot of process flows and accessPay results meanings]
+Some understanding of the current processes around how each AccessPay result is processed and followed up, especially around the unhappy paths, was needed, to be accounted for in the new designs.
 
-Multiple results - we discussed with ops how each result is processed and followed up 
-"Match" - straightforward marked as verified in spreadsheet
-"Partial match" - may need further clarification or updated details, QA gets in touch with org, updates spreadsheet, service desk request to update so then it will be a full match or may be verified at risk with the partially match details
-"Unable to check" - treated same as partial match?
-"No match" - QA gets in touch with org to get new details. 
-A chance the org doesn't respond. #}
+
+| AccessPay result | Next steps |
+| -------- | -------- |
+| Match | Marked as verified in spreadsheet. No email is sent to organisation. |
+| Partial match | QA gets in touch with organisation offline. If just needs further clarification and it's something small like a slight name mismatch, it could be verified at risk with partially matched details. If updated details are needed, new one's are provided by org and entered into AccessPay. Once a full match, QA makes a service desk request to update the details.  |
+| Unable to check | Treated same as no match and QA gets in touch with org to get new details |
+| No match | QA gets in touch with org to get new details. If no sucessful details are provided, could then be rejected. Any submitted claims would be rejected with rejected bank details as the reason. |
+
+A chance the org doesn't respond to offline communications to resolve issues.
 
 ## What our ideas were
 
@@ -105,40 +107,60 @@ This would provide the best user experience and remove much of the manual operat
 ### Partial automation
 
 - This would be keeping a human touch of the QA's in the service and not just relying on API's. 
-- Question is what is the balance of how much off the offline journey to bring into the service.
+- Question is, what is the balance of how much off the offline journey to bring into the service.
 - A key area of consideration was the "unhappy path". While successful verification of "match" is relatively straightforward, failed or inconclusive verification results of "partial match", "unable to check" and "no match" often require investigation, evidence gathering and communication between QA teams and organisations.
 
 
 #### Ideas
 
-OM task
-- Remove the first spreadsheet and instead have a OM task created and assigned to a QA once bank details have been submitted by a organisation. The task would contain the workplace ID of the org to check and the QA would go into the service to find the details 
-- By having a OM task it would reduce delays in bank details being checked from the weekly export.
-- Would remove the spreadsheet reducing chances of manual errors in export of details across two spreadsheets.
+- OM task
 
-Bank verification status and outcome
-- Introduce in a new status that shows the state of the bank verification checks. 
-- Makes it clear to org's, SRO's and future processors whether the details have been verified and they don't have to consult offline spreadsheets or emails.
-- Saves phonecalls from the org to the BSA staff to confirm the state of their details. 
+Remove the first spreadsheet and instead have a OM task created and assigned to a QA once bank details have been submitted by a organisation. The task would contain the workplace ID of the org to check and the QA would go into the service to find the details 
 
-Edit bank details 
-- The QA will still recieve a OM task to check a organisation's details. The result will then be entered into the service with a status and note if futher information is required, and the organisation will update the details providing additional evidence themselves into the service.
-- This would replace the spreadsheets and bring all communication into the service to fulfill audit purposes. 
+> **We believe that** introducing a OM task for bank details verification
+> **Will be a useful feature for** QA's and organisations
+> **As it will** would reduce delays in bank details being checked from the weekly export and reduce chances of manual errors in export of details across two spreadsheets
 
-Submission upon verification
-- Org's can start filling in claims but they can't submit until their bank details have been verified.
-- This reduces the need for processor's to check spreadsheets as they wouldn't recieve tasks to process claims for org's haven't been verified. 
+- Bank verification status and outcome
+
+Introducing in a new status that shows the state of the bank verification checks of either "Not yet added" "Not yet processed (for QA's) / Submitted (for organisations)", "Verified", "Failed verification". 
+
+> **We believe that** introducing this status into the service
+> **Will be a useful feature for** QA's and organisations
+> **As it will** make it clear to org's, SRO's and future processors whether the details have been verified and they don't have to consult offline spreadsheets or emails, and it saves phonecalls from the org to the BSA staff to confirm the state of their details.
+
+- Submission upon verification
+
+Org's can start filling in claims but they can't submit until their bank details have been verified.
+
+> **We believe that** allowing organisation's to only submit claims upon verification of bank details
+> **Will be a useful feature for** QA's and processors
+> **As it will** reduce the need for processor's to check spreadsheets and reach out to QA's to confirm status as they wouldn't recieve tasks to process claims for org's haven't been verified. It also reduces the security risk of perhaps approving claims without bank details being verified.
+
+> **We believe that** allowing organisation's to only submit claims upon verification of bank details
+> **Will be a useful feature for** SRO's and organisations
+> **As it will** reduce delays for getting money back for claims and introduces more visibility into the process and stage bank details verification is up to, giving more indication in content around expectations.
+
+- Edit bank details 
+
+The QA will still recieve a OM task to check a organisation's details. The result will then be entered into the service with a status and note if futher information is required, and the organisation will update the details providing additional evidence themselves into the service.
+
+> **We believe that** allowing the QA to enter unhappy path results into the service and send it back to the organisation to update
+> **Will be a useful feature for** QA's and organisations
+> **As it will** replace the spreadsheets and bring all communication into the service to fulfill audit purposes, as well as reduce the need for a lot of offline communciation
 
 We also explored options where verification outcomes would be surfaced in the service while some issue resolution activities remained offline.
 
-QA's updating details
-- The offline communications would still happen but the QA is able to directly edit the details in the service
-- This would reduce delays of waiting for service desk updates
+- QA's updating details in the service after offline communication with the SRO to resolve the issues and get new details.
+
+> **We believe that** allowing the QA to update the details
+> **Will be a useful feature for** QA's and organisations
+> **As it will** reduce delays of waiting for service desk updates
 
 We worked closely with operational colleagues and business analysts to understand:
 - Whether QA colleagues should be able to update bank details directly in the service and any security risks.
 - How evidence and decision-making around results and needs for updates would be recorded for audit purposes.
-- Whether service desk requests would still be required.
+- Whether service desk requests would still be required and what function they play in audit trail.
 - Whether organisations should be able to update their own bank details following a failed verification check.
 - What information needs to be retained for audit purposes.
 - Whether email correspondence provides a sufficient audit trail or if we bring into service do we need to provide ways to record evidence and reasoning.
@@ -146,22 +168,22 @@ We worked closely with operational colleagues and business analysts to understan
 - How often verification issues occur and how often organisations need to update bank details to understand how much of a issue and value our different levels of solutions can bring.
 
 Through these discussions we found that:
-- There was desire to deliver edit of bank details, but this would take longer and bringing in issue resolution into the service would introduce significant complexity in making sure we fully replace the second spreadsheet which is where the .
+- There was desire to deliver edit of bank details, but this would take longer and bringing in issue resolution into the service would introduce significant complexity in making sure we fully replace the second spreadsheet which is where lots of the audit trail is recorded.
 - Many verification issues are resolved through clarification rather than changes to bank details.
 - Some of the proposed functionality could overlap with future cross-service bank verification work.
 
 ### MVP approach
 
-We held a scoping session and agreed that the first iteration should focus on delivering the smallest change that would provide meaningful value. Replacing a bit of the process, then can iterate to bring in more, as we aren’t saying this design is the perfect solution as that would probably be closer to full automation, but what’s the minimum we can do that brings value. If we went with bringing in edit into this first iteration with editing details and upload in the service, then it will take longer. 
+We held a scoping session and agreed that the first iteration should focus on delivering the smallest change that would provide meaningful value. Replacing a bit of the process, then can iterate to bring in more, as we aren’t saying this design is the perfect solution as that would probably be closer to full automation, but what’s the minimum we can do that brings value. If we went with bringing in edit into this first iteration with editing of details and uploading evidence and notes in the service, then it will take longer. 
 
 The proposed MVP would:
 - Surface final bank verification outcome in the service. 
-- Show status for "not yet added", "submitted", "verified" and "verification failed" leaving anything to do with problem states offline. 
+- Show status for "not yet added", "submitted/not yet processed", "verified" and "verification failed" leaving anything to do with problem states offline. 
 - Use banners to inform organisation's of what they should expect to happen next based on the status of their bank details
 - Include date of submission/verification/failure to help frame timelines of expectations and context
 - Prevent organisations from submitting claims until verification is complete which prevents claim processors from processing claims for organisations that have not been verified.
 - Remove the need for the first and third spreadsheet currently used in the process
-- Keep the existing offline process for resolving verification issues. This is what was captured in the second spreadsheet. All the interim results will be documented the same as now. Keeps it clear where each part of the process is happening by not bringing it just partly into the service.
+- Keep the existing offline process for resolving verification issues. This is what was captured in the second spreadsheet. All the interim results will be documented the same as now. Keeps it clear where each part of the process is happening by not bringing it just partly into the service. 
 - If need to update details, the QA will submit a service desk request. Once the request has been completed then the QA will be informed and they will go and record the verified result in the service.
 
 Some business process clarifications:
