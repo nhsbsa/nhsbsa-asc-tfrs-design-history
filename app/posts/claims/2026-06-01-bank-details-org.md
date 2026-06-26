@@ -115,7 +115,7 @@ This would provide the best user experience and remove much of the manual operat
 
 - OM task
 
-Remove the first spreadsheet and instead have a OM task created and assigned to a QA once bank details have been submitted by a organisation. The task would contain the workplace ID of the org to check and the QA would go into the service to find the details 
+Remove the first spreadsheet and instead have a OM task created and assigned to a QA once bank details have been submitted by a organisation. The task would contain the workplace ID of the org to check and the QA would go into the service to find the details.
 
 > **We believe that** introducing a OM task for bank details verification
 > **Will be a useful feature for** QA's and organisations
@@ -123,11 +123,23 @@ Remove the first spreadsheet and instead have a OM task created and assigned to 
 
 - Bank verification status and outcome
 
-Introducing in a new status that shows the state of the bank verification checks of either "Not yet added" "Not yet processed (for QA's) / Submitted (for organisations)", "Verified", "Failed verification". 
+Introducing in a new status that shows the state of the bank verification checks of either "Not yet added", "Submitted", "Verified", "Failed verification". The AccessPay result of "Not yet added" and "Submitted" would be dependent on whether bank details have been inputted into the service by the organisation. The AccessPay results of "full match", "partial match", "unable to check" and "no match" will map to the bank verification status of "verified" or "failed verification" in the service based on how a QA resolves the result.
 
 > **We believe that** introducing this status into the service
 > **Will be a useful feature for** QA's and organisations
-> **As it will** make it clear to org's, SRO's and future processors whether the details have been verified and they don't have to consult offline spreadsheets or emails, and it saves phonecalls from the org to the BSA staff to confirm the state of their details.
+> **As it will** make it clear to org's, SRO's and future processors whether the details have been verified and they don't have to consult offline spreadsheets or emails, and it saves phonecalls from the org to the BSA staff to confirm the state of their details. Expectations on next steps communicated in the service can be set based on the status. 
+
+- Banners based off bank verification status
+
+Adding in the status of the verification of bank details means we can make the service more dynamic and specific in the content we deliver to the organisation of what can expect to happen now. 
+
+| Status | Manage claims banner content |
+| -------- | -------- |
+| Not yet added | Direct org's to get their SRO to upload their bank details. If they try to submit claims, we can inform them their bank details are missing. |
+| Submitted |  In combination with adding the date the details were submitted on the bank details tab, the banner can inform the org they are awaiting verification within 5 working days of the submitted date. Directs them to the email address they can expect a email from. |
+| Verified | The banner informs the organisation they can now submit claims. Banner is removed once there is a claim in the "submitted", "needs action", "approved" or "rejected" tab |
+| Failed verification |  Informs the organisation the details failed verification and can't submit claims. Directs to support details if needed |
+
 
 - Submission upon verification
 
@@ -174,60 +186,69 @@ Through these discussions we found that:
 
 ### MVP approach
 
-We held a scoping session and agreed that the first iteration should focus on delivering the smallest change that would provide meaningful value. Replacing a bit of the process, then can iterate to bring in more, as we aren’t saying this design is the perfect solution as that would probably be closer to full automation, but what’s the minimum we can do that brings value. If we went with bringing in edit into this first iteration with editing of details and uploading evidence and notes in the service, then it will take longer. 
+We held a scoping session and agreed that the first iteration should focus on delivering the smallest change that would provide meaningful value. Replacing a bit of the process, then can iterate to bring in more, as we aren’t saying this design is the perfect solution as that would probably be closer to full automation, but what’s the minimum we can do that brings value. If we went with bringing in edit into this first iteration with editing of details and uploading evidence and notes in the service, then it will take longer to develop and deliver. 
 
 The proposed MVP would:
-- Surface final bank verification outcome in the service. 
-- Show status for "not yet added", "submitted/not yet processed", "verified" and "verification failed" leaving anything to do with problem states offline. 
+- Record and surface just the final bank verification outcome in the service. 
+- Show status for "not yet added", "submitted", "verified" and "verification failed" leaving anything to do with problem states offline. 
 - Use banners to inform organisation's of what they should expect to happen next based on the status of their bank details
 - Include date of submission/verification/failure to help frame timelines of expectations and context
 - Prevent organisations from submitting claims until verification is complete which prevents claim processors from processing claims for organisations that have not been verified.
 - Remove the need for the first and third spreadsheet currently used in the process
 - Keep the existing offline process for resolving verification issues. This is what was captured in the second spreadsheet. All the interim results will be documented the same as now. Keeps it clear where each part of the process is happening by not bringing it just partly into the service. 
 - If need to update details, the QA will submit a service desk request. Once the request has been completed then the QA will be informed and they will go and record the verified result in the service.
+- Automatic emails will be sent to organisations based off the final outcome entered into the service.
+- SRO and submitters will have different role based access in the service. SRO's can enter the details and see the bank details tab. Submitter's don't have access to the bank details tab, they are informed on the status on the bank details verification based off the banner in the manage claims tab.
 
 Some business process clarifications:
 - If a organisation does not respond to email requests for additional information or updated details, it is a reject after a to-be agreed upon timeframe.
 - Organisation's should still be able to access the service if they have been rejected but not submit claims. 
 
-#### Final designs to go into testing 
+#### Designs to go into testing 
 
-Not yet added
+Status: Not yet added
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-  <div style="flex: 1; max-width: 48%;">
-    <figure>
-      <img src="sro-not-yet-added.png" alt="Bank details not yet added - SRO only" style="width: 100%; height: auto;">
-      <figcaption>Bank details not yet added - SRO only</figcaption>
-    </figure>
-  </div>
   <div style="flex: 1; max-width: 48%;">
     <figure>
       <img src="sro-not-yet-added-banner.png" alt="Manage claims screen with banner reflecting bank details status" style="width: 100%; height: auto;">
-      <figcaption>Manage claims screen with banner reflecting bank details status - SRO</figcaption>
+      <figcaption>SRO view - Manage claims screen with banner reflecting bank details status</figcaption>
     </figure>
   </div>
+    <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="submitter-not-yet-added.png" alt="Manage claims screen with banner reflecting bank details status" style="width: 100%; height: auto;">
+      <figcaption>Submitter view</figcaption>
+    </figure>
+  </div> 
 </div>
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+    <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="sro-not-yet-added.png" alt="Bank details not yet added - SRO only" style="width: 100%; height: auto;">
+      <figcaption>SRO view - Bank details not yet added</figcaption>
+    </figure>
+  </div>
   <div style="flex: 1; max-width: 48%;">
     <figure>
       <img src="add-details.png" alt="Add bank details - SRO only" style="width: 100%; height: auto;">
       <figcaption>Add bank details</figcaption>
     </figure>
   </div>
-  <div style="flex: 1; max-width: 48%;">
-    <figure>
-      <img src="submitter-not-yet-added.png" alt="Manage claims screen with banner reflecting bank details status" style="width: 100%; height: auto;">
-      <figcaption>Manage claims screen with banner reflecting bank details status - Submitter</figcaption>
-    </figure>
-  </div>
 </div>
+
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-  <div style="flex: 1; max-width: 48%;">
+<div style="flex: 1; max-width: 48%;">
     <figure>
       <img src="sro-missing-submit.png" alt="Error when submitting claim without adding bank details" style="width: 100%; height: auto;">
-      <figcaption>Error when submitting claim without adding bank details</figcaption>
+      <figcaption>SRO view - Error when submitting claim without adding bank details</figcaption>
+    </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="submitter-missing-submit.png" alt="Error when submitting claim without adding bank details" style="width: 100%; height: auto;">
+      <figcaption>Submitter view</figcaption>
     </figure>
   </div>
 
@@ -238,29 +259,39 @@ Submitted
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
     <figure>
-      <img src="sro-submitted.png" alt="Bank details submitted - SRO only" style="width: 100%; height: auto;">
-      <figcaption>Bank details submitted - SRO only</figcaption>
+      <img src="sro-submitted-banner.png" alt="Manage claims screen with banner reflecting bank details status" style="width: 100%; height: auto;">
+      <figcaption>SRO view - Manage claims screen with banner reflecting bank details status</figcaption>
     </figure>
   </div>
   <div style="flex: 1; max-width: 48%;">
     <figure>
-      <img src="sro-submitted-banner.png" alt="Manage claims screen with banner reflecting bank details status" style="width: 100%; height: auto;">
-      <figcaption>Manage claims screen with banner reflecting bank details status</figcaption>
+      <img src="submitter-submitted-banner.png" alt="Manage claims screen with banner reflecting bank details status - submitter role" style="width: 100%; height: auto;">
+      <figcaption>Submitter view</figcaption>
+    </figure>
+  </div>
+
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+    <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="sro-bank-details-submitted.png" alt="Bank details submitted - SRO only" style="width: 100%; height: auto;">
+      <figcaption>SRO only - successfully submitted bank details</figcaption>
     </figure>
   </div>
 </div>
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-  <div style="flex: 1; max-width: 48%;">
+    <div style="flex: 1; max-width: 48%;">
     <figure>
-      <img src="submitter-submitted.png" alt="Manage claims screen with banner reflecting bank details status - submitter role" style="width: 100%; height: auto;">
-      <figcaption>Manage claims screen with banner reflecting bank details status - submitter</figcaption>
+      <img src="sro-awaiting-submit.png" alt="Bank details submitted - SRO only" style="width: 100%; height: auto;">
+      <figcaption>SRO view - Error when submitting a claim and bank details have only been submitted but not yet verified</figcaption>
     </figure>
   </div>
   <div style="flex: 1; max-width: 48%;">
     <figure>
-      <img src="sro-unverified-submit.png" alt="Error when submitting a claim and bank details have only been submitted but not yet verified" style="width: 100%; height: auto;">
-      <figcaption>Error when submitting a claim and bank details have only been submitted but not yet verified</figcaption>
+      <img src="submitter-awaiting-submit.png" alt="Error when submitting a claim and bank details have only been submitted but not yet verified" style="width: 100%; height: auto;">
+      <figcaption>Submitter view</figcaption>
     </figure>
   </div>
 </div>
@@ -272,14 +303,23 @@ Verified
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
     <figure>
-      <img src="sro-verified.png" alt="Bank details verified - SRO only" style="width: 100%; height: auto;">
-      <figcaption>Bank details verified - SRO only</figcaption>
+      <img src="sro-verified-banner.png" alt="Bank details verified - SRO only" style="width: 100%; height: auto;">
+      <figcaption>Bank details verified</figcaption>
     </figure>
   </div>
   <div style="flex: 1; max-width: 48%;">
     <figure>
-      <img src="sro-verified-banner.png" alt="Manage claims screen with banner reflecting bank details status" style="width: 100%; height: auto;">
-      <figcaption>Manage claims screen with banner reflecting bank details status - SRO and submitter</figcaption>
+      <img src="sro-verified-with-claims.png" alt="Manage claims screen with banner reflecting bank details status" style="width: 100%; height: auto;">
+      <figcaption>Bank details verified and claims submitted - no banner</figcaption>
+    </figure>
+  </div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="sro-verified.png" alt="Bank details verified - SRO only" style="width: 100%; height: auto;">
+      <figcaption>SRO only view - Bank details verified</figcaption>
     </figure>
   </div>
 </div>
@@ -289,14 +329,14 @@ Verification failed
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
     <figure>
-      <img src="sro-failed.png" alt="Bank details verification failed - SRO only" style="width: 100%; height: auto;">
-      <figcaption>Bank details tab with verification failed - SRO</figcaption>
+      <img src="sro-failed-banner.png" alt="Manage claims screen with banner reflecting bank details status" style="width: 100%; height: auto;">
+      <figcaption>SRO view - Manage claims screen with banner reflecting bank details status</figcaption>
     </figure>
   </div>
   <div style="flex: 1; max-width: 48%;">
     <figure>
-      <img src="sro-failed-banner.png" alt="Manage claims screen with banner reflecting bank details status" style="width: 100%; height: auto;">
-      <figcaption>Manage claims screen with banner reflecting bank details status - SRO</figcaption>
+      <img src="submitter-failed.png" alt="Manage claims screen with banner reflecting bank details status - submitter role" style="width: 100%; height: auto;">
+      <figcaption>Submitter view</figcaption>
     </figure>
   </div>
 </div>
@@ -304,14 +344,23 @@ Verification failed
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
     <figure>
-      <img src="submitter-failed.png" alt="Manage claims screen with banner reflecting bank details status - submitter role" style="width: 100%; height: auto;">
-      <figcaption>Manage claims screen with banner reflecting bank details status - submitter</figcaption>
+      <img src="sro-failed.png" alt="Bank details verification failed - SRO only" style="width: 100%; height: auto;">
+      <figcaption>SRO view - Bank details tab with verification failed</figcaption>
     </figure>
   </div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
     <figure>
       <img src="sro-failed-submit.png" alt="Error when trying to submit with failed bank details" style="width: 100%; height: auto;">
-      <figcaption>Error when trying to submit with failed bank details</figcaption>
+      <figcaption>SRO view - Error when trying to submit with failed bank details</figcaption>
+    </figure>
+  </div>
+    <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="submitter-failed-submit.png" alt="Bank details verification failed - SRO only" style="width: 100%; height: auto;">
+      <figcaption>Submitter view </figcaption>
     </figure>
   </div>
 </div>
@@ -325,13 +374,12 @@ This approach addresses the most significant user and operational risks while al
 - Whether users understood the different verification states.
 - Whether the proposed banners and status messages clearly communicated what was happening.
 - Expectations around verification timescales.
-- Whether organisations preferred being prevented from submitting claims until verification was complete.
+- Whether organisations found it frustrating being prevented from submitting claims until verification was complete, or would rather submit knowing they wouldn't be processed until bank details were verified.
 - How organisations expected to be notified when verification was successful.
 - What users expected to happen if there was a problem with their bank details.
 - Whether organisations would rely on email communication if issues needed to be resolved outside the service.
 - Whether users wanted visibility of verification dates and status history.
-- We also explored how organisations interpreted the different stages of the journey and whether there was - sufficient clarity around when they could begin submitting claims.
-- Testing is ongoing and will help us understand whether the proposed MVP provides enough visibility and reassurance while maintaining a simpler solution for the first iteration.
+- We also explored how organisations interpreted the different stages of the journey and whether there was sufficient clarity around when they could begin submitting claims.
 
 {# #### Who did they test with
 X Participants:
@@ -344,7 +392,7 @@ Moderated usability testing sessions and semi structured interview questions
 
 ### Findings:
 
-Analysis of the UR findings revealed a desire for edit bank details functionality to be available to organisations. The recommendation action was to review the scope for this feature, and it's priority revisited in the roadmap. Everything else in the designs functioned as expected.
+Analysis of the UR findings revealed a desire for edit bank details functionality to be available to organisations. The recommendation action was to review the scope for this feature, and it's priority revisited in the roadmap. Everything else in the designs functioned as expected and the proposed MVP provides enough visibility and reassurance while maintaining a simpler solution for the first iteration.
 
 ## What we will do next
 
