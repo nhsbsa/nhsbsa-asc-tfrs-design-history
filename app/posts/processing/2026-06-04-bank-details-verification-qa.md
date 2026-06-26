@@ -269,7 +269,9 @@ On scenario 4 we clarified with ops and buisness that if the org hasn't responde
 
 #### Processor view
 
-- Decision to hide the Access pay result from processors, including the fact the details may have been verified at risk. The "verification" or "verification failed" result is the only value necessary to display to processors. If the QA has decided to verify it, the processor can progress with processing the claim. 
+- Decision to hide the Access pay result from processors, including the fact the details may have been verified at risk. The "verification" or "verification failed" result is the only value necessary to display to processors. If the QA has decided to verify it, the processor can progress with processing the claim. The processor wouldn't have received a claim that didn't have its bank details verified, so checking the status is a step they can remove from their process.
+
+- Account number is also always masked from processor. For a QA the account number is only masked when the details have been verified.
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div style="flex: 1; max-width: 48%;">
