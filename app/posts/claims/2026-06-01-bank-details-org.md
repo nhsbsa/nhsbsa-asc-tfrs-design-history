@@ -1,5 +1,5 @@
 ---
-title: Verifying bank details 
+title: Verifying bank details - Organisation side
 description: Exploring how we can improve the bank details verification process by reducing reliance on manual spreadsheets, preventing delays for organisations and processors, and bringing key verification outcomes into the service
 author:
   name: Hannah Williams (Interaction designer)
@@ -381,19 +381,28 @@ This approach addresses the most significant user and operational risks while al
 - Whether users wanted visibility of verification dates and status history.
 - We also explored how organisations interpreted the different stages of the journey and whether there was sufficient clarity around when they could begin submitting claims.
 
-{# #### Who did they test with
-X Participants:
-X x band X processors
-X x band X processor / QA #}
+#### Who did they test with
 
-#### How did they test
+6 Participants took part in moderated usability testing sessions with semi structured interview questions
 
-Moderated usability testing sessions and semi structured interview questions
+### Questions:
+
+- Would org's expect to be able to submit claims if their bank details had yet to be verified?
+- Would their be a need for anyone else in the organisation apart from SRO, to view the bank details tab?
+- Do they use the hyperlink in the banner on manage claims screen to add bank details or navigate through tab.
+- Would they have used a personal bank account or a buisness one when adding bank details?
+- If there was no issue with verifying their bank details, would they expect to recieve a email saying now verified and can submit claims?
+- Any thoughts around 3-5 working day timeframe on checking details and getting a response?
+- If bank details failed verification what would they expect to do/happen next?
 
 ### Findings:
 
 Analysis of the UR findings revealed a desire for edit bank details functionality to be available to organisations. The recommendation action was to review the scope for this feature, and it's priority revisited in the roadmap. Everything else in the designs functioned as expected and the proposed MVP provides enough visibility and reassurance while maintaining a simpler solution for the first iteration.
 
 ## What we will do next
+
+Updates:
+- Timeframe confirmed as 5 working days for orgs to expect a response or email after submitting their bank details
+- They would expect a email no matter the outcome, even if verified
 
 Focus turns to the designs on the QA side.
