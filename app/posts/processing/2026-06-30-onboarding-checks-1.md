@@ -146,6 +146,20 @@ The final step would bring the onbaorder back to the registration details screen
 ![A screenshot from v15 showing the registration details for a registered at risk organisation](registered-at-risk.png "Registration details - registered at risk")
 
 ## How we tested our ideas and what we found
+We ran a round of usability testing with 5 members of the operational team that conduct the currrent onboardign checks. We aimed to understand:
 
+- whether users are able to use the system to record the outcome
+- whether the proposed registration information is sufficient for onboarders to decide whether to onboard an organisation, and what, if any additional information would they be looking for
+
+Our headline findings were:
+- The quantity of information displayed in the designs was managable, users praised being able to see everything on one page
+- There was delight around the information being displayed upfront, and the time saved no longer having to find this information was highlighted
+- ​Users identified where they may need to use existing processes, particularly for register at risk or rejection outcomes where a spreadsheet and communication with orgs may be needed
+- Register at risk status was praised, this is what users expected to see displayed on the organisations details once registered and onboarded – Expect it to be flagged next to the organisation name in the claim journey
+
+While no major usability issues were found onboarders are very set on needing defined criteria to make a decision. This aligned with findings during the work we did to agree upon the high level onboarding checks process. A key takeaway was the need to agree on how the individual checks inform an overall onboarding decision.
+
+Further details can be found in the <a href="https://nhsbsauk.sharepoint.com/:p:/r/teams/UserResearchLibrary/_layouts/15/doc2.aspx?sourcedoc=%7B47FC41F6-12A3-40A9-B246-F21C633EC796%7D&file=Self%20Serve%20Internal%20round%201%20-%20%20Bank%20and%20pre%20verification%20checks.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1&wdOrigin=OFFICECOM-WEB.APPGALLERY%2CAPPHOME-WEB.JUMPBACKIN&wdPreviousSession=3e85b55c-984f-4f62-b399-495a64b22049&wdPreviousSessionSrc=AppHomeWeb&ct=1783349715744">playback deck</a>.
 
 ## What we will do next
+Due to the lack of major usability issues we will make ready the designs for the development handover addressing any edges cases, error handling and validation needed. We have also agreed that the wider team need to clearly define how the individual checks inform the overal decision. We are tryign to get agreement on who should have responsibilty for this. We will work with the operational and fraud teams as needed to help with this. 
