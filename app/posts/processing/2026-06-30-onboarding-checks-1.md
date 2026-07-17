@@ -102,7 +102,7 @@ As there could duplicate names for information in differetn summary lists, for e
 
 ### Record decision
 
-The design for the decision involved a single question with the three options. We did explore two different content choices, looking at "register" vs "onboard" we decided that in keeping existing language refering to this joruney we would stick with register as a more appropriate choice.
+The design for the decision involved a single question with the three options. With our content designer, we explored two different content choices, looking at "register" vs "onboard" we decided that in keeping existing language refering to this joruney we would stick with register as a more appropriate choice.
 
 For the register at risk option we decided to add some additional hint text as:
 

@@ -1,5 +1,5 @@
 ---
-title: Verifying bank details - QA side
+title: Enabling QAs to verify bank details in the service
 description: Exploring how we can improve the bank details verification process by reducing reliance on manual spreadsheets, preventing delays for organisations and processors, and bringing key verification outcomes into the service
 author:
   name: Hannah Williams (Interaction designer)
@@ -59,7 +59,7 @@ What level of information must be captured in the service for audit purposes?
 - If the organisation doesn't respond to the offline communications, after a specific timeframe the QA can record it as verification failed.
 
 #### Language 
-Decided to use the language of the processor side and say "Not yet verified" instead of "submitted" on this side of the service. This is similar to what we do with claims of "Not yet processed" on processor side and "submitted" on claims side.
+Working with our content designer, we decided the language of the processor side and say "Not yet verified" instead of "submitted" on this side of the service. This is similar to what we do with claims of "Not yet processed" on processor side and "submitted" on claims side.
 
 This meant had to change the design slightly with moving where we put the submitted date as it no longer worked next to the status like it does with verified and verification failed. It works well sometimes to have the design be slightly different for different states to make it stand out
 

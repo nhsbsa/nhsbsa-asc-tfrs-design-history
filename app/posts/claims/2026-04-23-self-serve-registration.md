@@ -1,5 +1,5 @@
 ---
-title: Self serving organisation regisration
+title: Self serving organisation registration
 description: Exploring how we allow users to self initiate the onboarding journeys themselves through the service.
 author:
   name: Mark Portnell (Interaction designer)

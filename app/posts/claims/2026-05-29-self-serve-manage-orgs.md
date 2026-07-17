@@ -80,7 +80,7 @@ Following the crit we were able to converge on a single design idea and incorpor
 
 Firstly summary cards felt like the best approach for us and is a pattern we have used elsehwere in the service and have tested well with suers as ways of showing mutliple entities together in one list.
 
-We opted to go without sub headings as most users will only have one organsiation on this screen and we believed the sub-headings added unnecessary content to the screen in those situations. On top of this the sub-heading combined with the org state tag on the cards felt like duplicated content and we believed the tag would be a better approach and would be clearer for users. 
+Working with our content designer, we opted to go without sub headings as most users will only have one organsiation on this screen and we believed the sub-headings added unnecessary content to the screen in those situations. On top of this the sub-heading combined with the org state tag on the cards felt like duplicated content and we believed the tag would be a better approach and would be clearer for users. 
 
 We also decided upon a single column using the two thirds width for the cards this allowed for ample space for content and we believed it made the page easier to read for users. 
 
