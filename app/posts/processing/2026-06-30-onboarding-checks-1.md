@@ -112,7 +112,7 @@ For the register at risk option we decided to add some additional hint text as:
 
 In addition we used a conditional reveal for the notes associated with the no option as well which aligns with how we have implemented this approach in the claims process. The resulting design is as follows:
 
-![A screenshot from v15 showing the registration details screen witht he ability to record a decision](unprocessed.png "Record outcome")
+![A screenshot from v15 showing the registration details screen with the ability to record a decision](unprocessed.png "Record outcome")
 
 ### Confirm outcome
 
@@ -162,4 +162,27 @@ While no major usability issues were found onboarders are very set on needing de
 Further details can be found in the <a href="https://nhsbsauk.sharepoint.com/:p:/r/teams/UserResearchLibrary/_layouts/15/doc2.aspx?sourcedoc=%7B47FC41F6-12A3-40A9-B246-F21C633EC796%7D&file=Self%20Serve%20Internal%20round%201%20-%20%20Bank%20and%20pre%20verification%20checks.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1&wdOrigin=OFFICECOM-WEB.APPGALLERY%2CAPPHOME-WEB.JUMPBACKIN&wdPreviousSession=3e85b55c-984f-4f62-b399-495a64b22049&wdPreviousSessionSrc=AppHomeWeb&ct=1783349715744">playback deck</a>.
 
 ## What we will do next
-Due to the lack of major usability issues we will make ready the designs for the development handover addressing any edges cases, error handling and validation needed. We have also agreed that the wider team need to clearly define how the individual checks inform the overal decision. We are tryign to get agreement on who should have responsibilty for this. We will work with the operational and fraud teams as needed to help with this. 
+Due to the lack of major usability issues we will make ready the designs for the development handover addressing any edges cases, error handling and validation needed. 
+
+During this we had to make some small changes to the design to accomodate some changing requirements, inparticular organisations were required to submit two different types of evidence of address rather than one to accomodate this change and also present SRO details to align with how they are submitted we made some small changes to how registration details are displayed.
+
+![A screenshot from v16 showing the registration details screen with the updated design changes](iteration.png "Iterated registreationd details")
+
+ We have also agreed that the wider team need to clearly define how the individual checks inform the overal decision. We are tryign to get agreement on who should have responsibilty for this. We will work with the operational and fraud teams as needed to help with this. 
+
+ As part of the changes we need to make we also iterated the organisation details page for the processors, this was needed as Organisation name and address would no longer be taken from the ASC-WDS. We therefore iterated this page to detatch the ASC-WDS information, add any further information we get through the API as well as link back to the corresponding registration that was submitted. 
+
+ <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="org-details-old.png" alt="A screenshot from v14 showing the organisation details screen" style="width: 100%; height: auto;">
+      <figcaption>Previous organsiation details screen</figcaption>
+    </figure>
+  </div>
+  <div style="flex: 1; max-width: 48%;">
+    <figure>
+      <img src="org-details-new.png" alt="A screenshot from V15 showing the iterated organisation details screen" style="width: 100%; height: auto;">
+      <figcaption>Iterated organisation details screen</figcaption>
+    </figure>
+  </div>
+</div>
