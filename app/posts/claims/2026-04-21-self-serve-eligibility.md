@@ -5,10 +5,13 @@ author:
   name: Martine Gallie (Content designer)
   url: 'mailto:hi.martine.gallie@nhsbsa.nhs.uk'
 date: 2026-04-21
+modified: 2024-08-27
 tags:
 - private-beta
 - self-serve-onboarding
 - claims-version-23
+- claims-version-27
+
 aside:
   title:  Claims prototypes
   content: |
@@ -122,5 +125,19 @@ The content was iterated and the following updates made:
 - putting registration evidence requirements into 2 bulleted lists – one mandatory and one optional
 - specifying that the evidence relates to the organisation rather than the individual
 
-We will now retest the content, allowing people to self-select how they engage with it, along with the new registration screens. 
+We will now retest the content, allowing people to self-select how they engage with it, along with the new registration screens.
+
+Following conversations with the Head of Content at DHSC, we have come to understand that, when we move to public beta, our start page will need to be built using <a href="https://docs.publishing.service.gov.uk/repos/whitehall.html">Whitehall Publisher</a>. This is used to publish government content for specialist users like ours. 
+
+The DHSC content team will use the single-page <a href="https://design-guide.publishing.service.gov.uk/frontend-templates/detailed-guide/">Detailed guide frontend template</a> in that application to create the page. The "Start now" button will then link to our service pages hosted by us. 
+
+It’s important to note that, although the content has not changed, it went through user testing formatted as a <a href="https://design-guide.publishing.service.gov.uk/frontend-templates/guide/">guide</a>, which is a multi-page format. 
+
+This page needs to exist before we go into public beta so we plan to build it ourselves and allow it to be accessed directly without any account. This is the same behaviour as the current start page.
+
+This will allow us to point new potential users to this page rather than the expression of interest form. They can then create an account and register their organisation.
+
+The new page uses components from both the <a href="https://design-system.service.gov.uk/">GOV.UK Design System</a> and <a href="https://github.com/alphagov/govuk_publishing_components">GOVUK Publishing components</a>. We have tried to recreate the <a href="https://adult-social-care-7fe9bafd955a.herokuapp.com/claims/v27/claim-for-adult-social-care-learning-and-development">proposed Whitehall page</a> as accurately as possible in the prototype.
+
+We have shared the reformatted content, and a PDF of the page as it appears in the prototype, with the policy team at DHSC as they will need to request an initial review by the content team via <a href="https://departmentofhealth.freshdesk.com/support/home">Freshdesk</a>. 
 
