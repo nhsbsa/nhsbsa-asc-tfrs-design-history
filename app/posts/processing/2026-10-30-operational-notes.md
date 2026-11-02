@@ -76,9 +76,11 @@ Together, we reviewed our findings around current note taking processes, previou
 - How might we extract information from notes to create useful at a glance features? 
 - How might we enable processors to find notes more easily? 
 
+![A collection of sticky notes on a whiteboard grouped by theme](how-might-we-statements-notes.png "Grouped 'How might we statements'")
+
 We then themed our HMWs and used them as a prompt for crazy 8 sketching - a rapid ideation approach where each participant sketches 1 idea in 1 minute and repeats 8 times. The goal is to come up with creative and distinct ideas without being blocked by time to overthink them. We then dot voted and discussed which ideas to move forward with. 
 
-![A screenshot showing the address input screen with a new optional address line 3](address-new.png "The address inpout screen design")
+![A photo of multiple rough screen sketches produced as part of the rapid ideation activity](rapid-ideation-notes.png "Crazy 8 sketches")
 
 ## Ideation workshop next steps
 Our next step was to identify the scope of the notes feature, as any dedicated notes section created within the service would be unlikely to capture every level of documentation that is currently being captured.  
@@ -89,7 +91,10 @@ We then worked with the Funding operations team to determine what type of note s
 
 ## Designing the notes feature 
 
-Designs were mocked up in Figma and taken to a design crit with the multidisciplinary team before they were iterated on and added to the coded prototype.   
+Designs were mocked up in Figma and taken to a design crit with the multidisciplinary team before they were iterated on and added to the coded prototype. 
+
+![An illustrative screenshot of mutiple design iterations in Figma ](figma-designs-notes.png "Figma design iterations")
+
 To address our user needs to be able to capture, reference, search, sort and filter notes, we focused on the following features for our MVP: 
 
 ### Distinction between organisation notes and claim notes
@@ -100,9 +105,9 @@ To address our user needs to be able to capture, reference, search, sort and fil
 
 - The ‘More claim actions’ button menu is an MoJ component we introduced to the claim view page that allows more CTAs to be included without overcrowding the header of the page. For example, ‘Add a new note’, ‘View claim notes’ and ‘View claim history’ are hidden within the collapsible menu.  
 
-Approaching the design of this combined screen we reused content from our existing GDL signing screens and incorporated the declaration content that was already in the journey.
+![A screenshot of the default claim notes view](claim-notes-screenshot.png "The default view for claim specific notes")
 
-![A screenshot showing the new declaration screen that combined GDL signing content with the existing declaration content](declaration-new.png "New declaration screen")
+![A screenshot of the default claim notes view](org-notes-screenshot.png "The default view for organisation wide notes")
 
 ### Adding a note
 
@@ -110,15 +115,30 @@ Approaching the design of this combined screen we reused content from our existi
 
 - Adding a note opens a new window where the user can write the content of the note and assign a relevant category. Opening the note in a new tab means that the user can still reference the information on screen without losing their place, for example if processing a claim and they need to reference their progress to mention a specific learner and course. 
 
+![A screenshot of the 'Add a claim note' screen with example content](claim-note-example.png "Add a claim note example")
+
 - Categories added to a note are dependent on the note type. 
+
+### Replying to a note 
+
+- Users can reply to notes in a thread.  
+
+- Replies are hidden until the user interacts with them. 
+
+![A screenshot of a note reply interaction](note-reply-example.png "Replying to a note")
+
+### Note metadata
+
+- Each note contains a set of metadata: the note author, their role, a date and time stamp, a unique note ID, and when viewing a claim note view overall ‘Notes’, the claim reference too. 
+
+![A screenshot showing the core elements of a note: category tags, note body content, note metadata, note replies and a CTA to reply to a note.](note-component-breakdown.png "Note component breakdown")
 
 ### Filter, sort and search notes
 
 - We used the MoJ filter pattern to allow users to sort notes, search by keyword, and filter by note category. The filter can also be used to exclude claim notes at an organisation level. 
 
-### Note metadata
 
-- Each note contains a set of metadata: the note author, their role, a date and time stamp, a unique note ID, and when viewing a claim note view overall ‘Notes’, the claim reference too. 
+![A screenshot of organisation notes with the filter panel open](org-notes-with-filters.png "Organisation notes filtered to show only claim notes")
 
 
 ## Testing our ideas
