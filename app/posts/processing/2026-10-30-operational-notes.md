@@ -1,11 +1,11 @@
 ---
 title: Revisiting an operational notes feature
-description: Iterating the design following research with users and some new requirements.
+description: Introducing note functionality into the service for processors, QAs and CCS agents
 author:
   name: Naomi MacKenzie (Interaction designer)
-  url: 'mailto:hi.mark.portnell@nhsbsa.nhs.uk'
+  url: 'mailto:hi.naomi.mackenzie@nhsbsa.nhs.uk'
 date: 2026-10-30
-modified: 2026-10-30
+modified: 2026-11-04
 tags:
 - private-beta
 - processing-v18
